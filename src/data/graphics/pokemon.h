@@ -13177,6 +13177,20 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 	const u32 gMonShinyPalette_Siphormix[] = INCBIN_U32("graphics/_AW/pokemon/siphormix/shiny.gbapal.lz");
 	const u8 gMonIcon_Siphormix[] = INCBIN_U8("graphics/_AW/pokemon/siphormix/icon.4bpp");
 
+    // Psyduck Regional
+	const u32 gMonFrontPic_Psyduck_AW[] = INCBIN_U32("graphics/_AW/pokemon/psyduck/anim_front.4bpp.lz");
+	const u32 gMonPalette_Psyduck_AW[] = INCBIN_U32("graphics/_AW/pokemon/psyduck/normal.gbapal.lz");
+	const u32 gMonBackPic_Psyduck_AW[] = INCBIN_U32("graphics/_AW/pokemon/psyduck/back.4bpp.lz");
+	const u32 gMonShinyPalette_Psyduck_AW[] = INCBIN_U32("graphics/_AW/pokemon/psyduck/shiny.gbapal.lz");
+	const u8 gMonIcon_Psyduck_AW[] = INCBIN_U8("graphics/_AW/pokemon/psyduck/icon.4bpp");
+
+    // Horsea_AW
+	const u32 gMonFrontPic_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/anim_front.4bpp.lz");
+	const u32 gMonPalette_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/normal.gbapal.lz");
+	const u32 gMonBackPic_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/back.4bpp.lz");
+	const u32 gMonShinyPalette_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/shiny.gbapal.lz");
+	const u8 gMonIcon_Horsea_AW[] = INCBIN_U8("graphics/_AW/pokemon/horsea/icon.4bpp");
+
     // Tinymph
 	const u32 gMonFrontPic_Tinymph[] = INCBIN_U32("graphics/_AW/pokemon/tinymph/anim_front.4bpp.lz");
 	const u32 gMonPalette_Tinymph[] = INCBIN_U32("graphics/_AW/pokemon/tinymph/normal.gbapal.lz");

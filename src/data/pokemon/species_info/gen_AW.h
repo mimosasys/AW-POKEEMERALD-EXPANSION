@@ -327,10 +327,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 5,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It curls up into a ball when it is threatened,\n"
-            "protecting itself using its hard shell. If\n"
-            "it stresses out too much, it starts to glow\n"
-            "blue."),
+            "It curls up into a ball when it is\n"
+            "threatened, protecting itself using its\n"
+            "hard shell. If it stresses out too much,\n"
+            "it starts to glow blue."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -377,10 +377,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 14,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "By compressing itself into a ball, it can\n"
-            "generate static electricity, imbued with its\n"
-            "special magic. The snap from the sparks on\n"
-            "its tail is often mistaken for thunder."),
+            "By compressing itself into a ball, it\n"
+            "can generate static electricity, imbued\n"
+            "with its special magic. The snaps from\n"
+            "its sparks are often mistaken for thunder."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -583,9 +583,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .weight = 0,
         .description = COMPOUND_STRING(
             "It lives in deep holes it digs in the sand,\n"
-            "and uses bits of shiny minerals to decorate\n"
-            "its shell. When several gather, they hold\n"
-            "secret fashion parades."),
+            "and uses bits of shiny minerals to\n"
+            "decorate its shell. When several gather,\n"
+            "they hold secret fashion parades."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -633,8 +633,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .weight = 0,
         .description = COMPOUND_STRING(
             "The brush structures are used movement,\n"
-            "decoration, and feeding. It feels through the\n"
-            "sand for food, and any valuables it finds,\n"
+            "decoration, and feeding. It feels through\n"
+            "the sand for food - any valuables it finds\n"
             "it hides away or uses as decoration."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
@@ -682,10 +682,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 16,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The clothes it wears are fashioned out of the\n"
-            "sand around it and the minerals it has found\n"
-            "over time. It loves finding an excuse to show\n"
-            "off new designs."),
+            "The clothes it wears are fashioned out of\n"
+            "the sand around it and the minerals it\n"
+            "has found over time. It loves finding an\n"
+            "excuse to show off new designs."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -734,10 +734,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "They have adapted extraordinarily well to the\n"
-            "region, not being native to the area. Their\n"
-            "fighting spirit lets them go after prey much\n"
-            "bigger than they are."),
+            "They have adapted extraordinarily well to\n"
+            "the region, not being native to the area.\n"
+            "Their fighting spirit lets them go after\n"
+            "prey much bigger than they are."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -784,9 +784,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Though it can deliver a nasty bite, the most\n"
-            "dangerous part of this Pokémon is it's tail,\n"
-            "which it can flick to cause a knockout blow."),
+            "Though it can deliver a nasty bite, the\n"
+            "most dangerous part of this Pokémon is\n"
+            "it's tail, which it can flick to cause\n"
+            "a knockout blow."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -833,9 +834,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Their extreme territoriality stops many people\n"
-            "from close to them, though if raised correctly\n"
-            "they are incredibly valuable partners."),
+            "Their extreme territoriality stops many\n"
+            "people from close to them, though if\n"
+            "raised correctly they are incredibly\n"
+            "valuable partners."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -882,10 +884,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The hump on its back is used for storing water\n"
-            "it gathers, and can be filled up when it rains\n"
-            "because of its very porous skin. It loves\n"
-            "wallowing in water and mud."),
+            "The hump on its back is used for storing\n"
+            "water it gathers, and can be filled up\n"
+            "when it rains because of its very porous\n"
+            "skin. It loves wallowing in water and mud."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -934,8 +936,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .description = COMPOUND_STRING(
             "The 'ingot' on its back is actually a\n"
             "discolouration of its skin. The shine isn't\n"
-            "naturally there, so shinier ingots show more\n"
-            "desirable individuals."),
+            "naturally there, so shinier ingots show\n"
+            "more desirable individuals."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -984,10 +986,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 24,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It loves to cram itself into walls made out of\n"
-            "similar hexagonal columns. Since these look so\n"
-            "man-made, it was assumed for hundreds of years that\n"
-            "this Pokémon wasn't even real."),
+            "It loves to cram itself into walls made\n"
+            "out of similar hexagonal columns. Since\n"
+            "these look so man-made, it was assumed\n"
+            "for hundreds of years that it was made-up."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1036,7 +1038,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It swims in the open ocean with its mouth agape, hoping to swallow lots of algae. Although it has a scary appearance, it is in reality harmless."),
+            "It swims in the open ocean with its mouth\n"
+            "agape, hoping to swallow lots of algae.\n"
+            "Although it has a scary appearance, it\n"
+            "is in reality harmless."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1083,7 +1088,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The algae it swallows started growing between its teeth, giving it access to the algae's toxins. It thrives when the algae bloom and the tide turns red."),
+            "The algae it swallows started growing\n"
+            "between its teeth, giving it access to\n"
+            "the algae's toxins. It thrives when the\n"
+            "algae bloom and the tide turns red."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1130,10 +1138,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It floats around on the surface of the water,\n"
-            "trying to get people to hear it sing. While it\n"
-            "definitely needs more practice, it has big\n"
-            "dreams."),
+            "It floats around on the surface of the\n"
+            "water, trying to get people to hear it,\n"
+            "While it definitely needs more practice,\n"
+            "it has big dreams."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1180,10 +1188,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "They use their haunting voices to lure in prey,\n"
-            "poisoning them when in range. In olden times,\n"
-            "sailors would also fall for their eerie, yet\n"
-            "beautiful song."),
+            "They use their haunting voices to lure\n"
+            "in prey, poisoning them when in range.\n"
+            "In olden times, sailors would also fall\n"
+            "for their eerie, yet beautiful song."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1230,10 +1238,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The cells on its 'hands' have hardened into a\n"
-            "vinyl-like substance that it uses in its\n"
-            "performances. People and Pokémon alike flock\n"
-            "to their shows."),
+            "The cells on its 'hands' have hardened\n"
+            "into a vinyl-like substance that it\n"
+            "uses in its performances. People and\n"
+            "Pokémon alike flock to their shows."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1518,10 +1526,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 1,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "They stayed alive in the glacier in a state of\n"
-            "suspended animation, keeping their internal fire\n"
-            "just barely flickering. They can even survive\n"
-            "in the vacuum of space."),
+            "They stayed alive in the glacier in a state\n"
+            "of suspended animation, keeping their\n"
+            "internal fire just barely flickering. They\n"
+            "can even survive in the vacuum of space."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1615,7 +1623,57 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_UPSUNDER}),
+        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 16, SPECIES_UPSUNDER_M},
+                                {EVO_LEVEL_FEMALE, 16, SPECIES_UPSUNDER}),
+        .formSpeciesIdTable = sUpsittleFormSpeciesIdTable,
+    },
+    [SPECIES_UPSITTLE_N] = 
+    {
+        .baseHP        = 40,
+        .baseAttack    = 49,
+        .baseDefense   = 48,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .catchRate = 255,
+        .expYield = 14,
+        .evYield_SpAttack = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY,EGG_GROUP_HUMAN_LIKE),
+        .abilities = {ABILITY_RATTLED, ABILITY_FRIEND_GUARD},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Upsittle"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_UPSITTLE, 
+        .categoryName = _("Pride"),
+        .height = 3,
+        .weight = 120,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_UPSUNDER_N}),
+        .formSpeciesIdTable = sUpsittleFormSpeciesIdTable,
     },
     [SPECIES_UPSUNDER] = 
     {
@@ -1629,7 +1687,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .catchRate = 255,
         .expYield = 99,
         .evYield_SpAttack = 2,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_FEMALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -1663,6 +1721,103 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PROUDEMIND}),
+        .formSpeciesIdTable = sUpsunderFormSpeciesIdTable,
+    },
+    [SPECIES_UPSUNDER_M] = 
+    {
+        .baseHP        = 61,
+        .baseAttack    = 60,
+        .baseDefense   = 60,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
+        .catchRate = 255,
+        .expYield = 99,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY,EGG_GROUP_HUMAN_LIKE),
+        .abilities = {ABILITY_RATTLED, ABILITY_FRIEND_GUARD},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Upsunder"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_UPSUNDER, 
+        .categoryName = _("Pride"),
+        .height = 8,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PROUDEMIND_M}),
+        .formSpeciesIdTable = sUpsunderFormSpeciesIdTable,
+    },
+    [SPECIES_UPSUNDER_N] = 
+    {
+        .baseHP        = 61,
+        .baseAttack    = 60,
+        .baseDefense   = 60,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
+        .catchRate = 255,
+        .expYield = 99,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY,EGG_GROUP_HUMAN_LIKE),
+        .abilities = {ABILITY_RATTLED, ABILITY_FRIEND_GUARD},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Upsunder"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_UPSUNDER, 
+        .categoryName = _("Pride"),
+        .height = 8,
+        .weight = 340,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PROUDEMIND_N}),
+        .formSpeciesIdTable = sUpsunderFormSpeciesIdTable,
     },
     [SPECIES_PROUDEMIND] = 
     {
@@ -1676,7 +1831,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .catchRate = 255,
         .expYield = 210,
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_FEMALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -1691,6 +1846,361 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .weight = 580,
         .description = COMPOUND_STRING(
             ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .formSpeciesIdTable = sProudemindFormSpeciesIdTable,
+    },
+    [SPECIES_PROUDEMIND_M] = 
+    {
+        .baseHP        = 84,
+        .baseAttack    = 71,
+        .baseDefense   = 71,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 103,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
+        .catchRate = 255,
+        .expYield = 210,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY,EGG_GROUP_HUMAN_LIKE),
+        .abilities = {ABILITY_JUSTIFIED, ABILITY_FRIEND_GUARD},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Proudemind"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PROUDEMIND, 
+        .categoryName = _("Pride"),
+        .height = 17,
+        .weight = 580,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .formSpeciesIdTable = sProudemindFormSpeciesIdTable,
+    },
+    [SPECIES_PROUDEMIND_N] = 
+    {
+        .baseHP        = 84,
+        .baseAttack    = 71,
+        .baseDefense   = 71,
+        .baseSpeed     = 91,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 103,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
+        .catchRate = 255,
+        .expYield = 210,
+        .evYield_SpAttack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY,EGG_GROUP_HUMAN_LIKE),
+        .abilities = {ABILITY_JUSTIFIED, ABILITY_FRIEND_GUARD},
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Proudemind"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PROUDEMIND, 
+        .categoryName = _("Pride"),
+        .height = 17,
+        .weight = 580,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .formSpeciesIdTable = sProudemindFormSpeciesIdTable,
+    },
+
+    //
+
+    //
+
+    [SPECIES_PSYDUCK_AW] = 
+    {
+        .baseHP        = 58,
+        .baseAttack    = 51,
+        .baseDefense   = 40,
+        .baseSpeed     = 48,
+        .baseSpAttack  = 63,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_GRASS),
+        .catchRate = 255,
+        .expYield = 24,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS,EGG_GROUP_FIELD),
+        .abilities = {ABILITY_OWN_TEMPO, ABILITY_HARVEST},
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Psyduck"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PSYDUCK, 
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "The blindfold it wears keeps the light out\n"
+            "of its eyes, which helps with its headache.\n"
+            "It is made of regional plants and smells\n"
+            "vaguely sweet."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Psyduck_AW,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Psyduck,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Psyduck_AW,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_Psyduck_AW,
+        .shinyPalette = gMonShinyPalette_Psyduck_AW,
+        .iconSprite = gMonIcon_Psyduck_AW,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_VEILDUCK}),
+        .formSpeciesIdTable = sPsyduckFormSpeciesIdTable,
+    },
+    [SPECIES_VEILDUCK] = 
+    {
+        .baseHP        = 70,
+        .baseAttack    = 110,
+        .baseDefense   = 70,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_DARK),
+        .catchRate = 255,
+        .expYield = 186,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS,EGG_GROUP_FIELD),
+        .abilities = {ABILITY_OWN_TEMPO, ABILITY_HARVEST},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Veilduck"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_VEILDUCK, 
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "It uses its powers of darkness to 'see',\n"
+            "even with the mask covering its face. It\n"
+            "is able to use the aromatic flowers on it\n"
+            "to lull opponents before attacking."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+    },
+
+    //
+
+    [SPECIES_HORSEA_AW] = 
+    {
+        .baseHP        = 30,
+        .baseAttack    = 40,
+        .baseDefense   = 35,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
+        .catchRate = 255,
+        .expYield = 19,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1,EGG_GROUP_WATER_2),
+        .abilities = {ABILITY_FLAME_BODY, ABILITY_SWIFT_SWIM},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Horsea"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_HORSEA, 
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Horsea that lived in polar waters found a\n"
+            "way to keep themselves warm by heating up\n"
+            "their core. They blow bubbles of steam\n"
+            "as defense."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Horsea_AW,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_Horsea,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Horsea_AW,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_Horsea_AW,
+        .shinyPalette = gMonShinyPalette_Horsea_AW,
+        .iconSprite = gMonIcon_Horsea_AW,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA_AW}),
+        .formSpeciesIdTable = sHorseaFormSpeciesIdTable,
+    },
+    [SPECIES_SEADRA_AW] = 
+    {
+        .baseHP        = 58,
+        .baseAttack    = 70,
+        .baseDefense   = 61,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_WATER),
+        .catchRate = 255,
+        .expYield = 103,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1,EGG_GROUP_WATER_2),
+        .abilities = {ABILITY_FLAME_BODY, ABILITY_SWIFT_SWIM},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Seadra"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_SEADRA, 
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "They can flash boil the water around them\n"
+            "to release a huge amount of bubbles, and\n"
+            "escape amid the chaos. They emit a soft,\n"
+            "red glow from their core."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({ EVO_ITEM_HOLD, ITEM_DRAGON_SCALE, SPECIES_SMOULDRA},
+                                { EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_SMOULDRA}),
+        .formSpeciesIdTable = sSeadraFormSpeciesIdTable,                            
+    },
+    [SPECIES_SMOULDRA] = 
+    {
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 80,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .catchRate = 255,
+        .expYield = 203,
+        .evYieldSpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1,EGG_GROUP_DRAGON),
+        .abilities = {ABILITY_FLAME_BODY, ABILITY_SWIFT_SWIM},
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Smouldra"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_SMOULDRA, 
+        .categoryName = _("Dragon"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "They use their extreme heat release to\n"
+            "effectively cook their prey before they\n"
+            "eat it, helping them maintain their\n"
+            "extremely high metabolism."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1745,10 +2255,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "The sharp peaks on its skull are used like an\n"
-            "icebreaker. If something it hunts escapes onto\n"
-            "a floating iceberg, it can simply smash right\n"
-            "through it."),
+            "The sharp peaks on its skull are used like\n"
+            "an icebreaker. If something it hunts\n"
+            "escapes onto a floating iceberg, it can\n"
+            "simply smash right through it."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1795,9 +2305,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "When they hatch, they sprint up objects to get\n"
-            "as high as they can, and start nibbling on any\n"
-            "metal they can find. Unfortunately, our buildings\n"
+            "When they hatch, they sprint and get as high\n"
+            "as they can, and start nibbling on any metal\n"
+            "they can find. Unfortunately, buildings\n"
             "are commonly the closest thing to it."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
@@ -1846,10 +2356,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 0,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It has surrounded itself with sheets of metal it\n"
-            "doesn't finish eating. It hides by coating itself\n"
-            "in materials near to it, and staying perfectly\n"
-            "still."),
+            "It has surrounded itself with sheets of\n"
+            "metal it doesn't finish eating. It hides\n"
+            "by coating itself in materials near to it,\n"
+            "and staying perfectly still."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1868,7 +2378,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_PHASMETAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 48, SPECIES_PHASMETAL},
+                                {EVO_LEVEL_MALE, 48, SPECIES_PHASMETAL_M}),
     },
     [SPECIES_PHASMETAL] = 
     {
@@ -1883,7 +2394,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .expYield = 310,
         .evYield_HP = 2,
         .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(75),
+        .genderRatio = MON_FEMALE,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -1898,9 +2409,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .weight = 0,
         .description = COMPOUND_STRING(
             "People and Pokémon alike often climb around\n"
-            "Phasmetal thinking it is just a regular building\n"
-            "or structure. It is not bothered by this, and\n"
-            "would rather stay unnoticed."),
+            "Phasmetal thinking it is just a regular\n"
+            "building or structure. It is not bothered\n"
+            "by this, and would rather stay unnoticed."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1919,6 +2430,106 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
+        .formSpeciesIdTable = sPhasmetalFormSpeciesIdTable,
+    },
+    [SPECIES_PHASMETAL_M] = 
+    {
+        .baseHP        = 100,
+        .baseAttack    = 95,
+        .baseDefense   = 100,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .catchRate = 255,
+        .expYield = 310,
+        .evYield_HP = 2,
+        .evYield_Speed = 1,
+        .genderRatio = MON_MALE,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG,EGG_GROUP_MINERAL),
+        .abilities = {ABILITY_FILTER},
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Phasmetal"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PHASMETAL, 
+        .categoryName = _("Unknown"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "People and Pokémon alike often climb around\n"
+            "Phasmetal thinking it is just a regular\n"
+            "building or structure. It is not bothered\n"
+            "by this, and would rather stay unnoticed."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .formSpeciesIdTable = sPhasmetalFormSpeciesIdTable,
+    },
+
+    [SPECIES_MOSSCREE] = 
+    {
+        .baseHP        = 62,
+        .baseAttack    = 47,
+        .baseDefense   = 48,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 46,
+        .baseSpDefense = 52,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_ROCK),
+        .catchRate = 255,
+        .expYield = 26,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = {ABILITY_WATER_ABSORB},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Mosscree"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_MOSSCREE, 
+        .categoryName = _("Unknown"),
+        .height = 10,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MOSSTRATA})
     },
 
     [SPECIES_STRIGILENT] = 
@@ -1947,10 +2558,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 29,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It can see out of the energy orbs it creates\n"
-            "in the hundreds surrounding its territory.\n"
-            "Few report witnessing them, and even fewer are\n"
-            "ever believed."),
+            "It can see out of the energy orbs it\n"
+            "creates in the hundreds surrounding its\n"
+            "territory. Few report witnessing them, and\n"
+            "even fewer are ever believed."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1997,10 +2608,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 26,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "Its true form is of the psychic energy hidden\n"
-            "within its shell. Those who are touched by its\n"
-            "tendrils have their memories forcibly\n"
-            "altered, or removed."),
+            "Its true form is of the psychic energy\n"
+            "hidden within its shell. Those who are\n"
+            "touched by its tendrils have memories\n"
+            "forcibly altered, or even removed entirely."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -2047,10 +2658,10 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .height = 34,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "It is said that its wings are able to vibrate at\n"
-            "the frequency of brainwaves, influencing the\n"
-            "unconscious mind. Other than that, it barely\n"
-            "moves at all."),
+            "It is said that its wings are able to\n"
+            "vibrate at the frequency of brainwaves,\n"
+            "influencing the unconscious mind. Other\n"
+            "than that, it barely moves at all."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

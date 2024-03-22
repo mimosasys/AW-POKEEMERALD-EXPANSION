@@ -1895,3 +1895,49 @@ static const u16 sTerapagosFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TERAPAGOS
+
+// AW POKEMON START HERE
+
+static const u16 sPsyduckFormSpeciesIdTable[] = {
+    SPECIES_PSYDUCK,
+    SPECIES_PSYDUCK_AW,
+    FORM_SPECIES_END,
+};
+
+static const u16 sHorseaFormSpeciesIdTable[] = {
+    SPECIES_HORSEA,
+    SPECIES_HORSEA_AW,
+    FORM_SPECIES_END,
+};
+
+static const u16 sSeadraFormSpeciesIdTable[] = {
+    SPECIES_SEADRA,
+    SPECIES_SEADRA_AW,
+    FORM_SPECIES_END,
+};
+
+static const u16 sUpsittleFormSpeciesIdTable[] = {
+    SPECIES_UPSITTLE,
+    SPECIES_UPSITTLE_N,
+    FORM_SPECIES_END,
+};
+
+static const u16 sUpsunderFormSpeciesIdTable[] = {
+    SPECIES_UPSUNDER,
+    SPECIES_UPSUNDER_M,
+    SPECIES_UPSUNDER_N,
+    FORM_SPECIES_END,
+};
+
+static const u16 sProudemindFormSpeciesIdTable[] = {
+    SPECIES_PROUDEMIND,
+    SPECIES_PROUDEMIND_M,
+    SPECIES_PROUDEMIND_N,
+    FORM_SPECIES_END,
+};
+
+static const u16 sPhasmetalFormSpeciesIdTable[] = {
+    SPECIES_PHASMETAL,
+    SPECIES_PHASMETAL_M,
+    FORM_SPECIES_END,
+};

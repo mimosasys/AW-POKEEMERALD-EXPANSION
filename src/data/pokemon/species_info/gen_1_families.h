@@ -5767,6 +5767,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPsyduckLevelUpLearnset,
         .teachableLearnset = sPsyduckTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_GOLDUCK}),
+        .formSpeciesIdTable = sPsyduckFormSpeciesIdTable,
     },
 
     [SPECIES_GOLDUCK] =
@@ -11620,6 +11621,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sHorseaLevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
+        .formSpeciesIdTable = sHorseaFormSpeciesIdTable,
     },
 
     [SPECIES_SEADRA] =
@@ -11676,6 +11678,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSeadraTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA},
                                 {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+        .formSpeciesIdTable = sSeadraFormSpeciesIdTable,
     },
 
 #if P_GEN_2_CROSS_EVOS

@@ -1649,8 +1649,6 @@
 #define SPECIES_DEWSEL      AW_START + 15
 #define SPECIES_PUIPOUR     AW_START + 16
 #define SPECIES_SEALOCH     AW_START + 17
-//RFORM 1
-//RFORM 2
 //RFORM 3                   AW_START + 18
 #define SPECIES_BELOSEED    AW_START + 19
 #define SPECIES_BELOBITE    AW_START + 20
@@ -1739,7 +1737,7 @@
 //SOLAR WIND 1              AW_START + 103
 //SOLAR WIND 2              AW_START + 104
 //HEALER???                 AW_START + 105
-//NOT GOLDUCK               AW_START + 106
+#define SPECIES_VEILDUCK    AW_START + 106
 #define SPECIES_SMOULDRA    AW_START + 107
 #define SPECIES_FROSTYLO    AW_START + 108
 #define SPECIES_FRACTYLO    AW_START + 109
@@ -1748,9 +1746,9 @@
 //DRAGON 1                  AW_START + 112
 //DRAGON 2                  AW_START + 113
 //DRAGON 3                  AW_START + 114
-//PSEUDO 1                  AW_START + 115
-//PSEUDO 2                  AW_START + 116
-//PSEUDO 3                  AW_START + 117
+#define SPECIES_MOSSCREE    AW_START + 115
+#define SPECIES_MOSSTRATA   AW_START + 116
+#define SPECIES_LICHEON     AW_START + 117
 #define SPECIES_TINYMPH     AW_START + 118
 #define SPECIES_NYMFOIL     AW_START + 119
 #define SPECIES_PHASMETAL   AW_START + 120
@@ -1769,7 +1767,23 @@
 //SOLO LEGEND               AW_START + 133
 //SOLO LEGEND               AW_START + 134
 
-#define SPECIES_EGG                                AW_START + 134
+// AW FORMS
+
+#define AW_FORMS AW_START + 134
+
+#define SPECIES_PSYDUCK_AW  AW_FORMS + 1
+#define SPECIES_HORSEA_AW   AW_FORMS + 2
+#define SPECIES_SEADRA_AW   AW_FORMS + 3
+// r.form 1                 AW_FORMS + 4
+// r.form 2                 AW_FORMS + 5
+#define SPECIES_UPSITTLE_N  AW_FORMS + 6
+#define SPECIES_UPSUNDER_M  AW_FORMS + 7
+#define SPECIES_UPSUNDER_N  AW_FORMS + 8
+#define SPECIES_PROUDEMIND_M  AW_FORMS + 9
+#define SPECIES_PROUDEMIND_N  AW_FORMS + 10
+#define SPECIES_PHASMETAL_M AW_FORMS + 11
+
+#define SPECIES_EGG         AW_FORMS + 12
 
 #define NUM_SPECIES SPECIES_EGG
 
