@@ -13184,7 +13184,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 	const u32 gMonShinyPalette_Psyduck_AW[] = INCBIN_U32("graphics/_AW/pokemon/psyduck/shiny.gbapal.lz");
 	const u8 gMonIcon_Psyduck_AW[] = INCBIN_U8("graphics/_AW/pokemon/psyduck/icon.4bpp");
 
-    // Horsea_AW
+    // Horsea Regional
 	const u32 gMonFrontPic_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/anim_front.4bpp.lz");
 	const u32 gMonPalette_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/normal.gbapal.lz");
 	const u32 gMonBackPic_Horsea_AW[] = INCBIN_U32("graphics/_AW/pokemon/horsea/back.4bpp.lz");
