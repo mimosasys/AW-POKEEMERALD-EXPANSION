@@ -1679,7 +1679,7 @@
 #define SPECIES_RECORGOT    AW_START + 45
 //WATER 1                   AW_START + 46
 //WATER 2                   AW_START + 47
-#define SPECIES_PINNAUGUR   AW_START + 48
+//WATER 3 (unrelated)       AW_START + 48
 #define SPECIES_SHARKELP    AW_START + 49
 #define SPECIES_BASKALGAE   AW_START + 50
 #define SPECIES_SHYFONO     AW_START + 51
