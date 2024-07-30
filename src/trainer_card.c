@@ -289,12 +289,14 @@ static const u8 sTrainerPicOffset[2][GENDER_COUNT][2] =
     // Kanto
     {
         [MALE]   = {13, 4},
-        [FEMALE] = {13, 4}
+        [FEMALE] = {13, 4},
+        [ENBY]   = {13, 4}
     },
     // Hoenn
     {
         [MALE]   = {1, 0},
-        [FEMALE] = {1, 0}
+        [FEMALE] = {1, 0},
+        [ENBY] = {1, 0}
     },
 };
 
@@ -303,17 +305,20 @@ static const u8 sTrainerPicFacilityClass[][GENDER_COUNT] =
     [CARD_TYPE_FRLG] =
     {
         [MALE]   = FACILITY_CLASS_RED,
-        [FEMALE] = FACILITY_CLASS_LEAF
+        [FEMALE] = FACILITY_CLASS_LEAF,
+        [ENBY]   = FACILITY_CLASS_ENBY
     },
     [CARD_TYPE_RS] =
     {
         [MALE]   = FACILITY_CLASS_RS_BRENDAN,
-        [FEMALE] = FACILITY_CLASS_RS_MAY
+        [FEMALE] = FACILITY_CLASS_RS_MAY,
+        [ENBY]   = FACILITY_CLASS_ENBY
     },
     [CARD_TYPE_EMERALD] =
     {
         [MALE]   = FACILITY_CLASS_BRENDAN,
-        [FEMALE] = FACILITY_CLASS_MAY
+        [FEMALE] = FACILITY_CLASS_MAY,
+        [ENBY]   = FACILITY_CLASS_ENBY
     }
 };
 

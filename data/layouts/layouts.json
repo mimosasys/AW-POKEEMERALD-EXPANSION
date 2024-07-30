@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route108_Lower/border.bin",
       "blockdata_filepath": "data/layouts/Route108_Lower/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERIN_VILLAGE",
+      "name": "ErinVillage_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/ErinVillage/border.bin",
+      "blockdata_filepath": "data/layouts/ErinVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ERIN_VILLAGE_YOUR_HOUSE",
+      "name": "ErinVillage_YourHouse_Layout",
+      "width": 15,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ErinVillage_YourHouse/border.bin",
+      "blockdata_filepath": "data/layouts/ErinVillage_YourHouse/map.bin"
     }
   ]
 }

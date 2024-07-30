@@ -6,11 +6,13 @@
 //
 
 // gMapGroup_AW_Towns
+#define MAP_ERIN_VILLAGE (0 | (0 << 8))
 
 // gMapGroup_AW_Routes
 #define MAP_ROUTE108_LOWER (0 | (1 << 8))
 
 // gMapGroup_AW_Indoors
+#define MAP_ERIN_VILLAGE_YOUR_HOUSE (0 | (2 << 8))
 
 // gMapGroup_AW_Misc
 

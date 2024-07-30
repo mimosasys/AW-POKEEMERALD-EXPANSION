@@ -1073,3 +1073,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/Route108_Lower/scripts.inc"
+
+	.include "data/maps/ErinVillage/scripts.inc"
+
+	.include "data/maps/ErinVillage_YourHouse/scripts.inc"

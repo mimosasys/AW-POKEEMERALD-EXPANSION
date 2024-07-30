@@ -5834,10 +5834,12 @@ u16 FacilityClassToPicIndex(u16 facilityClass)
 
 u16 PlayerGenderToFrontTrainerPicId(u8 playerGender)
 {
-    if (playerGender != MALE)
-        return FacilityClassToPicIndex(FACILITY_CLASS_MAY);
+    if (playerGender == MALE)
+        return TRAINER_PIC_AW_P_MALE;
+    else if (playerGender == FEMALE)
+        return TRAINER_PIC_AW_P_FEMALE;
     else
-        return FacilityClassToPicIndex(FACILITY_CLASS_BRENDAN);
+        return TRAINER_PIC_AW_P_ENBY;
 }
 
 void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
