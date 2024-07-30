@@ -126,7 +126,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(ROUTE108_LOWER), MAP_NUM(ROUTE108_LOWER), WARP_ID_NONE, 8, 9);
     WarpIntoMap();
 }
 

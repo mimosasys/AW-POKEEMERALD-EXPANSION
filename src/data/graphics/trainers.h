@@ -292,6 +292,17 @@ const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steve
 const u32 gTrainerBackPicPalette_Red[] = INCBIN_U32("graphics/trainers/back_pics/red.gbapal.lz");
 const u32 gTrainerBackPicPalette_Leaf[] = INCBIN_U32("graphics/trainers/back_pics/leaf.gbapal.lz");
 
+// AW TRAINERS
+const u32 gTrainerFrontPic_AW_P_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_male.4bpp.lz");
+const u32 gTrainerPalette_AW_P_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_male.gbapal.lz");
+
+const u32 gTrainerFrontPic_AW_P_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_female.4bpp.lz");
+const u32 gTrainerPalette_AW_P_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_female.gbapal.lz");
+
+const u32 gTrainerFrontPic_AW_P_Enby[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_enby.4bpp.lz");
+const u32 gTrainerPalette_AW_P_Enby[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_enby.gbapal.lz");
+
+
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
 // gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
@@ -381,6 +392,13 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(WALLY, Wally),
     TRAINER_SPRITE(BRENDAN, Brendan),
     TRAINER_SPRITE(MAY, May),
+
+    // AW TRAINERS
+    TRAINER_SPRITE(AW_P_MALE, AW_P_Male),
+    TRAINER_SPRITE(AW_P_FEMALE, AW_P_Female),
+    TRAINER_SPRITE(AW_P_ENBY,AW_P_Enby),
+
+    
     TRAINER_SPRITE(BUG_CATCHER, BugCatcher),
     TRAINER_SPRITE(POKEMON_RANGER_M, PokemonRangerM),
     TRAINER_SPRITE(POKEMON_RANGER_F, PokemonRangerF),
