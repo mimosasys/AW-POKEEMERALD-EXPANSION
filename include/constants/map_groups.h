@@ -13,6 +13,7 @@
 
 // gMapGroup_AW_Indoors
 #define MAP_ERIN_VILLAGE_YOUR_HOUSE (0 | (2 << 8))
+#define MAP_ROUTE108_LABORATORY     (1 | (2 << 8))
 
 // gMapGroup_AW_Misc
 

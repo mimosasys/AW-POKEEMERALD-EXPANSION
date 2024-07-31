@@ -1077,3 +1077,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ErinVillage/scripts.inc"
 
 	.include "data/maps/ErinVillage_YourHouse/scripts.inc"
+
+	.include "data/maps/Route108_Laboratory/scripts.inc"

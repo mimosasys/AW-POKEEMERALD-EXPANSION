@@ -545,8 +545,10 @@
 
 #define AW_MUS_BATTLE_WILD          610
 #define AW_MUS_BATTLE_JADE_GRUNT    611
+#define AW_MUS_ERIN_VILLAGE         612
+#define AW_MUS_LABORATORY           613
 
-#define END_MUS                     AW_MUS_BATTLE_JADE_GRUNT
+#define END_MUS                     AW_MUS_LABORATORY
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

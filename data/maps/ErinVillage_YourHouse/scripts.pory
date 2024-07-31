@@ -1,0 +1,72 @@
+mapscripts ErinVillage_YourHouse_MapScripts {
+    
+}
+
+script ErinVillage_YourHouse_WakeUp {
+    lockall
+    applymovement(1,Mum0)
+    message(ErinVillage_YourHouse_WakeUp_Dialog1)
+    waitmessage
+    applymovement(1,Mum1)
+    waitmovement(0)
+    message(ErinVillage_YourHouse_WakeUp_Dialog2)
+    waitmessage
+    call(PlayersHouse_2F_EventScript_SetWallClock)
+    message(format("Oh, and take these too!"))
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(format("Got the Running Shoes."))
+    waitmessage
+    setflag(FLAG_SYS_B_DASH)
+    setflag(FLAG_RECEIVED_RUNNING_SHOES)    
+    message(ErinVillage_YourHouse_WakeUp_Dialog3)
+    waitmessage
+    closemessage
+    applymovement(1,Mum2)
+    waitmovement(0)
+    setvar(VAR_AW_PROGRESS_1,1)
+    releaseall
+}
+
+script ErinVillage_YourHouse_InteractMum {
+    lockall
+    applymovement(1,FacePlayer)
+    msgbox(format("You have a good time with {RIVAL}, ok? Be careful out there on the rocks! And remember not to go down too far!"))
+    applymovement(1,FaceOriginalDirection)
+    releaseall
+}
+
+text ErinVillage_YourHouse_WakeUp_Dialog1 {
+    format(
+        "Oh! {PLAYER}! You finally woke up! You're such a sleepyhead."
+    )
+}
+
+text ErinVillage_YourHouse_WakeUp_Dialog2 {
+    format(
+        "Weren't you meeting up with {RIVAL} today? You'd better hurry!\p"
+        "What? No, it's not, your clock must be wrong. That explains it. You'd better set it!"
+    )
+}
+
+text ErinVillage_YourHouse_WakeUp_Dialog3 {
+    format(
+        "There! Much better.\p"
+        "You have a good time with {RIVAL}, ok? Be careful out there on the rocks! And remember not to go down too far!"
+    )
+}
+
+movement Mum0 {
+    face_player
+}
+
+movement Mum1 {
+    walk_up*4
+    walk_left*2
+}
+
+movement Mum2 {
+    walk_right*2
+    walk_down*4
+    face_original_direction
+}

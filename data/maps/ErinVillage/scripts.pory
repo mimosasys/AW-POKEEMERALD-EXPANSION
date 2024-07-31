@@ -1,0 +1,213 @@
+mapscripts ErinVillage_MapScripts {
+    
+}
+
+script ErinVillage_InteractFarmer {
+    lock
+    applymovement(1,FacePlayer)
+    message(format(
+        "Oh, me? I'm making sure these crops grow.\p"
+        "It's not exactly often that someone leaves the village to get produce, so it's a very important job."
+    ))
+    waitmessage
+    applymovement(1,FaceOriginalDirection)
+    release
+}
+
+movement FacePlayer {
+    face_player
+}
+
+movement FaceOriginalDirection {
+    face_original_direction
+}
+
+script ErinVillage_TryLeaveVillage {
+    lock
+    applymovement(2,EmoteExclamation)
+    waitmovement(0)
+    applymovement(2,FacePlayer)
+    waitmovement(0)
+    message(format(
+        "Now, now, {PLAYER}, I think I saw {RIVAL} waiting for you at the other end of town.\p"
+        "He seemed very excited, you'd better hurry!"
+    ))
+    waitmessage
+    closemessage
+    applymovement(2,FaceOriginalDirection)
+    applymovement(OBJ_EVENT_ID_PLAYER,Player_WalkUp)
+    waitmovement(0)
+    release
+}
+
+movement EmoteExclamation {
+    emote_exclamation_mark
+}
+
+movement Player_WalkUp {
+    walk_up
+}
+
+script ErinVillage_FindRival_Left {
+    lock
+    applymovement(3,Rival_JumpInPlace)
+    waitmovement(0)
+    applymovement(3,RivalEnter_Left)
+    waitmovement(0)
+    call(ErinVillage_TalkToRival)
+    release
+}
+
+script ErinVillage_FindRival_Centre {
+    lock
+    applymovement(3,Rival_JumpInPlace)
+    waitmovement(0)
+    applymovement(3,RivalEnter_Centre)
+    waitmovement(0)
+    call(ErinVillage_TalkToRival)
+    release
+}
+
+script ErinVillage_FindRival_Right {
+    lock
+    applymovement(3,Rival_JumpInPlace)
+    waitmovement(0)
+    applymovement(3,RivalEnter_Right)
+    waitmovement(0)
+    call(ErinVillage_TalkToRival)
+    release
+}
+
+movement Rival_JumpInPlace {
+    jump_in_place_down*2
+}
+
+script ErinVillage_OnBridge {
+    lockall
+    call(ErinVillage_RivalOnBridge)
+    releaseall
+}
+
+script ErinVillage_TalkToRival {
+    msgbox(format(
+        "{RIVAL}: {PLAYER}! I'm so excited for today! You remember what's happening, right?"
+    ),MSGBOX_YESNO)
+    if (var(VAR_RESULT) == 1) {
+        msgbox(format("Yeah! You bet!"))
+        waitmessage
+    } else {
+        msgbox(format("What?! How could you have forgotten?!"))
+        waitmessage
+    }
+    message(format(
+        "The elders said we're allowed to go into their sacred cave!\p"
+        "I've been waiting for this since your birthday! I wanted to go by myself, but...\p"
+        "I really wanna do it together! The two of us, yeah!\p"
+        "You remember where it is, right? I'll meet you on the bridge!"
+    ))
+    waitmessage
+    applymovement(3,RivalExit)
+    removeobject(3)
+    setvar(VAR_AW_PROGRESS_1,2)
+}
+
+script ErinVillage_RivalOnBridge {
+    msgbox(format(
+        "{RIVAL}: Come on, it's just up ahea-"
+    ),MSGBOX_AUTOCLOSE)
+    closemessage
+    special(StopMapMusic)
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,6)
+    setvar(VAR_0x8007,10)
+    special(ShakeCamera)
+    waitstate
+    delay(30)
+    applymovement(OBJ_EVENT_ID_PLAYER,ShakeSurprise)
+    applymovement(4, ShakeSurprise)
+    message(format(
+        "Uhh... what was that?\p"
+        "It was coming from the cave...!"
+    ))
+    waitmessage
+    closemessage
+    applymovement(4,Rival_WalkBridge)
+    applymovement(OBJ_EVENT_ID_PLAYER, Player_WalkBridge)
+    waitmovement(0)
+    delay(30)
+    msgbox(format(
+        "H- hey, we probably shouldn't stay here-"
+    ),MSGBOX_AUTOCLOSE)
+    closemessage
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,6)
+    setvar(VAR_0x8007,20)
+    special(ShakeCamera)
+    delay(20)
+    playse(SE_M_RAZOR_WIND)
+    applymovement(4,Rival_FallOffBridge)
+    applymovement(OBJ_EVENT_ID_PLAYER,Player_FallOffBridge)
+    message(format("{PLAYER}!"))
+    waitmovement(0)
+    fadescreen(FADE_TO_WHITE)
+    waitstate
+    message(format("???: Vibrava! There's someone falling!"))
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+    waitmoncry
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+    waitmoncry
+    delay(20)
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_FAINT)
+    delay(20)
+    playse(SE_M_FLY)
+    waitse
+    removeobject(4)
+    setvar(VAR_AW_PROGRESS_1,3)
+    delay(120)
+    warpsilent(MAP_ROUTE108_LABORATORY,26,11)
+    releaseall
+}
+
+movement RivalEnter_Left {
+    walk_fast_down*3
+    walk_fast_left
+    face_player
+}
+
+movement RivalEnter_Centre {
+    walk_fast_down*3
+    face_player
+}
+
+movement RivalEnter_Right {
+    walk_fast_down*3
+    walk_fast_right
+    face_player
+}
+
+movement RivalExit {
+    walk_fast_up*5
+}
+
+movement ShakeSurprise {
+    face_up
+    emote_double_exclamation_mark
+}
+
+movement Rival_WalkBridge {
+    walk_slow_up*1
+}
+
+movement Player_WalkBridge {
+    walk_up*3
+}
+
+movement Rival_FallOffBridge {
+    walk_faster_left*10
+}
+
+movement Player_FallOffBridge {
+    walk_faster_right*10
+}

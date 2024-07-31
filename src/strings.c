@@ -58,7 +58,6 @@ ALIGNED(4) const u8 gText_PickCancel[] = _("{DPAD_UPDOWN}PICK {A_BUTTON}{B_BUTTO
 ALIGNED(4) const u8 gText_AButtonExit[] = _("{A_BUTTON}EXIT");
 const u8 gText_BirchBoy[] = _("Masc");
 const u8 gText_BirchGirl[] = _("Fem");
-const u8 gText_BirchEnby[] = _("Andro");
 const u8 gText_DefaultNameStu[] = _("STU");
 const u8 gText_DefaultNameMilton[] = _("MILTON");
 const u8 gText_DefaultNameTom[] = _("TOM");
@@ -257,6 +256,11 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the POKéMON LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
+
+// AW TEXT
+
+const u8 gText_BirchEnby[] = _("Andro");
+const u8 gText_AW_Rival[] = _("Diego");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
