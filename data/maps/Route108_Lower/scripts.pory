@@ -72,7 +72,7 @@ script Route108_Lower_Transition {
                 "Carla: Oop, seems you were a bit enthusiastic.\pNevermind, you'll have plenty of other chances!\p"
             ))
             waitmessage
-        } elif (var(VAR_RESULT) == B_OUTCOME_RUN) {
+        } elif (var(VAR_RESULT) == B_OUTCOME_RAN) {
             message(format(
                 "Carla: Aww, you were in with a chance! It's ok, though, we all have to run sometimes.\p"
             ))
