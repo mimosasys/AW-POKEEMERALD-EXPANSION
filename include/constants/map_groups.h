@@ -6,7 +6,8 @@
 //
 
 // gMapGroup_AW_Towns
-#define MAP_ERIN_VILLAGE (0 | (0 << 8))
+#define MAP_ERIN_VILLAGE  (0 | (0 << 8))
+#define MAP_PORT_MULBERRY (1 | (0 << 8))
 
 // gMapGroup_AW_Routes
 #define MAP_ROUTE108_LOWER (0 | (1 << 8))

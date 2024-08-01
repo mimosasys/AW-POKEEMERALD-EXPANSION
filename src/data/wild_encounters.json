@@ -11496,12 +11496,12 @@
           "map": "MAP_ROUTE108_LOWER",
           "base_label": "gRoute108_Lower0",
           "land_mons": {
-            "encounter_rate": 6,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_DODUO"
+                "species": "SPECIES_DEWSEL"
               },
               {
                 "min_level": 2,

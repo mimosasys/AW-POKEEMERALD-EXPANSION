@@ -260,7 +260,7 @@ const u8 gText_ThePC[] = _("the PC");
 // AW TEXT
 
 const u8 gText_BirchEnby[] = _("Andro");
-const u8 gText_AW_Rival[] = _("Diego");
+const u8 gText_AW_Rival[] = _("Mike");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {

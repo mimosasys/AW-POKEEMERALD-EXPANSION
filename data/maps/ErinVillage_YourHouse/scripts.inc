@@ -108,34 +108,40 @@ Mum2:
 
 ErinVillage_YourHouse_WakeUp_Text_0:
 # 15 "data/maps/ErinVillage_YourHouse/scripts.pory"
-	.string "Oh, and take these too!$"
+	.string "Oh, and take these too.\p"
+	.string "$"
 
 ErinVillage_YourHouse_WakeUp_Text_1:
 # 18 "data/maps/ErinVillage_YourHouse/scripts.pory"
-	.string "Got the Running Shoes.$"
+	.string "Got the Running Shoes.\p"
+	.string "$"
 
 ErinVillage_YourHouse_InteractMum_Text_0:
 # 34 "data/maps/ErinVillage_YourHouse/scripts.pory"
 	.string "You have a good time with {RIVAL},\n"
 	.string "ok? Be careful out there on the rocks!\l"
-	.string "And remember not to go down too far!$"
+	.string "And remember not to go down too far.\p"
+	.string "$"
 
 ErinVillage_YourHouse_WakeUp_Dialog1::
 # 39 "data/maps/ErinVillage_YourHouse/scripts.pory"
 	.string "Oh! {PLAYER}! You finally woke up!\n"
-	.string "You're such a sleepyhead.$"
+	.string "You're such a sleepyhead.\p"
+	.string "$"
 
 ErinVillage_YourHouse_WakeUp_Dialog2::
 # 45 "data/maps/ErinVillage_YourHouse/scripts.pory"
 	.string "Weren't you meeting up with {RIVAL}\n"
 	.string "today? You'd better hurry!\p"
 	.string "What? No, it's not, your clock must be\n"
-	.string "wrong. That explains it. You'd better\l"
-	.string "set it!$"
+	.string "wrong.\n"
+	.string "That explains it. You'd better set it.\p"
+	.string "$"
 
 ErinVillage_YourHouse_WakeUp_Dialog3::
 # 52 "data/maps/ErinVillage_YourHouse/scripts.pory"
 	.string "There! Much better.\p"
 	.string "You have a good time with {RIVAL},\n"
 	.string "ok? Be careful out there on the rocks!\l"
-	.string "And remember not to go down too far!$"
+	.string "And remember not to go down too far.\p"
+	.string "$"

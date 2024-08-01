@@ -2424,6 +2424,11 @@ gCryTable::
 	cry Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
 
+@ AW POKEMON START HERE
+	cry Cry_Alpacoil
+	cry Cry_Alpachrome
+	cry Cry_Llamalloy
+
 	.align 2
 gCryTable_Reverse::
 .if P_FAMILY_BULBASAUR == TRUE
@@ -4849,3 +4854,8 @@ gCryTable_Reverse::
 .if P_FAMILY_PECHARUNT == TRUE
 	cry_reverse Cry_Pecharunt
 .endif @ P_FAMILY_PECHARUNT
+
+@ AW POKEMON START HERE
+	cry_reverse Cry_Alpacoil
+	cry_reverse Cry_Alpachrome
+	cry_reverse Cry_Llamalloy

@@ -6154,6 +6154,15 @@ Cry_Pecharunt::
 	.incbin "sound/direct_sound_samples/cries/pecharunt.bin"
 .endif @ P_FAMILY_PECHARUNT
 
+@ AW POKEMON START HERE
+
+Cry_Alpacoil::
+	.incbin "sound/direct_sound_samples/cries/_AW/alpacoil.bin"
+Cry_Alpachrome::
+	.incbin "sound/direct_sound_samples/cries/_AW/alpachrome.bin"
+Cry_Llamalloy::
+	.incbin "sound/direct_sound_samples/cries/_AW/llamalloy.bin"
+
 	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"

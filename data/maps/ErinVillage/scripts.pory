@@ -7,7 +7,7 @@ script ErinVillage_InteractFarmer {
     applymovement(1,FacePlayer)
     message(format(
         "Oh, me? I'm making sure these crops grow.\p"
-        "It's not exactly often that someone leaves the village to get produce, so it's a very important job."
+        "It's not exactly often that someone leaves the village to get produce, so it's a very important job.\p"
     ))
     waitmessage
     applymovement(1,FaceOriginalDirection)
@@ -30,7 +30,7 @@ script ErinVillage_TryLeaveVillage {
     waitmovement(0)
     message(format(
         "Now, now, {PLAYER}, I think I saw {RIVAL} waiting for you at the other end of town.\p"
-        "He seemed very excited, you'd better hurry!"
+        "He seemed very excited, you'd better hurry!\p"
     ))
     waitmessage
     closemessage
@@ -96,18 +96,20 @@ script ErinVillage_TalkToRival {
         msgbox(format("Yeah! You bet!"))
         waitmessage
     } else {
-        msgbox(format("What?! How could you have forgotten?!"))
+        msgbox(format("What?! How could you have forgotten?"))
         waitmessage
     }
     message(format(
         "The elders said we're allowed to go into their sacred cave!\p"
         "I've been waiting for this since your birthday! I wanted to go by myself, but...\p"
-        "I really wanna do it together! The two of us, yeah!\p"
-        "You remember where it is, right? I'll meet you on the bridge!"
+        "I really wanna do it together!\nThe two of us, yeah!\p"
+        "You remember where it is, right?\nI'll meet you on the bridge!\p"
     ))
     waitmessage
     applymovement(3,RivalExit)
+    waitmovement(0)
     removeobject(3)
+    setflag(FLAG_AW_START_TUT)
     setvar(VAR_AW_PROGRESS_1,2)
 }
 
@@ -128,7 +130,7 @@ script ErinVillage_RivalOnBridge {
     applymovement(4, ShakeSurprise)
     message(format(
         "Uhh... what was that?\p"
-        "It was coming from the cave...!"
+        "It was coming from the cave...?\p"
     ))
     waitmessage
     closemessage
@@ -149,11 +151,11 @@ script ErinVillage_RivalOnBridge {
     playse(SE_M_RAZOR_WIND)
     applymovement(4,Rival_FallOffBridge)
     applymovement(OBJ_EVENT_ID_PLAYER,Player_FallOffBridge)
-    message(format("{PLAYER}!"))
+    message(format("{PLAYER}!\p"))
     waitmovement(0)
     fadescreen(FADE_TO_WHITE)
     waitstate
-    message(format("???: Vibrava! There's someone falling!"))
+    message(format("???: Vibrava! There's someone falling!\p"))
     playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
     waitmoncry
     playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
@@ -164,10 +166,8 @@ script ErinVillage_RivalOnBridge {
     playse(SE_M_FLY)
     waitse
     removeobject(4)
-    setvar(VAR_AW_PROGRESS_1,3)
     delay(120)
-    warpsilent(MAP_ROUTE108_LABORATORY,26,11)
-    releaseall
+    warpwhitefade(MAP_ROUTE108_LABORATORY,26,11)
 }
 
 movement RivalEnter_Left {

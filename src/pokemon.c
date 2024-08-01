@@ -5367,7 +5367,7 @@ u16 GetBattleBGM(void)
     }
     else
         //BATTLE MUSIC
-        return AW_MUS_BATTLE_JADE_GRUNT;
+        return AW_MUS_BATTLE_WILD;
 }
 
 void PlayBattleBGM(void)
