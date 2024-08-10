@@ -1265,6 +1265,9 @@ SECTIONS {
         
         sound/songs/midi/aw_mus_battle_wild.o(.rodata);
         sound/songs/midi/aw_mus_battle_jade_grunt.o(.rodata);
+        sound/songs/midi/aw_mus_erin_village.o(.rodata);
+        sound/songs/midi/aw_mus_laboratory.o(.rodata);
+        sound/songs/midi/aw_mus_battle_rival.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -1081,3 +1081,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route108_Laboratory/scripts.inc"
 
 	.include "data/maps/PortMulberry/scripts.inc"
+
+	.include "data/maps/PuceCity/scripts.inc"
+
+	.include "data/maps/PuceLake/scripts.inc"

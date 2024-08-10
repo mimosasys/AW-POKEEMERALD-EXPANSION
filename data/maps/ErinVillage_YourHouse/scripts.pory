@@ -7,6 +7,7 @@ script ErinVillage_YourHouse_WakeUp {
     applymovement(1,Mum0)
     message(ErinVillage_YourHouse_WakeUp_Dialog1)
     waitmessage
+    closemessage
     applymovement(1,Mum1)
     waitmovement(0)
     message(ErinVillage_YourHouse_WakeUp_Dialog2)
@@ -45,7 +46,7 @@ text ErinVillage_YourHouse_WakeUp_Dialog1 {
 text ErinVillage_YourHouse_WakeUp_Dialog2 {
     format(
         "Weren't you meeting up with {RIVAL} today? You'd better hurry!\p"
-        "What? No, it's not, your clock must be wrong.\nThat explains it. You'd better set it.\p"
+        "What? No, it's not, your clock must be wrong.\pThat explains it. You'd better set it.\p"
     )
 }
 

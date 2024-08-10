@@ -114,9 +114,9 @@ script ErinVillage_TalkToRival {
 }
 
 script ErinVillage_RivalOnBridge {
-    msgbox(format(
+    message(format(
         "{RIVAL}: Come on, it's just up ahea-"
-    ),MSGBOX_AUTOCLOSE)
+    ))
     closemessage
     special(StopMapMusic)
     setvar(VAR_0x8004,2)
@@ -138,17 +138,19 @@ script ErinVillage_RivalOnBridge {
     applymovement(OBJ_EVENT_ID_PLAYER, Player_WalkBridge)
     waitmovement(0)
     delay(30)
-    msgbox(format(
+    message(format(
         "H- hey, we probably shouldn't stay here-"
-    ),MSGBOX_AUTOCLOSE)
+    ))
     closemessage
     setvar(VAR_0x8004,2)
     setvar(VAR_0x8005,6)
     setvar(VAR_0x8006,6)
-    setvar(VAR_0x8007,20)
+    setvar(VAR_0x8007,10)
     special(ShakeCamera)
-    delay(20)
+    delay(40)
+    playse(SE_M_WING_ATTACK)
     playse(SE_M_RAZOR_WIND)
+    special(SpawnCameraObject)
     applymovement(4,Rival_FallOffBridge)
     applymovement(OBJ_EVENT_ID_PLAYER,Player_FallOffBridge)
     message(format("{PLAYER}!\p"))
@@ -167,7 +169,10 @@ script ErinVillage_RivalOnBridge {
     waitse
     removeobject(4)
     delay(120)
+    special(RemoveCameraObject)
     warpwhitefade(MAP_ROUTE108_LABORATORY,26,11)
+    delay(120)
+    // call(Route108_Laboratory_OnWarp)
 }
 
 movement RivalEnter_Left {

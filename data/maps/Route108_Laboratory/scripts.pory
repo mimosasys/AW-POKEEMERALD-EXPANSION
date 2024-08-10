@@ -1,15 +1,13 @@
 mapscripts Route108_Laboratory_MapScripts {
-    // MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
-    //     VAR_TEMP_1, 0: Route108_Laboratory_OnWarp
-    // ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_PROGRESS_1, 2: Route108_Laboratory_OnWarp
+    ]
 }
 
 script Route108_Laboratory_OnWarp {
-    if (var(VAR_AW_PROGRESS_1) == 2) {
-        special(StopMapMusic)
-        setvar(VAR_AW_PROGRESS_1,3)
-        call(Route108_Laboratory_FirstTime)
-    }
+    special(StopMapMusic)
+    setvar(VAR_AW_PROGRESS_1,3)
+    call(Route108_Laboratory_FirstTime)
 }
 
 script Route108_Laboratory_FirstTime {
@@ -20,6 +18,7 @@ script Route108_Laboratory_FirstTime {
         "???: Professor! Professor! They're awake.\p"
         ))
     waitmessage
+    closemessage
     delay(20)
     playbgm(AW_MUS_LABORATORY,FALSE)
     applymovement(2,Route108_ProfessorEnter)
@@ -29,7 +28,9 @@ script Route108_Laboratory_FirstTime {
         "You fell from up on Mt. Eigo. How'd you even get up there, anyway?\p"
         ))
     waitmessage
+    delay(40)
     applymovement(2,EmoteExclamation)
+    delay(10)
     message(format(
         "Y- you say you live up there?! That can't be right! Nobody lives up there!\p"
     ))
@@ -80,7 +81,7 @@ script Route108_Laboratory_FirstTime {
     delay(60)
     message(format(
         "Fern: Ah, {PLAYER}. Well, you are something of an enigma, that's for sure. It's lovely to make your acquaintaince.\p"
-        "I think you should stay here a while, just to make sure you recover properly. Vibrava caught you, but I can't say whether or not you were hurt on the way down.\p"
+        "I think you should stay here a while, just to make sure you recover properly.\pVibrava caught you, but I can't say whether or not you were hurt on the way down.\p"
     ))
     waitmessage
     delay(10)
@@ -99,10 +100,11 @@ script Route108_Laboratory_FirstTime {
     closemessage
     applymovement(2,ProfessorToPokeballs)
     applymovement(1,CarlaToPokeballs)
+    delay(30)
     applymovement(OBJ_EVENT_ID_PLAYER,PlayerToPokeballs)
     waitmovement(0)
     message(format(
-        "Fern: Sorry, it's a bit of a mess. Here they are!\nTake your pick.\p"
+        "Fern: Sorry, it's a bit of a mess. Here they are!\pTake your pick.\p"
     ))
     waitmessage
     releaseall
@@ -128,7 +130,7 @@ script Route108_Laboratory_DontLeaveRight {
     waitmovement(0)
     delay(20)
     message(format(
-        "Carla: Go on! Choose one.\p"
+        "Carla: Go on! Choose one!\p"
     ))
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER,Player_WalkUp)
@@ -152,6 +154,7 @@ script Route108_Laboratory_PickAlpacoil {
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             removeobject(3)
+            setflag(FLAG_AW_PICK_ALPACOIL)
             call(Route108_Laboratory_Yay)
         } else {
             hidemonpic
@@ -180,6 +183,7 @@ script Route108_Laboratory_PickSmackop {
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             removeobject(4)
+            setflag(FLAG_AW_PICK_SMACKOP)
             call(Route108_Laboratory_Yay)
         } else {
             hidemonpic
@@ -208,7 +212,7 @@ script Route108_Laboratory_PickPuppixy {
             playfanfare(MUS_OBTAIN_ITEM)
             waitfanfare
             removeobject(5)
-            setflag(FLAG_AW_MID_TUT)
+            setflag(FLAG_AW_PICK_PUPPIXY)
             call(Route108_Laboratory_Yay)
         } else {
             hidemonpic
@@ -222,6 +226,7 @@ script Route108_Laboratory_PickPuppixy {
 }
 
 script Route108_Laboratory_Yay {
+    setflag(FLAG_AW_MID_TUT)
     msgbox(format(
         "Would you like to give your Pokémon a nickname?\p"
     ), MSGBOX_YESNO)
@@ -230,27 +235,29 @@ script Route108_Laboratory_Yay {
     }
     closemessage
     hidemonpic
-    //setflag(FLAG_ADVENTURE_STARTED) POKEDEX??
     setvar(VAR_AW_PROGRESS_1,4)
     message(format(
         "Fern: Well, that's that.\p"
     ))
     waitmessage
-    applymovement(1,FacePlayer)
+    applymovement(1,WalkUpSpot)
+    waitmovement(0)
     message(format(
-        "Carla: And what a cute Pokémon you chose.\p"
+        "Carla: And what a cute Pokémon you chose!\p"
     ))
     waitmessage
     message(format(
         "Fern: Ok, now! Follow me outside, I'll show you around the place.\p"
     ))
     waitmessage
+    closemessage
     applymovement(2,ProfessorLeave)
     waitmovement(0)
     playse(SE_DOOR)
     removeobject(2)
     delay(60)
     release
+    hideobjectat(3,MAP_ROUTE108_LOWER)
 }
 
 script Route108_Laboratory_TalkCarla {
@@ -293,10 +300,6 @@ movement WalkRightSpot {
     walk_in_place_right*2
 }
 
-movement LookDown {
-    face_down
-}
-
 movement LookUp {
     face_up
 }
@@ -313,8 +316,10 @@ movement ProfessorToPokeballs {
 }
 
 movement CarlaToPokeballs {
-    walk_left*6
-    walk_down*8
+    walk_left*4
+    walk_down
+    walk_left*2
+    walk_down*7
     walk_left*10
 }
 

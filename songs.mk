@@ -1250,3 +1250,6 @@ $(MID_SUBDIR)/aw_mus_erin_village.s: %.s: %.mid
 
 $(MID_SUBDIR)/aw_mus_laboratory.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V110
+
+$(MID_SUBDIR)/aw_mus_battle_rival.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V110

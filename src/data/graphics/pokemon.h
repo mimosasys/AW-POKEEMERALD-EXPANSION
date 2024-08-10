@@ -13107,12 +13107,12 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 	const u32 gMonShinyPalette_Dewsel[] = INCBIN_U32("graphics/pokemon/_AW/dewsel/shiny.gbapal.lz");
 	const u8 gMonIcon_Dewsel[] = INCBIN_U8("graphics/pokemon/_AW/dewsel/icon.4bpp");
 
-    // Beloseed
-	const u32 gMonFrontPic_Beloseed[] = INCBIN_U32("graphics/pokemon/_AW/beloseed/anim_front.4bpp.lz");
-	const u32 gMonPalette_Beloseed[] = INCBIN_U32("graphics/pokemon/_AW/beloseed/normal.gbapal.lz");
-	const u32 gMonBackPic_Beloseed[] = INCBIN_U32("graphics/pokemon/_AW/beloseed/back.4bpp.lz");
-	const u32 gMonShinyPalette_Beloseed[] = INCBIN_U32("graphics/pokemon/_AW/beloseed/shiny.gbapal.lz");
-	const u8 gMonIcon_Beloseed[] = INCBIN_U8("graphics/pokemon/_AW/beloseed/icon.4bpp");
+    // Signoll
+    const u32 gMonFrontPic_Signoll[] = INCBIN_U32("graphics/pokemon/_AW/signoll/anim_front.4bpp.lz");
+    const u32 gMonPalette_Signoll[] = INCBIN_U32("graphics/pokemon/_AW/signoll/normal.gbapal.lz");
+    const u32 gMonBackPic_Signoll[] = INCBIN_U32("graphics/pokemon/_AW/signoll/back.4bpp.lz");
+    const u32 gMonShinyPalette_Signoll[] = INCBIN_U32("graphics/pokemon/_AW/signoll/shiny.gbapal.lz");
+    // const u32 gMonIcon_Signoll[] = INCBIN_U32("graphics/pokemon/_AW/signoll/icon.4bpp");
 
     // Valvogue
 	const u32 gMonFrontPic_Valvogue[] = INCBIN_U32("graphics/pokemon/_AW/valvogue/anim_front.4bpp.lz");

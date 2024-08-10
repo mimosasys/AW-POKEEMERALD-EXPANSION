@@ -41,7 +41,8 @@
   ],
   "gMapGroup_AW_Towns": [
     "ErinVillage",
-    "PortMulberry"
+    "PortMulberry",
+    "PuceCity"
   ],
   "gMapGroup_AW_Routes": [
     "Route108_Lower"
@@ -51,7 +52,7 @@
     "Route108_Laboratory"
   ],
   "gMapGroup_AW_Misc": [
-
+    "PuceLake"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

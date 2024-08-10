@@ -2619,16 +2619,16 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_COEVAL] =
     {
         .name = _("Coeval"),
-        .description = COMPOUND_STRING("All moves happen immediately. WIP"),
+        .description = COMPOUND_STRING("All moves happen immediately. WIP"), // No recharge or warm-ups
         .aiRating = 8,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
 
-    [ABILITY_SOMNILUS] =
+    [ABILITY_AMNESIAC] =
     {
-        .name = _("unnamed"),
+        .name = _("Amnesiac"),
         .description = COMPOUND_STRING("Reduces PP of enemy's contact moves."),
         .aiRating = 8,
         .cantBeCopied = TRUE,
@@ -2636,10 +2636,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
     },
 
-    [ABILITY_CHIRURGE] =
+    [ABILITY_SLUMBER] =
     {
-        .name = _("unnamed"),
-        .description = COMPOUND_STRING("unknown"),
+        .name = _("Slumber"),
+        .description = COMPOUND_STRING("Pokémon is constantly asleep."),
         .aiRating = 8,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,

@@ -4460,6 +4460,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PortMulberry/border.bin",
       "blockdata_filepath": "data/layouts/PortMulberry/map.bin"
+    },
+    {
+      "id": "LAYOUT_PUCE_CITY",
+      "name": "PuceCity_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/PuceCity/border.bin",
+      "blockdata_filepath": "data/layouts/PuceCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_PUCE_LAKE",
+      "name": "PuceLake_Layout",
+      "width": 38,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/PuceLake/border.bin",
+      "blockdata_filepath": "data/layouts/PuceLake/map.bin"
     }
   ]
 }
