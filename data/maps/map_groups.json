@@ -40,19 +40,21 @@
     "gMapGroup_IndoorRoute124"
   ],
   "gMapGroup_AW_Towns": [
-    "ErinVillage",
-    "PortMulberry",
-    "PuceCity"
+    "AW_ErinVillage",
+    "AW_PortMulberry",
+    "AW_PuceCity"
   ],
   "gMapGroup_AW_Routes": [
-    "Route108_Lower"
+    "AW_Route108_Lower",
+    "AW_Route110_Forest",
+    "AW_Route110_Path"
   ],
   "gMapGroup_AW_Indoors": [
-    "ErinVillage_YourHouse",
-    "Route108_Laboratory"
+    "AW_ErinVillage_YourHouse",
+    "AW_Route108_Laboratory"
   ],
   "gMapGroup_AW_Misc": [
-    "PuceLake"
+    "AW_PuceLake"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

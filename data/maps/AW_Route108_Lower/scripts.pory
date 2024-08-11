@@ -1,0 +1,302 @@
+mapscripts AW_Route108_Lower_MapScripts {
+    // MAP_SCRIPT_ON_TRANSITION: Route108_HideOrShowTruck
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_PROGRESS_1, 4: Route108_Lower_Transition
+    ]
+}
+
+script Route108_HideOrShowTruck {
+    if (flag(FLAG_AW_VISIT_MULBERRY) == FALSE) {
+        setmetatile(8,34,0x1D8,TRUE)
+        setmetatile(8,35,0x1D8,TRUE)
+        setmetatile(9,34,0x1D9,TRUE)
+        setmetatile(10,34,0x1D2,TRUE)
+        setmetatile(10,35,0x1E2,TRUE)
+    }
+}
+
+script Route108_Lower_Transition {
+    lockall
+    hideobjectat(3,MAP_AW_ROUTE108_LOWER)
+    applymovement(OBJ_EVENT_ID_PLAYER,Player_LeaveLab)
+    waitmovement(0)
+    showobjectat(3,MAP_AW_ROUTE108_LOWER)
+    applymovement(3,Carla_LeaveLab)
+    waitmovement(0)
+    message(format(
+        "Fern: Well, {PLAYER}, this is Route 108.\p"
+    ))
+    waitmessage
+    applymovement(2,LookRight)
+    message(format(
+        "To the east is Port Mulberry. It's the closest town to the lab.\p"
+    ))
+    waitmessage
+    applymovement(2,LookDown)
+    message(format(
+       "And south of us is Puce City, and the nearby Puce Lake. It's an important dig site for us.\p"
+    ))
+    waitmessage
+    applymovement(2,LookUp)
+    message(format(
+       "And, well, we're smack-bang in the middle! Hah!\p"
+        "Say, have you caught a Pokémon before? This is as good a spot as any.\p"
+        "Here, take these. I've got plenty spare.\p"
+    ))
+    waitmessage
+    applymovement(2,WalkUpSpot)
+    waitmovement(0)
+    giveitem(ITEM_POKE_BALL,10)
+    waitmessage
+    applymovement(2,LookDown)
+    message(format(
+       "Fern: Now, all you have to do is take step into that tall grass!\p"
+        "It's best to lower the other Pokémon's health a fair bit before throwing a ball, but who knows, you might get lucky!\p"
+    ))
+    waitmessage
+    applymovement(3,Carla_GoToPlayer)
+    waitmovement(0)
+    message(format(
+        "Carla: You've got this! Go give it a shot! Catching Pokémon lets you make more friends!\p"
+        "With the Pokémon, of course.\p"
+    ))
+    waitmessage
+    closemessage
+    applymovement(2,Professor_MoveToGrass)
+    applymovement(3,Carla_MoveToGrass)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER,Player_GoToGrass)
+    waitmovement(0)
+    setwildbattle(SPECIES_DEWSEL,3)
+    dowildbattle
+        
+    specialvar(VAR_RESULT,GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        applymovement(2,Carla_GoToPlayer2)
+        applymovement(3,Professor_GoToPlayer)
+        special(HealPlayerParty)
+        message(format(
+           "Carla: Hey! Nice job, good catch!\p"
+        ))
+        waitmessage
+    } elif (var(VAR_RESULT) == B_OUTCOME_WON) {
+        applymovement(2,Carla_GoToPlayer2)
+        applymovement(3,Professor_GoToPlayer)
+        special(HealPlayerParty)
+        message(format(
+            "Carla: Oop, seems you were a bit enthusiastic.\pNevermind, you'll have plenty of other chances!\p"
+            ))
+       waitmessage
+    } else {
+        applymovement(2,Carla_GoToPlayer2)
+        applymovement(3,Professor_GoToPlayer)
+        special(HealPlayerParty)
+        message(format(
+            "Carla: Aww, dang! That's too bad. It's ok, we'll heal your Pokémon right up!\p"
+        ))
+        waitmessage
+    }
+
+    applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
+    delay(10)
+    message(format(
+        "Fern: Well, you get the picture.\p"
+        "Actually, I have something to ask of you. I hope it's not too much all at once.\p"
+    ))
+    waitmessage
+    message(format(
+        "Carla: Oh, you mean...!\p"
+        "That's a great idea!\p"
+    ))
+    waitmessage
+    message(format(
+        "Fern: You see, {PLAYER}, our research team is a bit...\p"
+        "How do I put this...\p"
+        "Short of staff at the moment. Really, it's just Carla, me, and a few other hands.\p"
+        "So... I was thinking that while you're here recovering, you could help us out!\p"
+        "...You will help us, right?\p"
+    ))
+    waitmessage
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkUpSpot)
+    waitmovement(0)
+    applymovement(2,EmoteExclamation)
+    delay(20)
+    applymovement(2,LookDown)
+    message(format(
+        "Fern: ...! Oh! Well, thanks, {PLAYER}! It really will be such a big help for us!\p"
+        "Carla: Soooo... I guess we'll leave you to get used to your surroundings.\p"
+       "We're gonna go get ready for another expedition to Puce Lake, so come join us when you've had a look around.\p"
+    ))
+    waitmessage
+    applymovement(3,Carla_BackToLab)
+    applymovement(2,Professor_BackToLab)
+    message(format(
+        "Fern: See you round, {PLAYER}!\p"
+    ))
+    waitmessage
+    applymovement(2,Professor_BackToLab2)
+    message(format(
+        "Carla: Catch lots of Pokémon! And be nice to yours, ok?\p"
+    ))
+    waitmessage
+    applymovement(3,Carla_BackToLab2)
+    waitmovement(0)
+    removeobject(2)
+    removeobject(3)
+    setvar(VAR_AW_PROGRESS_1,5)
+    setflag(FLAG_AW_FINISH_TUT)
+    releaseall
+}
+
+script YouCantParkThere {
+    lockall
+    if (flag(FLAG_AW_VISIT_MULBERRY) == false) {
+        applymovement(9,WalkLeftSpot)
+        waitmovement(0)
+        message(format(
+            "Hey! You can't just park your truck there!\p"
+        ))
+        waitmessage
+        closemessage
+        applymovement(8,WalkRightSpot)
+        waitmovement(0)
+        message(format(
+            "Uh, yes I can. It's my truck.\p"
+        ))
+        waitmessage
+        closemessage
+        applymovement(9,FacePlayer)
+        delay(10)
+        message(format(
+            "But people can't get past! Like this kid, for example.\p"
+        ))
+        waitmessage
+        closemessage
+        applymovement(8,WalkRightSpot)
+        waitmovement(0)
+        message(format(
+            "Well, it sucks to be them.\p"
+        ))
+        applymovement(8,WalkLeftSpot)
+        waitmovement(0)
+        message(format(
+            "...How did you even get it there?\p"
+        ))
+        waitmessage
+        applymovement(8,FaceOriginalDirection)
+        applymovement(9,FaceOriginalDirection)
+        closemessage
+    } else {
+        applymovement(9,FacePlayer)
+        message(format(
+            "Well, lucky for you, that guy moved his truck, finally.\p"
+            "What a doofus.\p"
+        ))
+        waitmessage
+        applymovement(9,FaceOriginalDirection)
+    }
+    releaseall
+}
+
+script DidYouKnow {
+    lockall
+    applymovement(5,FacePlayer)
+    waitmovement(0)
+    message(format(
+        "Did you know? Route 108 continues up here!\p"
+        "Well, I say that, but you can't exactly get over this ledge to see it.\p"
+    ))
+    waitmessage
+    releaseall
+}
+
+script YoullMeetTrainers {
+    lockall
+    applymovement(4,FacePlayer)
+    waitmovement(0)
+    message(format(
+        "If you go on a journey with your Pokémon, you'll see plenty of trainers around the place wanting to battle!\p"
+        "Huh? Me? I'm just out for a walk.\p"
+    ))
+    waitmessage
+    releaseall
+}
+
+movement WalkUpSpot {
+    walk_in_place_up*2
+}
+
+movement LookRight {
+    face_right
+}
+
+movement LookDown {
+    face_down
+}
+
+movement Player_LeaveLab {
+    walk_down
+}
+
+movement Carla_LeaveLab {
+    walk_down
+    walk_right
+    walk_down
+    face_down
+}
+
+movement Professor_GiveBalls {
+    walk_up*2
+}
+
+movement Carla_GoToPlayer {
+    walk_down
+    face_player
+}
+
+movement Professor_MoveToGrass {
+    walk_down*2
+    walk_left
+    face_right
+}
+
+movement Carla_MoveToGrass {
+    walk_down
+    walk_left
+    walk_down*4
+    walk_left
+    face_right
+}
+
+movement Player_GoToGrass {
+    walk_down*7
+}
+
+movement Professor_GoToPlayer {
+    walk_right
+    walk_down*2
+}
+
+movement Carla_GoToPlayer2 {
+    walk_fast_down*2
+}
+
+movement Carla_BackToLab {
+    walk_up*3
+    face_player
+}
+
+movement Professor_BackToLab {
+    walk_up*2
+    face_player
+}
+
+movement Professor_BackToLab2 {
+    walk_up*6
+}
+
+movement Carla_BackToLab2 {
+    walk_left
+    walk_up*6
+}

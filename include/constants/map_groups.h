@@ -6,19 +6,21 @@
 //
 
 // gMapGroup_AW_Towns
-#define MAP_ERIN_VILLAGE  (0 | (0 << 8))
-#define MAP_PORT_MULBERRY (1 | (0 << 8))
-#define MAP_PUCE_CITY     (2 | (0 << 8))
+#define MAP_AW_ERIN_VILLAGE  (0 | (0 << 8))
+#define MAP_AW_PORT_MULBERRY (1 | (0 << 8))
+#define MAP_AW_PUCE_CITY     (2 | (0 << 8))
 
 // gMapGroup_AW_Routes
-#define MAP_ROUTE108_LOWER (0 | (1 << 8))
+#define MAP_AW_ROUTE108_LOWER  (0 | (1 << 8))
+#define MAP_AW_ROUTE110_FOREST (1 | (1 << 8))
+#define MAP_AW_ROUTE110_PATH   (2 | (1 << 8))
 
 // gMapGroup_AW_Indoors
-#define MAP_ERIN_VILLAGE_YOUR_HOUSE (0 | (2 << 8))
-#define MAP_ROUTE108_LABORATORY     (1 | (2 << 8))
+#define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE (0 | (2 << 8))
+#define MAP_AW_ROUTE108_LABORATORY     (1 | (2 << 8))
 
 // gMapGroup_AW_Misc
-#define MAP_PUCE_LAKE (0 | (3 << 8))
+#define MAP_AW_PUCE_LAKE (0 | (3 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (4 << 8))

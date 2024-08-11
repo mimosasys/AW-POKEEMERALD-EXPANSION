@@ -11493,8 +11493,8 @@
           }
         },
         {
-          "map": "MAP_ROUTE108_LOWER",
-          "base_label": "gRoute108_Lower0",
+          "map": "MAP_AW_ROUTE108_LOWER",
+          "base_label": "gAW_Route108_Lower0",
           "land_mons": {
             "encounter_rate": 20,
             "mons": [

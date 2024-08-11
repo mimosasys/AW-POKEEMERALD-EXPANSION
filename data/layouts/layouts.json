@@ -4412,74 +4412,94 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE108_LOWER",
-      "name": "Route_108Lower_Layout",
+      "id": "LAYOUT_AW_ROUTE108_LOWER",
+      "name": "AW_Route_108Lower_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route108_Lower/border.bin",
-      "blockdata_filepath": "data/layouts/Route108_Lower/map.bin"
+      "border_filepath": "data/layouts/AW_Route108_Lower/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route108_Lower/map.bin"
     },
     {
-      "id": "LAYOUT_ERIN_VILLAGE",
-      "name": "ErinVillage_Layout",
+      "id": "LAYOUT_AW_ERIN_VILLAGE",
+      "name": "AW_ErinVillage_Layout",
       "width": 30,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
-      "border_filepath": "data/layouts/ErinVillage/border.bin",
-      "blockdata_filepath": "data/layouts/ErinVillage/map.bin"
+      "border_filepath": "data/layouts/AW_ErinVillage/border.bin",
+      "blockdata_filepath": "data/layouts/AW_ErinVillage/map.bin"
     },
     {
-      "id": "LAYOUT_ERIN_VILLAGE_YOUR_HOUSE",
-      "name": "ErinVillage_YourHouse_Layout",
+      "id": "LAYOUT_AW_ERIN_VILLAGE_YOUR_HOUSE",
+      "name": "AW_ErinVillage_YourHouse_Layout",
       "width": 15,
       "height": 17,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/ErinVillage_YourHouse/border.bin",
-      "blockdata_filepath": "data/layouts/ErinVillage_YourHouse/map.bin"
+      "border_filepath": "data/layouts/AW_ErinVillage_YourHouse/border.bin",
+      "blockdata_filepath": "data/layouts/AW_ErinVillage_YourHouse/map.bin"
     },
     {
-      "id": "LAYOUT_ROUTE108_LABORATORY",
-      "name": "Route108_Laboratory_Layout",
+      "id": "LAYOUT_AW_ROUTE108_LABORATORY",
+      "name": "AW_Route108_Laboratory_Layout",
       "width": 34,
       "height": 34,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_Lab",
-      "border_filepath": "data/layouts/Route108_Laboratory/border.bin",
-      "blockdata_filepath": "data/layouts/Route108_Laboratory/map.bin"
+      "border_filepath": "data/layouts/AW_Route108_Laboratory/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route108_Laboratory/map.bin"
     },
     {
-      "id": "LAYOUT_PORT_MULBERRY",
-      "name": "PortMulberry_Layout",
+      "id": "LAYOUT_AW_PORT_MULBERRY",
+      "name": "AW_PortMulberry_Layout",
       "width": 46,
       "height": 44,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/PortMulberry/border.bin",
-      "blockdata_filepath": "data/layouts/PortMulberry/map.bin"
+      "border_filepath": "data/layouts/AW_PortMulberry/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PortMulberry/map.bin"
     },
     {
-      "id": "LAYOUT_PUCE_CITY",
-      "name": "PuceCity_Layout",
+      "id": "LAYOUT_AW_PUCE_CITY",
+      "name": "AW_PuceCity_Layout",
       "width": 40,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/PuceCity/border.bin",
-      "blockdata_filepath": "data/layouts/PuceCity/map.bin"
+      "border_filepath": "data/layouts/AW_PuceCity/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PuceCity/map.bin"
     },
     {
-      "id": "LAYOUT_PUCE_LAKE",
-      "name": "PuceLake_Layout",
+      "id": "LAYOUT_AW_PUCE_LAKE",
+      "name": "AW_PuceLake_Layout",
       "width": 38,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/PuceLake/border.bin",
-      "blockdata_filepath": "data/layouts/PuceLake/map.bin"
+      "border_filepath": "data/layouts/AW_PuceLake/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PuceLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE110_FOREST",
+      "name": "AW_Route110_Forest_Layout",
+      "width": 22,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/AW_Route110_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route110_Forest/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE110_PATH",
+      "name": "AW_Route110_Path_Layout",
+      "width": 38,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/AW_Route110_Path/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route110_Path/map.bin"
     }
   ]
 }

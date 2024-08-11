@@ -1072,16 +1072,20 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 
-	.include "data/maps/Route108_Lower/scripts.inc"
+	.include "data/maps/AW_Route108_Lower/scripts.inc"
 
-	.include "data/maps/ErinVillage/scripts.inc"
+	.include "data/maps/AW_ErinVillage/scripts.inc"
 
-	.include "data/maps/ErinVillage_YourHouse/scripts.inc"
+	.include "data/maps/AW_ErinVillage_YourHouse/scripts.inc"
 
-	.include "data/maps/Route108_Laboratory/scripts.inc"
+	.include "data/maps/AW_Route108_Laboratory/scripts.inc"
 
-	.include "data/maps/PortMulberry/scripts.inc"
+	.include "data/maps/AW_PortMulberry/scripts.inc"
 
-	.include "data/maps/PuceCity/scripts.inc"
+	.include "data/maps/AW_PuceCity/scripts.inc"
 
-	.include "data/maps/PuceLake/scripts.inc"
+	.include "data/maps/AW_PuceLake/scripts.inc"
+
+	.include "data/maps/AW_Route110_Forest/scripts.inc"
+
+	.include "data/maps/AW_Route110_Path/scripts.inc"
