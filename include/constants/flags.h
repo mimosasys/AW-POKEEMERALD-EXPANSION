@@ -1218,14 +1218,14 @@
 #define FLAG_ITEM_SAFARI_ZONE_NORTH_EAST_NUGGET                     0x491
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
-#define FLAG_AW_FINISH_TUT                                          0x493 // Unused Flag
+#define FLAG_AW_UNUSED                                              0x493 // Unused Flag
 #define FLAG_AW_START_TUT                                           0x494 // Unused Flag
 #define FLAG_AW_MID_TUT                                             0x495 // Unused Flag
 #define FLAG_AW_PICK_ALPACOIL                                       0x496 // Unused Flag
 #define FLAG_AW_PICK_SMACKOP                                        0x497 // Unused Flag
 #define FLAG_AW_PICK_PUPPIXY                                        0x498 // Unused Flag
 #define FLAG_AW_VISIT_MULBERRY                                      0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+#define FLAG_AW_FINISH_TUT                                          0x49A // Unused Flag
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag

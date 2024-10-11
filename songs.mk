@@ -1243,13 +1243,16 @@ $(MID_SUBDIR)/aw_mus_battle_wild.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V090
 
 $(MID_SUBDIR)/aw_mus_battle_jade_grunt.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V110
+	$(MID) $< $@ -E -R0 -G229 -V110
 
 $(MID_SUBDIR)/aw_mus_erin_village.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V125
+	$(MID) $< $@ -E -R0 -G229 -V125
 
 $(MID_SUBDIR)/aw_mus_laboratory.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V110
+	$(MID) $< $@ -E -R0 -G229 -V110
 
 $(MID_SUBDIR)/aw_mus_battle_rival.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G229 -V110
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_puce_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120

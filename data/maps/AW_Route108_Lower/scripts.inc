@@ -40,480 +40,584 @@ Route108_Lower_Transition::
 # 23 "data/maps/AW_Route108_Lower/scripts.pory"
 	showobjectat 3, MAP_AW_ROUTE108_LOWER
 # 24 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Carla_LeaveLab
+	opendoor 8, 8
 # 25 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
+	waitdooranim
 # 26 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_0
+	setobjectxy 3, 8, 8
+# 27 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_LeaveLab
+# 28 "data/maps/AW_Route108_Lower/scripts.pory"
+	closedoor 8, 8
 # 29 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 30 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, LookRight
+	special SpawnCameraObject
 # 31 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_1
-# 34 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 35 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, LookDown
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_MoveDown1
+# 32 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 33 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_0
 # 36 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_2
+	waitmessage
+# 37 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, LookRight
+# 38 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookRight3
 # 39 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 40 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, LookUp
-# 41 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_3
-# 46 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_1
+# 43 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
+# 44 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, LookDown
+# 45 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookLeft3
+# 46 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
 # 47 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, WalkUpSpot
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookDown3
 # 48 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
 # 49 "data/maps/AW_Route108_Lower/scripts.pory"
-	giveitem ITEM_POKE_BALL, 10
-# 50 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 51 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, LookDown
+	message Route108_Lower_Transition_Text_2
 # 52 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_4
+	waitmessage
+# 53 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, LookUp
+# 54 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookUp3
+# 55 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
 # 56 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_3
+# 61 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
-# 57 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Carla_GoToPlayer
-# 58 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
-# 59 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_5
+# 62 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, WalkUpSpot
 # 63 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
+	waitmovement 0
 # 64 "data/maps/AW_Route108_Lower/scripts.pory"
-	closemessage
+	giveitem ITEM_POKE_BALL, 10
 # 65 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Professor_MoveToGrass
+	waitmessage
 # 66 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Carla_MoveToGrass
+	applymovement 2, LookDown
 # 67 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookDown3
 # 68 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_GoToGrass
-# 69 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
-# 70 "data/maps/AW_Route108_Lower/scripts.pory"
-	setwildbattle SPECIES_DEWSEL, 3
-# 71 "data/maps/AW_Route108_Lower/scripts.pory"
-	dowildbattle
+# 69 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_4
 # 73 "data/maps/AW_Route108_Lower/scripts.pory"
-	specialvar VAR_RESULT, GetBattleOutcome
+	waitmessage
 # 74 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_GoToPlayer
+# 75 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 76 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_5
+# 80 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 81 "data/maps/AW_Route108_Lower/scripts.pory"
+	closemessage
+# 82 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_MoveToGrass
+# 83 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_MoveToGrass
+# 84 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 85 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Player_GoToGrass
+# 86 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 87 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookDown3
+# 88 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Player_GoToGrass2
+# 89 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 90 "data/maps/AW_Route108_Lower/scripts.pory"
+	setwildbattle SPECIES_DEWSEL, 3
+# 91 "data/maps/AW_Route108_Lower/scripts.pory"
+	dowildbattle
+# 93 "data/maps/AW_Route108_Lower/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 94 "data/maps/AW_Route108_Lower/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route108_Lower_Transition_2
-# 82 "data/maps/AW_Route108_Lower/scripts.pory"
+# 102 "data/maps/AW_Route108_Lower/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route108_Lower_Transition_3
-# 91 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Carla_GoToPlayer2
-# 92 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Professor_GoToPlayer
-# 93 "data/maps/AW_Route108_Lower/scripts.pory"
+# 111 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_GoToPlayer2
+# 112 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_GoToPlayer
+# 113 "data/maps/AW_Route108_Lower/scripts.pory"
 	special HealPlayerParty
-# 94 "data/maps/AW_Route108_Lower/scripts.pory"
+# 114 "data/maps/AW_Route108_Lower/scripts.pory"
 	message Route108_Lower_Transition_Text_8
-# 97 "data/maps/AW_Route108_Lower/scripts.pory"
+# 117 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
 Route108_Lower_Transition_1:
-# 100 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LookUp
-# 101 "data/maps/AW_Route108_Lower/scripts.pory"
-	delay 10
-# 102 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_9
-# 106 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 107 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_10
-# 111 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 112 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_11
-# 119 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
 # 120 "data/maps/AW_Route108_Lower/scripts.pory"
-	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, LookUp
 # 121 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WalkUpSpot
+	delay 10
 # 122 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
-# 123 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, EmoteExclamation
-# 124 "data/maps/AW_Route108_Lower/scripts.pory"
-	delay 20
-# 125 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, LookDown
+	message Route108_Lower_Transition_Text_9
 # 126 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_12
+	waitmessage
+# 127 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_10
 # 131 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
 # 132 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Carla_BackToLab
-# 133 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Professor_BackToLab
-# 134 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_13
-# 137 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 138 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Professor_BackToLab2
+	message Route108_Lower_Transition_Text_11
 # 139 "data/maps/AW_Route108_Lower/scripts.pory"
-	message Route108_Lower_Transition_Text_14
-# 142 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
-# 143 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Carla_BackToLab2
-# 144 "data/maps/AW_Route108_Lower/scripts.pory"
+# 140 "data/maps/AW_Route108_Lower/scripts.pory"
+	closemessage
+# 141 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WalkUpSpot
+# 142 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
+# 143 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, EmoteExclamation
+# 144 "data/maps/AW_Route108_Lower/scripts.pory"
+	delay 20
 # 145 "data/maps/AW_Route108_Lower/scripts.pory"
-	removeobject 2
+	applymovement 2, LookDown
 # 146 "data/maps/AW_Route108_Lower/scripts.pory"
-	removeobject 3
+	special RemoveCameraObject
 # 147 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_12
+# 156 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 157 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_BackToLab
+# 158 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_BackToLab
+# 159 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_13
+# 162 "data/maps/AW_Route108_Lower/scripts.pory"
+	message Route108_Lower_Transition_Text_14
+# 165 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 166 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_BackToLab2
+# 167 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_BackToLab2
+# 168 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 169 "data/maps/AW_Route108_Lower/scripts.pory"
+	hideobjectat 2, MAP_AW_ROUTE108_LOWER
+# 170 "data/maps/AW_Route108_Lower/scripts.pory"
+	hideobjectat 3, MAP_AW_ROUTE108_LOWER
+# 171 "data/maps/AW_Route108_Lower/scripts.pory"
+	removeobject 2
+# 172 "data/maps/AW_Route108_Lower/scripts.pory"
+	removeobject 3
+# 173 "data/maps/AW_Route108_Lower/scripts.pory"
 	setvar VAR_AW_PROGRESS_1, 5
-# 148 "data/maps/AW_Route108_Lower/scripts.pory"
+# 174 "data/maps/AW_Route108_Lower/scripts.pory"
 	setflag FLAG_AW_FINISH_TUT
-# 149 "data/maps/AW_Route108_Lower/scripts.pory"
+# 175 "data/maps/AW_Route108_Lower/scripts.pory"
 	releaseall
 	return
 
 Route108_Lower_Transition_2:
-# 75 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Carla_GoToPlayer2
-# 76 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Professor_GoToPlayer
-# 77 "data/maps/AW_Route108_Lower/scripts.pory"
+# 95 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_GoToPlayer2
+# 96 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_GoToPlayer
+# 97 "data/maps/AW_Route108_Lower/scripts.pory"
 	special HealPlayerParty
-# 78 "data/maps/AW_Route108_Lower/scripts.pory"
+# 98 "data/maps/AW_Route108_Lower/scripts.pory"
 	message Route108_Lower_Transition_Text_6
-# 81 "data/maps/AW_Route108_Lower/scripts.pory"
+# 101 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
 	goto Route108_Lower_Transition_1
 
 Route108_Lower_Transition_3:
-# 83 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 2, Carla_GoToPlayer2
-# 84 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 3, Professor_GoToPlayer
-# 85 "data/maps/AW_Route108_Lower/scripts.pory"
+# 103 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 3, Carla_GoToPlayer2
+# 104 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 2, Professor_GoToPlayer
+# 105 "data/maps/AW_Route108_Lower/scripts.pory"
 	special HealPlayerParty
-# 86 "data/maps/AW_Route108_Lower/scripts.pory"
+# 106 "data/maps/AW_Route108_Lower/scripts.pory"
 	message Route108_Lower_Transition_Text_7
-# 89 "data/maps/AW_Route108_Lower/scripts.pory"
+# 109 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
 	goto Route108_Lower_Transition_1
 
 
 YouCantParkThere::
-# 153 "data/maps/AW_Route108_Lower/scripts.pory"
+# 179 "data/maps/AW_Route108_Lower/scripts.pory"
 	lockall
-# 154 "data/maps/AW_Route108_Lower/scripts.pory"
+# 180 "data/maps/AW_Route108_Lower/scripts.pory"
 	goto_if_unset FLAG_AW_VISIT_MULBERRY, YouCantParkThere_2
-# 191 "data/maps/AW_Route108_Lower/scripts.pory"
+# 217 "data/maps/AW_Route108_Lower/scripts.pory"
 	applymovement 9, FacePlayer
-# 192 "data/maps/AW_Route108_Lower/scripts.pory"
+# 218 "data/maps/AW_Route108_Lower/scripts.pory"
 	message YouCantParkThere_Text_5
-# 196 "data/maps/AW_Route108_Lower/scripts.pory"
+# 222 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
-# 197 "data/maps/AW_Route108_Lower/scripts.pory"
+# 223 "data/maps/AW_Route108_Lower/scripts.pory"
 	applymovement 9, FaceOriginalDirection
 YouCantParkThere_1:
-# 199 "data/maps/AW_Route108_Lower/scripts.pory"
+# 225 "data/maps/AW_Route108_Lower/scripts.pory"
 	releaseall
 	return
 
 YouCantParkThere_2:
-# 155 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 9, WalkLeftSpot
-# 156 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
-# 157 "data/maps/AW_Route108_Lower/scripts.pory"
-	message YouCantParkThere_Text_0
-# 160 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 161 "data/maps/AW_Route108_Lower/scripts.pory"
-	closemessage
-# 162 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 8, WalkRightSpot
-# 163 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
-# 164 "data/maps/AW_Route108_Lower/scripts.pory"
-	message YouCantParkThere_Text_1
-# 167 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 168 "data/maps/AW_Route108_Lower/scripts.pory"
-	closemessage
-# 169 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 9, FacePlayer
-# 170 "data/maps/AW_Route108_Lower/scripts.pory"
-	delay 10
-# 171 "data/maps/AW_Route108_Lower/scripts.pory"
-	message YouCantParkThere_Text_2
-# 174 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmessage
-# 175 "data/maps/AW_Route108_Lower/scripts.pory"
-	closemessage
-# 176 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 8, WalkRightSpot
-# 177 "data/maps/AW_Route108_Lower/scripts.pory"
-	waitmovement 0
-# 178 "data/maps/AW_Route108_Lower/scripts.pory"
-	message YouCantParkThere_Text_3
 # 181 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 8, WalkLeftSpot
+	applymovement 9, WalkLeftSpot
 # 182 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
 # 183 "data/maps/AW_Route108_Lower/scripts.pory"
-	message YouCantParkThere_Text_4
+	message YouCantParkThere_Text_0
 # 186 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
 # 187 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 8, FaceOriginalDirection
+	closemessage
 # 188 "data/maps/AW_Route108_Lower/scripts.pory"
-	applymovement 9, FaceOriginalDirection
+	applymovement 8, WalkRightSpot
 # 189 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 190 "data/maps/AW_Route108_Lower/scripts.pory"
+	message YouCantParkThere_Text_1
+# 193 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 194 "data/maps/AW_Route108_Lower/scripts.pory"
+	closemessage
+# 195 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 9, FacePlayer
+# 196 "data/maps/AW_Route108_Lower/scripts.pory"
+	delay 10
+# 197 "data/maps/AW_Route108_Lower/scripts.pory"
+	message YouCantParkThere_Text_2
+# 200 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 201 "data/maps/AW_Route108_Lower/scripts.pory"
+	closemessage
+# 202 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 8, WalkRightSpot
+# 203 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 204 "data/maps/AW_Route108_Lower/scripts.pory"
+	message YouCantParkThere_Text_3
+# 207 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 8, WalkLeftSpot
+# 208 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmovement 0
+# 209 "data/maps/AW_Route108_Lower/scripts.pory"
+	message YouCantParkThere_Text_4
+# 212 "data/maps/AW_Route108_Lower/scripts.pory"
+	waitmessage
+# 213 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 8, FaceOriginalDirection
+# 214 "data/maps/AW_Route108_Lower/scripts.pory"
+	applymovement 9, FaceOriginalDirection
+# 215 "data/maps/AW_Route108_Lower/scripts.pory"
 	closemessage
 	goto YouCantParkThere_1
 
 
 DidYouKnow::
-# 203 "data/maps/AW_Route108_Lower/scripts.pory"
+# 229 "data/maps/AW_Route108_Lower/scripts.pory"
 	lockall
-# 204 "data/maps/AW_Route108_Lower/scripts.pory"
+# 230 "data/maps/AW_Route108_Lower/scripts.pory"
 	applymovement 5, FacePlayer
-# 205 "data/maps/AW_Route108_Lower/scripts.pory"
+# 231 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
-# 206 "data/maps/AW_Route108_Lower/scripts.pory"
+# 232 "data/maps/AW_Route108_Lower/scripts.pory"
 	message DidYouKnow_Text_0
-# 210 "data/maps/AW_Route108_Lower/scripts.pory"
+# 237 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
-# 211 "data/maps/AW_Route108_Lower/scripts.pory"
+# 238 "data/maps/AW_Route108_Lower/scripts.pory"
 	releaseall
 	return
 
 
 YoullMeetTrainers::
-# 215 "data/maps/AW_Route108_Lower/scripts.pory"
+# 242 "data/maps/AW_Route108_Lower/scripts.pory"
 	lockall
-# 216 "data/maps/AW_Route108_Lower/scripts.pory"
+# 243 "data/maps/AW_Route108_Lower/scripts.pory"
 	applymovement 4, FacePlayer
-# 217 "data/maps/AW_Route108_Lower/scripts.pory"
+# 244 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmovement 0
-# 218 "data/maps/AW_Route108_Lower/scripts.pory"
+# 245 "data/maps/AW_Route108_Lower/scripts.pory"
 	message YoullMeetTrainers_Text_0
-# 222 "data/maps/AW_Route108_Lower/scripts.pory"
+# 249 "data/maps/AW_Route108_Lower/scripts.pory"
 	waitmessage
-# 223 "data/maps/AW_Route108_Lower/scripts.pory"
+# 250 "data/maps/AW_Route108_Lower/scripts.pory"
 	releaseall
 	return
 
 
-# 226 "data/maps/AW_Route108_Lower/scripts.pory"
-WalkUpSpot:
-# 227 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_in_place_up
-# 227 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_in_place_up
-	step_end
-
-# 230 "data/maps/AW_Route108_Lower/scripts.pory"
-LookRight:
-# 231 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_right
-	step_end
-
-# 234 "data/maps/AW_Route108_Lower/scripts.pory"
-LookDown:
-# 235 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_down
-	step_end
-
-# 238 "data/maps/AW_Route108_Lower/scripts.pory"
-Player_LeaveLab:
-# 239 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-	step_end
-
-# 242 "data/maps/AW_Route108_Lower/scripts.pory"
-Carla_LeaveLab:
-# 243 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 244 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_right
-# 245 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 246 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_down
-	step_end
-
-# 249 "data/maps/AW_Route108_Lower/scripts.pory"
-Professor_GiveBalls:
-# 250 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 250 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-	step_end
-
 # 253 "data/maps/AW_Route108_Lower/scripts.pory"
-Carla_GoToPlayer:
+WalkUpSpot:
 # 254 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 255 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_player
+	walk_in_place_up
+# 254 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_in_place_up
 	step_end
 
+# 257 "data/maps/AW_Route108_Lower/scripts.pory"
+LookRight:
 # 258 "data/maps/AW_Route108_Lower/scripts.pory"
-Professor_MoveToGrass:
-# 259 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 259 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 260 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_left
+	face_right
+	step_end
+
 # 261 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_right
+LookDown:
+# 262 "data/maps/AW_Route108_Lower/scripts.pory"
+	face_down
 	step_end
 
-# 264 "data/maps/AW_Route108_Lower/scripts.pory"
-Carla_MoveToGrass:
 # 265 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
+Player_LeaveLab:
 # 266 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_left
-# 267 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_down
-# 267 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 267 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 267 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 268 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_left
-# 269 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_right
 	step_end
 
+# 269 "data/maps/AW_Route108_Lower/scripts.pory"
+Carla_LeaveLab:
+# 270 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 271 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
 # 272 "data/maps/AW_Route108_Lower/scripts.pory"
-Player_GoToGrass:
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_down
 # 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 273 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
+	face_down
 	step_end
 
 # 276 "data/maps/AW_Route108_Lower/scripts.pory"
-Professor_GoToPlayer:
+Professor_GiveBalls:
 # 277 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_right
-# 278 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
-# 278 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_down
+	walk_up
+# 277 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
 	step_end
 
+# 280 "data/maps/AW_Route108_Lower/scripts.pory"
+Carla_GoToPlayer:
 # 281 "data/maps/AW_Route108_Lower/scripts.pory"
-Carla_GoToPlayer2:
-# 282 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_fast_down
-# 282 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_fast_down
+	face_player
 	step_end
 
+# 284 "data/maps/AW_Route108_Lower/scripts.pory"
+Professor_MoveToGrass:
 # 285 "data/maps/AW_Route108_Lower/scripts.pory"
-Carla_BackToLab:
+	walk_down
+# 285 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
 # 286 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 286 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 286 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
+	walk_left
 # 287 "data/maps/AW_Route108_Lower/scripts.pory"
-	face_player
+	face_right
 	step_end
 
 # 290 "data/maps/AW_Route108_Lower/scripts.pory"
-Professor_BackToLab:
+Carla_MoveToGrass:
 # 291 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
+	walk_down
 # 291 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
+	walk_down
 # 292 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 293 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 293 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 293 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 294 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 295 "data/maps/AW_Route108_Lower/scripts.pory"
+	face_right
+	step_end
+
+# 298 "data/maps/AW_Route108_Lower/scripts.pory"
+Player_GoToGrass:
+# 299 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 299 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 299 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 299 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+	step_end
+
+# 302 "data/maps/AW_Route108_Lower/scripts.pory"
+Player_GoToGrass2:
+# 303 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 303 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 303 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+	step_end
+
+# 306 "data/maps/AW_Route108_Lower/scripts.pory"
+Professor_GoToPlayer:
+# 307 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 307 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+	step_end
+
+# 310 "data/maps/AW_Route108_Lower/scripts.pory"
+Carla_GoToPlayer2:
+# 311 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_fast_right
+# 312 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_fast_down
+	step_end
+
+# 315 "data/maps/AW_Route108_Lower/scripts.pory"
+Carla_BackToLab:
+# 316 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_slow_up
+# 316 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_slow_up
+# 316 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_slow_up
+# 317 "data/maps/AW_Route108_Lower/scripts.pory"
 	face_player
 	step_end
 
-# 295 "data/maps/AW_Route108_Lower/scripts.pory"
+# 320 "data/maps/AW_Route108_Lower/scripts.pory"
+Professor_BackToLab:
+# 321 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 321 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 322 "data/maps/AW_Route108_Lower/scripts.pory"
+	face_player
+	step_end
+
+# 325 "data/maps/AW_Route108_Lower/scripts.pory"
 Professor_BackToLab2:
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 326 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 296 "data/maps/AW_Route108_Lower/scripts.pory"
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 327 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
 	step_end
 
-# 299 "data/maps/AW_Route108_Lower/scripts.pory"
+# 330 "data/maps/AW_Route108_Lower/scripts.pory"
 Carla_BackToLab2:
-# 300 "data/maps/AW_Route108_Lower/scripts.pory"
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+# 331 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_up
+	step_end
+
+# 334 "data/maps/AW_Route108_Lower/scripts.pory"
+Camera_LookLeft3:
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_left
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_left
+	step_end
+
+# 338 "data/maps/AW_Route108_Lower/scripts.pory"
+Camera_LookRight3:
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+# 339 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_right
+	step_end
+
+# 342 "data/maps/AW_Route108_Lower/scripts.pory"
+Camera_MoveDown1:
+# 343 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+	step_end
+
+# 346 "data/maps/AW_Route108_Lower/scripts.pory"
+Camera_LookDown3:
+# 347 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 347 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+# 347 "data/maps/AW_Route108_Lower/scripts.pory"
+	walk_down
+	step_end
+
+# 350 "data/maps/AW_Route108_Lower/scripts.pory"
+Camera_LookUp3:
+# 351 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
+# 351 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
-	walk_up
-# 301 "data/maps/AW_Route108_Lower/scripts.pory"
+# 351 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_up
 	step_end
 
 Route108_Lower_Transition_Text_0:
-# 27 "data/maps/AW_Route108_Lower/scripts.pory"
+# 34 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Fern: Well, {PLAYER}, this is Route\n"
 	.string "108.\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_1:
-# 32 "data/maps/AW_Route108_Lower/scripts.pory"
+# 41 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "To the east is Port Mulberry. It's the\n"
 	.string "closest town to the lab.\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_2:
-# 37 "data/maps/AW_Route108_Lower/scripts.pory"
+# 50 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "And south of us is Puce City, and the\n"
 	.string "nearby Puce Lake. It's an important dig\l"
 	.string "site for us.\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_3:
-# 42 "data/maps/AW_Route108_Lower/scripts.pory"
+# 57 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "And, well, we're smack-bang in the\n"
 	.string "middle! Hah!\p"
 	.string "Say, have you caught a Pokémon before?\n"
@@ -522,8 +626,8 @@ Route108_Lower_Transition_Text_3:
 	.string "$"
 
 Route108_Lower_Transition_Text_4:
-# 53 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: Now, all you have to do is take\n"
+# 70 "data/maps/AW_Route108_Lower/scripts.pory"
+	.string "Fern: Now, all you have to do is take a\n"
 	.string "step into that tall grass!\p"
 	.string "It's best to lower the other Pokémon's\n"
 	.string "health a fair bit before throwing a ball,\l"
@@ -531,7 +635,7 @@ Route108_Lower_Transition_Text_4:
 	.string "$"
 
 Route108_Lower_Transition_Text_5:
-# 60 "data/maps/AW_Route108_Lower/scripts.pory"
+# 77 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: You've got this! Go give it a\n"
 	.string "shot! Catching Pokémon lets you make\l"
 	.string "more friends!\p"
@@ -539,12 +643,12 @@ Route108_Lower_Transition_Text_5:
 	.string "$"
 
 Route108_Lower_Transition_Text_6:
-# 79 "data/maps/AW_Route108_Lower/scripts.pory"
+# 99 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: Hey! Nice job, good catch!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_7:
-# 87 "data/maps/AW_Route108_Lower/scripts.pory"
+# 107 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: Oop, seems you were a bit\n"
 	.string "enthusiastic.\p"
 	.string "Nevermind, you'll have plenty of other\n"
@@ -552,13 +656,13 @@ Route108_Lower_Transition_Text_7:
 	.string "$"
 
 Route108_Lower_Transition_Text_8:
-# 95 "data/maps/AW_Route108_Lower/scripts.pory"
+# 115 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: Aww, dang! That's too bad. It's\n"
 	.string "ok, we'll heal your Pokémon right up!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_9:
-# 103 "data/maps/AW_Route108_Lower/scripts.pory"
+# 123 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Fern: Well, you get the picture.\p"
 	.string "Actually, I have something to ask of\n"
 	.string "you. I hope it's not too much all at\l"
@@ -566,13 +670,13 @@ Route108_Lower_Transition_Text_9:
 	.string "$"
 
 Route108_Lower_Transition_Text_10:
-# 108 "data/maps/AW_Route108_Lower/scripts.pory"
+# 128 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: Oh, you mean...!\p"
 	.string "That's a great idea!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_11:
-# 113 "data/maps/AW_Route108_Lower/scripts.pory"
+# 133 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Fern: You see, {PLAYER}, our research\n"
 	.string "team is a bit...\p"
 	.string "How do I put this...\p"
@@ -585,71 +689,85 @@ Route108_Lower_Transition_Text_11:
 	.string "$"
 
 Route108_Lower_Transition_Text_12:
-# 127 "data/maps/AW_Route108_Lower/scripts.pory"
+# 148 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Fern: ...! Oh! Well, thanks, {PLAYER}!\n"
 	.string "It really will be such a big help for us!\p"
-	.string "Carla: Soooo... I guess we'll leave you\n"
-	.string "to get used to your surroundings.\p"
-	.string "We're gonna go get ready for another\n"
-	.string "expedition to Puce Lake, so come join\l"
-	.string "us when you've had a look around.\p"
+	.string "Actually, there's something that would\n"
+	.string "be a big help already.\p"
+	.string "A friend of mine, an inventor called\n"
+	.string "Gear lives in Port Mulberry, and he's\l"
+	.string "been fixing up a communication device\l"
+	.string "for me.\p"
+	.string "They live in a big building up on the\n"
+	.string "rocks. You can't miss it.\p"
+	.string "I'd go and get it myself, but we're\n"
+	.string "already in a big rush to get ready for\l"
+	.string "our next dig site at Puce Lake.\p"
+	.string "Could you go get that for us? It would\n"
+	.string "be such a big help. I'll work out some\l"
+	.string "sort of reward, don't worry.\p"
+	.string "Port Mulberry is just to the east of\n"
+	.string "here, if you recall. Come back to the lab\l"
+	.string "when you get the device!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_13:
-# 135 "data/maps/AW_Route108_Lower/scripts.pory"
+# 160 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Fern: See you round, {PLAYER}!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_14:
-# 140 "data/maps/AW_Route108_Lower/scripts.pory"
+# 163 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Carla: Catch lots of Pokémon! And be\n"
 	.string "nice to yours, ok?\p"
 	.string "$"
 
 YouCantParkThere_Text_0:
-# 158 "data/maps/AW_Route108_Lower/scripts.pory"
+# 184 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Hey! You can't just park your truck\n"
 	.string "there!\p"
 	.string "$"
 
 YouCantParkThere_Text_1:
-# 165 "data/maps/AW_Route108_Lower/scripts.pory"
+# 191 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Uh, yes I can. It's my truck.\p"
 	.string "$"
 
 YouCantParkThere_Text_2:
-# 172 "data/maps/AW_Route108_Lower/scripts.pory"
+# 198 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "But people can't get past! Like this\n"
 	.string "kid, for example.\p"
 	.string "$"
 
 YouCantParkThere_Text_3:
-# 179 "data/maps/AW_Route108_Lower/scripts.pory"
+# 205 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Well, it sucks to be them.\p"
 	.string "$"
 
 YouCantParkThere_Text_4:
-# 184 "data/maps/AW_Route108_Lower/scripts.pory"
+# 210 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "...How did you even get it there?\p"
 	.string "$"
 
 YouCantParkThere_Text_5:
-# 193 "data/maps/AW_Route108_Lower/scripts.pory"
+# 219 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Well, lucky for you, that guy moved his\n"
 	.string "truck, finally.\p"
 	.string "What a doofus.\p"
 	.string "$"
 
 DidYouKnow_Text_0:
-# 207 "data/maps/AW_Route108_Lower/scripts.pory"
+# 233 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Did you know? Route 108 continues up\n"
 	.string "here!\p"
 	.string "Well, I say that, but you can't exactly\n"
 	.string "get over this ledge to see it.\p"
+	.string "Route 109 is up there somewhere too,\n"
+	.string "but I've never been.\p"
 	.string "$"
 
 YoullMeetTrainers_Text_0:
-# 219 "data/maps/AW_Route108_Lower/scripts.pory"
+# 246 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "If you go on a journey with your\n"
 	.string "Pokémon, you'll see plenty of trainers\l"
 	.string "around the place wanting to battle!\p"

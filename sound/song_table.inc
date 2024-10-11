@@ -617,6 +617,7 @@ gSongTable::
 	song aw_mus_erin_village, 0, 0
 	song aw_mus_laboratory, 0, 0
 	song aw_mus_battle_rival, 0, 0
+	song aw_mus_puce_city, 0, 0
 
 	.align 2
 dummy_song_header:

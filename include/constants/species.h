@@ -1649,15 +1649,15 @@
 #define SPECIES_DEWSEL      AW_START + 15
 #define SPECIES_PUIPOUR     AW_START + 16
 #define SPECIES_SEALOCH     AW_START + 17
-//FLYING SEED 1             AW_START + 18
-//FLYING SEED 2             AW_START + 19
-//FLYING SEED 3             AW_START + 20
-//#define SPECIES_BELOSEED    AW_START + 21
-//#define SPECIES_BELOBITE    AW_START + 22
-//#define SPECIES_BELOSCYTHE  AW_START + 23
-//BUG 1                     AW_START + 24
-//BUG 2                     AW_START + 25
-//BUG 3                     AW_START + 26
+#define SPECIES_TROPILOT    AW_START + 18
+#define SPECIES_PROPIARY    AW_START + 19
+#define SPECIES_JETIMBER    AW_START + 20
+#define SPECIES_CLIPPEP     AW_START + 21
+#define SPECIES_ZIPPINCH    AW_START + 22
+#define SPECIES_GUSTOLOCK   AW_START + 23
+#define SPECIES_TERMEET     AW_START + 24
+#define SPECIES_CLUSTERM    AW_START + 25
+#define SPECIES_TERMANATE   AW_START + 26
 #define SPECIES_SIGNOLL     AW_START + 27
 #define SPECIES_POSSANA     AW_START + 28
 #define SPECIES_POSSIERRA   AW_START + 29
@@ -1697,79 +1697,77 @@
 //FLYING 3                  AW_START + 63
 #define SPECIES_GEENKY      AW_START + 64
 #define SPECIES_UNFAIREE    AW_START + 65
-#define SPECIES_CABALLE     AW_START + 66
-#define SPECIES_WYRAPP      AW_START + 67
-#define SPECIES_BEETEMOLT   AW_START + 68
-#define SPECIES_PHANTOMOLT  AW_START + 69
-#define SPECIES_SKIRMUSH    AW_START + 70
-#define SPECIES_CORDYSPAR   AW_START + 71
-#define SPECIES_ICIRKRILL   AW_START + 72
-#define SPECIES_KRILLOWATT  AW_START + 73
-#define SPECIES_GRAMAIN     AW_START + 74
-#define SPECIES_TARDEVAIL   AW_START + 75
-//ICE 1                     AW_START + 76
-//ICE 2                     AW_START + 77
-//ICE 3                     AW_START + 78
-//ICE 4                     AW_START + 79
-//GHOST 1                   AW_START + 80
-//GHOST 2                   AW_START + 81
-//GHOST 3                   AW_START + 82
-//GHOST 4 (unrelated)       AW_START + 83
-//GHOST 5                   AW_START + 84
-#define SPECIES_LURIDIRT    AW_START + 85
-#define SPECIES_LURIDWELL   AW_START + 86
-#define SPECIES_DESOLONG    AW_START + 87
-//CONV. 3 (unrelated)       AW_START + 88
-//CONV. 4                   AW_START + 89
-//FIRE                      AW_START + 90
-//SMEARGLE EVO              AW_START + 91
-//FAIRY 1                   AW_START + 92
-//FAIRY 2                   AW_START + 93
-//FAIRY 3                   AW_START + 94
-#define SPECIES_UPSITTLE    AW_START + 95
-#define SPECIES_UPSUNDER    AW_START + 96
-#define SPECIES_PROUDEMIND  AW_START + 97
-//FIGHT 1                   AW_START + 98
-//FIGHT 2                   AW_START + 99
-//NIXIE 1                   AW_START + 100
-//NIXIE 2                   AW_START + 101
-//ELEC 1                    AW_START + 102
-//ELEC 2 (unrelated)        AW_START + 103
-//ELEC 1                    AW_START + 104
-//ELEC 2                    AW_START + 105
-//ELEC 3                    AW_START + 106
-//SOLAR WIND 1              AW_START + 107
-//SOLAR WIND 2              AW_START + 108
-//HEALER???                 AW_START + 109
-#define SPECIES_VEILDUCK    AW_START + 110
-#define SPECIES_SMOULDRA    AW_START + 111
-#define SPECIES_FROSTYLO    AW_START + 112
-#define SPECIES_FRACTYLO    AW_START + 113
-//TULLYMONSTRUM 1           AW_START + 114
-//TULLYMONSTRUM 2           AW_START + 115
-#define SPECIES_GEKOBOLD    AW_START + 116
-//DRAGON 2                  AW_START + 117
-//DRAGON 3                  AW_START + 118
-#define SPECIES_MOSSCREE    AW_START + 119
-#define SPECIES_MOSSTRATA   AW_START + 120
-#define SPECIES_LICHEON     AW_START + 121
-#define SPECIES_TINYMPH     AW_START + 122
-#define SPECIES_NYMFOIL     AW_START + 123
-#define SPECIES_PHASMETAL   AW_START + 124
-#define SPECIES_STRIGILENT  AW_START + 125
-#define SPECIES_SOMNILUS    AW_START + 126
-#define SPECIES_CHIRURGE    AW_START + 127
-//TRIO 1                    AW_START + 128
-//TRIO 2                    AW_START + 129
-//TRIO 3                    AW_START + 130
-//DUO 1                     AW_START + 121
-//DUO 2                     AW_START + 132
-//MYTH 1                    AW_START + 133
-//MYTH 2                    AW_START + 134
-//MYTH 3                    AW_START + 135
-#define SPECIES_FORMANDALA  AW_START + 136
-//SOLO LEGEND               AW_START + 137
-//SOLO LEGEND               AW_START + 138
+#define SPECIES_BEETEMOLT   AW_START + 66
+#define SPECIES_PHANTOMOLT  AW_START + 67
+#define SPECIES_SKIRMUSH    AW_START + 68
+#define SPECIES_CORDYSPAR   AW_START + 69
+#define SPECIES_ICIRKRILL   AW_START + 70
+#define SPECIES_KRILLOWATT  AW_START + 71
+#define SPECIES_GRAMAIN     AW_START + 72
+#define SPECIES_TARDEVAIL   AW_START + 73
+#define SPECIES_SIMIRA      AW_START + 74
+#define SPECIES_MIAMIRA     AW_START + 75
+#define SPECIES_MIRASTINE   AW_START + 76
+#define SPECIES_MIRASKEW    AW_START + 77
+//GHOST 1                   AW_START + 78
+//GHOST 2                   AW_START + 79
+//GHOST 3                   AW_START + 80
+//GHOST 4 (unrelated)       AW_START + 81
+//GHOST 5                   AW_START + 82
+#define SPECIES_LURIDIRT    AW_START + 83
+#define SPECIES_LURIDWELL   AW_START + 84
+#define SPECIES_DESOLONG    AW_START + 85
+#define SPECIES_GNOSEPASS   AW_START + 86
+#define SPECIES_POCUSPASS   AW_START + 87
+//FIRE                      AW_START + 88
+#define SPECIES_BEAGLOSS    AW_START + 89
+//FAIRY 1                   AW_START + 90
+//FAIRY 2                   AW_START + 91
+//FAIRY 3                   AW_START + 92
+#define SPECIES_UPSITTLE    AW_START + 93
+#define SPECIES_UPSUNDER    AW_START + 94
+#define SPECIES_PROUDEMIND  AW_START + 95
+//FIGHT 1                   AW_START + 96
+//FIGHT 2                   AW_START + 97
+#define SPECIES_ARTHINGY    AW_START + 98
+#define SPECIES_DOOHICRAB   AW_START + 99
+//ELEC 1                    AW_START + 100
+//ELEC 2 (unrelated)        AW_START + 101
+#define SPECIES_OHMEOW      AW_START + 102
+#define SPECIES_AMPURR      AW_START + 103
+#define SPECIES_COMPROAR    AW_START + 104
+//SOLAR WIND 1              AW_START + 105
+//SOLAR WIND 2              AW_START + 106
+//HEALER???                 AW_START + 107
+#define SPECIES_VEILDUCK    AW_START + 108
+#define SPECIES_SMOULDRA    AW_START + 109
+#define SPECIES_FROSTYLO    AW_START + 110
+#define SPECIES_FRACTYLO    AW_START + 111
+#define SPECIES_TOTULLY     AW_START + 112
+#define SPECIES_MONSTOXIN   AW_START + 113
+#define SPECIES_GEKOBOLD    AW_START + 114
+#define SPECIES_URDROWSY    AW_START + 115
+#define SPECIES_DRACOZY     AW_START + 116
+#define SPECIES_MOSSCREE    AW_START + 117
+#define SPECIES_MOSSTRATA   AW_START + 118
+#define SPECIES_MOSSTROMA     AW_START + 119
+#define SPECIES_TINYMPH     AW_START + 120
+#define SPECIES_NYMFOIL     AW_START + 121
+#define SPECIES_PHASMETAL   AW_START + 122
+#define SPECIES_STRIGILENT  AW_START + 123
+#define SPECIES_SOMNILUS    AW_START + 124
+#define SPECIES_CHIRURGE    AW_START + 125
+//TRIO 1                    AW_START + 126
+//TRIO 2                    AW_START + 127
+//TRIO 3                    AW_START + 128
+//DUO 1                     AW_START + 129
+//DUO 2                     AW_START + 130
+//MYTH 1                    AW_START + 131
+//MYTH 2                    AW_START + 132
+//MYTH 3                    AW_START + 133
+#define SPECIES_FORMANDALA  AW_START + 134
+//SOLO LEGEND               AW_START + 135
+//SOLO LEGEND               AW_START + 136
 
 // AW FORMS
 

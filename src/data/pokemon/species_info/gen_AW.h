@@ -502,6 +502,157 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
     },
 
     //
+
+    [SPECIES_TROPILOT] = 
+    {
+        .baseHP        = 40,
+        .baseAttack    = 55,
+        .baseDefense   = 45,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 51,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_GRASS),
+        .catchRate = 255,
+        .expYield = 58,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_INFILTRATOR},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Tropilot"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_TROPILOT, 
+        .categoryName = _("Propellor"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "As it drops from the treetops, the propellors\n"
+            "on its front spin at high speed, allowing it\n"
+            "to achieve powered flight. It uses this to\n"
+            "find a suitable home."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_PROPIARY}),
+    },
+
+    [SPECIES_PROPIARY] = 
+    {
+        .baseHP        = 55,
+        .baseAttack    = 70,
+        .baseDefense   = 57,
+        .baseSpeed     = 84,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
+        .catchRate = 255,
+        .expYield = 93,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_INFILTRATOR},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Propiary"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PROPIARY, 
+        .categoryName = _("Propellor"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            ""),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_JETIMBER}),
+    },
+
+    [SPECIES_JETIMBER] = 
+    {
+        .baseHP        = 70,
+        .baseAttack    = 83,
+        .baseDefense   = 70,
+        .baseSpeed     = 112,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
+        .catchRate = 255,
+        .expYield = 126,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = {ABILITY_CHLOROPHYLL, ABILITY_INFILTRATOR},
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Jetimber"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_JETIMBER, 
+        .categoryName = _("Stealth"),
+        .height = 0,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "Despite flying completely silently, they can\n"
+            "easily break the sound barrier. They drop many\n"
+            "Seed Bombs on anyone who invades its\n"
+            "territory - look out!"),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+    },
+
+    //
     
     [SPECIES_SIGNOLL] = 
     {
@@ -1109,6 +1260,58 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
     },
 
     //
+
+    //
+
+    [SPECIES_PINNAUGUR] = 
+    {
+        .baseHP        = 102,
+        .baseAttack    = 70,
+        .baseDefense   = 68,
+        .baseSpeed     = 83,
+        .baseSpAttack  = 91,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_WATER, TYPE_PSYCHIC),
+        .catchRate = 255,
+        .expYield = 190,
+        .evYield_HP = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
+        .abilities = {ABILITY_INTIMIDATE, ABILITY_SUCTION_CUPS},
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Pinnaugur"),
+        .cryId = CRY_NONE,
+        .natDexNum = NATIONAL_DEX_PINNAUGUR, 
+        .categoryName = _("Big Fin"),
+        .height = 80,
+        .weight = 0,
+        .description = COMPOUND_STRING(
+            "The mesmerising, changing patterns on its\n"
+            "huge fins are used to distract prey, while\n"
+            "its extremely long tentacles surround it\n"
+            "from all sides."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CircledQuestionMark,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_None,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CircledQuestionMark,
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,,
+        .palette = gMonPalette_CircledQuestionMark,
+        .shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_QuestionMark,
+        .iconPalIndex = 4,
+        .levelUpLearnset = sNoneLevelUpLearnset,
+        .teachableLearnset = sNoneTeachableLearnset,
+    },
 
     [SPECIES_SHARKELP] = 
     {
@@ -2473,9 +2676,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LICHEON})
+        .evolutions = EVOLUTION({EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_MOSSTROMA})
     },
-    [SPECIES_LICHEON] = 
+    [SPECIES_MOSSTROMA] = 
     {
         .baseHP        = 135,
         .baseAttack    = 90,
@@ -2494,9 +2697,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL,EGG_GROUP_GRASS),
         .abilities = {ABILITY_WATER_ABSORB},
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Licheon"),
+        .speciesName = _("MOSSTROMA"),
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_LICHEON, 
+        .natDexNum = NATIONAL_DEX_MOSSTROMA, 
         .categoryName = _("Unknown"),
         .height = 27,
         .weight = 0,
