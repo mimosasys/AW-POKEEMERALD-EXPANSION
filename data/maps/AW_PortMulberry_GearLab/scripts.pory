@@ -1,0 +1,266 @@
+mapscripts AW_PortMulberry_GearLab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: GearLab_HideGearObject
+    // MAP_SCRIPT_ON_FRAME_TABLE [
+    //     VAR_AW_PROGRESS_1, 5: GearLab_HideGearObject
+    // ]
+}
+
+script GearLab_HideGearObject {
+    hideobjectat(2,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+}
+
+script GearLab_WalkIntoMachine {
+    lockall
+    if (flag(FLAG_AW_HELP_GEAR)) {
+        msgbox(format(
+            "Gear: H-hey! I wouldn't go in there, if I were you!\p"
+            "Y'know, u-unless you really wanna..."
+        ))
+    } else {
+        applymovement(1,KirliaRunUp2)
+        waitmovement(0)
+        playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+        waitmoncry
+        applymovement(1,KirliaRunDown2)
+        waitmovement(0)
+        if (var(VAR_AW_PROGRESS_1)==6) {
+            msgbox(format(
+                "It seems that's not what Kirlia wants you to do..."
+            ))
+        } else {
+            msgbox(format(
+                "That Kirlia seems to want your attention..."
+            ))
+        }
+    }
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkDown1)
+    waitmovement(0)
+    releaseall
+}
+
+script GearLab_TalkToKirlia {
+    lockall
+    playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+    applymovement(1,Rival_JumpInPlace)
+    waitmovement(0)
+    msgbox(format("It seems this Kirlia is trying to tell you something...?"))
+    waitmessage
+    playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+    msgbox(format(
+        "Kirlia: ...\p"
+        "...\p"
+        "...!"
+        ))
+    waitmessage
+    hideobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+    playse(SE_M_TELEPORT)
+    waitse
+    setobjectxy(1,12,5)
+    showobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+    playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+    waitmoncry
+    applymovement(OBJ_EVENT_ID_PLAYER,PlayerFaceRightExclaimed)
+    waitmovement(0)
+    applymovement(1,KirliaSpin)
+    waitmovement(0)
+    applymovement(1,KirliaSpin)
+    waitmovement(0)
+    applymovement(1,KirliaGoToMachine)
+    waitmovement(0)
+    hideobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+    playse(SE_M_CHARGE)
+    waitse
+    msgbox(format("Could it have to do with that machine?"))
+    waitmessage
+    setvar(VAR_AW_PROGRESS_1,6)
+    releaseall
+}
+
+script GearLab_UseMachine {
+    lockall
+    if (flag(FLAG_AW_HELP_GEAR)) {
+        msgbox(format("A screen lit up saying 'Please do not push this button again.'"))
+        waitmessage
+    } else {
+        setflag(FLAG_AW_HELP_GEAR)
+        special(StopMapMusic)
+        playse(SE_CLICK)
+        waitse
+        playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+        waitmoncry
+        playse(SE_M_CHARGE)
+        waitse
+        playse(SE_M_COSMIC_POWER)
+        waitse
+        playse(SE_M_EXPLOSION)
+        waitse
+        playse(SE_DING_DONG)
+        waitse
+        clearflag(FLAG_AW_HIDE_GEAR)
+        setobjectxy(2,12,1)
+        showobjectat(2,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+        applymovement(2,GearLeaveMachine)
+        waitmovement(0)
+        msgbox(format(
+            "???: Ugh... What... was I doing?\p"
+            "...\p"
+            "...\p"
+            "...Uh, you didn't see any of that, did you?\p"
+            "...\p"
+            "Ah- I- I mean, that was, uh...\p"
+            "It... it worked?"
+            ))
+        waitmessage
+        applymovement(2,GearCheckPhone)
+        waitmovement(0)
+        msgbox(format(
+            "???: Oh, crud, 14 missed messages from Avery.\p"
+            "I hope he didn't want that communicator quickly..."
+            ))
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER,PlayerTalkUp)
+        waitmovement(0)
+        msgbox(format(
+            "???: H-He did?! And you're his new apprentice?!\p"
+            "Ohhh... Ohh, I am sooo done for... I'm sooo late..."
+            ))
+        waitmessage
+        playse(SE_POKENAV_CALL)
+        waitse
+        msgbox(format(
+            "???: AVERY! I- uh- mishaps at the lab- I'm so sorry-\p"
+            "...\p"
+            "...\p"
+            "...Oh. Oh, well... that's alright then...\p"
+            "Uh-huh...\p"
+            "Mm-hmm...\p"
+            "Phew, that's a relief...!"
+            ))
+        waitmessage
+        playse(SE_POKENAV_HANG_UP)
+        waitse
+        msgbox(format(
+            "???: Sooo... uhhh..."
+            ))
+        waitmessage
+        applymovement(2,GearMeetPlayer)
+        waitmovement(0)
+        msgbox(format(
+            "I'm Gear...! Nice to m-meet you?\p"
+            "S-so sorry about that... mess-up...\p"
+            "I got my machine working... but uh...\p"
+            "I couldn't exactly... uh...\p"
+            "...reach the switch to set it back... so um... yeah...\p"
+            "...\p"
+            "H-hey, uh, Avery said you could have this communicator thingo.\p"
+            "It's just over here... i-if you want it, I guess...\p"
+            "N-no pressure..."
+            ))
+        waitmessage
+        applymovement(2,GearGoToDesk)
+        applymovement(OBJ_EVENT_ID_PLAYER,PlayerFollowGear)
+        waitmovement(0)
+        msgbox(format(
+            "It's uh... It's just here...\p"
+            "Avery said you could have this one. It's just the spare I've been working on."
+            ))
+        waitmessage
+        setflag(FLAG_RECEIVED_POKENAV)
+        setflag(FLAG_SYS_POKENAV_GET)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox(format(
+            "{PLAYER} received the PokéNav!"
+            ))
+        waitfanfare
+        waitmessage
+        special(Overworld_PlaySpecialMapMusic)
+        msgbox(format(
+            "You can check a map of the region with it. And make and receive calls.\p"
+            "It's kinda archaic by today's standards, but that's why I'm working on it.\p"
+            "I work on software engineering and Pokémon genetics and communications and-"
+            "and lots of other things I like a lot and I think it's all really important and"
+            "...\p"
+            "S-sorry... I rambled again...\p"
+            "Just um... Show Avery the PokéNav, ok?\p"
+            "Catch you later... or maybe not... if you feel like it...\p"
+            "I'm always gonna be right here... I-in my lab... where I like it."
+            ))
+        waitmessage
+        waitmovement(0)
+        hideobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+        setobjectxyperm(2,3,5)
+        setvar(VAR_AW_PROGRESS_1,7)
+    }
+    releaseall
+}
+
+script GearLab_TalkToGear {
+    lockall
+    applymovement(1,FacePlayer)
+    releaseall
+}
+
+movement KirliaRunUp2 {
+    walk_fast_up*2
+    jump_in_place_left*3
+}
+movement KirliaRunDown2 {
+    walk_fast_down*2
+}
+
+movement WalkDown1 {
+    walk_down
+}
+
+movement KirliaSpin {
+    face_left
+    face_down
+    face_right
+    face_up
+    jump_in_place_up*2
+}
+
+movement KirliaGoToMachine {
+    walk_fast_right
+    walk_fast_up*2
+    walk_fast_left
+    walk_fast_up*2
+}
+
+movement PlayerFaceRightExclaimed {
+    face_right
+    emote_exclamation_mark
+}
+
+movement GearLeaveMachine {
+    walk_faster_down*2
+}
+
+movement GearCheckPhone {
+    face_right
+    walk_in_place_right*4
+}
+
+movement PlayerTalkUp {
+    walk_in_place_up*3
+}
+
+movement GearMeetPlayer {
+    walk_fast_right
+    walk_fast_down*2
+    face_player
+}
+
+movement GearGoToDesk {
+    walk_down*2
+    walk_left*10
+    walk_up*2
+    face_left
+}
+
+movement PlayerFollowGear {
+    walk_right
+    walk_down*2
+    walk_left*10
+    walk_up
+}

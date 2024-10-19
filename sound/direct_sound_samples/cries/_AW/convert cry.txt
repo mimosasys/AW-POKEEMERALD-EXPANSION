@@ -1,0 +1,1 @@
+ffmpeg -i sound/direct_sound_samples/cries/_AW/armanova.mp3 -c:a pcm_s8 -ac 1 -ar 13379 sound/direct_sound_samples/cries/_AW/armanova.aif

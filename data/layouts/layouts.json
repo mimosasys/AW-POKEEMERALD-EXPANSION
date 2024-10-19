@@ -4474,7 +4474,7 @@
     {
       "id": "LAYOUT_AW_PUCE_LAKE",
       "name": "AW_PuceLake_Layout",
-      "width": 64,
+      "width": 70,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mossdeep",
@@ -4500,6 +4500,36 @@
       "secondary_tileset": "gTileset_Mossdeep",
       "border_filepath": "data/layouts/AW_Route110_Path/border.bin",
       "blockdata_filepath": "data/layouts/AW_Route110_Path/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_PORT_MULBERRY_GEAR_LAB",
+      "name": "AW_PortMulberry_GearLab_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/AW_PortMulberry_GearLab/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PortMulberry_GearLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_PUCE_CITY_GYM",
+      "name": "AW_PuceCity_Gym_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Unused2",
+      "border_filepath": "data/layouts/AW_PuceCity_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PuceCity_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_TEST_AREA1",
+      "name": "AW_TestArea1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/AW_TestArea1/border.bin",
+      "blockdata_filepath": "data/layouts/AW_TestArea1/map.bin"
     }
   ]
 }

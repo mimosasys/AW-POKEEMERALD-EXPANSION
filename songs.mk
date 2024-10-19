@@ -1256,3 +1256,15 @@ $(MID_SUBDIR)/aw_mus_battle_rival.s: %.s: %.mid
 
 $(MID_SUBDIR)/aw_mus_puce_city.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_puce_lake.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_opening.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_battle_trainer.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_port_mulberry.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120

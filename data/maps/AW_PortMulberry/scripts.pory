@@ -1,0 +1,23 @@
+mapscripts AW_PortMulberry_MapScripts {
+
+}
+
+script PortMulberry_LeaveLab {
+    lockall
+    pokenavcall(format(
+        "Avery: {PLAYER}! That you? Looks like you got the PokéNav, then. Good job!\p"
+        "You met Gear, then? They've been a good friend of mine for years.\p"
+        "Their knowledge in Pokémon DNA is unmatched. Though they do tend to be a bit... anxious?\p"
+        "Anyway, Carla and I are heading off to Puce Lake. There's already a few people there, and apparently we're onto something big.\p"
+        "Feel free to look around the place before coming around. I'll show you the ropes when you get here, so to speak.\p"
+        "Okay, {PLAYER}, see you soon!"
+    ))
+    waitmessage
+    setvar(VAR_AW_PROGRESS_1,8)
+    setflag(FLAG_AW_VISIT_MULBERRY)
+    setflag(FLAG_AW_HIDE_CARLA_AVERY)
+    setflag(FLAG_AW_HIDE_MIKE_1)
+    setflag(FLAG_AW_HIDE_MIKE_2)
+    setflag(FLAG_AW_HIDE_MIKE_3)
+    releaseall
+}

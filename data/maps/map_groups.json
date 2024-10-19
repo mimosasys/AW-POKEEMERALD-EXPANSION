@@ -51,10 +51,13 @@
   ],
   "gMapGroup_AW_Indoors": [
     "AW_ErinVillage_YourHouse",
-    "AW_Route108_Laboratory"
+    "AW_Route108_Laboratory",
+    "AW_PortMulberry_GearLab",
+    "AW_PuceCity_Gym"
   ],
   "gMapGroup_AW_Misc": [
-    "AW_PuceLake"
+    "AW_PuceLake",
+    "AW_TestArea1"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

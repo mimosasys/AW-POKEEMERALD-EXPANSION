@@ -618,6 +618,10 @@ gSongTable::
 	song aw_mus_laboratory, 0, 0
 	song aw_mus_battle_rival, 0, 0
 	song aw_mus_puce_city, 0, 0
+	song aw_mus_puce_lake, 0, 0
+	song aw_mus_opening, 0, 0
+	song aw_mus_battle_trainer, 0, 0
+	song aw_mus_port_mulberry, 0, 0
 
 	.align 2
 dummy_song_header:

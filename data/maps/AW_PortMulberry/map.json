@@ -2,7 +2,7 @@
   "id": "MAP_AW_PORT_MULBERRY",
   "name": "AW_PortMulberry",
   "layout": "LAYOUT_AW_PORT_MULBERRY",
-  "music": "MUS_DUMMY",
+  "music": "AW_MUS_PORT_MULBERRY",
   "region_map_section": "MAPSEC_AW_PORT_MULBERRY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -23,10 +23,24 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_AW_PORT_MULBERRY_GEAR_LAB",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "7",
+      "script": "PortMulberry_LeaveLab"
+    }
   ],
   "bg_events": [
 

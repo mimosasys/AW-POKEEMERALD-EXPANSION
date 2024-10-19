@@ -6162,6 +6162,19 @@ Cry_Alpachrome::
 	.incbin "sound/direct_sound_samples/cries/_AW/alpachrome.bin"
 Cry_Llamalloy::
 	.incbin "sound/direct_sound_samples/cries/_AW/llamalloy.bin"
+Cry_Smackop::
+	.incbin "sound/direct_sound_samples/cries/_AW/smackop.bin"
+@ Cry_Storkick::
+@ 	.incbin "sound/direct_sound_samples/cries/_AW/storkick.bin"
+Cry_Phorusmash::
+	.incbin "sound/direct_sound_samples/cries/_AW/phorusmash.bin"
+Cry_Puppixy::
+	.incbin "sound/direct_sound_samples/cries/_AW/puppixy.bin"
+Cry_Faerdillo::
+	.incbin "sound/direct_sound_samples/cries/_AW/faerdillo.bin"
+Cry_Armanova::
+	.incbin "sound/direct_sound_samples/cries/_AW/armanova.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

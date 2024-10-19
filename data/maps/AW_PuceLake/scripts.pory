@@ -1,0 +1,364 @@
+mapscripts AW_PuceLake_MapScripts {
+
+}
+
+script PuceLake_MeetAvery {
+    lockall
+    msgbox(format(
+        "Carla: Hey, {PLAYER}! I knew you'd show up!"
+        ))
+    waitmessage
+    closemessage
+    applymovement(4,PuceLake_CarlaGotoPlayer)
+    applymovement(5,PuceLake_AveryGotoPlayer)
+    waitmovement(5)
+    msgbox(format(
+        "Avery: Gear's quite a character, aren't they? I'm glad they're safe.\p"
+        "Well, this is Puce Lake. The lake itself is just around this path here, it's not far.\p"
+        "It's quite a lovely place, actually. I come here to wind down after a hard day working!"
+        ))
+    waitmessage
+    applymovement(4,WalkUpSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Carla: Avery, I haven't seen you leave the lab unless it's for an expedition.\p"
+        "I wish you came here to wind down, you need it. You work yourself to the bone."
+        ))
+    waitmessage
+    applymovement(5,WalkDownSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Avery: It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
+        "Not with Team Jade about. They'll try steal our research again."
+        ))
+    waitmessage
+    applymovement(4,FaceRight)
+    applymovement(5,FaceRight)
+    msgbox(format(
+        "Avery: Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
+        "They've been around for a few years, and they've had a few successes, too.\p"
+        "It's really set us back a lot. That's part of the reason we're so short-staffed. So many of them have just... given up, really.\p"
+        "But I'm not giving up. I don't care if we have funding or not. I'm going to uncover the history of this region."
+        ))
+    waitmessage
+    applymovement(4,WalkRightSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Carla: ...You can tell he's really passionate about this, can't you?\p"
+        "Um, we'll head on down to the lakeside. You'll see the dig site on the south side.\p"
+        "I'll give you the tour once we're there! I hope you're excited to see it!"
+        ))
+    waitmessage
+    applymovement(5,WalkRightSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Avery: Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
+        ))
+    waitmessage
+    applymovement(4,PuceLake_CarlaLeavePlayer1)
+    applymovement(5,PuceLake_AveryLeavePlayer)
+    waitmovement(5)
+    applymovement(4,FaceRight)
+    waitmovement(0)
+    msgbox(format(
+        "Carla: Uh, I don't mean to alarm you, but..."
+        ))
+    waitmessage
+    special(Script_FadeOutMapMusic)
+    msgbox(format(    
+        "There's a boy behind you who's been staring at you this whole time.\p"
+        "Do you know him?"
+        ))
+    waitmessage
+    closemessage
+    applymovement(4,PuceLake_CarlaLeavePlayer2)
+    waitmovement(0)
+    setobjectxy(4,36,23)
+    setobjectxy(5,33,23)
+
+    special(SpawnCameraObject)
+    clearflag(FLAG_AW_HIDE_MIKE_1)
+    applymovement(6,FaceLeft)
+    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
+    applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookRight3)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: ...{PLAYER}?"
+        ))
+    waitmessage
+    closemessage
+    applymovement(6,PuceLake_MikeGotoPlayer)
+    waitmovement(0)
+    if (var(VAR_TEMP_0) == 0) {
+        applymovement(6,PuceLake_MikeGotoPlayer2)
+    } else {
+        applymovement(6,PuceLake_MikeGotoPlayer3)
+    }
+    applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookLeft3)
+    waitmovement(0)
+    special(RemoveCameraObject)
+    msgbox(format(
+        "Mike: {PLAYER}! O-oh my goodness! I- I thought- I thought you'd...\p"
+        "I- I'm so glad you're alright!\p"
+        "I thought I was going to die... and then this Pokémon swooped out of nowhere and saved me!\p"
+        "When I woke up, I was in some laboratory, and this guy -\p"
+        "Professor Conifer, that's his name -\p"
+        "He made sure I was ok...\p"
+        "I- I mean, I'm still a bit bruised, but..."
+        ))
+    waitmessage
+    applymovement(6,EmoteExclamationMark)
+    waitmovement(0)
+    msgbox(format(
+        "N- no way! That's what happened to you, too?!\p"
+        "..."
+        ))
+    waitmessage
+    applymovement(6,LookDown)
+    waitmovement(0)
+    msgbox(format(
+        "That must have been him, then..."
+    ))
+    waitmessage
+    special(Overworld_PlaySpecialMapMusic)
+    applymovement(6,FaceLeft)
+    waitmovement(0)
+    msgbox(format(
+        "U- uh... Anyway!\p"
+        "Let's walk together, ok? Take in the lakeside air!"
+    ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
+    applymovement(6,WalkLeft1)
+    waitmovement(0)
+    msgbox(format(
+        "Ow, on second thoughts, you go on ahead. My legs are still hurting...\p"
+        "I'll catch up, ok?"
+    ))
+    waitmessage
+    releaseall
+}
+
+script PuceLake_DontLeaveYet1 {
+    lockall
+    applymovement(6,WalkLeftSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: {PLAYER}? Come on, you go ahead.\p"
+        "...My legs just hurt, that's all. I'll catch up."
+    ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
+    waitmovement(0)
+    releaseall
+}
+
+script PuceLake_MikeTalk {
+    lockall
+    removeobject(6,MAP_AW_PUCE_LAKE)
+    clearflag(FLAG_AW_HIDE_MIKE_2)
+    applymovement(10,PuceLake_MikeGotoPlayer4)
+    waitmovement(0)
+    if (var(VAR_TEMP_2)==0) {
+        applymovement(10,PuceLake_MikeGotoPlayer5)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
+    } else {
+        applymovement(10,PuceLake_MikeGotoPlayer6)
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
+    }
+    msgbox(format(
+        "Mike: Phew! Made it!\p"
+        "Gah... now my legs hurt again... I'm gonna rest for a bit...\p"
+        "Wanna talk?\p"
+        "I uh... When I got saved by that professor, he told me some things.\p"
+        "He said that there's this other professor named Fern, and they're enemies.\p"
+        "That's... that's the professor that saved you, isn't it?\p"
+        "Just um... be careful around him, ok?\p"
+        "Milo - that's Professor Conifer - doesn't trust him, and he told me not to either.\p"
+        "He sounds pretty shady... he said they used to be close, but...\p"
+        "They haven't talked in years, and now they're enemies.\p"
+        "I wonder what happened between them?\p"
+        "...\p"
+        "You keep going ahead, ok?\p"
+        "My legs still need a bit more time, hah..."
+    ))    
+    waitmessage
+    setflag(FLAG_AW_HIDE_MIKE_3)
+    showobjectat(4,MAP_AW_PUCE_LAKE)
+    showobjectat(5,MAP_AW_PUCE_LAKE)
+    releaseall
+}
+
+script PuceLake_DontLeaveYet2 {
+    lockall
+    applymovement(10,WalkLeftSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: I'm alright, {PLAYER}, don't worry.\p"
+        "I'll catch up!"
+    ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
+    waitmovement(0)
+    releaseall
+}
+
+script PuceLake_Trigger1_Upper {
+    setvar(VAR_TEMP_0,0)
+    if (var(VAR_TEMP_1)==0) {
+        call(PuceLake_MeetAvery)
+        setvar(VAR_TEMP_1,1)
+    } else {
+        call(PuceLake_DontLeaveYet1)
+    }
+}
+
+script PuceLake_Trigger1_Lower {
+    setvar(VAR_TEMP_0,1)
+    if (var(VAR_TEMP_1)==0) {
+        call(PuceLake_MeetAvery)
+        setvar(VAR_TEMP_1,1)
+    } else {
+        call(PuceLake_DontLeaveYet1)
+    }
+}
+
+script PuceLake_Trigger2_Upper {
+    setvar(VAR_TEMP_2,0)
+    if (var(VAR_TEMP_1)==1) {
+        call(PuceLake_MikeTalk)
+        setvar(VAR_TEMP_1,2)
+    } else {
+        call(PuceLake_DontLeaveYet2)
+    }    
+}
+
+script PuceLake_Trigger2_Lower {
+    setvar(VAR_TEMP_2,1)
+    if (var(VAR_TEMP_1)==1) {
+        call(PuceLake_MikeTalk)
+        setvar(VAR_TEMP_1,2)
+    } else {
+        call(PuceLake_DontLeaveYet2)
+    }  
+}
+
+script PuceLake_Trainer_SchoolgirlJessy {
+    trainerbattle_single(TRAINER_JESSY,SchoolgirlJessyIntro,SchoolgirlJessyOutro)
+    end
+}
+
+script PuceLake_Trainer_YoungsterTyler {
+    trainerbattle_single(TRAINER_TYLER,YoungsterTylerIntro,YoungsterTylerOutro)
+    end
+}
+
+script PuceLake_Trainer_LassAdela {
+    trainerbattle_single(TRAINER_ADELA,LassAdelaIntro,LassAdelaOutro)
+    end
+}
+
+text SchoolgirlJessyIntro {
+    format(
+        "Um... hi! It's my first battle, so go easy on me!"
+    )
+}
+
+text SchoolgirlJessyOutro {
+    format(
+        "That was your first battle, too? So cool!"
+    )
+}
+
+text YoungsterTylerIntro {
+    format(
+        "Hey! You got Pokémon? Let's battle! I'll win!"
+    )
+}
+
+text YoungsterTylerOutro {
+    format(
+        "Aw, you're good..."
+    )
+}
+
+text LassAdelaIntro {
+    format(
+        "The lakeside is so calming... Gah! A trainer!"
+    )
+}
+
+text LassAdelaOutro {
+    format(
+        "Sigh, back to enjoying the view..."
+    )
+}
+
+movement PuceLake_CarlaGotoPlayer {
+    walk_up*6
+    face_right
+}
+
+movement PuceLake_AveryGotoPlayer {
+    walk_up*7
+    walk_right
+}
+
+movement WalkDownSpot {
+    walk_in_place_down*2
+}
+
+movement PuceLake_AveryLeavePlayer {
+    walk_left
+    walk_down*7
+}
+
+movement PuceLake_CarlaLeavePlayer1 {
+    face_left
+}
+
+movement PuceLake_CarlaLeavePlayer2 {
+    walk_down*6
+}
+
+movement PuceLake_MikeGotoPlayer {
+    walk_slow_left*2
+    walk_left*2
+}
+
+movement PuceLake_MikeGotoPlayer2 {
+    walk_fast_down
+    walk_fast_left*3
+}
+
+movement PuceLake_MikeGotoPlayer3 {
+    walk_fast_down*2
+    walk_fast_left*3
+}
+
+movement PuceLake_MikeGotoPlayer4 {
+    walk_down*3
+    walk_left*2
+    walk_down
+    walk_left
+    walk_down
+}
+
+movement PuceLake_MikeGotoPlayer5 {
+    walk_left
+    face_down
+}
+
+movement PuceLake_MikeGotoPlayer6 {
+    walk_down
+}
+
+movement FaceLeft {
+    face_left
+}
+
+movement WalkLeft1 {
+    walk_left
+}

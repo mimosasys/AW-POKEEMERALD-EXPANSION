@@ -2428,6 +2428,12 @@ gCryTable::
 	cry Cry_Alpacoil
 	cry Cry_Alpachrome
 	cry Cry_Llamalloy
+	cry Cry_Smackop
+	@ cry Cry_Storkick
+	cry Cry_Phorusmash
+	cry Cry_Puppixy
+	cry Cry_Faerdillo
+	cry Cry_Armanova
 
 	.align 2
 gCryTable_Reverse::
@@ -4859,3 +4865,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Alpacoil
 	cry_reverse Cry_Alpachrome
 	cry_reverse Cry_Llamalloy
+	cry_reverse Cry_Smackop
+	@ cry_reverse Cry_Storkick
+	cry_reverse Cry_Phorusmash
+	cry_reverse Cry_Puppixy
+	cry_reverse Cry_Faerdillo
+	cry_reverse Cry_Armanova

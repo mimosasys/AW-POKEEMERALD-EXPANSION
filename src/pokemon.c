@@ -121,6 +121,9 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(FAERDILLO),
     HOENN_TO_NATIONAL(ARMANOVA),
     //
+    HOENN_TO_NATIONAL(SKUARCTIC),
+    HOENN_TO_NATIONAL(SKUINDLE),
+    HOENN_TO_NATIONAL(ALBURGLE),
     HOENN_TO_NATIONAL(DODUO),
     HOENN_TO_NATIONAL(DODRIO),
     HOENN_TO_NATIONAL(PURRLOIN),
@@ -131,9 +134,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(TROPILOT),
     HOENN_TO_NATIONAL(PROPIARY),
     HOENN_TO_NATIONAL(JETIMBER),
-    HOENN_TO_NATIONAL(CLIPPEP),
-    HOENN_TO_NATIONAL(ZIPPINCH),
-    HOENN_TO_NATIONAL(GUSTOLOCK),
+    //
     HOENN_TO_NATIONAL(TERMEET),
     HOENN_TO_NATIONAL(CLUSTERM),
     HOENN_TO_NATIONAL(TERMANATE),
@@ -5359,7 +5360,7 @@ u16 GetBattleBGM(void)
         }
     }
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
-        return MUS_VS_TRAINER;
+        return AW_MUS_BATTLE_TRAINER;
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u8 trainerClass;
@@ -5389,7 +5390,7 @@ u16 GetBattleBGM(void)
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return AW_MUS_BATTLE_RIVAL;
             if (!StringCompare(GetTrainerNameFromId(gTrainerBattleOpponent_A), gText_BattleWallyName))
-                return MUS_VS_TRAINER;
+                return AW_MUS_BATTLE_TRAINER;
             return AW_MUS_BATTLE_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
@@ -5402,7 +5403,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_TRAINER;
+            return AW_MUS_BATTLE_TRAINER;
         }
     }
     else

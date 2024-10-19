@@ -1089,3 +1089,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AW_Route110_Forest/scripts.inc"
 
 	.include "data/maps/AW_Route110_Path/scripts.inc"
+
+	.include "data/maps/AW_PortMulberry_GearLab/scripts.inc"
+
+	.include "data/maps/AW_PuceCity_Gym/scripts.inc"
+
+	.include "data/maps/AW_TestArea1/scripts.inc"

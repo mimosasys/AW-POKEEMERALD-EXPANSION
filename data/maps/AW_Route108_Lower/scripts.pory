@@ -2,16 +2,18 @@ mapscripts AW_Route108_Lower_MapScripts {
     // MAP_SCRIPT_ON_TRANSITION: Route108_HideOrShowTruck
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_AW_PROGRESS_1, 4: Route108_Lower_Transition
+        // VAR_AW_PROGRESS_1, 5: Route108_HideOrShowTruck
     ]
 }
 
 script Route108_HideOrShowTruck {
-    if (flag(FLAG_AW_VISIT_MULBERRY) == FALSE) {
+    if (flag(FLAG_AW_HELP_GEAR) == FALSE) {
         setmetatile(8,34,0x1D8,TRUE)
         setmetatile(8,35,0x1D8,TRUE)
         setmetatile(9,34,0x1D9,TRUE)
         setmetatile(10,34,0x1D2,TRUE)
         setmetatile(10,35,0x1E2,TRUE)
+        releaseall
     }
 }
 
@@ -34,7 +36,7 @@ script Route108_Lower_Transition {
         "Fern: Well, {PLAYER}, this is Route 108.\p"
     ))
     waitmessage
-    applymovement(2,LookRight)
+    applymovement(2,FaceRight)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookRight3)
     waitmovement(0)
     message(format(
@@ -95,8 +97,9 @@ script Route108_Lower_Transition {
         applymovement(3,Carla_GoToPlayer2)
         applymovement(2,Professor_GoToPlayer)
         special(HealPlayerParty)
+
         message(format(
-           "Carla: Hey! Nice job, good catch!\p"
+           "Carla: Hey! Nice job, good catch!\pIf you like, bring them on your travels with you, or you can put them in the PC for storage.\p"
         ))
         waitmessage
     } elif (var(VAR_RESULT) == B_OUTCOME_WON) {
@@ -147,32 +150,36 @@ script Route108_Lower_Transition {
     message(format(
         "Fern: ...! Oh! Well, thanks, {PLAYER}! It really will be such a big help for us!\p"
         "Actually, there's something that would be a big help already.\p"
-        "A friend of mine, an inventor called Gear lives in Port Mulberry, and he's been fixing up a communication device for me.\p"
+        "A friend of mine, an inventor called Gear lives in Port Mulberry, and they've been fixing up a communication device for me.\p"
+        "And, well, they're not picking up their phone. I hope nothing's happened to them.\p"
         "They live in a big building up on the rocks. You can't miss it.\p"
-        "I'd go and get it myself, but we're already in a big rush to get ready for our next dig site at Puce Lake.\p"
-        "Could you go get that for us? It would be such a big help. I'll work out some sort of reward, don't worry.\p"
+        "I'd go and get the device myself, but we're already in a rush to get ready for our next expedition to Puce Lake.\p"
+        "Could you go get that for us? I'll work out some sort of reward, don't worry.\p"
         "Port Mulberry is just to the east of here, if you recall. Come back to the lab when you get the device!\p"
     ))
     waitmessage
     applymovement(3,Carla_BackToLab)
     applymovement(2,Professor_BackToLab)
+    waitmovement(0)
     message(format(
         "Fern: See you round, {PLAYER}!\p"
     ))
+    waitmessage
     message(format(
         "Carla: Catch lots of Pokémon! And be nice to yours, ok?\p"
     ))
     waitmessage
     applymovement(2,Professor_BackToLab2)
     applymovement(3,Carla_BackToLab2)
-    waitmovement(0)
-    hideobjectat(2,MAP_AW_ROUTE108_LOWER)
-    hideobjectat(3,MAP_AW_ROUTE108_LOWER)
+    waitmovement(2)
+    waitmovement(3)
     removeobject(2)
     removeobject(3)
-    setvar(VAR_AW_PROGRESS_1,5)
     setflag(FLAG_AW_FINISH_TUT)
+    setflag(FLAG_AW_HIDE_GEAR)
+    setvar(VAR_AW_PROGRESS_1,5)
     releaseall
+    release
 }
 
 script YouCantParkThere {
@@ -216,8 +223,9 @@ script YouCantParkThere {
     } else {
         applymovement(9,FacePlayer)
         message(format(
-            "Well, lucky for you, that guy moved his truck, finally.\p"
-            "What a doofus.\p"
+            "Well, lucky for you, there's nothing in the way, finally.\p"
+            "What a doofus, parking your truck in the way like that.\p"
+            "How'd he even get it here?"
         ))
         waitmessage
         applymovement(9,FaceOriginalDirection)
@@ -254,7 +262,7 @@ movement WalkUpSpot {
     walk_in_place_up*2
 }
 
-movement LookRight {
+movement FaceRight {
     face_right
 }
 

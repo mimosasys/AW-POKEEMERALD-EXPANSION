@@ -1,0 +1,26 @@
+mapscripts AW_PuceCity_MapScripts {
+
+}
+
+script PuceCity_Artist {
+    lockall
+    applymovement(3,EmoteExclamationMark)
+    waitmovement(0)
+    msgbox(format(
+        "Ah! No, no, no!\p"
+        "Please, don't go past! I am making a magnificent artwork!\p"
+        "I need complete stillness... No passers-by! Back you go!"
+        ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkUp1)
+    waitmovement(0)
+    releaseall
+}
+
+movement EmoteExclamationMark {
+    emote_exclamation_mark
+}
+
+movement WalkUp1 {
+    walk_up
+}

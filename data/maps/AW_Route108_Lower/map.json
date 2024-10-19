@@ -140,7 +140,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "YouCantParkThere",
-      "flag": "0"
+      "flag": "FLAG_AW_VISIT_MULBERRY"
     }
   ],
   "warp_events": [
@@ -148,7 +148,7 @@
       "x": 8,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_DYNAMIC",
+      "dest_map": "MAP_AW_ROUTE108_LABORATORY",
       "dest_warp_id": "0"
     }
   ],
