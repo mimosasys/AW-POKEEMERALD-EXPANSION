@@ -622,6 +622,7 @@ gSongTable::
 	song aw_mus_opening, 0, 0
 	song aw_mus_battle_trainer, 0, 0
 	song aw_mus_port_mulberry, 0, 0
+	song aw_mus_battle_gym, 0, 0
 
 	.align 2
 dummy_song_header:

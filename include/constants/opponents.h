@@ -11,11 +11,11 @@
 #define TRAINER_TYLER                         2
 #define TRAINER_ADELA                         3
 #define TRAINER_JADEGRUNT_PUCE_LAKE_1         4
+#define TRAINER_RIVAL_PUCELAKE_ALPACOIL       5
+#define TRAINER_RIVAL_PUCELAKE_SMACKOP        6
+#define TRAINER_RIVAL_PUCELAKE_PUPPIXY        7
 
 //
-#define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
 #define TRAINER_GABRIELLE_1                   9
 #define TRAINER_GRUNT_PETALBURG_WOODS        10

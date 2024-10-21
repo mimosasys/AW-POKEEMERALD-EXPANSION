@@ -30,24 +30,36 @@ static const struct TrainerMon sParty_JadeGruntPuceLake1[] = {
     },
 };
 
-static const struct TrainerMon sParty_GruntAquaHideout4[] = {
+static const struct TrainerMon sParty_Rival_PuceLake_Alpacoil[] = {
     {
-    .lvl = 32,
-    .species = SPECIES_CARVANHA,
+    .lvl = 4,
+    .species = SPECIES_PURRLOIN,
+    },
+    {
+    .lvl = 5,
+    .species = SPECIES_SMACKOP,
     }
 };
 
-static const struct TrainerMon sParty_GruntSeafloorCavern1[] = {
+static const struct TrainerMon sParty_Rival_PuceLake_Smackop[] = {
     {
-    .lvl = 36,
-    .species = SPECIES_POOCHYENA,
+    .lvl = 4,
+    .species = SPECIES_PURRLOIN,
+    },
+    {
+    .lvl = 5,
+    .species = SPECIES_PUPPIXY,
     }
 };
 
-static const struct TrainerMon sParty_GruntSeafloorCavern2[] = {
+static const struct TrainerMon sParty_Rival_PuceLake_Puppixy[] = {
+        {
+    .lvl = 4,
+    .species = SPECIES_PURRLOIN,
+    },
     {
-    .lvl = 36,
-    .species = SPECIES_CARVANHA,
+    .lvl = 5,
+    .species = SPECIES_ALPACOIL,
     }
 };
 

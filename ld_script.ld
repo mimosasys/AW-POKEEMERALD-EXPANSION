@@ -1273,6 +1273,7 @@ SECTIONS {
         sound/songs/midi/aw_mus_opening.o(.rodata);
         sound/songs/midi/aw_mus_battle_trainer.o(.rodata);
         sound/songs/midi/aw_mus_port_mulberry.o(.rodata);
+        sound/songs/midi/aw_mus_battle_gym.o(.rodata);
     } > ROM =0
 
     lib_rodata :

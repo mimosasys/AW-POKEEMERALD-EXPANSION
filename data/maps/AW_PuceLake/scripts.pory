@@ -4,6 +4,7 @@ mapscripts AW_PuceLake_MapScripts {
 
 script PuceLake_MeetAvery {
     lockall
+    setvar(VAR_AW_PROGRESS_2,1)
     msgbox(format(
         "Carla: Hey, {PLAYER}! I knew you'd show up!"
         ))
@@ -64,7 +65,7 @@ script PuceLake_MeetAvery {
         "Carla: Uh, I don't mean to alarm you, but..."
         ))
     waitmessage
-    special(Script_FadeOutMapMusic)
+    fadeoutbgm(1)
     msgbox(format(    
         "There's a boy behind you who's been staring at you this whole time.\p"
         "Do you know him?"
@@ -73,8 +74,6 @@ script PuceLake_MeetAvery {
     closemessage
     applymovement(4,PuceLake_CarlaLeavePlayer2)
     waitmovement(0)
-    setobjectxy(4,36,23)
-    setobjectxy(5,33,23)
 
     special(SpawnCameraObject)
     clearflag(FLAG_AW_HIDE_MIKE_1)
@@ -107,6 +106,7 @@ script PuceLake_MeetAvery {
         "I- I mean, I'm still a bit bruised, but..."
         ))
     waitmessage
+    closemessage
     applymovement(6,EmoteExclamationMark)
     waitmovement(0)
     msgbox(format(
@@ -114,13 +114,15 @@ script PuceLake_MeetAvery {
         "..."
         ))
     waitmessage
+    closemessage
     applymovement(6,LookDown)
     waitmovement(0)
     msgbox(format(
         "That must have been him, then..."
     ))
     waitmessage
-    special(Overworld_PlaySpecialMapMusic)
+    fadeinbgm(1)
+    closemessage
     applymovement(6,FaceLeft)
     waitmovement(0)
     msgbox(format(
@@ -128,6 +130,7 @@ script PuceLake_MeetAvery {
         "Let's walk together, ok? Take in the lakeside air!"
     ))
     waitmessage
+    closemessage
     applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
     applymovement(6,WalkLeft1)
     waitmovement(0)
@@ -136,27 +139,22 @@ script PuceLake_MeetAvery {
         "I'll catch up, ok?"
     ))
     waitmessage
-    releaseall
-}
 
-script PuceLake_DontLeaveYet1 {
-    lockall
-    applymovement(6,WalkLeftSpot)
-    waitmovement(0)
-    msgbox(format(
-        "Mike: {PLAYER}? Come on, you go ahead.\p"
-        "...My legs just hurt, that's all. I'll catch up."
-    ))
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
-    waitmovement(0)
+    setobjectxyperm(4,33,23)
+    setobjectxyperm(5,30,23)
     releaseall
+    end
 }
 
 script PuceLake_MikeTalk {
-    lockall
+    setvar(VAR_AW_PROGRESS_2,1)
     removeobject(6,MAP_AW_PUCE_LAKE)
+    setflag(FLAG_AW_HIDE_MIKE_1)
     clearflag(FLAG_AW_HIDE_MIKE_2)
+    setobjectxyperm(10,56,24)
+    showobjectat(10,MAP_AW_PUCE_LAKE)
+
+    lockall
     applymovement(10,PuceLake_MikeGotoPlayer4)
     waitmovement(0)
     if (var(VAR_TEMP_2)==0) {
@@ -185,9 +183,132 @@ script PuceLake_MikeTalk {
         "My legs still need a bit more time, hah..."
     ))    
     waitmessage
-    setflag(FLAG_AW_HIDE_MIKE_3)
-    showobjectat(4,MAP_AW_PUCE_LAKE)
-    showobjectat(5,MAP_AW_PUCE_LAKE)
+    releaseall
+    end
+}
+
+script PuceLake_MeetCarla {
+    setvar(VAR_AW_PROGRESS_2,2)
+    setflag(FLAG_AW_HIDE_MIKE_2)
+    clearflag(FLAG_AW_HIDE_MIKE_3)
+    showobjectat(11,MAP_AW_PUCE_LAKE)
+    showobjectat(12,MAP_AW_PUCE_LAKE)
+    showobjectat(13,MAP_AW_PUCE_LAKE)
+
+    lockall
+    applymovement(4,WalkRightSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Carla: Ah, there you are, {PLAYER}! How was the walk?\p"
+        "Let me heal up that team of yours!"
+    ))
+    waitmessage
+    closemessage
+    special(HealPlayerParty)
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeftSpot)
+    msgbox(format(
+        "Who was that guy, by the way?\p"
+        "Oh, a friend of yours? Neat!\p"
+        "Looks like he's caught up with you. I'll say hi!"
+    ))
+    waitmessage
+    closemessage
+    
+    applymovement(11,PuceLake_MikeGotoPlayer7)
+    waitmovement(0)
+    if (var(VAR_TEMP_3)==0) {
+        applymovement(11,PuceLake_MikeGotoPlayer8)
+        waitmovement(0)
+    } else {
+        applymovement(11,PuceLake_MikeGotoPlayer9)
+        waitmovement(0)
+    }
+
+    msgbox(format(
+        "Carla: Hi! You must be {PLAYER}'s friend, right?"
+    ))
+    waitmessage
+    closemessage
+    applymovement(11,WalkLeftSpot)
+    waitmovement(0)
+
+    msgbox(format(
+        "Mike: H-hi ma'am... Y-yes, that's right.\p"
+        "Carla: Oh, don't be so formal, it's alright!"
+        "I'm the assistant to Professor Avery Fern. He's an archaeologist from around here.\p"
+        "Mike: Y-you're -\p"
+        "Carla: And {PLAYER} here is helping out too! Avery asked her to help out with this dig site! Ain't that exciting?"
+    ))
+    waitmessage
+    closemessage
+    fadeoutbgm(1)
+    delay(30)
+    applymovement(11,LookUp)
+    delay(30)
+    msgbox(format(
+        "Mike: {PLAYER}...? Y-you're helping him?\p"
+        "He's shady! No good! That's what Conifer told me!\p"
+        "I... What do I do?!"
+    ))
+    waitmessage
+    playbgm(MUS_ENCOUNTER_AQUA,FALSE)
+    applymovement(12,PuceLake_Grunt1Enter)
+    applymovement(13,PuceLake_Grunt1Enter)
+    waitmovement(13)
+    msgbox(format(
+        "Jade Grunt 1: Ha-HA! Knew we'd find you lot here.\p"
+        "Finding another important site, taking the contents for yourself...\p"
+        "Jade Grunt 2: We simply won't let you! This site belongs to Team Jade!"
+    ))
+    waitmessage
+    applymovement(11,WalkRightSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: You guys..! You came!\p"
+        "Grunt 1: Yes, yes, we heard, Mikey.\p"
+        "Carla: Team Jade! How did I know you guys would show up?\p"
+        "{PLAYER}, it seems your friend here is with those Jade guys. That's not good for us.\p"
+        "Grunt 1: Listen here - what do you do with people standing in your way?\p"
+        "Mike: ...?\p"
+        "Grunt 2: You challenge them to a battle! The prof did give you a Pokémon, right?\p"
+        "Mike: Y-yeah!\p"
+        "Grunt 1: We'll deal with the assistant, you deal with the kid. Got it?\p"
+        "Mike: I... ok..!"
+    ))
+    waitmessage
+    applymovement(11,FacePlayer)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: {PLAYER}, I...\p"
+        "I challenge you to a battle!"
+    ))
+    waitmessage
+    closemessage
+    if (flag(FLAG_AW_PICK_ALPACOIL)) {
+        trainerbattle_no_intro(TRAINER_RIVAL_PUCELAKE_ALPACOIL,PuceLake_MikeLose)
+    } elif (flag(FLAG_AW_PICK_SMACKOP)) {
+        trainerbattle_no_intro(TRAINER_RIVAL_PUCELAKE_SMACKOP,PuceLake_MikeLose)
+    } else {
+        trainerbattle_no_intro(TRAINER_RIVAL_PUCELAKE_PUPPIXY,PuceLake_MikeLose)
+    }
+
+    setvar(VAR_AW_PROGRESS_1,9)
+
+    releaseall
+    end
+}
+
+script PuceLake_DontLeaveYet1 {
+    lockall
+    applymovement(6,WalkLeftSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Mike: {PLAYER}? Come on, you go ahead.\p"
+        "...My legs just hurt, that's all. I'll catch up."
+    ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
+    waitmovement(0)
     releaseall
 }
 
@@ -207,42 +328,41 @@ script PuceLake_DontLeaveYet2 {
 
 script PuceLake_Trigger1_Upper {
     setvar(VAR_TEMP_0,0)
-    if (var(VAR_TEMP_1)==0) {
-        call(PuceLake_MeetAvery)
-        setvar(VAR_TEMP_1,1)
-    } else {
-        call(PuceLake_DontLeaveYet1)
-    }
+    call_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
+    call(PuceLake_DontLeaveYet1)
+    end
 }
 
 script PuceLake_Trigger1_Lower {
     setvar(VAR_TEMP_0,1)
-    if (var(VAR_TEMP_1)==0) {
-        call(PuceLake_MeetAvery)
-        setvar(VAR_TEMP_1,1)
-    } else {
-        call(PuceLake_DontLeaveYet1)
-    }
+    
+    call_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
+    call(PuceLake_DontLeaveYet1)
+    end
 }
 
 script PuceLake_Trigger2_Upper {
     setvar(VAR_TEMP_2,0)
-    if (var(VAR_TEMP_1)==1) {
-        call(PuceLake_MikeTalk)
-        setvar(VAR_TEMP_1,2)
-    } else {
-        call(PuceLake_DontLeaveYet2)
-    }    
+    call_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
+    call(PuceLake_DontLeaveYet2)
+    end   
 }
 
 script PuceLake_Trigger2_Lower {
     setvar(VAR_TEMP_2,1)
-    if (var(VAR_TEMP_1)==1) {
-        call(PuceLake_MikeTalk)
-        setvar(VAR_TEMP_1,2)
-    } else {
-        call(PuceLake_DontLeaveYet2)
-    }  
+    call_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
+    call(PuceLake_DontLeaveYet2)
+    end  
+}
+
+script PuceLake_Trigger3_Upper {
+    setvar(VAR_TEMP_3,0)
+    call(PuceLake_MeetCarla)
+}
+
+script PuceLake_Trigger3_Lower {
+    setvar(VAR_TEMP_3,1)
+    call(PuceLake_MeetCarla)
 }
 
 script PuceLake_Trainer_SchoolgirlJessy {
@@ -293,6 +413,12 @@ text LassAdelaIntro {
 text LassAdelaOutro {
     format(
         "Sigh, back to enjoying the view..."
+    )
+}
+
+text PuceLake_MikeLose {
+    format(
+        "{PLAYER}...!"
     )
 }
 
@@ -353,6 +479,33 @@ movement PuceLake_MikeGotoPlayer5 {
 
 movement PuceLake_MikeGotoPlayer6 {
     walk_down
+}
+
+movement PuceLake_MikeGotoPlayer7 {
+    walk_down*3
+    walk_left
+    walk_down*3
+}
+
+movement PuceLake_MikeGotoPlayer8 {
+    walk_down
+    walk_left*2
+}
+
+movement PuceLake_MikeGotoPlayer9 {
+    walk_left*2
+}
+
+movement PuceLake_Grunt1Enter {
+    walk_fast_down*7
+    walk_fast_left
+}
+
+movement PuceLake_Grunt2Enter {
+    walk_fast_down*4
+    walk_fast_left
+    walk_fast_down*4
+    walk_fast_left
 }
 
 movement FaceLeft {

@@ -109,13 +109,18 @@
 #define TRAINER_PIC_RS_BRENDAN            91
 #define TRAINER_PIC_RS_MAY                92
 
+// AW TRAINERS
+
 #define TRAINER_PIC_AW_P_MALE             93
 #define TRAINER_PIC_AW_P_FEMALE           94
 #define TRAINER_PIC_AW_P_ENBY             95
-#define TRAINER_PIC_AW_JADE_MALE          96
-#define TRAINER_PIC_AW_JADE_FEMALE        97
+#define TRAINER_PIC_AW_JADEGRUNT_MALE     96
+#define TRAINER_PIC_AW_JADEGRUNT_FEMALE   97
+#define TRAINER_PIC_AW_RIVAL              98
+#define TRAINER_PIC_AW_LEADER_WENDY       99
+#define TRAINER_PIC_AW_LEADER_WYATT       100
 
-#define TRAINER_PIC_COUNT                 98
+#define TRAINER_PIC_COUNT                 101
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

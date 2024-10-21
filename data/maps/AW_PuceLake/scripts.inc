@@ -6,129 +6,129 @@ PuceLake_MeetAvery::
 # 6 "data/maps/AW_PuceLake/scripts.pory"
 	lockall
 # 7 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_AW_PROGRESS_2, 1
+# 8 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MeetAvery_Text_0
-# 10 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
 # 11 "data/maps/AW_PuceLake/scripts.pory"
-	closemessage
+	waitmessage
 # 12 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, PuceLake_CarlaGotoPlayer
+	closemessage
 # 13 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 5, PuceLake_AveryGotoPlayer
+	applymovement 4, PuceLake_CarlaGotoPlayer
 # 14 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 5
+	applymovement 5, PuceLake_AveryGotoPlayer
 # 15 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_1
-# 20 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 21 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, WalkUpSpot
-# 22 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 23 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_2
-# 27 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 28 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 5, WalkDownSpot
-# 29 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 30 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_3
-# 34 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 35 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, FaceRight
-# 36 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 5, FaceRight
-# 37 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_4
-# 43 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 44 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, WalkRightSpot
-# 45 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 46 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_5
-# 51 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 52 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 5, WalkRightSpot
-# 53 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 54 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_6
-# 57 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 58 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, PuceLake_CarlaLeavePlayer1
-# 59 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 5, PuceLake_AveryLeavePlayer
-# 60 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 5
-# 61 "data/maps/AW_PuceLake/scripts.pory"
+# 16 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_1
+# 21 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 22 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 4, WalkUpSpot
+# 23 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 24 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_2
+# 28 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 29 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 5, WalkDownSpot
+# 30 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 31 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_3
+# 35 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 36 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 4, FaceRight
+# 37 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 5, FaceRight
+# 38 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_4
+# 44 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 45 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 4, WalkRightSpot
+# 46 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 47 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_5
+# 52 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 53 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 5, WalkRightSpot
+# 54 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 55 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_6
+# 58 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 59 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 4, PuceLake_CarlaLeavePlayer1
+# 60 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 5, PuceLake_AveryLeavePlayer
+# 61 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 5
 # 62 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
+	applymovement 4, FaceRight
 # 63 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 64 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MeetAvery_Text_7
-# 66 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
 # 67 "data/maps/AW_PuceLake/scripts.pory"
-	special Script_FadeOutMapMusic
+	waitmessage
 # 68 "data/maps/AW_PuceLake/scripts.pory"
+	fadeoutbgm 1
+# 69 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MeetAvery_Text_8
-# 72 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
 # 73 "data/maps/AW_PuceLake/scripts.pory"
-	closemessage
-# 74 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 4, PuceLake_CarlaLeavePlayer2
-# 75 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 76 "data/maps/AW_PuceLake/scripts.pory"
-	setobjectxy 4, 36, 23
-# 77 "data/maps/AW_PuceLake/scripts.pory"
-	setobjectxy 5, 33, 23
-# 79 "data/maps/AW_PuceLake/scripts.pory"
-	special SpawnCameraObject
-# 80 "data/maps/AW_PuceLake/scripts.pory"
-	clearflag FLAG_AW_HIDE_MIKE_1
-# 81 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, FaceLeft
-# 82 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
-# 83 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookRight3
-# 84 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 85 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_9
-# 88 "data/maps/AW_PuceLake/scripts.pory"
 	waitmessage
-# 89 "data/maps/AW_PuceLake/scripts.pory"
+# 74 "data/maps/AW_PuceLake/scripts.pory"
 	closemessage
-# 90 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, PuceLake_MikeGotoPlayer
-# 91 "data/maps/AW_PuceLake/scripts.pory"
+# 75 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 4, PuceLake_CarlaLeavePlayer2
+# 76 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 92 "data/maps/AW_PuceLake/scripts.pory"
+# 78 "data/maps/AW_PuceLake/scripts.pory"
+	special SpawnCameraObject
+# 79 "data/maps/AW_PuceLake/scripts.pory"
+	clearflag FLAG_AW_HIDE_MIKE_1
+# 80 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 6, FaceLeft
+# 81 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, FaceRight
+# 82 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookRight3
+# 83 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 84 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_9
+# 87 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 88 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 89 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 6, PuceLake_MikeGotoPlayer
+# 90 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 91 "data/maps/AW_PuceLake/scripts.pory"
 	compare VAR_TEMP_0, 0
 	goto_if_eq PuceLake_MeetAvery_2
-# 95 "data/maps/AW_PuceLake/scripts.pory"
+# 94 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 6, PuceLake_MikeGotoPlayer3
 PuceLake_MeetAvery_1:
-# 97 "data/maps/AW_PuceLake/scripts.pory"
+# 96 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, Camera_LookLeft3
-# 98 "data/maps/AW_PuceLake/scripts.pory"
+# 97 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 99 "data/maps/AW_PuceLake/scripts.pory"
+# 98 "data/maps/AW_PuceLake/scripts.pory"
 	special RemoveCameraObject
-# 100 "data/maps/AW_PuceLake/scripts.pory"
+# 99 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MeetAvery_Text_10
-# 109 "data/maps/AW_PuceLake/scripts.pory"
+# 108 "data/maps/AW_PuceLake/scripts.pory"
 	waitmessage
+# 109 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
 # 110 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 6, EmoteExclamationMark
 # 111 "data/maps/AW_PuceLake/scripts.pory"
@@ -138,397 +138,609 @@ PuceLake_MeetAvery_1:
 # 116 "data/maps/AW_PuceLake/scripts.pory"
 	waitmessage
 # 117 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, LookDown
+	closemessage
 # 118 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
+	applymovement 6, LookDown
 # 119 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 120 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MeetAvery_Text_12
-# 122 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
 # 123 "data/maps/AW_PuceLake/scripts.pory"
-	special Overworld_PlaySpecialMapMusic
+	waitmessage
 # 124 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, FaceLeft
+	fadeinbgm 1
 # 125 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
+	closemessage
 # 126 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_13
-# 130 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 131 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
-# 132 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, WalkLeft1
-# 133 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 6, FaceLeft
+# 127 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 134 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_MeetAvery_Text_14
-# 138 "data/maps/AW_PuceLake/scripts.pory"
+# 128 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_13
+# 132 "data/maps/AW_PuceLake/scripts.pory"
 	waitmessage
-# 139 "data/maps/AW_PuceLake/scripts.pory"
+# 133 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 134 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
+# 135 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 6, WalkLeft1
+# 136 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 137 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetAvery_Text_14
+# 141 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 143 "data/maps/AW_PuceLake/scripts.pory"
+	setobjectxyperm 4, 33, 23
+# 144 "data/maps/AW_PuceLake/scripts.pory"
+	setobjectxyperm 5, 30, 23
+# 145 "data/maps/AW_PuceLake/scripts.pory"
 	releaseall
-	return
+	end
 
 PuceLake_MeetAvery_2:
-# 93 "data/maps/AW_PuceLake/scripts.pory"
+# 92 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 6, PuceLake_MikeGotoPlayer2
 	goto PuceLake_MeetAvery_1
 
 
-PuceLake_DontLeaveYet1::
-# 143 "data/maps/AW_PuceLake/scripts.pory"
-	lockall
-# 144 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 6, WalkLeftSpot
-# 145 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 146 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_DontLeaveYet1_Text_0
-# 150 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 151 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
-# 152 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
-# 153 "data/maps/AW_PuceLake/scripts.pory"
-	releaseall
-	return
-
-
 PuceLake_MikeTalk::
+# 150 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_AW_PROGRESS_2, 1
+# 151 "data/maps/AW_PuceLake/scripts.pory"
+	removeobject 6, MAP_AW_PUCE_LAKE
+# 152 "data/maps/AW_PuceLake/scripts.pory"
+	setflag FLAG_AW_HIDE_MIKE_1
+# 153 "data/maps/AW_PuceLake/scripts.pory"
+	clearflag FLAG_AW_HIDE_MIKE_2
+# 154 "data/maps/AW_PuceLake/scripts.pory"
+	setobjectxyperm 10, 56, 24
+# 155 "data/maps/AW_PuceLake/scripts.pory"
+	showobjectat 10, MAP_AW_PUCE_LAKE
 # 157 "data/maps/AW_PuceLake/scripts.pory"
 	lockall
 # 158 "data/maps/AW_PuceLake/scripts.pory"
-	removeobject 6, MAP_AW_PUCE_LAKE
-# 159 "data/maps/AW_PuceLake/scripts.pory"
-	clearflag FLAG_AW_HIDE_MIKE_2
-# 160 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 10, PuceLake_MikeGotoPlayer4
-# 161 "data/maps/AW_PuceLake/scripts.pory"
+# 159 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 162 "data/maps/AW_PuceLake/scripts.pory"
+# 160 "data/maps/AW_PuceLake/scripts.pory"
 	compare VAR_TEMP_2, 0
 	goto_if_eq PuceLake_MikeTalk_2
-# 167 "data/maps/AW_PuceLake/scripts.pory"
+# 165 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 10, PuceLake_MikeGotoPlayer6
-# 168 "data/maps/AW_PuceLake/scripts.pory"
+# 166 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 169 "data/maps/AW_PuceLake/scripts.pory"
+# 167 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LookUp
 PuceLake_MikeTalk_1:
-# 171 "data/maps/AW_PuceLake/scripts.pory"
+# 169 "data/maps/AW_PuceLake/scripts.pory"
 	msgbox PuceLake_MikeTalk_Text_0
-# 187 "data/maps/AW_PuceLake/scripts.pory"
+# 185 "data/maps/AW_PuceLake/scripts.pory"
 	waitmessage
-# 188 "data/maps/AW_PuceLake/scripts.pory"
-	setflag FLAG_AW_HIDE_MIKE_3
-# 189 "data/maps/AW_PuceLake/scripts.pory"
-	showobjectat 4, MAP_AW_PUCE_LAKE
-# 190 "data/maps/AW_PuceLake/scripts.pory"
-	showobjectat 5, MAP_AW_PUCE_LAKE
-# 191 "data/maps/AW_PuceLake/scripts.pory"
+# 186 "data/maps/AW_PuceLake/scripts.pory"
 	releaseall
-	return
+	end
 
 PuceLake_MikeTalk_2:
-# 163 "data/maps/AW_PuceLake/scripts.pory"
+# 161 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement 10, PuceLake_MikeGotoPlayer5
-# 164 "data/maps/AW_PuceLake/scripts.pory"
+# 162 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
-# 165 "data/maps/AW_PuceLake/scripts.pory"
+# 163 "data/maps/AW_PuceLake/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, LookUp
 	goto PuceLake_MikeTalk_1
 
 
-PuceLake_DontLeaveYet2::
+PuceLake_MeetCarla::
+# 191 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_AW_PROGRESS_2, 2
+# 192 "data/maps/AW_PuceLake/scripts.pory"
+	setflag FLAG_AW_HIDE_MIKE_2
+# 193 "data/maps/AW_PuceLake/scripts.pory"
+	clearflag FLAG_AW_HIDE_MIKE_3
+# 194 "data/maps/AW_PuceLake/scripts.pory"
+	showobjectat 11, MAP_AW_PUCE_LAKE
 # 195 "data/maps/AW_PuceLake/scripts.pory"
-	lockall
+	showobjectat 12, MAP_AW_PUCE_LAKE
 # 196 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement 10, WalkLeftSpot
-# 197 "data/maps/AW_PuceLake/scripts.pory"
-	waitmovement 0
+	showobjectat 13, MAP_AW_PUCE_LAKE
 # 198 "data/maps/AW_PuceLake/scripts.pory"
-	msgbox PuceLake_DontLeaveYet2_Text_0
-# 202 "data/maps/AW_PuceLake/scripts.pory"
-	waitmessage
-# 203 "data/maps/AW_PuceLake/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
-# 204 "data/maps/AW_PuceLake/scripts.pory"
+	lockall
+# 199 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 4, WalkRightSpot
+# 200 "data/maps/AW_PuceLake/scripts.pory"
 	waitmovement 0
+# 201 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_0
 # 205 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 206 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 207 "data/maps/AW_PuceLake/scripts.pory"
+	special HealPlayerParty
+# 208 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WalkLeftSpot
+# 209 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_1
+# 214 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 215 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 217 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, PuceLake_MikeGotoPlayer7
+# 218 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 219 "data/maps/AW_PuceLake/scripts.pory"
+	compare VAR_TEMP_3, 0
+	goto_if_eq PuceLake_MeetCarla_2
+# 223 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, PuceLake_MikeGotoPlayer9
+# 224 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+PuceLake_MeetCarla_1:
+# 227 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_2
+# 230 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 231 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 232 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, WalkLeftSpot
+# 233 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 235 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_3
+# 242 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 243 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 244 "data/maps/AW_PuceLake/scripts.pory"
+	fadeoutbgm 1
+# 245 "data/maps/AW_PuceLake/scripts.pory"
+	delay 30
+# 246 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, LookUp
+# 247 "data/maps/AW_PuceLake/scripts.pory"
+	delay 30
+# 248 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_4
+# 253 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 254 "data/maps/AW_PuceLake/scripts.pory"
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
+# 255 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 12, PuceLake_Grunt1Enter
+# 256 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 13, PuceLake_Grunt1Enter
+# 257 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 13
+# 258 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_5
+# 263 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 264 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, WalkRightSpot
+# 265 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 266 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_6
+# 278 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 279 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, FacePlayer
+# 280 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 281 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_MeetCarla_Text_7
+# 285 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 286 "data/maps/AW_PuceLake/scripts.pory"
+	closemessage
+# 287 "data/maps/AW_PuceLake/scripts.pory"
+	goto_if_set FLAG_AW_PICK_ALPACOIL, PuceLake_MeetCarla_6
+# 289 "data/maps/AW_PuceLake/scripts.pory"
+	goto_if_set FLAG_AW_PICK_SMACKOP, PuceLake_MeetCarla_7
+# 292 "data/maps/AW_PuceLake/scripts.pory"
+	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_PUPPIXY, PuceLake_MikeLose
+PuceLake_MeetCarla_5:
+# 295 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_AW_PROGRESS_1, 9
+# 297 "data/maps/AW_PuceLake/scripts.pory"
+	releaseall
+	end
+
+PuceLake_MeetCarla_2:
+# 220 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 11, PuceLake_MikeGotoPlayer8
+# 221 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+	goto PuceLake_MeetCarla_1
+
+PuceLake_MeetCarla_6:
+# 288 "data/maps/AW_PuceLake/scripts.pory"
+	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_ALPACOIL, PuceLake_MikeLose
+	goto PuceLake_MeetCarla_5
+
+PuceLake_MeetCarla_7:
+# 290 "data/maps/AW_PuceLake/scripts.pory"
+	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_SMACKOP, PuceLake_MikeLose
+	goto PuceLake_MeetCarla_5
+
+
+PuceLake_DontLeaveYet1::
+# 302 "data/maps/AW_PuceLake/scripts.pory"
+	lockall
+# 303 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 6, WalkLeftSpot
+# 304 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 305 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_DontLeaveYet1_Text_0
+# 309 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 310 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
+# 311 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 312 "data/maps/AW_PuceLake/scripts.pory"
+	releaseall
+	return
+
+
+PuceLake_DontLeaveYet2::
+# 316 "data/maps/AW_PuceLake/scripts.pory"
+	lockall
+# 317 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement 10, WalkLeftSpot
+# 318 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 319 "data/maps/AW_PuceLake/scripts.pory"
+	msgbox PuceLake_DontLeaveYet2_Text_0
+# 323 "data/maps/AW_PuceLake/scripts.pory"
+	waitmessage
+# 324 "data/maps/AW_PuceLake/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, WalkLeft1
+# 325 "data/maps/AW_PuceLake/scripts.pory"
+	waitmovement 0
+# 326 "data/maps/AW_PuceLake/scripts.pory"
 	releaseall
 	return
 
 
 PuceLake_Trigger1_Upper::
-# 209 "data/maps/AW_PuceLake/scripts.pory"
+# 330 "data/maps/AW_PuceLake/scripts.pory"
 	setvar VAR_TEMP_0, 0
-# 210 "data/maps/AW_PuceLake/scripts.pory"
-	compare VAR_TEMP_1, 0
-	goto_if_eq PuceLake_Trigger1_Upper_1
-# 214 "data/maps/AW_PuceLake/scripts.pory"
+# 331 "data/maps/AW_PuceLake/scripts.pory"
+	call_if_eq VAR_AW_PROGRESS_2, 0, PuceLake_MeetAvery
+# 332 "data/maps/AW_PuceLake/scripts.pory"
 	call PuceLake_DontLeaveYet1
-	return
-
-PuceLake_Trigger1_Upper_1:
-# 211 "data/maps/AW_PuceLake/scripts.pory"
-	call PuceLake_MeetAvery
-# 212 "data/maps/AW_PuceLake/scripts.pory"
-	setvar VAR_TEMP_1, 1
-	return
+	end
 
 
 PuceLake_Trigger1_Lower::
-# 219 "data/maps/AW_PuceLake/scripts.pory"
+# 337 "data/maps/AW_PuceLake/scripts.pory"
 	setvar VAR_TEMP_0, 1
-# 220 "data/maps/AW_PuceLake/scripts.pory"
-	compare VAR_TEMP_1, 0
-	goto_if_eq PuceLake_Trigger1_Lower_1
-# 224 "data/maps/AW_PuceLake/scripts.pory"
+# 338 "data/maps/AW_PuceLake/scripts.pory"
+	call_if_eq VAR_AW_PROGRESS_2, 0, PuceLake_MeetAvery
+# 339 "data/maps/AW_PuceLake/scripts.pory"
 	call PuceLake_DontLeaveYet1
-	return
-
-PuceLake_Trigger1_Lower_1:
-# 221 "data/maps/AW_PuceLake/scripts.pory"
-	call PuceLake_MeetAvery
-# 222 "data/maps/AW_PuceLake/scripts.pory"
-	setvar VAR_TEMP_1, 1
-	return
+	end
 
 
 PuceLake_Trigger2_Upper::
-# 229 "data/maps/AW_PuceLake/scripts.pory"
+# 344 "data/maps/AW_PuceLake/scripts.pory"
 	setvar VAR_TEMP_2, 0
-# 230 "data/maps/AW_PuceLake/scripts.pory"
-	compare VAR_TEMP_1, 1
-	goto_if_eq PuceLake_Trigger2_Upper_1
-# 234 "data/maps/AW_PuceLake/scripts.pory"
+# 345 "data/maps/AW_PuceLake/scripts.pory"
+	call_if_eq VAR_AW_PROGRESS_2, 1, PuceLake_MikeTalk
+# 346 "data/maps/AW_PuceLake/scripts.pory"
 	call PuceLake_DontLeaveYet2
-	return
-
-PuceLake_Trigger2_Upper_1:
-# 231 "data/maps/AW_PuceLake/scripts.pory"
-	call PuceLake_MikeTalk
-# 232 "data/maps/AW_PuceLake/scripts.pory"
-	setvar VAR_TEMP_1, 2
-	return
+	end
 
 
 PuceLake_Trigger2_Lower::
-# 239 "data/maps/AW_PuceLake/scripts.pory"
+# 351 "data/maps/AW_PuceLake/scripts.pory"
 	setvar VAR_TEMP_2, 1
-# 240 "data/maps/AW_PuceLake/scripts.pory"
-	compare VAR_TEMP_1, 1
-	goto_if_eq PuceLake_Trigger2_Lower_1
-# 244 "data/maps/AW_PuceLake/scripts.pory"
+# 352 "data/maps/AW_PuceLake/scripts.pory"
+	call_if_eq VAR_AW_PROGRESS_2, 1, PuceLake_MikeTalk
+# 353 "data/maps/AW_PuceLake/scripts.pory"
 	call PuceLake_DontLeaveYet2
+	end
+
+
+PuceLake_Trigger3_Upper::
+# 358 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_TEMP_3, 0
+# 359 "data/maps/AW_PuceLake/scripts.pory"
+	call PuceLake_MeetCarla
 	return
 
-PuceLake_Trigger2_Lower_1:
-# 241 "data/maps/AW_PuceLake/scripts.pory"
-	call PuceLake_MikeTalk
-# 242 "data/maps/AW_PuceLake/scripts.pory"
-	setvar VAR_TEMP_1, 2
+
+PuceLake_Trigger3_Lower::
+# 363 "data/maps/AW_PuceLake/scripts.pory"
+	setvar VAR_TEMP_3, 1
+# 364 "data/maps/AW_PuceLake/scripts.pory"
+	call PuceLake_MeetCarla
 	return
 
 
 PuceLake_Trainer_SchoolgirlJessy::
-# 249 "data/maps/AW_PuceLake/scripts.pory"
+# 368 "data/maps/AW_PuceLake/scripts.pory"
 	trainerbattle_single TRAINER_JESSY, SchoolgirlJessyIntro, SchoolgirlJessyOutro
 	end
 
 
 PuceLake_Trainer_YoungsterTyler::
-# 254 "data/maps/AW_PuceLake/scripts.pory"
+# 373 "data/maps/AW_PuceLake/scripts.pory"
 	trainerbattle_single TRAINER_TYLER, YoungsterTylerIntro, YoungsterTylerOutro
 	end
 
 
 PuceLake_Trainer_LassAdela::
-# 259 "data/maps/AW_PuceLake/scripts.pory"
+# 378 "data/maps/AW_PuceLake/scripts.pory"
 	trainerbattle_single TRAINER_ADELA, LassAdelaIntro, LassAdelaOutro
 	end
 
 
-# 299 "data/maps/AW_PuceLake/scripts.pory"
+# 424 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_CarlaGotoPlayer:
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 300 "data/maps/AW_PuceLake/scripts.pory"
+# 425 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 301 "data/maps/AW_PuceLake/scripts.pory"
+# 426 "data/maps/AW_PuceLake/scripts.pory"
 	face_right
 	step_end
 
-# 304 "data/maps/AW_PuceLake/scripts.pory"
+# 429 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_AveryGotoPlayer:
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 305 "data/maps/AW_PuceLake/scripts.pory"
+# 430 "data/maps/AW_PuceLake/scripts.pory"
 	walk_up
-# 306 "data/maps/AW_PuceLake/scripts.pory"
+# 431 "data/maps/AW_PuceLake/scripts.pory"
 	walk_right
 	step_end
 
-# 309 "data/maps/AW_PuceLake/scripts.pory"
+# 434 "data/maps/AW_PuceLake/scripts.pory"
 WalkDownSpot:
-# 310 "data/maps/AW_PuceLake/scripts.pory"
+# 435 "data/maps/AW_PuceLake/scripts.pory"
 	walk_in_place_down
-# 310 "data/maps/AW_PuceLake/scripts.pory"
+# 435 "data/maps/AW_PuceLake/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 313 "data/maps/AW_PuceLake/scripts.pory"
+# 438 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_AveryLeavePlayer:
-# 314 "data/maps/AW_PuceLake/scripts.pory"
+# 439 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 315 "data/maps/AW_PuceLake/scripts.pory"
+# 440 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
 	step_end
 
-# 318 "data/maps/AW_PuceLake/scripts.pory"
+# 443 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_CarlaLeavePlayer1:
-# 319 "data/maps/AW_PuceLake/scripts.pory"
+# 444 "data/maps/AW_PuceLake/scripts.pory"
 	face_left
 	step_end
 
-# 322 "data/maps/AW_PuceLake/scripts.pory"
+# 447 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_CarlaLeavePlayer2:
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 323 "data/maps/AW_PuceLake/scripts.pory"
+# 448 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
 	step_end
 
-# 326 "data/maps/AW_PuceLake/scripts.pory"
+# 451 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer:
-# 327 "data/maps/AW_PuceLake/scripts.pory"
+# 452 "data/maps/AW_PuceLake/scripts.pory"
 	walk_slow_left
-# 327 "data/maps/AW_PuceLake/scripts.pory"
+# 452 "data/maps/AW_PuceLake/scripts.pory"
 	walk_slow_left
-# 328 "data/maps/AW_PuceLake/scripts.pory"
+# 453 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 328 "data/maps/AW_PuceLake/scripts.pory"
+# 453 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
 	step_end
 
-# 331 "data/maps/AW_PuceLake/scripts.pory"
+# 456 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer2:
-# 332 "data/maps/AW_PuceLake/scripts.pory"
+# 457 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_down
-# 333 "data/maps/AW_PuceLake/scripts.pory"
+# 458 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
-# 333 "data/maps/AW_PuceLake/scripts.pory"
+# 458 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
-# 333 "data/maps/AW_PuceLake/scripts.pory"
+# 458 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 336 "data/maps/AW_PuceLake/scripts.pory"
+# 461 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer3:
-# 337 "data/maps/AW_PuceLake/scripts.pory"
+# 462 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_down
-# 337 "data/maps/AW_PuceLake/scripts.pory"
+# 462 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_down
-# 338 "data/maps/AW_PuceLake/scripts.pory"
+# 463 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
-# 338 "data/maps/AW_PuceLake/scripts.pory"
+# 463 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
-# 338 "data/maps/AW_PuceLake/scripts.pory"
+# 463 "data/maps/AW_PuceLake/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 341 "data/maps/AW_PuceLake/scripts.pory"
+# 466 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer4:
-# 342 "data/maps/AW_PuceLake/scripts.pory"
+# 467 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 342 "data/maps/AW_PuceLake/scripts.pory"
+# 467 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 342 "data/maps/AW_PuceLake/scripts.pory"
+# 467 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 343 "data/maps/AW_PuceLake/scripts.pory"
+# 468 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 343 "data/maps/AW_PuceLake/scripts.pory"
+# 468 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 344 "data/maps/AW_PuceLake/scripts.pory"
+# 469 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
-# 345 "data/maps/AW_PuceLake/scripts.pory"
+# 470 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 346 "data/maps/AW_PuceLake/scripts.pory"
+# 471 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
 	step_end
 
-# 349 "data/maps/AW_PuceLake/scripts.pory"
+# 474 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer5:
-# 350 "data/maps/AW_PuceLake/scripts.pory"
+# 475 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
-# 351 "data/maps/AW_PuceLake/scripts.pory"
+# 476 "data/maps/AW_PuceLake/scripts.pory"
 	face_down
 	step_end
 
-# 354 "data/maps/AW_PuceLake/scripts.pory"
+# 479 "data/maps/AW_PuceLake/scripts.pory"
 PuceLake_MikeGotoPlayer6:
-# 355 "data/maps/AW_PuceLake/scripts.pory"
+# 480 "data/maps/AW_PuceLake/scripts.pory"
 	walk_down
 	step_end
 
-# 358 "data/maps/AW_PuceLake/scripts.pory"
+# 483 "data/maps/AW_PuceLake/scripts.pory"
+PuceLake_MikeGotoPlayer7:
+# 484 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 484 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 484 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 485 "data/maps/AW_PuceLake/scripts.pory"
+	walk_left
+# 486 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 486 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 486 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+	step_end
+
+# 489 "data/maps/AW_PuceLake/scripts.pory"
+PuceLake_MikeGotoPlayer8:
+# 490 "data/maps/AW_PuceLake/scripts.pory"
+	walk_down
+# 491 "data/maps/AW_PuceLake/scripts.pory"
+	walk_left
+# 491 "data/maps/AW_PuceLake/scripts.pory"
+	walk_left
+	step_end
+
+# 494 "data/maps/AW_PuceLake/scripts.pory"
+PuceLake_MikeGotoPlayer9:
+# 495 "data/maps/AW_PuceLake/scripts.pory"
+	walk_left
+# 495 "data/maps/AW_PuceLake/scripts.pory"
+	walk_left
+	step_end
+
+# 498 "data/maps/AW_PuceLake/scripts.pory"
+PuceLake_Grunt1Enter:
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 499 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 500 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_left
+	step_end
+
+# 503 "data/maps/AW_PuceLake/scripts.pory"
+PuceLake_Grunt2Enter:
+# 504 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 504 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 504 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 504 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 505 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_left
+# 506 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 506 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 506 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 506 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_down
+# 507 "data/maps/AW_PuceLake/scripts.pory"
+	walk_fast_left
+	step_end
+
+# 510 "data/maps/AW_PuceLake/scripts.pory"
 FaceLeft:
-# 359 "data/maps/AW_PuceLake/scripts.pory"
+# 511 "data/maps/AW_PuceLake/scripts.pory"
 	face_left
 	step_end
 
-# 362 "data/maps/AW_PuceLake/scripts.pory"
+# 514 "data/maps/AW_PuceLake/scripts.pory"
 WalkLeft1:
-# 363 "data/maps/AW_PuceLake/scripts.pory"
+# 515 "data/maps/AW_PuceLake/scripts.pory"
 	walk_left
 	step_end
 
 PuceLake_MeetAvery_Text_0:
-# 8 "data/maps/AW_PuceLake/scripts.pory"
+# 9 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Carla: Hey, {PLAYER}! I knew you'd\n"
 	.string "show up!$"
 
 PuceLake_MeetAvery_Text_1:
-# 16 "data/maps/AW_PuceLake/scripts.pory"
+# 17 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Avery: Gear's quite a character, aren't\n"
 	.string "they? I'm glad they're safe.\p"
 	.string "Well, this is Puce Lake. The lake itself\n"
@@ -539,14 +751,14 @@ PuceLake_MeetAvery_Text_1:
 	.string "working!$"
 
 PuceLake_MeetAvery_Text_2:
-# 24 "data/maps/AW_PuceLake/scripts.pory"
+# 25 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Carla: Avery, I haven't seen you leave\n"
 	.string "the lab unless it's for an expedition.\p"
 	.string "I wish you came here to wind down, you\n"
 	.string "need it. You work yourself to the bone.$"
 
 PuceLake_MeetAvery_Text_3:
-# 31 "data/maps/AW_PuceLake/scripts.pory"
+# 32 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Avery: It's important research, Carla.\n"
 	.string "And besides, I can't just leave the lab\l"
 	.string "unattended.\p"
@@ -554,7 +766,7 @@ PuceLake_MeetAvery_Text_3:
 	.string "steal our research again.$"
 
 PuceLake_MeetAvery_Text_4:
-# 38 "data/maps/AW_PuceLake/scripts.pory"
+# 39 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Avery: Haven't heard of them,\n"
 	.string "{PLAYER}? They're a fellow\l"
 	.string "archaeology group that, instead of\l"
@@ -571,7 +783,7 @@ PuceLake_MeetAvery_Text_4:
 	.string "uncover the history of this region.$"
 
 PuceLake_MeetAvery_Text_5:
-# 47 "data/maps/AW_PuceLake/scripts.pory"
+# 48 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Carla: ...You can tell he's really\n"
 	.string "passionate about this, can't you?\p"
 	.string "Um, we'll head on down to the lakeside.\n"
@@ -581,27 +793,27 @@ PuceLake_MeetAvery_Text_5:
 	.string "I hope you're excited to see it!$"
 
 PuceLake_MeetAvery_Text_6:
-# 55 "data/maps/AW_PuceLake/scripts.pory"
+# 56 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Avery: Er... yes. We'll get to it. See you\n"
 	.string "in a bit, ok, {PLAYER}?$"
 
 PuceLake_MeetAvery_Text_7:
-# 64 "data/maps/AW_PuceLake/scripts.pory"
+# 65 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Carla: Uh, I don't mean to alarm you,\n"
 	.string "but...$"
 
 PuceLake_MeetAvery_Text_8:
-# 69 "data/maps/AW_PuceLake/scripts.pory"
+# 70 "data/maps/AW_PuceLake/scripts.pory"
 	.string "There's a boy behind you who's been\n"
 	.string "staring at you this whole time.\p"
 	.string "Do you know him?$"
 
 PuceLake_MeetAvery_Text_9:
-# 86 "data/maps/AW_PuceLake/scripts.pory"
+# 85 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Mike: ...{PLAYER}?$"
 
 PuceLake_MeetAvery_Text_10:
-# 101 "data/maps/AW_PuceLake/scripts.pory"
+# 100 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Mike: {PLAYER}! O-oh my goodness! I-\n"
 	.string "I thought- I thought you'd...\p"
 	.string "I- I'm so glad you're alright!\p"
@@ -621,30 +833,23 @@ PuceLake_MeetAvery_Text_11:
 	.string "...$"
 
 PuceLake_MeetAvery_Text_12:
-# 120 "data/maps/AW_PuceLake/scripts.pory"
+# 121 "data/maps/AW_PuceLake/scripts.pory"
 	.string "That must have been him, then...$"
 
 PuceLake_MeetAvery_Text_13:
-# 127 "data/maps/AW_PuceLake/scripts.pory"
+# 129 "data/maps/AW_PuceLake/scripts.pory"
 	.string "U- uh... Anyway!\p"
 	.string "Let's walk together, ok? Take in the\n"
 	.string "lakeside air!$"
 
 PuceLake_MeetAvery_Text_14:
-# 135 "data/maps/AW_PuceLake/scripts.pory"
+# 138 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Ow, on second thoughts, you go on\n"
 	.string "ahead. My legs are still hurting...\p"
 	.string "I'll catch up, ok?$"
 
-PuceLake_DontLeaveYet1_Text_0:
-# 147 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Mike: {PLAYER}? Come on, you go\n"
-	.string "ahead.\p"
-	.string "...My legs just hurt, that's all. I'll\n"
-	.string "catch up.$"
-
 PuceLake_MikeTalk_Text_0:
-# 172 "data/maps/AW_PuceLake/scripts.pory"
+# 170 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Mike: Phew! Made it!\p"
 	.string "Gah... now my legs hurt again... I'm gonna\n"
 	.string "rest for a bit...\p"
@@ -669,36 +874,119 @@ PuceLake_MikeTalk_Text_0:
 	.string "You keep going ahead, ok?\p"
 	.string "My legs still need a bit more time, hah...$"
 
+PuceLake_MeetCarla_Text_0:
+# 202 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Carla: Ah, there you are, {PLAYER}!\n"
+	.string "How was the walk?\p"
+	.string "Let me heal up that team of yours!$"
+
+PuceLake_MeetCarla_Text_1:
+# 210 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Who was that guy, by the way?\p"
+	.string "Oh, a friend of yours? Neat!\p"
+	.string "Looks like he's caught up with you. I'll\n"
+	.string "say hi!$"
+
+PuceLake_MeetCarla_Text_2:
+# 228 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Carla: Hi! You must be {PLAYER}'s\n"
+	.string "friend, right?$"
+
+PuceLake_MeetCarla_Text_3:
+# 236 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Mike: H-hi ma'am... Y-yes, that's right.\p"
+	.string "Carla: Oh, don't be so formal, it's\n"
+	.string "alright! I'm the assistant to Professor\l"
+	.string "Avery Fern. He's an archaeologist from\l"
+	.string "around here.\p"
+	.string "Mike: Y-you're -\p"
+	.string "Carla: And {PLAYER} here is helping\n"
+	.string "out too! Avery asked her to help out\l"
+	.string "with this dig site! Ain't that exciting?$"
+
+PuceLake_MeetCarla_Text_4:
+# 249 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Mike: {PLAYER}...? Y-you're helping\n"
+	.string "him?\p"
+	.string "He's shady! No good! That's what\n"
+	.string "Conifer told me!\p"
+	.string "I... What do I do?!$"
+
+PuceLake_MeetCarla_Text_5:
+# 259 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Jade Grunt 1: Ha-HA! Knew we'd find you\n"
+	.string "lot here.\p"
+	.string "Finding another important site, taking\n"
+	.string "the contents for yourself...\p"
+	.string "Jade Grunt 2: We simply won't let you!\n"
+	.string "This site belongs to Team Jade!$"
+
+PuceLake_MeetCarla_Text_6:
+# 267 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Mike: You guys..! You came!\p"
+	.string "Grunt 1: Yes, yes, we heard, Mikey.\p"
+	.string "Carla: Team Jade! How did I know you\n"
+	.string "guys would show up?\p"
+	.string "{PLAYER}, it seems your friend here is\n"
+	.string "with those Jade guys. That's not good\l"
+	.string "for us.\p"
+	.string "Grunt 1: Listen here - what do you do\n"
+	.string "with people standing in your way?\p"
+	.string "Mike: ...?\p"
+	.string "Grunt 2: You challenge them to a\n"
+	.string "battle! The prof did give you a Pokémon,\l"
+	.string "right?\p"
+	.string "Mike: Y-yeah!\p"
+	.string "Grunt 1: We'll deal with the assistant,\n"
+	.string "you deal with the kid. Got it?\p"
+	.string "Mike: I... ok..!$"
+
+PuceLake_MeetCarla_Text_7:
+# 282 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Mike: {PLAYER}, I...\p"
+	.string "I challenge you to a battle!$"
+
+PuceLake_DontLeaveYet1_Text_0:
+# 306 "data/maps/AW_PuceLake/scripts.pory"
+	.string "Mike: {PLAYER}? Come on, you go\n"
+	.string "ahead.\p"
+	.string "...My legs just hurt, that's all. I'll\n"
+	.string "catch up.$"
+
 PuceLake_DontLeaveYet2_Text_0:
-# 199 "data/maps/AW_PuceLake/scripts.pory"
+# 320 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Mike: I'm alright, {PLAYER}, don't\n"
 	.string "worry.\p"
 	.string "I'll catch up!$"
 
 SchoolgirlJessyIntro::
-# 263 "data/maps/AW_PuceLake/scripts.pory"
+# 382 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Um... hi! It's my first battle, so go easy\n"
 	.string "on me!$"
 
 SchoolgirlJessyOutro::
-# 269 "data/maps/AW_PuceLake/scripts.pory"
+# 388 "data/maps/AW_PuceLake/scripts.pory"
 	.string "That was your first battle, too? So\n"
 	.string "cool!$"
 
 YoungsterTylerIntro::
-# 275 "data/maps/AW_PuceLake/scripts.pory"
+# 394 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Hey! You got Pokémon? Let's battle! I'll\n"
 	.string "win!$"
 
 YoungsterTylerOutro::
-# 281 "data/maps/AW_PuceLake/scripts.pory"
+# 400 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Aw, you're good...$"
 
 LassAdelaIntro::
-# 287 "data/maps/AW_PuceLake/scripts.pory"
+# 406 "data/maps/AW_PuceLake/scripts.pory"
 	.string "The lakeside is so calming... Gah! A\n"
 	.string "trainer!$"
 
 LassAdelaOutro::
-# 293 "data/maps/AW_PuceLake/scripts.pory"
+# 412 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Sigh, back to enjoying the view...$"
+
+PuceLake_MikeLose::
+# 418 "data/maps/AW_PuceLake/scripts.pory"
+	.string "{PLAYER}...!$"
