@@ -82,29 +82,11 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 17,
+      "x": 21,
       "y": 29,
       "elevation": 0,
       "var": "VAR_AW_PROGRESS_1",
-      "var_value": "7",
-      "script": "PuceCity_Artist"
-    },
-    {
-      "type": "trigger",
-      "x": 18,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "7",
-      "script": "PuceCity_Artist"
-    },
-    {
-      "type": "trigger",
-      "x": 19,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "7",
+      "var_value": "10",
       "script": "PuceCity_Artist"
     },
     {
@@ -113,16 +95,34 @@
       "y": 29,
       "elevation": 0,
       "var": "VAR_AW_PROGRESS_1",
-      "var_value": "7",
+      "var_value": "10",
       "script": "PuceCity_Artist"
     },
     {
       "type": "trigger",
-      "x": 21,
+      "x": 19,
       "y": 29,
       "elevation": 0,
       "var": "VAR_AW_PROGRESS_1",
-      "var_value": "7",
+      "var_value": "10",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "10",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "10",
       "script": "PuceCity_Artist"
     }
   ],

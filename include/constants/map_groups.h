@@ -16,10 +16,11 @@
 #define MAP_AW_ROUTE110_PATH   (2 | (1 << 8))
 
 // gMapGroup_AW_Indoors
-#define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE (0 | (2 << 8))
-#define MAP_AW_ROUTE108_LABORATORY     (1 | (2 << 8))
-#define MAP_AW_PORT_MULBERRY_GEAR_LAB  (2 | (2 << 8))
-#define MAP_AW_PUCE_CITY_GYM           (3 | (2 << 8))
+#define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE   (0 | (2 << 8))
+#define MAP_AW_ROUTE108_LABORATORY       (1 | (2 << 8))
+#define MAP_AW_PORT_MULBERRY_GEAR_LAB    (2 | (2 << 8))
+#define MAP_AW_PUCE_CITY_GYM             (3 | (2 << 8))
+#define MAP_AW_PORT_MULBERRY_POKE_CENTER (4 | (2 << 8))
 
 // gMapGroup_AW_Misc
 #define MAP_AW_PUCE_LAKE  (0 | (3 << 8))

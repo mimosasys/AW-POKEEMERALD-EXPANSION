@@ -1,0 +1,37 @@
+mapscripts AW_PortMulberry_PokeCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: PortMulberry_PokeCenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script PortMulberry_PokeCenter_OnTransition {
+    setrespawn(HEAL_LOCATION_AW_PORT_MULBERRY)
+    end
+}
+
+script AW_CommonPokeCenter {
+    lockall
+    msgbox(format(
+        "Hi, welcome to the Pokémon Center!\p"
+        "Would you like us to heal your Pokémon?"
+        ),MSGBOX_YESNO)
+    waitmessage
+    if(var(VAR_RESULT) == YES) {
+        msgbox(format(
+            "Sure, let me just take those from you..."
+        ))
+        delay(30)
+        applymovement(1,WalkLeftSpot)
+        waitmovement(0)
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        special(HealPlayerParty)
+        dofieldeffect(FLDEFF_POKECENTER_HEAL)
+        waitfieldeffect(FLDEFF_POKECENTER_HEAL)
+        applymovement(1,WalkDownSpot)
+    }
+    msgbox(format(
+        "We hope to see you again!"
+    ))
+    waitmessage
+    applymovement(OBJ_EVENT_ID_PLAYER,LookDown)
+    releaseall
+}

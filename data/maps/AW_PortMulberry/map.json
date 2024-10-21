@@ -29,6 +29,13 @@
       "elevation": 0,
       "dest_map": "MAP_AW_PORT_MULBERRY_GEAR_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_AW_PORT_MULBERRY_POKE_CENTER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -40,24 +47,6 @@
       "var": "VAR_AW_PROGRESS_1",
       "var_value": "7",
       "script": "PortMulberry_LeaveLab"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 13,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
-      "y": 14,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
     }
   ],
   "bg_events": [

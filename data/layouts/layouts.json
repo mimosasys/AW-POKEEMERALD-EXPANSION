@@ -4530,6 +4530,16 @@
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/AW_TestArea1/border.bin",
       "blockdata_filepath": "data/layouts/AW_TestArea1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_PORT_MULBERRY_POKE_CENTER",
+      "name": "AW_PortMulberry_PokeCenter_Layout",
+      "width": 16,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/AW_PortMulberry_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PortMulberry_PokeCenter/map.bin"
     }
   ]
 }

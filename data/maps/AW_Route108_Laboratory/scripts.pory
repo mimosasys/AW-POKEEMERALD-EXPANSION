@@ -5,8 +5,9 @@ mapscripts AW_Route108_Laboratory_MapScripts {
 }
 
 script Route108_Laboratory_OnWarp {
-    special(StopMapMusic)
+    fadeoutbgm(1)
     setvar(VAR_AW_PROGRESS_1,3)
+    setrespawn(HEAL_LOCATION_AW_ROUTE108)
     call(Route108_Laboratory_FirstTime)
 }
 
@@ -289,6 +290,19 @@ script Route108_Laboratory_TalkCarla {
         }
     }
     release
+}
+
+script Route108_Laboratory_HealMachine {
+    lockall
+    fadescreen(FADE_TO_BLACK)
+    waitstate
+    setrespawn(HEAL_LOCATION_AW_ROUTE108)
+    special(HealPlayerParty)
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    fadescreen(FADE_FROM_BLACK)
+    waitstate
+    releaseall
 }
 
 movement Route108_ProfessorEnter {

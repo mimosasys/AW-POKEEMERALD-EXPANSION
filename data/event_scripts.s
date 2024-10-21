@@ -1095,3 +1095,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AW_PuceCity_Gym/scripts.inc"
 
 	.include "data/maps/AW_TestArea1/scripts.inc"
+
+	.include "data/maps/AW_PortMulberry_PokeCenter/scripts.inc"
