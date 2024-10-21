@@ -22474,3 +22474,31 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+// AW MOVESETS START HERE
+
+static const struct LevelUpMove sAlpacoilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_POUND),
+    LEVEL_UP_MOVE(4, MOVE_GROWL),
+    LEVEL_UP_MOVE(7, MOVE_WRAP),
+    LEVEL_UP_END
+};
+
+//
+
+static const struct LevelUpMove sSmackopLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE(4, MOVE_LEER),
+    LEVEL_UP_MOVE(7, MOVE_QUICK_ATTACK),
+    LEVEL_UP_END
+};
+
+//
+
+static const struct LevelUpMove sPuppixyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TACKLE),
+    LEVEL_UP_MOVE(4, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(7, MOVE_ROLLOUT),
+    LEVEL_UP_MOVE(11, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE(15, MOVE_FAIRY_WIND),
+    LEVEL_UP_END
+};
