@@ -2438,6 +2438,10 @@ enum {
     CRY_PUPPIXY,
     CRY_FAERDILLO,
     CRY_ARMANOVA,
+    //
+    CRY_SIGNOLL,
+    //
+    CRY_GNOSEPASS,
 
     CRY_COUNT,
 };

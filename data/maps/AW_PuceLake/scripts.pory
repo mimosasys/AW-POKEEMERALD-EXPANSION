@@ -1,5 +1,12 @@
 mapscripts AW_PuceLake_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: PuceLake_MeetAvery_OnTransition
+}
 
+script PuceLake_MeetAvery_OnTransition {
+    setflag(FLAG_AW_HIDE_MIKE_1)
+    setflag(FLAG_AW_HIDE_MIKE_2)
+    setflag(FLAG_AW_HIDE_MIKE_3)
+    end
 }
 
 script PuceLake_MeetAvery {
@@ -15,7 +22,7 @@ script PuceLake_MeetAvery {
     waitmovement(5)
     
     msgbox(format(
-        "Avery: Gear's quite a character, aren't they? I'm glad they're safe.\p"
+        "Fern: Gear's quite a character, aren't they? I'm glad they're safe.\p"
         "Well, this is Puce Lake. The lake itself is just around this path here, it's not far.\p"
         "It's quite a lovely place, actually. I come here to wind down after a hard day working!"
         ))
@@ -30,14 +37,14 @@ script PuceLake_MeetAvery {
     applymovement(5,WalkDownSpot)
     waitmovement(0)
     msgbox(format(
-        "Avery: It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
+        "Fern: It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
         "Not with Team Jade about. They'll try steal our research again."
         ))
     waitmessage
     applymovement(4,FaceRight)
     applymovement(5,FaceRight)
     msgbox(format(
-        "Avery: Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
+        "Fern: Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
         "They've been around for a few years, and they've had a few successes, too.\p"
         "It's really set us back a lot. That's part of the reason we're so short-staffed. So many of them have just... given up, really.\p"
         "But I'm not giving up. I don't care if we have funding or not. I'm going to uncover the history of this region."
@@ -48,13 +55,19 @@ script PuceLake_MeetAvery {
     msgbox(format(
         "Carla: ...You can tell he's really passionate about this, can't you?\p"
         "Um, we'll head on down to the lakeside. You'll see the dig site on the south side.\p"
-        "I'll give you the tour once we're there! I hope you're excited to see it!"
+        "I'll give you the tour once we're there! I hope you're excited to see it!\p"
+        "Oh, and here's a little gift from Avery and I.\p"
+        "Consider it thanks for joining the team. I know it's not much, but..."
         ))
     waitmessage
+    closemessage
     applymovement(5,WalkRightSpot)
     waitmovement(0)
+    giveitem(ITEM_POTION,5)
+    waitmessage
+    delay(15)
     msgbox(format(
-        "Avery: Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
+        "Fern: Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
         ))
     waitmessage
     applymovement(4,PuceLake_CarlaLeavePlayer1)
@@ -107,7 +120,7 @@ script PuceLake_MeetAvery {
         ))
     waitmessage
     closemessage
-    applymovement(6,EmoteExclamationMark)
+    applymovement(6,EmoteExclamation)
     waitmovement(0)
     msgbox(format(
         "N- no way! That's what happened to you, too?!\p"
@@ -149,8 +162,9 @@ script PuceLake_MeetAvery {
 
 script PuceLake_MikeTalk {
     lockall
+    setflag(FLAG_AW_HIDE_MIKE_1)
     clearflag(FLAG_AW_HIDE_MIKE_2)
-    setvar(VAR_AW_PROGRESS_2,1)
+    setvar(VAR_AW_PROGRESS_2,2)
 
     removeobject(6,MAP_AW_PUCE_LAKE)
     addobject(10)
@@ -188,8 +202,8 @@ script PuceLake_MikeTalk {
 }
 
 script PuceLake_MeetCarla {
-    setvar(VAR_AW_PROGRESS_2,2)
     removeobject(10)
+    setflag(FLAG_AW_HIDE_MIKE_2)
     clearflag(FLAG_AW_HIDE_MIKE_3)
     addobject(11)
     addobject(12)
@@ -278,7 +292,7 @@ script PuceLake_MeetCarla {
     waitmovement(0)
     msgbox(format(
         "Carla: Team Jade! How did I know you guys would show up?\p"
-        "{PLAYER}, it seems your friend here is with those Jade guys. That's not good for us.\p"
+        "{PLAYER}, it seems your friend here is with those Jade guys. That's not good for us."
     ))
     applymovement(12,WalkLeftSpot)
     msgbox(format(
@@ -323,6 +337,7 @@ script PuceLake_MeetCarla {
         waitmovement(0)
     }
 
+    playbgm(MUS_ENCOUNTER_AQUA,FALSE)
     msgbox(format(
         "Mike: I... I couldn't do it..."
     ))
@@ -346,7 +361,7 @@ script PuceLake_MeetCarla {
     applymovement(13,PuceLake_Grunt2ComeBack)
 
     msgbox(format(
-        "Grunt 1: Alrighty then. Prepare to feel the power of Team Jade!\p"
+        "Grunt 1: Alrighty then. Prepare to feel the power of Team Jade!"
     ))
     waitmessage
     closemessage
@@ -358,6 +373,10 @@ script PuceLake_MeetCarla {
         applymovement(14,PuceLake_CarlaJoin2)
         waitmovement(0)
     }
+
+    playfanfare(SE_USE_ITEM)
+    waitfanfare
+    special(HealPlayerParty)
 
     msgbox(format(
         "Carla: I got your back, {PLAYER}.\p"
@@ -469,15 +488,228 @@ script PuceLake_MeetCarla {
     ))
     waitmessage
 
-    setvar(VAR_AW_PROGRESS_1,9)
+    //setvar(VAR_AW_PROGRESS_1,9)
+    setvar(VAR_AW_PROGRESS_2,3)
+    setflag(FLAG_AW_HIDE_MIKE_3)
+    setflag(FLAG_AW_HIDE_MIKE_2)
+    setflag(FLAG_AW_HIDE_MIKE_1)
+    removeobject(11)
+    removeobject(12)
+    removeobject(13)
 
+    if (var(VAR_TEMP_3) == 0) {
+        setobjectxyperm(14,35,23)
+    } else {
+        setobjectxyperm(14,35,22)
+    }
     releaseall
     end
 }
 
+script PuceLake_TalkWendy {
+    lockall
+    faceplayer
+    msgbox(format(
+        "Hm? Hey, you're a young trainer!\p"
+        "The name's Wendy, 'n I'm the gym leader of Puce City.\p"
+        "You wanna challenge the gym, hey?\p"
+        "'nfortunately, I can't just let anyone fight me out of the blue like this.\p"
+        "You've gotta be registered with the league first, ya see.\p"
+        "And, well, I'm sorta new to this whole gym leader thing.\p"
+        "Look, it's tempting to just get straight into it, I admit, but there's all sorts of regulations and things I gotta follow.\p"
+        "If ya wanna get registered, fly on over to the gym when I'm back.\p"
+        "I'm just, uh, on my lunch break.\p"
+        "Guess I'll see ya 'round?"
+    ))
+    waitmessage
+    releaseall
+}
+
+script PuceLake_TalkCarla {
+    lockall
+    faceplayer
+    msgbox(format(
+        "Avery's just across there, at the dig site.\p"
+        "Head over when you're ready!"
+    ))
+    waitmessage
+    releaseall
+}
+
+script PuceLake_Trigger4_Left {
+    setvar(VAR_TEMP_4,0)
+    goto(PuceLake_GetToDigSite)
+}
+
+script PuceLake_Trigger4_Right {
+    setvar(VAR_TEMP_4,1)
+    goto(PuceLake_GetToDigSite)
+}
+
+script PuceLake_GetToDigSite {
+    lockall
+    applymovement(15,FacePlayer)
+    waitmovement(0)
+    msgbox(format(
+        "Fern: Sounds like there was a commotion up there!\p"
+        "You alright, {PLAYER}?\p"
+        "I'll bet it was Team Jade, wasn't it?\p"
+        "Looks like you and Carla managed to fend them off, though.\p"
+        "Great job, really. They're real menaces, I'll say."
+    ))
+    waitmessage
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookDown3)
+    waitmovement(0)
+    msgbox(format(
+        "Well, here we are. This is our dig site.\p"
+        "We've managed to mark out the region of interest. Now we're into the important task of actually seeing what we've struck.\p"
+        "You see, a kid from Puce City found a strange artefact on this very beach, and since we were close-by, he came to us.\p"
+        "And, well, I was stunned. It looked hand-carved, but...\p"
+        "As I'm sure you're aware, humans have only been in the --- Region for a few hundred years, because of how remote it is.\p"
+        "So finding something as intricately designed as that? Dating back to as old as it was?\p"
+        "Things like this are exactly why I came to --- in the first place, five years ago."
+    ))
+    waitmessage
+    applymovement(15,LookDown)
+    waitmovement(0)
+    msgbox(format(
+        "I hate to say it, but our current dig team is a bit of a rag-tag group.\p"
+        "We had to bring everyone together rather quickly.\p"
+        "If I'm honest, this is the first dig we've had that I'm truly excited about.\p"
+        "I've just got no idea what we'll find."
+    ))
+    waitmessage
+    closemessage
+
+    delay(15)
+
+    applymovement(2,PuceLake_Scientist1)
+    fadeoutbgm(1)
+    waitmovement(0)
+    msgbox(format(
+        "Scientist: P-Professor...! I- I think I've found something of importance!"
+    ))
+    waitmessage
+    applymovement(15,WalkDownSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Fern: What is it?\p"
+        "Scientist: O-over here...!"
+    ))
+    waitmessage
+
+    applymovement(2,PuceLake_Scientist2)
+    applymovement(15,PuceLake_AveryFollowScientist)
+    applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerFollowAvery1)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    special(RemoveCameraObject)
+    if (var(VAR_TEMP_4) == 0) {
+        applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerFollowAvery2)
+    }
+    else {
+        applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerFollowAvery3)
+    }
+    waitmovement(0)
+
+    msgbox(format(
+        "Scientist: ...Do you see it?\p"
+        "Fern: See what?\p"
+        "Scientist: The... the carving...!"
+    ))
+    waitmessage
+
+    applymovement(15,EmoteQuestion)
+    waitmovement(0)
+    delay(60)
+    applymovement(15,EmoteExclamation)
+    waitmovement(0)
+
+    msgbox(format(
+        "Fern: ...Oh my goodness.\p"
+        "It... it's some sort of language. It has to be.\p"
+        "The stone is... it's painted...!\p"
+        "Terry, this is a major discovery!\p"
+        "We have to get to work bringing this back to the lab!"
+    ))
+    waitmessage
+
+    applymovement(2,WalkRightSpot)
+    waitmovement(0)
+    
+    msgbox(format(
+        "Scientist: Y-yes! Of course!"
+    ))
+    waitmessage
+
+    applymovement(15,PuceLake_AveryGotoPlayer2)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
+    waitmovement(0)
+
+    msgbox(format(
+        "Fern: {PLAYER}, sorry, this is a bit bigger than I was expecting.\p"
+        "I was going to get you to help out with tagging things, just to start you off...\p"
+        "But this has gotten way out of hand. I'm gonna have to ask you to let the professionals handle this one.\p"
+        "A bit of a let down, I know, but just think!\p"
+        "What have we just discovered? What secrets will we unearth?\p"
+        "I'll uh... I'll call you when this is all sorted out.\p"
+        "For now, just relax. We'll take care of this."
+    ))
+    waitmessage
+    closemessage
+
+    fadescreen(FADE_TO_BLACK)
+    delay(60)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerGotoLeave)
+
+    //formatwarp(MAP_AW_PUCE_LAKE,31,23)
+
+    setflag(FLAG_AW_HIDE_PROFS_PUCE_LAKE2)
+    setmetatile(21,35,0x071,FALSE)
+    waitmovement(0)
+    fadescreen(FADE_FROM_BLACK)
+    fadeinbgm(1)
+    applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerLeave)
+    waitmovement(0)
+    applymovement(16,PuceLake_WendyGotoPlayer)
+    waitmovement(0)
+
+    msgbox(format(
+        "Wendy: Hey! I, uh...\p"
+        "I saw you take out those other trainers back there.\p"
+        "You've got some guts, you know?\p"
+        "If you want another challenge, head on over to my gym.\p"
+        "I'll get you set up with the league registry and everything!\p"
+        "Looks like my lunch break is over, so hopefully I'll see you there!"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(16,PuceLake_WendyLeave)
+    //setflag(FLAG_GYM_)
+    setvar(VAR_AW_PROGRESS_2,4)
+    setvar(VAR_AW_PROGRESS_1,9)
+    waitmovement(0)
+    setobjectxyperm(16,0,0)
+    removeobject(16)
+
+    releaseall
+}
+
+script PuceLake_DigSiteSign {
+    lockall
+    msgbox(format(
+        "- TEAM TOPAZ DIG SITE -\nAuthorized Persons Only\p"
+    ),MSGBOX_SIGN)
+    waitmessage
+    releaseall
+}
+
 script PuceLake_DontLeaveYet1 {
     lockall
-    applymovement(6,WalkLeftSpot)
+    applymovement(6,FacePlayer)
     waitmovement(0)
     msgbox(format(
         "Mike: {PLAYER}? Come on, you go ahead.\p"
@@ -491,7 +723,7 @@ script PuceLake_DontLeaveYet1 {
 
 script PuceLake_DontLeaveYet2 {
     lockall
-    applymovement(10,WalkLeftSpot)
+    applymovement(10,FacePlayer)
     waitmovement(0)
     msgbox(format(
         "Mike: I'm alright, {PLAYER}, don't worry.\p"
@@ -506,28 +738,24 @@ script PuceLake_DontLeaveYet2 {
 script PuceLake_Trigger1_Upper {
     setvar(VAR_TEMP_0,0)
     goto_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
-    goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_DontLeaveYet1)
     end
 }
 
 script PuceLake_Trigger1_Lower {
     setvar(VAR_TEMP_0,1)
     goto_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
-    goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_DontLeaveYet1)
     end
 }
 
 script PuceLake_Trigger2_Upper {
     setvar(VAR_TEMP_2,0)
     goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
-    goto_if_eq(VAR_AW_PROGRESS_2,2,PuceLake_DontLeaveYet2)
     end   
 }
 
 script PuceLake_Trigger2_Lower {
     setvar(VAR_TEMP_2,1)
     goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
-    goto_if_eq(VAR_AW_PROGRESS_2,2,PuceLake_DontLeaveYet2)
     end  
 }
 
@@ -709,17 +937,17 @@ movement PuceLake_Grunt2ComeBack {
 }
 
 movement PuceLake_MikeGetOut {
-    walk_fast_left*2
+    walk_fast_right*2
     face_left
 }
 
 movement PuceLake_CarlaJoin1 {
-    walk_fast_left*2
+    walk_right*2
 }
 
 movement PuceLake_CarlaJoin2 {
-    walk_fast_up
-    walk_fast_left*2
+    walk_up
+    walk_right*2
 }
 
 movement PuceLake_GruntsRun {
@@ -729,11 +957,89 @@ movement PuceLake_GruntsRun {
 }
 
 movement PuceLake_GruntGrabMike1 {
-    walk_fast_down*5
+    walk_fast_down*6
 }
 
 movement PuceLake_GruntGrabMike2 {
     walk_fast_up*7
+}
+
+movement PuceLake_Scientist1 {
+    emote_question_mark
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    emote_exclamation_mark
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    walk_in_place_slow_right*3
+    walk_fast_up
+    walk_fast_right
+    walk_fast_up*2
+    walk_in_place_fast_up*3
+}
+
+movement PuceLake_Scientist2 {
+    walk_fast_down*2
+    walk_fast_left
+    walk_fast_down
+    face_right
+}
+
+movement PuceLake_AveryFollowScientist {
+    walk_down*3
+    walk_right
+    walk_down
+    face_left
+}
+
+movement PuceLake_PlayerFollowAvery1 {
+    walk_down*3
+}
+
+movement PuceLake_PlayerFollowAvery2 {
+    walk_right
+    walk_down*2
+
+}
+
+movement PuceLake_PlayerFollowAvery3 {
+    walk_down*2
+
+}
+
+movement PuceLake_AveryGotoPlayer2 {
+    walk_fast_up
+    face_player
+}
+
+movement PuceLake_PlayerGotoLeave {
+    walk_faster_up*6
+    walk_faster_right*6
+    walk_faster_up*5
+    walk_faster_right*4
+}
+
+movement PuceLake_PlayerLeave {
+    walk_right*4
+    walk_up
+    walk_right*2
+    walk_up*6
+}
+
+movement PuceLake_WendyGotoPlayer {
+    walk_down*2
+}
+
+movement PuceLake_WendyLeave {
+    walk_right*3
+    walk_down
+    walk_right*3
+    walk_down
+    walk_right*3
 }
 
 movement FaceLeft {
@@ -742,4 +1048,8 @@ movement FaceLeft {
 
 movement WalkLeft1 {
     walk_left
+}
+
+movement EmoteQuestion {
+    emote_question_mark
 }

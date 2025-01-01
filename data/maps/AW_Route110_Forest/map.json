@@ -2,7 +2,7 @@
   "id": "MAP_AW_ROUTE110_FOREST",
   "name": "AW_Route110_Forest",
   "layout": "LAYOUT_AW_ROUTE110_FOREST",
-  "music": "MUS_DUMMY",
+  "music": "AW_MUS_ROUTE_110",
   "region_map_section": "MAPSEC_AW_ROUTE_110",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

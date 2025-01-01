@@ -554,8 +554,12 @@
 #define AW_MUS_BATTLE_TRAINER       618
 #define AW_MUS_PORT_MULBERRY        619
 #define AW_MUS_BATTLE_GYM           620
+#define AW_MUS_ROUTE_110            621
+#define AW_MUS_BATTLE_JADE_ADMIN    622
+#define AW_MUS_POKE_GYM             623
+#define AW_MUS_ROUTE_108_LOWER      624
 
-#define END_MUS                     AW_MUS_BATTLE_GYM
+#define END_MUS                     AW_MUS_ROUTE_108_LOWER
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

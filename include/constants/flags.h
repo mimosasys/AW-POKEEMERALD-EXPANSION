@@ -1234,7 +1234,7 @@
 #define FLAG_AW_HIDE_MIKE_3                                         0x4A0 // Unused Flag
 #define FLAG_AW_HIDE_PROFS_PUCE_LAKE                                0x4A1 // Unused Flag
 #define FLAG_AW_HIDE_PROFS_PUCE_LAKE2                               0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
+#define FLAG_AW_START_GYM                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag

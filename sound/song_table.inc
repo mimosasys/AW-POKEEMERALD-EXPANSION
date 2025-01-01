@@ -623,6 +623,10 @@ gSongTable::
 	song aw_mus_battle_trainer, 0, 0
 	song aw_mus_port_mulberry, 0, 0
 	song aw_mus_battle_gym, 0, 0
+	song aw_mus_route_110, 0, 0
+	song aw_mus_battle_jade_admin, 0, 0
+	song aw_mus_poke_gym, 0, 0
+	song aw_mus_route_108_lower, 0, 0
 
 	.align 2
 dummy_song_header:

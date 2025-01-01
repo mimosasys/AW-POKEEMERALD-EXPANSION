@@ -8,6 +8,35 @@ script PortMulberry_PokeCenter_OnTransition {
     end
 }
 
+script PortMulberry_PokeCenter_NPC1 {
+    lockall
+    faceplayer
+    msgbox(format(
+        "Ah! A young trainer!\p"
+        "'ow lovely to see! It iz wonderful...\p"
+        "I am Martine, a travelling chef from Kalos.\p"
+        "A long way to travel, non?"
+    ))
+    waitmessage
+    releaseall
+}
+
+script PortMulberry_PokeCenter_NPC2 {
+    lockall
+    faceplayer
+    msgbox(format(
+        "Woah! I didn't hear you coming, I was so engrossed in this book!\p"
+        "What book is it?\p"
+        "'House of Leavanny'.\p"
+        "Ugh, it makes my head spin...\p"
+        "But I can't stop reading!"
+    ))
+    waitmessage
+    applymovement(3,LookUp)
+    releaseall
+}
+
+
 script AW_CommonPokeCenter {
     lockall
     msgbox(format(
@@ -24,14 +53,20 @@ script AW_CommonPokeCenter {
         waitmovement(0)
         incrementgamestat(GAME_STAT_USED_POKECENTER)
         special(HealPlayerParty)
+        closemessage
         dofieldeffect(FLDEFF_POKECENTER_HEAL)
         waitfieldeffect(FLDEFF_POKECENTER_HEAL)
         applymovement(1,WalkDownSpot)
+        msgbox(format(
+            "There we are, all happy and healthy!"
+        ))
+        waitmessage
     }
     msgbox(format(
         "We hope to see you again!"
     ))
     waitmessage
     applymovement(OBJ_EVENT_ID_PLAYER,LookDown)
+    waitmovement(0)
     releaseall
 }

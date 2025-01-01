@@ -42,23 +42,29 @@
   "gMapGroup_AW_Towns": [
     "AW_ErinVillage",
     "AW_PortMulberry",
-    "AW_PuceCity"
+    "AW_PuceCity",
+    "AW_VerdigrisCity"
   ],
   "gMapGroup_AW_Routes": [
     "AW_Route108_Lower",
     "AW_Route110_Forest",
-    "AW_Route110_Path"
+    "AW_Route110_Path",
+    "AW_Route111_East",
+    "AW_Route111_West",
+    "AW_Route112"
   ],
   "gMapGroup_AW_Indoors": [
     "AW_ErinVillage_YourHouse",
     "AW_Route108_Laboratory",
     "AW_PortMulberry_GearLab",
     "AW_PuceCity_Gym",
-    "AW_PortMulberry_PokeCenter"
+    "AW_PortMulberry_PokeCenter",
+    "AW_PuceCity_PokeCenter"
   ],
   "gMapGroup_AW_Misc": [
     "AW_PuceLake",
-    "AW_TestArea1"
+    "AW_TestArea1",
+    "AW_WindFarm"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

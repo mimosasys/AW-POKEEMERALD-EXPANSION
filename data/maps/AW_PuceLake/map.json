@@ -25,7 +25,7 @@
       "x": 17,
       "y": 34,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -44,14 +44,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_AW_HIDE_PROFS_PUCE_LAKE2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
       "x": 30,
       "y": 32,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -199,13 +199,13 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PuceLake_TalkCarla",
       "flag": "FLAG_AW_HIDE_PROFS_PUCE_LAKE2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRANDON",
-      "x": 22,
-      "y": 30,
+      "x": 21,
+      "y": 31,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -214,6 +214,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_AW_HIDE_PROFS_PUCE_LAKE2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 37,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PuceLake_TalkWendy",
+      "flag": "FLAG_AW_START_GYM"
     }
   ],
   "warp_events": [
@@ -225,8 +238,8 @@
       "x": 61,
       "y": 15,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "0",
       "script": "PuceLake_Trigger1_Upper"
     },
     {
@@ -234,8 +247,8 @@
       "x": 61,
       "y": 16,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "0",
       "script": "PuceLake_Trigger1_Lower"
     },
     {
@@ -243,8 +256,8 @@
       "x": 35,
       "y": 22,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "2",
       "script": "PuceLake_Trigger3_Upper"
     },
     {
@@ -252,8 +265,8 @@
       "x": 35,
       "y": 23,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "2",
       "script": "PuceLake_Trigger3_Lower"
     },
     {
@@ -261,8 +274,8 @@
       "x": 52,
       "y": 30,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "1",
       "script": "PuceLake_Trigger2_Upper"
     },
     {
@@ -270,12 +283,73 @@
       "x": 53,
       "y": 31,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "1",
       "script": "PuceLake_Trigger2_Lower"
+    },
+    {
+      "type": "trigger",
+      "x": 61,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "1",
+      "script": "PuceLake_DontLeaveYet1"
+    },
+    {
+      "type": "trigger",
+      "x": 61,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "1",
+      "script": "PuceLake_DontLeaveYet1"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "2",
+      "script": "PuceLake_DontLeaveYet2"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 31,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "2",
+      "script": "PuceLake_DontLeaveYet2"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "3",
+      "script": "PuceLake_Trigger4_Left"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "3",
+      "script": "PuceLake_Trigger4_Right"
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "PuceLake_DigSiteSign"
+    }
   ]
 }

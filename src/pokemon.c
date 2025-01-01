@@ -5402,8 +5402,10 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
-                case TRAINER_CLASS_JADE:
+        case TRAINER_CLASS_JADE:
             return AW_MUS_BATTLE_JADE_GRUNT;
+        case TRAINER_CLASS_JADE_ADMIN:
+            return AW_MUS_BATTLE_JADE_ADMIN;
         default:
             return AW_MUS_BATTLE_TRAINER;
         }

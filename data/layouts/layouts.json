@@ -4515,9 +4515,9 @@
       "id": "LAYOUT_AW_PUCE_CITY_GYM",
       "name": "AW_PuceCity_Gym_Layout",
       "width": 20,
-      "height": 20,
+      "height": 22,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Unused2",
+      "secondary_tileset": "gTileset_PuceGym",
       "border_filepath": "data/layouts/AW_PuceCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/AW_PuceCity_Gym/map.bin"
     },
@@ -4540,6 +4540,66 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/AW_PortMulberry_PokeCenter/border.bin",
       "blockdata_filepath": "data/layouts/AW_PortMulberry_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_PUCE_CITY_POKE_CENTER",
+      "name": "AW_PuceCity_PokeCenter_Layout",
+      "width": 16,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/AW_PuceCity_PokeCenter/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PuceCity_PokeCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_VERDIGRIS_CITY",
+      "name": "AW_VerdigrisCity_Layout",
+      "width": 46,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/AW_VerdigrisCity/border.bin",
+      "blockdata_filepath": "data/layouts/AW_VerdigrisCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE111_EAST",
+      "name": "AW_Route111_East_Layout",
+      "width": 60,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_EverGrande",
+      "border_filepath": "data/layouts/AW_Route111_East/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route111_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE111_WEST",
+      "name": "AW_Route111_West_Layout",
+      "width": 60,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AW_Route111_West/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route111_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE112",
+      "name": "AW_Route112_Layout",
+      "width": 20,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AW_Route112/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route112/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_WIND_FARM",
+      "name": "AW_WindFarm_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/AW_WindFarm/border.bin",
+      "blockdata_filepath": "data/layouts/AW_WindFarm/map.bin"
     }
   ]
 }

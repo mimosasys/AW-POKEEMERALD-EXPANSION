@@ -1,1 +1,1 @@
-ffmpeg -i sound/direct_sound_samples/cries/_AW/puppixy.mp3 -c:a pcm_s8 -ac 1 -ar 13379 sound/direct_sound_samples/cries/_AW/puppixy.aif
+ffmpeg -i sound/direct_sound_samples/cries/_AW/llamalloy.mp3 -c:a pcm_s8 -ac 1 -ar 13379 sound/direct_sound_samples/cries/_AW/llamalloy.aif

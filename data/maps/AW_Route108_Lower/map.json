@@ -2,7 +2,7 @@
   "id": "MAP_AW_ROUTE108_LOWER",
   "name": "AW_Route108_Lower",
   "layout": "LAYOUT_AW_ROUTE108_LOWER",
-  "music": "MUS_LILYCOVE",
+  "music": "AW_MUS_ROUTE_108_LOWER",
   "region_map_section": "MAPSEC_AW_ROUTE_108",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

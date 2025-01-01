@@ -1274,6 +1274,10 @@ SECTIONS {
         sound/songs/midi/aw_mus_battle_trainer.o(.rodata);
         sound/songs/midi/aw_mus_port_mulberry.o(.rodata);
         sound/songs/midi/aw_mus_battle_gym.o(.rodata);
+        sound/songs/midi/aw_mus_route_110.o(.rodata);
+        sound/songs/midi/aw_mus_battle_jade_admin.o(.rodata);
+        sound/songs/midi/aw_mus_poke_gym.o(.rodata);
+        sound/songs/midi/aw_mus_route_108_lower.o(.rodata);
     } > ROM =0
 
     lib_rodata :

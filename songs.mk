@@ -1271,3 +1271,16 @@ $(MID_SUBDIR)/aw_mus_port_mulberry.s: %.s: %.mid
 
 $(MID_SUBDIR)/aw_mus_battle_gym.s: %.s: %.mid
 	$(MID) $< $@ -E -R0 -G229 -V115
+
+$(MID_SUBDIR)/aw_mus_route_110.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_battle_jade_admin.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+$(MID_SUBDIR)/aw_mus_poke_gym.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120
+
+
+$(MID_SUBDIR)/aw_mus_route_108_lower.s: %.s: %.mid
+	$(MID) $< $@ -E -R0 -G229 -V120

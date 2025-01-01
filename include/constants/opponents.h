@@ -14,12 +14,12 @@
 #define TRAINER_RIVAL_PUCELAKE_ALPACOIL       5
 #define TRAINER_RIVAL_PUCELAKE_SMACKOP        6
 #define TRAINER_RIVAL_PUCELAKE_PUPPIXY        7
+#define TRAINER_PARA                          8
+#define TRAINER_ROBIN                         9
+#define TRAINER_JAY                           10
+#define TRAINER_LEADER_WENDY                        11
 
 //
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
-#define TRAINER_GABRIELLE_1                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
-#define TRAINER_MARCEL                       11
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
@@ -620,7 +620,7 @@
 #define TRAINER_HALEY_4                     609
 #define TRAINER_HALEY_5                     610
 #define TRAINER_SALLY                       611
-#define TRAINER_ROBIN                       612
+// #define TRAINER_ROBIN                       612
 #define TRAINER_ANDREA                      613
 #define TRAINER_CRISSY                      614
 #define TRAINER_RICK                        615

@@ -11496,7 +11496,7 @@
           "map": "MAP_AW_ROUTE108_LOWER",
           "base_label": "gAW_Route108_Lower0",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 2,
@@ -11565,66 +11565,66 @@
           "map": "MAP_AW_ROUTE110_FOREST",
           "base_label": "gAW_Route110_Forest0",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 18,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 6,
+                "max_level": 7,
                 "species": "SPECIES_TROPILOT"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_SPINARAK"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_CUTIEFLY"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 7,
                 "species": "SPECIES_TERMEET"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 7,
                 "species": "SPECIES_FOONGUS"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_TROPILOT"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 7,
                 "species": "SPECIES_SPINARAK"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 6,
+                "max_level": 8,
                 "species": "SPECIES_SIGNOLL"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_FOONGUS"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 7,
+                "max_level": 10,
                 "species": "SPECIES_TERMEET"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_NONE"
               }
             ]
@@ -11634,67 +11634,343 @@
           "map": "MAP_AW_ROUTE110_PATH",
           "base_label": "gAW_Route110_Path0",
           "land_mons": {
-            "encounter_rate": 12,
+            "encounter_rate": 16,
             "mons": [
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_NONE"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_TROPILOT"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_SPINARAK"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_CUTIEFLY"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_TERMEET"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_TROPILOT"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_SPINARAK"
               },
               {
-                "min_level": 2,
-                "max_level": 3,
+                "min_level": 7,
+                "max_level": 8,
                 "species": "SPECIES_SIGNOLL"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 8,
+                "max_level": 9,
                 "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 8,
+                "max_level": 10,
                 "species": "SPECIES_TERMEET"
               },
               {
-                "min_level": 3,
-                "max_level": 4,
+                "min_level": 8,
+                "max_level": 9,
                 "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AW_ROUTE111_EAST",
+          "base_label": "gAW_Route111_East0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_BASILT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_PHANPY"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SNUBBULL"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_BASILT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_PHANPY"
+              },
+              {
+                "min_level": 7,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_STONJOURNER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_EEVEE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_EEVEE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AW_ROUTE111_WEST",
+          "base_label": "gAW_Route111_West0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_BASILT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_PHANPY"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SNUBBULL"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_YUWANA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_NOSEPASS"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_PHANPY"
+              },
+              {
+                "min_level": 7,
+                "max_level": 8,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_STONJOURNER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_EEVEE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_EEVEE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AW_ROUTE112",
+          "base_label": "gAW_Route1120",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_BASILT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_CLAMOUR"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_CLAYBARA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_CLAMOUR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_CLAYBARA"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_BASILT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SKUARCTIC"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_SKUARCTIC"
+              },
+              {
+                "min_level": 7,
+                "max_level": 8,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 8,
+                "max_level": 9,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 7,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 8,
+                "species": "SPECIES_BASILT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AW_WIND_FARM",
+          "base_label": "gAW_WindFarm0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_SIGNOLL"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ESCASETE"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_KLINK"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_SKUARCTIC"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_SIGNOLL"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ESCASETE"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_KLINK"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_MAGNEMITE"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_OHMEOW"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_OHMEOW"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_OHMEOW"
               }
             ]
           }

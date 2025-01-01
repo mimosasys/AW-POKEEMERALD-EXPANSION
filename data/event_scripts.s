@@ -1097,3 +1097,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AW_TestArea1/scripts.inc"
 
 	.include "data/maps/AW_PortMulberry_PokeCenter/scripts.inc"
+
+	.include "data/maps/AW_PuceCity_PokeCenter/scripts.inc"
+
+	.include "data/maps/AW_VerdigrisCity/scripts.inc"
+
+	.include "data/maps/AW_Route111_East/scripts.inc"
+
+	.include "data/maps/AW_Route111_West/scripts.inc"
+
+	.include "data/maps/AW_Route112/scripts.inc"
+
+	.include "data/maps/AW_WindFarm/scripts.inc"

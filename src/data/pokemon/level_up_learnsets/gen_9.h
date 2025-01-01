@@ -22502,3 +22502,19 @@ static const struct LevelUpMove sPuppixyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_FAIRY_WIND),
     LEVEL_UP_END
 };
+
+//
+
+static const struct LevelUpMove sSkuarcticLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_PECK),
+    LEVEL_UP_MOVE(1, MOVE_LEER),
+    LEVEL_UP_MOVE(5, MOVE_GUST),
+    LEVEL_UP_MOVE(7, MOVE_TAUNT),
+    LEVEL_UP_MOVE(13, MOVE_SNATCH),
+    LEVEL_UP_MOVE(19, MOVE_FLING),
+    LEVEL_UP_MOVE(25, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(31, MOVE_TORMENT),
+    LEVEL_UP_MOVE(36, MOVE_DRILL_PECK),
+    LEVEL_UP_MOVE(42, MOVE_NIGHT_SLASH),
+    LEVEL_UP_END
+};

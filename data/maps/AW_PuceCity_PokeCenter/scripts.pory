@@ -1,0 +1,34 @@
+mapscripts AW_PuceCity_PokeCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: PuceCity_PokeCenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script PuceCity_PokeCenter_OnTransition {
+    setrespawn(HEAL_LOCATION_AW_PUCE_CITY)
+    end
+}
+
+script PuceCity_PokeCenter_NPC1 {
+    lockall
+    faceplayer
+    msgbox(format(
+        "The spirits seem at peace today.\p"
+        "Maybe in your travels you'll go to the Spirit Valley.\p"
+        "Tell those there I said hello."
+        ))
+    waitmessage
+    releaseall
+}
+
+script PuceCity_PokeCenter_NPC2 {
+    lockall
+    faceplayer
+    msgbox(format(
+        "...\p"
+        "...\p"
+        "...This show sucks."
+        ))
+    waitmessage
+    applymovement(3,LookUp)
+    releaseall
+}

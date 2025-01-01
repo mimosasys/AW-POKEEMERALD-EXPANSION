@@ -13100,6 +13100,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_Armanova[] = INCBIN_U32("graphics/pokemon/_AW/armanova/shiny.gbapal.lz");
     const u8 gMonIcon_Armanova[] = INCBIN_U8("graphics/pokemon/_AW/armanova/icon.4bpp");
 
+    // Skuarctic
+
+    const u32 gMonFrontPic_Skuarctic[] = INCBIN_U32("graphics/pokemon/_AW/skuarctic/anim_front.4bpp.lz");
+    const u32 gMonPalette_Skuarctic[] = INCBIN_U32("graphics/pokemon/_AW/skuarctic/normal.gbapal.lz");
+    const u32 gMonBackPic_Skuarctic[] = INCBIN_U32("graphics/pokemon/_AW/skuarctic/back.4bpp.lz");
+    const u32 gMonShinyPalette_Skuarctic[] = INCBIN_U32("graphics/pokemon/_AW/skuarctic/shiny.gbapal.lz");
+    const u32 gMonIcon_Skuarctic[] = INCBIN_U32("graphics/pokemon/_AW/skuarctic/icon.4bpp");
+
     // Dewsel
 	const u32 gMonFrontPic_Dewsel[] = INCBIN_U32("graphics/pokemon/_AW/dewsel/anim_front.4bpp.lz");
 	const u32 gMonPalette_Dewsel[] = INCBIN_U32("graphics/pokemon/_AW/dewsel/normal.gbapal.lz");
@@ -13176,6 +13184,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 	const u32 gMonBackPic_Siphormix[] = INCBIN_U32("graphics/pokemon/_AW/siphormix/back.4bpp.lz");
 	const u32 gMonShinyPalette_Siphormix[] = INCBIN_U32("graphics/pokemon/_AW/siphormix/shiny.gbapal.lz");
 	const u8 gMonIcon_Siphormix[] = INCBIN_U8("graphics/pokemon/_AW/siphormix/icon.4bpp");
+
+    // Gnosepass
+	const u32 gMonFrontPic_Gnosepass[] = INCBIN_U32("graphics/pokemon/_AW/gnosepass/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gnosepass[] = INCBIN_U32("graphics/pokemon/_AW/gnosepass/normal.gbapal.lz");
+    const u32 gMonBackPic_Gnosepass[] = INCBIN_U32("graphics/pokemon/_AW/gnosepass/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gnosepass[] = INCBIN_U32("graphics/pokemon/_AW/gnosepass/shiny.gbapal.lz");
+    const u32 gMonIcon_Gnosepass[] = INCBIN_U32("graphics/pokemon/_AW/gnosepass/icon.4bpp");
 
     // Psyduck Regional
 	const u32 gMonFrontPic_Psyduck_AW[] = INCBIN_U32("graphics/pokemon/_AW/psyduck/anim_front.4bpp.lz");

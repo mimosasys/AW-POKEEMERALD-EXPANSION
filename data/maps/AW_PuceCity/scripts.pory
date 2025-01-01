@@ -4,7 +4,7 @@ mapscripts AW_PuceCity_MapScripts {
 
 script PuceCity_Artist {
     lockall
-    applymovement(3,EmoteExclamationMark)
+    applymovement(3,EmoteExclamation)
     waitmovement(0)
     msgbox(format(
         "Ah! No, no, no!\p"
@@ -17,8 +17,35 @@ script PuceCity_Artist {
     releaseall
 }
 
-movement EmoteExclamationMark {
-    emote_exclamation_mark
+script PuceCity_CantGetIntoGym {
+    lockall
+    applymovement(4,FacePlayer)
+    if (var(VAR_AW_PROGRESS_2) < 3) {
+        msgbox(format(
+            "Hey, kid! Wanting to challenge the gym?\p"
+            "Oh, you aren't registered with the league...\p"
+            "You're going to need to do that before you can challenge Wendy.\p"
+            "Sorry, pal.\p"
+            "Actually, Wendy's not even here right now.\p"
+            "She's off at the lake. Maybe see if she can help you out?"
+        ))
+        waitmessage
+        applymovement(OBJ_EVENT_ID_PLAYER,WalkDown1)
+        waitmovement(0)
+    } else {
+        msgbox(format(
+            "Hey, sorry, I can't let you in unless you're set up with the Pokémon league.\p"
+            "Oh, Wendy said she'll sort it out?\p"
+            "Great! She's just gotten back now!\p"
+            "Head on in, and good luck with the gym!"
+        ))
+        //setvar(VAR_AW_GYM_PROGRESS,1)
+        waitmessage
+        warpdoor(MAP_AW_PUCE_CITY_GYM,0)
+    }
+    // applymovement(OBJ_EVENT_ID_PLAYER,WalkUp1)
+    // waitmovement(0)
+    releaseall
 }
 
 movement WalkUp1 {

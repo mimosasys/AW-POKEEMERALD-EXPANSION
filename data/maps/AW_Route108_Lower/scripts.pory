@@ -36,6 +36,7 @@ script Route108_Lower_Transition {
         "Fern: Well, {PLAYER}, this is Route 108.\p"
     ))
     waitmessage
+    closemessage
     applymovement(2,FaceRight)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookRight3)
     waitmovement(0)
@@ -43,6 +44,7 @@ script Route108_Lower_Transition {
         "To the east is Port Mulberry. It's the closest town to the lab.\p"
     ))
     waitmessage
+    closemessage
     applymovement(2,LookDown)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookLeft3)
     waitmovement(0)
@@ -52,6 +54,7 @@ script Route108_Lower_Transition {
        "And south of us is Puce City, and the nearby Puce Lake. It's an important dig site for us.\p"
     ))
     waitmessage
+    closemessage
     applymovement(2,LookUp)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookUp3)
     waitmovement(0)
@@ -61,6 +64,7 @@ script Route108_Lower_Transition {
         "Here, take these. I've got plenty spare.\p"
     ))
     waitmessage
+    closemessage
     applymovement(2,WalkUpSpot)
     waitmovement(0)
     giveitem(ITEM_POKE_BALL,10)
@@ -73,6 +77,7 @@ script Route108_Lower_Transition {
         "It's best to lower the other Pokémon's health a fair bit before throwing a ball, but who knows, you might get lucky!\p"
     ))
     waitmessage
+    closemessage
     applymovement(3,Carla_GoToPlayer)
     waitmovement(0)
     message(format(
@@ -296,9 +301,9 @@ movement Professor_MoveToGrass {
 }
 
 movement Carla_MoveToGrass {
-    walk_down*2
-    walk_left
     walk_down*3
+    walk_left
+    walk_down*2
     walk_left
     face_right
 }

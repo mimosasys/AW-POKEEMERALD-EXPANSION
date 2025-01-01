@@ -6175,6 +6175,14 @@ Cry_Faerdillo::
 Cry_Armanova::
 	.incbin "sound/direct_sound_samples/cries/_AW/armanova.bin"
 
+@	
+Cry_Signoll::
+	.incbin "sound/direct_sound_samples/cries/_AW/signoll.bin"
+
+@
+Cry_Gnosepass::
+	.incbin "sound/direct_sound_samples/cries/_AW/gnosepass.bin"
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

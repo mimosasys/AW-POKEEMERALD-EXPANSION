@@ -1,0 +1,208 @@
+mapscripts AW_PuceCity_Gym_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_GYM_PROGRESS, 0: PuceCity_Gym_Welcome
+        // VAR_AW_PROGRESS_1, 5: Route108_HideOrShowTruck
+    ]
+}
+
+script PuceCity_Gym_Man {
+    
+}
+
+script PuceCity_Gym_Welcome {
+    lockall
+    setvar(VAR_AW_GYM_PROGRESS,1)
+    applymovement(OBJ_EVENT_ID_PLAYER,PuceCity_Gym_PlayerEnter)
+    applymovement(6,WalkDownSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Wendy: Ah! Great, you came!\p"
+        "I'll introduce myself again. Th' name's Wendy, and I'm the gym leader.\p"
+        "Since you've never done one before, I'll give you the rundown.\p"
+        "Across the --- region, there are 8 gyms.\p"
+        "'f you defeat all of 'em, you get to fight these super-strong trainers called the 'Elite Four'.\p"
+        "Then you face the Champion, the strongest trainer in the region!\p"
+        "That's if you want to take the league challenge, of course."
+    ))
+    waitmessage
+    msgbox(format(
+        "So, whaddaya say? You want to give it a shot?"
+    ),MSGBOX_YESNO)
+    while (var(VAR_TEMP_1) == 0) {
+        waitmessage
+        if (var(VAR_TEMP_1) == 0) {
+            if (var(VAR_RESULT) == YES) {
+                setvar(VAR_TEMP_1,1)
+            } else {
+                msgbox(format(
+                    "Aw, come on, I think you've really got some skills in battling.\p"
+                    "I saw how you handled those guys back at the lake.\p"
+                    "And you clearly love being with your Pokémon. It'll be a good chance for all of you to strengthen your bonds.\p"
+                    "So, whaddaya say? You want to give it a shot?"
+                ),MSGBOX_YESNO)
+                waitmessage
+                if (var(VAR_RESULT) == NO) {
+                    setvar(VAR_TEMP_1,2)
+                }
+            }
+        } else {
+            msgbox(format(
+                "Aw, come on, please?"
+            ),MSGBOX_YESNO)
+        }
+    }
+
+    msgbox(format(
+        "Excellent! Consider this your formal introduction to the Pokémon league!\p"
+        "Let me just make sure the registry goes through..."
+    ))
+    waitmessage
+    closemessage
+    delay(30)
+    playse(SE_DING_DONG)
+    waitse
+    msgbox(format(
+        "Fantastic! You're all registered!\p"
+        "Now all you need to do is tackle the gym itself!\p"
+        "Since this is your first time in a Gym, there's not really a puzzle to it."
+    ))
+    waitmessage
+    closemessage
+    applymovement(6,WalkUpSpot)
+    waitmovement(0)
+    msgbox(format(
+        "I just stand at the other end of the room, while you defeat the 3 trainers between us."
+    ))
+    waitmessage
+    closemessage
+    applymovement(6,LookDown)
+    waitmovement(0)
+    msgbox(format(
+        "Then you get to fight me, and if you win, I give you a badge as proof of your victory.\p"
+        "Sound good?\p"
+        "Great! Then I'll get to my place!\p"
+        "Good luck, {PLAYER}! I'll see you at the other end, yeah?"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(6,PuceCity_Gym_WendyWalkAway)
+    waitmovement(0)
+    setflag(FLAG_AW_START_GYM)
+    removeobject(6)
+
+    releaseall
+}
+
+script PuceCity_Gym_Trainer1 {
+    trainerbattle_single(TRAINER_PARA,BirdkeeperParaIntro,BirdkeeperParaOutro)
+    end
+}
+
+script PuceCity_Gym_Trainer2 {
+    trainerbattle_single(TRAINER_ROBIN,BirdkeeperRobinIntro,BirdkeeperRobinOutro)
+    end
+}
+
+script PuceCity_Gym_Trainer3 {
+    trainerbattle_single(TRAINER_JAY,BirdkeeperJayIntro,BirdkeeperJayOutro)
+    end
+}
+
+script PuceCity_Gym_Wendy {
+    lockall
+    msgbox(format(
+        "Wendy: {PLAYER}! Nice job!\p"
+        "Now there's just one thing left to do in the gym!\p"
+        "I gotta say, you're gonna be the first gym challenger I've had.\p"
+        "You ready? I'm flying at you, full force!\p"
+        "Gimme a good battle, won't'cha?"
+    ))
+    waitmessage
+    closemessage
+    trainerbattle_no_intro(TRAINER_LEADER_WENDY,LeaderWendyOutro)
+    msgbox(format(
+        "Well, I can't say I'm all that surprised!\p"
+        "That was some battle, alright, {PLAYER}. You sure have some skills!\p"
+        "'n those Pokémon of yours are just amazing, too!\p"
+        "Before I get started rambling, here's your badge! You've earned it!"
+    ))
+    waitmessage
+    closemessage
+    setflag(FLAG_BADGE01_GET)
+    msgbox(format(
+        "Obtained the Gale Badge from Wendy!"
+    ))
+    playfanfare(MUS_OBTAIN_BADGE)
+    waitfanfare
+    waitmessage
+    closemessage
+    msgbox(format(
+        "Nice! Keep that close, hey?\p"
+        "Well, you've got a whole journey ahead of ya, and a whole region to explore!\p"
+        "I did something like that when I was still studying, and now I'm a gym leader.\p"
+        "Who knows where your journey will take you, eh?\p"
+        "Just make sure to enjoy yourself, {PLAYER}. That's what's important.\p"
+        "I'll see you around, ok? And thanks for the great battle!"
+    ))
+    waitmessage
+    closemessage
+    setvar(VAR_AW_PROGRESS_1,9)
+    releaseall
+}
+
+text BirdkeeperParaIntro {
+    format(
+        "Hey! Welcome to the gym!\p"
+        "Prepare to lose!"
+    )
+}
+
+text BirdkeeperParaOutro {
+    format(
+        "I wasn't expecting that!"
+    )
+}
+
+text BirdkeeperRobinIntro {
+    format(
+        "I'm a big fan of birds! That's why I'm here!"
+    )
+}
+
+text BirdkeeperRobinOutro {
+    format(
+        "Just... just fly away, won't you?!"
+    )
+}
+
+text BirdkeeperJayIntro {
+    format(
+        "Not much longer now! Wendy's just over there!\p"
+        "But it's not over yet!"
+    )
+}
+
+text BirdkeeperJayOutro {
+    format(
+        "Woah!"
+    )
+}
+
+text LeaderWendyOutro {
+    format(
+        "Gah! My feathers, everywhere!"
+    )
+}
+
+movement PuceCity_Gym_PlayerEnter {
+    walk_up
+    walk_right
+    face_up
+}
+
+movement PuceCity_Gym_WendyWalkAway {
+    walk_up
+    walk_right*4
+    walk_up*4
+}

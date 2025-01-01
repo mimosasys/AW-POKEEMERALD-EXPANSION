@@ -2434,6 +2434,10 @@ gCryTable::
 	cry Cry_Puppixy
 	cry Cry_Faerdillo
 	cry Cry_Armanova
+	@
+	cry Cry_Signoll
+	@ 
+	cry Cry_Gnosepass
 
 	.align 2
 gCryTable_Reverse::
@@ -4871,3 +4875,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Puppixy
 	cry_reverse Cry_Faerdillo
 	cry_reverse Cry_Armanova
+	@
+	cry_reverse Cry_Signoll
+	@ 
+	cry_reverse Cry_Gnosepass
