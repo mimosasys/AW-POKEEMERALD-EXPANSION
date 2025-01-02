@@ -2,7 +2,7 @@
   "id": "MAP_AW_PORT_MULBERRY_POKE_CENTER",
   "name": "AW_PortMulberry_PokeCenter",
   "layout": "LAYOUT_AW_PORT_MULBERRY_POKE_CENTER",
-  "music": "MUS_POKE_CENTER",
+  "music": "AW_MUS_PKMN_CENTER",
   "region_map_section": "MAPSEC_AW_PORT_MULBERRY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

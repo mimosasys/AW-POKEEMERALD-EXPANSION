@@ -2,7 +2,7 @@
   "id": "MAP_AW_ROUTE111_EAST",
   "name": "AW_Route111_East",
   "layout": "LAYOUT_AW_ROUTE111_EAST",
-  "music": "MUS_DUMMY",
+  "music": "AW_MUS_ROUTE_111",
   "region_map_section": "MAPSEC_AW_ROUTE_111",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

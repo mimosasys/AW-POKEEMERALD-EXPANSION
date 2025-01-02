@@ -2,7 +2,7 @@
   "id": "MAP_AW_PUCE_CITY_POKE_CENTER",
   "name": "AW_PuceCity_PokeCenter",
   "layout": "LAYOUT_AW_PUCE_CITY_POKE_CENTER",
-  "music": "MUS_POKE_CENTER",
+  "music": "AW_MUS_PKMN_CENTER",
   "region_map_section": "MAPSEC_AW_PUCE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

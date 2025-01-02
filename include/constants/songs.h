@@ -558,8 +558,10 @@
 #define AW_MUS_BATTLE_JADE_ADMIN    622
 #define AW_MUS_POKE_GYM             623
 #define AW_MUS_ROUTE_108_LOWER      624
+#define AW_MUS_ROUTE_111            625
+#define AW_MUS_PKMN_CENTER          626
 
-#define END_MUS                     AW_MUS_ROUTE_108_LOWER
+#define END_MUS                     AW_MUS_PKMN_CENTER
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
