@@ -251,6 +251,51 @@ static bool set_parse_error(struct Parser *p, struct SourceLocation location, co
     return false;
 }
 
+static bool show_parse_error(struct Parser *p)
+{
+    // Print error message.
+    int n = fprintf(stderr, "%s:%d: ", p->source->path, p->error_location.line);
+    fprintf(stderr, "error: %s\n", p->error);
+
+    // Seek to the line.
+    int line, begin, end;
+    for (line = 1, begin = 0; begin < p->source->buffer_n; begin++)
+    {
+        if (p->error_location.line == line)
+            break;
+        if (p->source->buffer[begin] == '\n')
+            line++;
+    }
+    for (end = begin; end < p->source->buffer_n; end++)
+    {
+        if (p->source->buffer[end] == '\n')
+            break;
+    }
+
+    // Print the source line.
+    fprintf(stderr, "%s:%d: %.*s\n", p->source->path, p->error_location.line, end - begin, &p->source->buffer[begin]);
+
+    // Print caret pointing at the column.
+    fprintf(stderr, "%*s", n, "");
+    for (int column = 1; column < p->error_location.column && begin + column < end; column++)
+    {
+        unsigned char c = p->source->buffer[begin + column];
+        fputc(c == '\t' ? c : ' ', stderr);
+    }
+    fprintf(stderr, "^\n");
+
+    p->error = NULL;
+    p->fatal_error = true;
+
+    return false;
+}
+
+static bool set_show_parse_error(struct Parser *p, struct SourceLocation location, const char *error)
+{
+    set_parse_error(p, location, error);
+    return show_parse_error(p);
+}
+
 __attribute__((warn_unused_result))
 static bool peek_char(struct Parser *p, unsigned char *c)
 {
@@ -381,6 +426,12 @@ static bool match_eol(struct Parser *p)
 }
 
 __attribute__((warn_unused_result))
+static bool match_empty_line(struct Parser *p)
+{
+    return match_eol(p);
+}
+
+__attribute__((warn_unused_result))
 static bool match_int(struct Parser *p, int *i)
 {
     assert(p && i);
@@ -404,23 +455,6 @@ static bool match_int(struct Parser *p, int *i)
 
     *p = p_;
     return true;
-}
-
-__attribute__((warn_unused_result))
-static bool match_empty_line(struct Parser *p)
-{
-    struct Parser p_ = *p;
-    if (match_exact(&p_, "# ")) {
-        int line;
-        if (match_int(&p_, &line)) {
-            struct Token t;
-            match_until_eol(&p_, &t);
-            p_.location.line = line - 1;
-            *p = p_;
-        }
-    }
-
-    return match_eol(p);
 }
 
 __attribute__((warn_unused_result))
@@ -571,59 +605,6 @@ static bool match_move_identifier(struct Parser *p, struct Token *t)
 
     *p = q;
     return true;
-}
-
-static bool show_parse_error(struct Parser *p)
-{
-    // Print error message.
-    int n = fprintf(stderr, "%s:%d: ", p->source->path, p->error_location.line);
-    fprintf(stderr, "error: %s\n", p->error);
-
-    struct Parser p_ = {
-        .source = p->source,
-        .location = { .line = 1, .column = 1 },
-        .offset = 0,
-    };
-
-    for (;;) {
-        if (p->error_location.line == p_.location.line)
-            break;
-        if (!match_empty_line(&p_))
-            skip_line(&p_);
-        if (match_eof(&p_))
-            assert(false);
-    }
-
-    int begin = p_.offset;
-    int end;
-    for (end = begin; end < p->source->buffer_n; end++)
-    {
-        if (p->source->buffer[end] == '\n')
-            break;
-    }
-
-    // Print the source line.
-    fprintf(stderr, "%s:%d: %.*s\n", p->source->path, p->error_location.line, end - begin, &p->source->buffer[begin]);
-
-    // Print caret pointing at the column.
-    fprintf(stderr, "%*s", n, "");
-    for (int column = 1; column < p->error_location.column && begin + column < end; column++)
-    {
-        unsigned char c = p->source->buffer[begin + column];
-        fputc(c == '\t' ? c : ' ', stderr);
-    }
-    fprintf(stderr, "^\n");
-
-    p->error = NULL;
-    p->fatal_error = true;
-
-    return false;
-}
-
-static bool set_show_parse_error(struct Parser *p, struct SourceLocation location, const char *error)
-{
-    set_parse_error(p, location, error);
-    return show_parse_error(p);
 }
 
 __attribute__((warn_unused_result))
@@ -1553,7 +1534,6 @@ static void fprint_species(FILE *f, const char *prefix, struct String s)
         static const unsigned char *male = (unsigned char *)u8"♂";
         static const unsigned char *female = (unsigned char *)u8"♀";
         static const unsigned char *e_diacritic = (unsigned char *)u8"é";
-        static const unsigned char *right_single_quotation_mark = (unsigned char *)u8"’";
         for (int i = 0; i < s.string_n; i++)
         {
             unsigned char c = s.string[i];
@@ -1571,7 +1551,7 @@ static void fprint_species(FILE *f, const char *prefix, struct String s)
                 underscore = false;
                 fputc(c - 'a' + 'A', f);
             }
-            else if (c == '\'' || c == '%' || is_utf8_character(s, &i, right_single_quotation_mark))
+            else if (c == '\'' || c == '%')
             {
                 // Do nothing.
             }

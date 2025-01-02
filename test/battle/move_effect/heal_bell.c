@@ -10,7 +10,6 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Heal Bell cures the entire party")
 {
     u32 move;
-
     PARAMETRIZE { move = MOVE_HEAL_BELL; }
     PARAMETRIZE { move = MOVE_AROMATHERAPY; }
 
