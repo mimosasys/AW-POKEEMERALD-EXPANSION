@@ -5,7 +5,7 @@
 
 #define TRAINER_NONE                          0
 
-// AW TRAINERS
+// AW START REPLACING TRAINERS HERE
 
 #define TRAINER_JESSY                         1
 #define TRAINER_TYLER                         2
@@ -17,8 +17,9 @@
 #define TRAINER_PARA                          8
 #define TRAINER_ROBIN                         9
 #define TRAINER_JAY                           10
-#define TRAINER_LEADER_WENDY                  11
+#define TRAINER_LEADER_WENDY                        11
 
+//
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14

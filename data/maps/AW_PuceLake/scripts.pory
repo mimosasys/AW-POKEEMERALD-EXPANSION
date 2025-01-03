@@ -385,7 +385,7 @@ script PuceLake_MeetCarla {
     waitmessage
     closemessage
 
-    trainerbattle_no_intro(TRAINER_TEAMJADE_GRUNT_PUCELAKE,PuceLake_GruntLose)
+    trainerbattle_no_intro(TRAINER_JADEGRUNT_PUCE_LAKE_1,PuceLake_GruntLose)
 
     playbgm(MUS_ENCOUNTER_AQUA,FALSE)
     delay(30)
@@ -770,17 +770,17 @@ script PuceLake_Trigger3_Lower {
 }
 
 script PuceLake_Trainer_SchoolgirlJessy {
-    trainerbattle_single(TRAINER_SCHOOLGIRL_JESSY,SchoolgirlJessyIntro,SchoolgirlJessyOutro)
+    trainerbattle_single(TRAINER_JESSY,SchoolgirlJessyIntro,SchoolgirlJessyOutro)
     end
 }
 
 script PuceLake_Trainer_YoungsterTyler {
-    trainerbattle_single(TRAINER_YOUNGSTER_TYLER,YoungsterTylerIntro,YoungsterTylerOutro)
+    trainerbattle_single(TRAINER_TYLER,YoungsterTylerIntro,YoungsterTylerOutro)
     end
 }
 
 script PuceLake_Trainer_LassAdela {
-    trainerbattle_single(TRAINER_LASS_ADELA,LassAdelaIntro,LassAdelaOutro)
+    trainerbattle_single(TRAINER_ADELA,LassAdelaIntro,LassAdelaOutro)
     end
 }
 

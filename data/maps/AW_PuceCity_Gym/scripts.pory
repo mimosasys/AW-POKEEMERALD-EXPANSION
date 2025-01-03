@@ -95,17 +95,17 @@ script PuceCity_Gym_Welcome {
 }
 
 script PuceCity_Gym_Trainer1 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_PARA,BirdkeeperParaIntro,BirdkeeperParaOutro)
+    trainerbattle_single(TRAINER_PARA,BirdkeeperParaIntro,BirdkeeperParaOutro)
     end
 }
 
 script PuceCity_Gym_Trainer2 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_ROBIN,BirdkeeperRobinIntro,BirdkeeperRobinOutro)
+    trainerbattle_single(TRAINER_ROBIN,BirdkeeperRobinIntro,BirdkeeperRobinOutro)
     end
 }
 
 script PuceCity_Gym_Trainer3 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_JAY,BirdkeeperJayIntro,BirdkeeperJayOutro)
+    trainerbattle_single(TRAINER_JAY,BirdkeeperJayIntro,BirdkeeperJayOutro)
     end
 }
 
@@ -120,7 +120,7 @@ script PuceCity_Gym_Wendy {
     ))
     waitmessage
     closemessage
-    trainerbattle_no_intro(TRAINER_GYMLEADER_WENDY,LeaderWendyOutro)
+    trainerbattle_no_intro(TRAINER_LEADER_WENDY,LeaderWendyOutro)
     msgbox(format(
         "Well, I can't say I'm all that surprised!\p"
         "That was some battle, alright, {PLAYER}. You sure have some skills!\p"

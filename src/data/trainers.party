@@ -81,141 +81,177 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-/*
-    AW TRAINERS START HERE
-/*
+=== TRAINER_SAWYER_1 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
 
-=== TRAINER_SCHOOLGIRL_JESSY ===
-Name: Jessy
-Class: School Girl
-Pic: School Girl
-Music: Girl
+Geodude
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skuarctic
-Level: 3
-
-=== TRAINER_YOUNGSTER_TYLER ===
-Name: Tyler
-Class: Youngster
-Pic: Youngster
-Music: Male
-
-Dewsel
-Level: 3
-					
-=== TRAINER_LASS_ADELA ===
-Name: Adela
-Class: Lass
-Pic: Lass
-Music: Girl
-
-Purrloin
-Level: 4
-
-=== TRAINER_TEAMJADE_GRUNT_PUCELAKE ===
-Name: Grunt
-Class: Team Jade
-Pic: Aw Jadegrunt Male
+=== TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
 Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Skuarctic
-Level: 6
+Poochyena
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Purrloin
-Level: 7
+=== TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-=== TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-Music: Male
+Zubat
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Purrloin
-Level: 5
+Carvanha
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Smackop
-Level: 6
-Ability: Anger Point
+=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-=== TRAINER_RIVAL_PUCELAKE_SMACKOP ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-Music: Male
+Zubat
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Purrloin
-Level: 5
+=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Puppixy
-Level: 6
-Ability: Bulletproof
+Carvanha
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_PUCELAKE_PUPPIXY ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-Music: Male
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Purrloin
-Level: 5
+Poochyena
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Alpacoil
-Level: 6
-Ability: Magic Bounce
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-=== TRAINER_BIRDKEEPER_PARA ===
-Name: Para
-Class: Bird Keeper
-Pic: Lass
+Carvanha
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GABRIELLE_1 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
+Pic: Pokemon Breeder F
+Gender: Female
 Music: Female
+Double Battle: No
+AI: Check Bad Move
 
-Doduo
-Level: 7
+Skitty
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skuarctic
-Level: 8
+Poochyena
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BIRDKEEPER_ROBIN ===
-Name: Robin
-Class: Bird Keeper
-Pic: Bird Keeper
-Music: Male
+Zigzagoon
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skuarctic
-Level: 8
+Lotad
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Noibat
-Level: 8
+Seedot
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BIRDKEEPER_JAY ===
-Name: Jay
-Class: Bird Keeper
-Pic: Pokemon Breeder M
-Music: Male
+Taillow
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Fowlily
-Level: 8
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Skuarctic
+Poochyena
 Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_GYMLEADER_WENDY ===
-Name: Wendy
-Class: Gym Leader
-Pic: Aw Leader Wendy
+=== TRAINER_MARCEL ===
+Name: MARCEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Doduo
-Level: 10
+Manectric
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Fowlily
-Level: 11
-
-Skarmory
-Level: 12
-
-/*
-    AW TRAINERS END HERE
-/*
+Shiftry
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
