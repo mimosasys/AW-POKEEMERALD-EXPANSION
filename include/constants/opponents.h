@@ -7,17 +7,17 @@
 
 // AW START REPLACING TRAINERS HERE
 
-#define TRAINER_JESSY                         1
-#define TRAINER_TYLER                         2
-#define TRAINER_ADELA                         3
-#define TRAINER_JADEGRUNT_PUCE_LAKE_1         4
-#define TRAINER_RIVAL_PUCELAKE_ALPACOIL       5
-#define TRAINER_RIVAL_PUCELAKE_SMACKOP        6
-#define TRAINER_RIVAL_PUCELAKE_PUPPIXY        7
-#define TRAINER_PARA                          8
-#define TRAINER_ROBIN                         9
-#define TRAINER_JAY                           10
-#define TRAINER_LEADER_WENDY                        11
+#define TRAINER_SCHOOLKIDF_JESSY             1
+#define TRAINER_YOUNGSTER_TYLER              2
+#define TRAINER_LASS_ADELA                   3
+#define TRAINER_TEAMJADE_GRUNT_PUCELAKE      4
+#define TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL 5
+#define TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP  6
+#define TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY  7
+#define TRAINER_BIRDKEEPER_PARA              8
+#define TRAINER_BIRDKEEPER_ROBIN             9
+#define TRAINER_BIRDKEEPER_JAY               10
+#define TRAINER_GYMLEADER_WENDY              11
 
 //
 #define TRAINER_ALBERTO                      12
@@ -620,7 +620,7 @@
 #define TRAINER_HALEY_4                     609
 #define TRAINER_HALEY_5                     610
 #define TRAINER_SALLY                       611
-// #define TRAINER_ROBIN                       612
+#define TRAINER_ROBIN                       612
 #define TRAINER_ANDREA                      613
 #define TRAINER_CRISSY                      614
 #define TRAINER_RICK                        615

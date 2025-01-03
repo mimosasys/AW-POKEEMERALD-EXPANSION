@@ -428,15 +428,15 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
 
     // AW TRAINERS
-    TRAINER_SPRITE(AW_P_MALE, AW_P_Male),
-    TRAINER_SPRITE(AW_P_FEMALE, AW_P_Female),
-    TRAINER_SPRITE(AW_P_ENBY,AW_P_Enby),
+    TRAINER_SPRITE(TRAINER_PIC_AW_P_MALE, gTrainerFrontPic_AW_P_Male, gTrainerPalette_AW_P_Male),
+    TRAINER_SPRITE(TRAINER_PIC_AW_P_FEMALE, gTrainerFrontPic_AW_P_Female, gTrainerPalette_AW_P_Female),
+    TRAINER_SPRITE(TRAINER_PIC_AW_P_ENBY,gTrainerFrontPic_AW_P_Enby,gTrainerPalette_AW_P_Enby),
 
-    TRAINER_SPRITE(AW_JADEGRUNT_MALE,AW_JadeGrunt_Male),
-    TRAINER_SPRITE(AW_JADEGRUNT_FEMALE,AW_JadeGrunt_Female),
-    TRAINER_SPRITE(AW_RIVAL,AW_Rival),
-    TRAINER_SPRITE(AW_LEADER_WENDY,AW_LeaderWendy),
-    TRAINER_SPRITE(AW_LEADER_WYATT,AW_LeaderWyatt),
+    TRAINER_SPRITE(TRAINER_PIC_AW_JADEGRUNT_MALE,gTrainerFrontPic_AW_JadeGrunt_Male,gTrainerPalette_AW_JadeGrunt_Male),
+    TRAINER_SPRITE(TRAINER_PIC_AW_JADEGRUNT_FEMALE,gTrainerFrontPic_AW_JadeGrunt_Female,gTrainerPalette_AW_JadeGrunt_Female),
+    TRAINER_SPRITE(TRAINER_PIC_AW_RIVAL,gTrainerFrontPic_AW_Rival,gTrainerPalette_AW_Rival),
+    TRAINER_SPRITE(TRAINER_PIC_AW_LEADER_WENDY,gTrainerFrontPic_AW_LeaderWendy,gTrainerPalette_AW_LeaderWendy),
+    TRAINER_SPRITE(TRAINER_PIC_AW_LEADER_WYATT,gTrainerFrontPic_AW_LeaderWyatt,gTrainerPalette_AW_LeaderWyatt),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

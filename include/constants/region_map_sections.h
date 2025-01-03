@@ -90,113 +90,113 @@
 #define MAPSEC_SECRET_BASE                  0x56
 #define MAPSEC_DYNAMIC                      0x57
 #define MAPSEC_PALLET_TOWN                  0x58
-// #define MAPSEC_VIRIDIAN_CITY                0x59
-// #define MAPSEC_PEWTER_CITY                  0x5A
-// #define MAPSEC_CERULEAN_CITY                0x5B
-// #define MAPSEC_LAVENDER_TOWN                0x5C
-// #define MAPSEC_VERMILION_CITY               0x5D
-// #define MAPSEC_CELADON_CITY                 0x5E
-// #define MAPSEC_FUCHSIA_CITY                 0x5F
-// #define MAPSEC_CINNABAR_ISLAND              0x60
-// #define MAPSEC_INDIGO_PLATEAU               0x61
-// #define MAPSEC_SAFFRON_CITY                 0x62
-// #define MAPSEC_ROUTE_4_POKECENTER           0x63
-// #define MAPSEC_ROUTE_10_POKECENTER          0x64
-// #define MAPSEC_ROUTE_1                      0x65
-// #define MAPSEC_ROUTE_2                      0x66
-// #define MAPSEC_ROUTE_3                      0x67
-// #define MAPSEC_ROUTE_4                      0x68
-// #define MAPSEC_ROUTE_5                      0x69
-// #define MAPSEC_ROUTE_6                      0x6A
-// #define MAPSEC_ROUTE_7                      0x6B
-// #define MAPSEC_ROUTE_8                      0x6C
-// #define MAPSEC_ROUTE_9                      0x6D
-// #define MAPSEC_ROUTE_10                     0x6E
-// #define MAPSEC_ROUTE_11                     0x6F
-// #define MAPSEC_ROUTE_12                     0x70
-// #define MAPSEC_ROUTE_13                     0x71
-// #define MAPSEC_ROUTE_14                     0x72
-// #define MAPSEC_ROUTE_15                     0x73
-// #define MAPSEC_ROUTE_16                     0x74
-// #define MAPSEC_ROUTE_17                     0x75
-// #define MAPSEC_ROUTE_18                     0x76
-// #define MAPSEC_ROUTE_19                     0x77
-// #define MAPSEC_ROUTE_20                     0x78
-// #define MAPSEC_ROUTE_21                     0x79
-// #define MAPSEC_ROUTE_22                     0x7A
-// #define MAPSEC_ROUTE_23                     0x7B
-// #define MAPSEC_ROUTE_24                     0x7C
-// #define MAPSEC_ROUTE_25                     0x7D
-// #define MAPSEC_VIRIDIAN_FOREST              0x7E
-// #define MAPSEC_MT_MOON                      0x7F
-// #define MAPSEC_S_S_ANNE                     0x80
-// #define MAPSEC_UNDERGROUND_PATH             0x81
-// #define MAPSEC_UNDERGROUND_PATH_2           0x82
-// #define MAPSEC_DIGLETTS_CAVE                0x83
-// #define MAPSEC_KANTO_VICTORY_ROAD           0x84
-// #define MAPSEC_ROCKET_HIDEOUT               0x85
-// #define MAPSEC_SILPH_CO                     0x86
-// #define MAPSEC_POKEMON_MANSION              0x87
-// #define MAPSEC_KANTO_SAFARI_ZONE            0x88
-// #define MAPSEC_POKEMON_LEAGUE               0x89
-// #define MAPSEC_ROCK_TUNNEL                  0x8A
-// #define MAPSEC_SEAFOAM_ISLANDS              0x8B
-// #define MAPSEC_POKEMON_TOWER                0x8C
-// #define MAPSEC_CERULEAN_CAVE                0x8D
-// #define MAPSEC_POWER_PLANT                  0x8E
-// #define MAPSEC_ONE_ISLAND                   0x8F
-// #define MAPSEC_TWO_ISLAND                   0x90
-// #define MAPSEC_THREE_ISLAND                 0x91
-// #define MAPSEC_FOUR_ISLAND                  0x92
-// #define MAPSEC_FIVE_ISLAND                  0x93
-// #define MAPSEC_SEVEN_ISLAND                 0x94
-// #define MAPSEC_SIX_ISLAND                   0x95
-// #define MAPSEC_KINDLE_ROAD                  0x96
-// #define MAPSEC_TREASURE_BEACH               0x97
-// #define MAPSEC_CAPE_BRINK                   0x98
-// #define MAPSEC_BOND_BRIDGE                  0x99
-// #define MAPSEC_THREE_ISLE_PORT              0x9A
-// #define MAPSEC_SEVII_ISLE_6                 0x9B
-// #define MAPSEC_SEVII_ISLE_7                 0x9C
-// #define MAPSEC_SEVII_ISLE_8                 0x9D
-// #define MAPSEC_SEVII_ISLE_9                 0x9E
-// #define MAPSEC_RESORT_GORGEOUS              0x9F
-// #define MAPSEC_WATER_LABYRINTH              0xA0
-// #define MAPSEC_FIVE_ISLE_MEADOW             0xA1
-// #define MAPSEC_MEMORIAL_PILLAR              0xA2
-// #define MAPSEC_OUTCAST_ISLAND               0xA3
-// #define MAPSEC_GREEN_PATH                   0xA4
-// #define MAPSEC_WATER_PATH                   0xA5
-// #define MAPSEC_RUIN_VALLEY                  0xA6
-// #define MAPSEC_TRAINER_TOWER                0xA7
-// #define MAPSEC_CANYON_ENTRANCE              0xA8
-// #define MAPSEC_SEVAULT_CANYON               0xA9
-// #define MAPSEC_TANOBY_RUINS                 0xAA
-// #define MAPSEC_SEVII_ISLE_22                0xAB
-// #define MAPSEC_SEVII_ISLE_23                0xAC
-// #define MAPSEC_SEVII_ISLE_24                0xAD
-// #define MAPSEC_NAVEL_ROCK_FRLG              0xAE
-// #define MAPSEC_MT_EMBER                     0xAF
-// #define MAPSEC_BERRY_FOREST                 0xB0
-// #define MAPSEC_ICEFALL_CAVE                 0xB1
-// #define MAPSEC_ROCKET_WAREHOUSE             0xB2
-// #define MAPSEC_TRAINER_TOWER_2              0xB3
-// #define MAPSEC_DOTTED_HOLE                  0xB4
-// #define MAPSEC_LOST_CAVE                    0xB5
-// #define MAPSEC_PATTERN_BUSH                 0xB6
-// #define MAPSEC_ALTERING_CAVE_FRLG           0xB7
-// #define MAPSEC_TANOBY_CHAMBERS              0xB8
-// #define MAPSEC_THREE_ISLE_PATH              0xB9
-// #define MAPSEC_TANOBY_KEY                   0xBA
-// #define MAPSEC_BIRTH_ISLAND_FRLG            0xBB
-// #define MAPSEC_MONEAN_CHAMBER               0xBC
-// #define MAPSEC_LIPTOO_CHAMBER               0xBD
-// #define MAPSEC_WEEPTH_CHAMBER               0xBE
-// #define MAPSEC_DILFORD_CHAMBER              0xBF
-// #define MAPSEC_SCUFIB_CHAMBER               0xC0
-// #define MAPSEC_RIXY_CHAMBER                 0xC1
-// #define MAPSEC_VIAPOIS_CHAMBER              0xC2
-// #define MAPSEC_EMBER_SPA                    0xC3
+#define MAPSEC_VIRIDIAN_CITY                0x59
+#define MAPSEC_PEWTER_CITY                  0x5A
+#define MAPSEC_CERULEAN_CITY                0x5B
+#define MAPSEC_LAVENDER_TOWN                0x5C
+#define MAPSEC_VERMILION_CITY               0x5D
+#define MAPSEC_CELADON_CITY                 0x5E
+#define MAPSEC_FUCHSIA_CITY                 0x5F
+#define MAPSEC_CINNABAR_ISLAND              0x60
+#define MAPSEC_INDIGO_PLATEAU               0x61
+#define MAPSEC_SAFFRON_CITY                 0x62
+#define MAPSEC_ROUTE_4_POKECENTER           0x63
+#define MAPSEC_ROUTE_10_POKECENTER          0x64
+#define MAPSEC_ROUTE_1                      0x65
+#define MAPSEC_ROUTE_2                      0x66
+#define MAPSEC_ROUTE_3                      0x67
+#define MAPSEC_ROUTE_4                      0x68
+#define MAPSEC_ROUTE_5                      0x69
+#define MAPSEC_ROUTE_6                      0x6A
+#define MAPSEC_ROUTE_7                      0x6B
+#define MAPSEC_ROUTE_8                      0x6C
+#define MAPSEC_ROUTE_9                      0x6D
+#define MAPSEC_ROUTE_10                     0x6E
+#define MAPSEC_ROUTE_11                     0x6F
+#define MAPSEC_ROUTE_12                     0x70
+#define MAPSEC_ROUTE_13                     0x71
+#define MAPSEC_ROUTE_14                     0x72
+#define MAPSEC_ROUTE_15                     0x73
+#define MAPSEC_ROUTE_16                     0x74
+#define MAPSEC_ROUTE_17                     0x75
+#define MAPSEC_ROUTE_18                     0x76
+#define MAPSEC_ROUTE_19                     0x77
+#define MAPSEC_ROUTE_20                     0x78
+#define MAPSEC_ROUTE_21                     0x79
+#define MAPSEC_ROUTE_22                     0x7A
+#define MAPSEC_ROUTE_23                     0x7B
+#define MAPSEC_ROUTE_24                     0x7C
+#define MAPSEC_ROUTE_25                     0x7D
+#define MAPSEC_VIRIDIAN_FOREST              0x7E
+#define MAPSEC_MT_MOON                      0x7F
+#define MAPSEC_S_S_ANNE                     0x80
+#define MAPSEC_UNDERGROUND_PATH             0x81
+#define MAPSEC_UNDERGROUND_PATH_2           0x82
+#define MAPSEC_DIGLETTS_CAVE                0x83
+#define MAPSEC_KANTO_VICTORY_ROAD           0x84
+#define MAPSEC_ROCKET_HIDEOUT               0x85
+#define MAPSEC_SILPH_CO                     0x86
+#define MAPSEC_POKEMON_MANSION              0x87
+#define MAPSEC_KANTO_SAFARI_ZONE            0x88
+#define MAPSEC_POKEMON_LEAGUE               0x89
+#define MAPSEC_ROCK_TUNNEL                  0x8A
+#define MAPSEC_SEAFOAM_ISLANDS              0x8B
+#define MAPSEC_POKEMON_TOWER                0x8C
+#define MAPSEC_CERULEAN_CAVE                0x8D
+#define MAPSEC_POWER_PLANT                  0x8E
+#define MAPSEC_ONE_ISLAND                   0x8F
+#define MAPSEC_TWO_ISLAND                   0x90
+#define MAPSEC_THREE_ISLAND                 0x91
+#define MAPSEC_FOUR_ISLAND                  0x92
+#define MAPSEC_FIVE_ISLAND                  0x93
+#define MAPSEC_SEVEN_ISLAND                 0x94
+#define MAPSEC_SIX_ISLAND                   0x95
+#define MAPSEC_KINDLE_ROAD                  0x96
+#define MAPSEC_TREASURE_BEACH               0x97
+#define MAPSEC_CAPE_BRINK                   0x98
+#define MAPSEC_BOND_BRIDGE                  0x99
+#define MAPSEC_THREE_ISLE_PORT              0x9A
+#define MAPSEC_SEVII_ISLE_6                 0x9B
+#define MAPSEC_SEVII_ISLE_7                 0x9C
+#define MAPSEC_SEVII_ISLE_8                 0x9D
+#define MAPSEC_SEVII_ISLE_9                 0x9E
+#define MAPSEC_RESORT_GORGEOUS              0x9F
+#define MAPSEC_WATER_LABYRINTH              0xA0
+#define MAPSEC_FIVE_ISLE_MEADOW             0xA1
+#define MAPSEC_MEMORIAL_PILLAR              0xA2
+#define MAPSEC_OUTCAST_ISLAND               0xA3
+#define MAPSEC_GREEN_PATH                   0xA4
+#define MAPSEC_WATER_PATH                   0xA5
+#define MAPSEC_RUIN_VALLEY                  0xA6
+#define MAPSEC_TRAINER_TOWER                0xA7
+#define MAPSEC_CANYON_ENTRANCE              0xA8
+#define MAPSEC_SEVAULT_CANYON               0xA9
+#define MAPSEC_TANOBY_RUINS                 0xAA
+#define MAPSEC_SEVII_ISLE_22                0xAB
+#define MAPSEC_SEVII_ISLE_23                0xAC
+#define MAPSEC_SEVII_ISLE_24                0xAD
+#define MAPSEC_NAVEL_ROCK_FRLG              0xAE
+#define MAPSEC_MT_EMBER                     0xAF
+#define MAPSEC_BERRY_FOREST                 0xB0
+#define MAPSEC_ICEFALL_CAVE                 0xB1
+#define MAPSEC_ROCKET_WAREHOUSE             0xB2
+#define MAPSEC_TRAINER_TOWER_2              0xB3
+#define MAPSEC_DOTTED_HOLE                  0xB4
+#define MAPSEC_LOST_CAVE                    0xB5
+#define MAPSEC_PATTERN_BUSH                 0xB6
+#define MAPSEC_ALTERING_CAVE_FRLG           0xB7
+#define MAPSEC_TANOBY_CHAMBERS              0xB8
+#define MAPSEC_THREE_ISLE_PATH              0xB9
+#define MAPSEC_TANOBY_KEY                   0xBA
+#define MAPSEC_BIRTH_ISLAND_FRLG            0xBB
+#define MAPSEC_MONEAN_CHAMBER               0xBC
+#define MAPSEC_LIPTOO_CHAMBER               0xBD
+#define MAPSEC_WEEPTH_CHAMBER               0xBE
+#define MAPSEC_DILFORD_CHAMBER              0xBF
+#define MAPSEC_SCUFIB_CHAMBER               0xC0
+#define MAPSEC_RIXY_CHAMBER                 0xC1
+#define MAPSEC_VIAPOIS_CHAMBER              0xC2
+#define MAPSEC_EMBER_SPA                    0xC3
 #define MAPSEC_SPECIAL_AREA                 0xC4
 #define MAPSEC_AQUA_HIDEOUT                 0xC5
 #define MAPSEC_MAGMA_HIDEOUT                0xC6
@@ -215,56 +215,6 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_NONE                         0xD5
-
-// AW MAPS START HERE
-
-//CITIES AND TOWNS
-#define MAPSEC_AW_ERIN_VILLAGE              0x66
-#define MAPSEC_AW_PORT_MULBERRY             0x67
-#define MAPSEC_AW_PUCE_CITY                 0x68
-#define MAPSEC_AW_VERDIGRIS_CITY            0x69
-#define MAPSEC_AW_ZAFFRETON                 0x6A
-#define MAPSEC_AW_MAZARINE_ISLAND           0x6B
-#define MAPSEC_AW_ALABASTER_CITY            0x6C
-#define MAPSEC_AW_EBURNEAN_CITY             0x6D
-#define MAPSEC_AW_GAMBOGE_CITY              0x6E
-#define MAPSEC_AW_NACARAT_TOWN              0x6F
-#define MAPSEC_AW_AMETHYST_CITY             0x70
-#define MAPSEC_AW_GOSSAMER_CITY             0x71
-#define MAPSEC_AW_MALACHITE_TOWN            0x72
-
-//ROUTES
-#define MAPSEC_AW_ROUTE_101                 0x73
-#define MAPSEC_AW_ROUTE_102                 0x74
-#define MAPSEC_AW_ROUTE_103                 0x75
-#define MAPSEC_AW_ROUTE_104                 0x76
-#define MAPSEC_AW_ROUTE_105                 0x77
-#define MAPSEC_AW_ROUTE_106                 0x78
-#define MAPSEC_AW_ROUTE_107                 0x79
-#define MAPSEC_AW_ROUTE_108                 0x7A
-#define MAPSEC_AW_ROUTE_109                 0x7B
-#define MAPSEC_AW_ROUTE_110                 0x7C
-#define MAPSEC_AW_ROUTE_111                 0x7D
-#define MAPSEC_AW_ROUTE_112                 0x7E
-#define MAPSEC_AW_ROUTE_113                 0x7F
-
-//MISC
-#define MAPSEC_AW_POKEMON_LEAGUE            0x80
-#define MAPSEC_AW_VICTORY_ROAD              0x81
-#define MAPSEC_AW_MT_EIGO                   0x82
-#define MAPSEC_AW_EIGO_GROTTO               0x83
-#define MAPSEC_AW_LAB_1                     0x84
-#define MAPSEC_AW_LAB_2                     0x85
-#define MAPSEC_AW_WILDLIFE_RESERVE          0x86
-//#define MAPSEC_AW_GHOST_AREA                0x87
-#define MAPSEC_AW_WIND_FARM                 0x88
-#define MAPSEC_AW_MT_EIGO_CAVERNS           0x89
-#define MAPSEC_AW_SCRAPYARD                 0x8A
-#define MAPSEC_AW_GLACIER                   0x8B
-#define MAPSEC_AW_PUCE_LAKE                 0x8C
-#define MAPSEC_AW_EBURNEAN_LAKE             0x8D
-#define MAPSEC_AW_DEPT_STORE                0x8E
-#define MAPSEC_AW_MIRROR_CAVERN             0x8F
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
