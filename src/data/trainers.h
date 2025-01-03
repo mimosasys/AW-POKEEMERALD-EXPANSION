@@ -25,62 +25,6 @@
         {
         },
     },
-
-//     [TRAINER_JESSY] =
-//     {
-//         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-//         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-//         .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
-//         .trainerName = _("Jessy"),
-//         .items = {},
-//         .doubleBattle = FALSE,
-//         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-//         .party = TRAINER_PARTY(sParty_Jessy),
-//     },
-
-//     [TRAINER_TYLER] =
-//     {
-//         .trainerClass = TRAINER_CLASS_YOUNGSTER,
-//         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-//         .trainerPic = TRAINER_PIC_YOUNGSTER,
-//         .trainerName = _("Tyler"),
-//         .items = {},
-//         .doubleBattle = FALSE,
-//         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-//         .party = TRAINER_PARTY(sParty_Tyler),
-//     },
-
-//     [TRAINER_ADELA] =
-//     {
-//         .trainerClass = TRAINER_CLASS_LASS,
-//         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-//         .trainerPic = TRAINER_PIC_LASS,
-//         .trainerName = _("Adela"),
-//         .items = {},
-//         .doubleBattle = FALSE,
-//         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-//         .party = TRAINER_PARTY(sParty_Adela),
-//     },
-
-//     [TRAINER_JADEGRUNT_PUCE_LAKE_1] =
-//     {
-//         .trainerClass = TRAINER_CLASS_JADE,
-//         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-//         .trainerPic = TRAINER_PIC_AW_JADEGRUNT_MALE,
-//         .trainerName = _("Grunt"),
-//         .items = {},
-//         .doubleBattle = FALSE,
-//         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-//         .party = TRAINER_PARTY(sParty_JadeGruntPuceLake1),
-//     },
-
-//     [TRAINER_RIVAL_PUCELAKE_ALPACOIL] =
-//     {
-//         .trainerClass = TRAINER_CLASS_RIVAL,
-//         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-//         .trainerPic = TRAINER_PIC_AW_RIVAL,
-//         .trainerName = _("Mike"),
-//         .items = {},
 #line 19
     [TRAINER_SAWYER_1] =
     {
@@ -97,78 +41,6 @@
         .doubleBattle = FALSE,
 #line 26
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-<<<<<<< HEAD
-        .party = TRAINER_PARTY(sParty_Rival_PuceLake_Alpacoil),
-    },
-
-    [TRAINER_RIVAL_PUCELAKE_SMACKOP] =
-    {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AW_RIVAL,
-        .trainerName = _("Mike"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Rival_PuceLake_Smackop),
-    },
-
-    [TRAINER_RIVAL_PUCELAKE_PUPPIXY] =
-    {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AW_RIVAL,
-        .trainerName = _("Mike"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Rival_PuceLake_Puppixy),
-    },
-
-    [TRAINER_PARA] =
-    {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
-        .trainerName = _("Para"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Para),
-    },
-
-    [TRAINER_ROBIN] =
-    {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-        .trainerName = _("Robin"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Robin),
-    },
-
-    [TRAINER_JAY] =
-    {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .trainerName = _("Jay"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY,
-        .party = TRAINER_PARTY(sParty_Jay),
-    },
-
-    [TRAINER_LEADER_WENDY] =
-    {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_AW_LEADER_WENDY,
-        .trainerName = _("Wendy"),
-        .items = {ITEM_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-=======
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -556,13 +428,9 @@ F_TRAINER_FEMALE |
 #line 179
         .items = { ITEM_HYPER_POTION },
 #line 180
->>>>>>> a2685d0d087acd9e90fd9195b4bc398627dd4371
         .doubleBattle = FALSE,
 #line 181
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-<<<<<<< HEAD
-        .party = TRAINER_PARTY(sParty_LeaderWendy),
-=======
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -589,7 +457,6 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
->>>>>>> a2685d0d087acd9e90fd9195b4bc398627dd4371
     },
 #line 191
     [TRAINER_ALBERTO] =
@@ -28238,21 +28105,6 @@ F_TRAINER_FEMALE |
             },
         },
     },
-<<<<<<< HEAD
-
-    // [TRAINER_ROBIN] =
-    // {
-    //     .trainerClass = TRAINER_CLASS_LASS,
-    //     .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-    //     .trainerPic = TRAINER_PIC_LASS,
-    //     .trainerName = _("ROBIN"),
-    //     .items = {},
-    //     .doubleBattle = FALSE,
-    //     .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-    //     .party = TRAINER_PARTY(sParty_Robin),
-    // },
-
-=======
 #line 11135
     [TRAINER_ROBIN] =
     {
@@ -28310,7 +28162,6 @@ F_TRAINER_FEMALE |
         },
     },
 #line 11156
->>>>>>> a2685d0d087acd9e90fd9195b4bc398627dd4371
     [TRAINER_ANDREA] =
     {
 #line 11157
