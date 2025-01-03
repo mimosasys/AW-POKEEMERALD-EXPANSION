@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(!IS_MOVE_STATUS(MOVE_THUNDERBOLT));
+    ASSUME(gMovesInfo[MOVE_THUNDERBOLT].power != 0);
     ASSUME(gMovesInfo[MOVE_THUNDERBOLT].type == TYPE_ELECTRIC);
 }
 
@@ -115,7 +115,7 @@ SINGLE_BATTLE_TEST("Charge's effect is removed regardless if the next move is El
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].type != TYPE_ELECTRIC);
-        ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
+        ASSUME(gMovesInfo[MOVE_TACKLE].power != 0);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
