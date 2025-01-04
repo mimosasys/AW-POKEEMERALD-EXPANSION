@@ -11753,7 +11753,7 @@
               {
                 "min_level": 8,
                 "max_level": 9,
-                "species": "SPECIES_STONJOURNER"
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 5,
@@ -11822,7 +11822,7 @@
               {
                 "min_level": 8,
                 "max_level": 9,
-                "species": "SPECIES_STONJOURNER"
+                "species": "SPECIES_GLIGAR"
               },
               {
                 "min_level": 5,
@@ -11971,6 +11971,75 @@
                 "min_level": 8,
                 "max_level": 8,
                 "species": "SPECIES_OHMEOW"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_AW_PUCE_LAKE",
+          "base_label": "gAW_PuceLake0",
+          "land_mons": {
+            "encounter_rate": 18,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SKUARCTIC"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_PURRLOIN"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_DEWSEL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_DEWSEL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_DEWSEL"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_FOWLILY"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_FOWLILY"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_SKUARCTIC"
+              },
+              {
+                "min_level": 2,
+                "max_level": 4,
+                "species": "SPECIES_DODUO"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_DEWSEL"
+              },
+              {
+                "min_level": 3,
+                "max_level": 5,
+                "species": "SPECIES_DEWSEL"
               }
             ]
           }

@@ -216,6 +216,56 @@
 #define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_NONE                         0xD5
 
+// AW MAPS START HERE
+
+//CITIES AND TOWNS
+#define MAPSEC_AW_ERIN_VILLAGE              0x66
+#define MAPSEC_AW_PORT_MULBERRY             0x67
+#define MAPSEC_AW_PUCE_CITY                 0x68
+#define MAPSEC_AW_VERDIGRIS_CITY            0x69
+#define MAPSEC_AW_ZAFFRETON                 0x6A
+#define MAPSEC_AW_MAZARINE_ISLAND           0x6B
+#define MAPSEC_AW_ALABASTER_CITY            0x6C
+#define MAPSEC_AW_EBURNEAN_CITY             0x6D
+#define MAPSEC_AW_GAMBOGE_CITY              0x6E
+#define MAPSEC_AW_NACARAT_TOWN              0x6F
+#define MAPSEC_AW_AMETHYST_CITY             0x70
+#define MAPSEC_AW_GOSSAMER_CITY             0x71
+#define MAPSEC_AW_MALACHITE_TOWN            0x72
+
+//ROUTES
+#define MAPSEC_AW_ROUTE_101                 0x73
+#define MAPSEC_AW_ROUTE_102                 0x74
+#define MAPSEC_AW_ROUTE_103                 0x75
+#define MAPSEC_AW_ROUTE_104                 0x76
+#define MAPSEC_AW_ROUTE_105                 0x77
+#define MAPSEC_AW_ROUTE_106                 0x78
+#define MAPSEC_AW_ROUTE_107                 0x79
+#define MAPSEC_AW_ROUTE_108                 0x7A
+#define MAPSEC_AW_ROUTE_109                 0x7B
+#define MAPSEC_AW_ROUTE_110                 0x7C
+#define MAPSEC_AW_ROUTE_111                 0x7D
+#define MAPSEC_AW_ROUTE_112                 0x7E
+#define MAPSEC_AW_ROUTE_113                 0x7F
+
+//MISC
+#define MAPSEC_AW_POKEMON_LEAGUE            0x80
+#define MAPSEC_AW_VICTORY_ROAD              0x81
+#define MAPSEC_AW_MT_EIGO                   0x82
+#define MAPSEC_AW_EIGO_GROTTO               0x83
+#define MAPSEC_AW_LAB_1                     0x84
+#define MAPSEC_AW_LAB_2                     0x85
+#define MAPSEC_AW_WILDLIFE_RESERVE          0x86
+#define MAPSEC_AW_SPIRIT_VALLEY             0x87
+#define MAPSEC_AW_WIND_FARM                 0x88
+#define MAPSEC_AW_MT_EIGO_CAVERNS           0x89
+#define MAPSEC_AW_SCRAPYARD                 0x8A
+#define MAPSEC_AW_GLACIER                   0x8B
+#define MAPSEC_AW_PUCE_LAKE                 0x8C
+#define MAPSEC_AW_EBURNEAN_LAKE             0x8D
+#define MAPSEC_AW_DEPT_STORE                0x8E
+#define MAPSEC_AW_MIRROR_CAVERN             0x8F
+
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF

@@ -57,14 +57,31 @@ script PuceLake_MeetAvery {
         "Um, we'll head on down to the lakeside. You'll see the dig site on the south side.\p"
         "I'll give you the tour once we're there! I hope you're excited to see it!\p"
         "Oh, and here's a little gift from Avery and I.\p"
-        "Consider it thanks for joining the team. I know it's not much, but..."
+        "I'm sure you'll find it useful. He helped make it himself, actually."
         ))
     waitmessage
     closemessage
     applymovement(5,WalkRightSpot)
     waitmovement(0)
+    playfanfare(MUS_OBTAIN_ITEM)
+    msgbox(format(
+        "Recieved the Pokédex from Professor Avery!"
+    ))
+    waitmessage
+    waitfanfare
+    setflag(FLAG_SYS_POKEDEX_GET)
+	special(SetUnlockedPokedexFlags)
+	setflag(FLAG_RECEIVED_POKEDEX_FROM_BIRCH)
+    closemessage
+    delay(15)
+    applymovement(5,WalkRightSpot)
+    waitmovement(0)
+    msgbox(format(
+        "Carla: And here's a little something from me. It's nothing, really."
+    ))
     giveitem(ITEM_POTION,5)
     waitmessage
+    closemessage
     delay(15)
     msgbox(format(
         "Fern: Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
@@ -770,17 +787,17 @@ script PuceLake_Trigger3_Lower {
 }
 
 script PuceLake_Trainer_SchoolgirlJessy {
-    trainerbattle_single(TRAINER_JESSY,SchoolgirlJessyIntro,SchoolgirlJessyOutro)
+    trainerbattle_single(TRAINER_SCHOOLKIDF_JESSY,SchoolgirlJessyIntro,SchoolgirlJessyOutro)
     end
 }
 
 script PuceLake_Trainer_YoungsterTyler {
-    trainerbattle_single(TRAINER_TYLER,YoungsterTylerIntro,YoungsterTylerOutro)
+    trainerbattle_single(TRAINER_YOUNGSTER_TYLER,YoungsterTylerIntro,YoungsterTylerOutro)
     end
 }
 
 script PuceLake_Trainer_LassAdela {
-    trainerbattle_single(TRAINER_ADELA,LassAdelaIntro,LassAdelaOutro)
+    trainerbattle_single(TRAINER_LASS_ADELA,LassAdelaIntro,LassAdelaOutro)
     end
 }
 

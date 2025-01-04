@@ -120,19 +120,19 @@ PuceCity_Gym_Welcome_11:
 
 PuceCity_Gym_Trainer1::
 # 98 "data/maps/AW_PuceCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_PARA, BirdkeeperParaIntro, BirdkeeperParaOutro
+	trainerbattle_single TRAINER_BIRDKEEPER_PARA, BirdkeeperParaIntro, BirdkeeperParaOutro
 	end
 
 
 PuceCity_Gym_Trainer2::
 # 103 "data/maps/AW_PuceCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_ROBIN, BirdkeeperRobinIntro, BirdkeeperRobinOutro
+	trainerbattle_single TRAINER_BIRDKEEPER_ROBIN, BirdkeeperRobinIntro, BirdkeeperRobinOutro
 	end
 
 
 PuceCity_Gym_Trainer3::
 # 108 "data/maps/AW_PuceCity_Gym/scripts.pory"
-	trainerbattle_single TRAINER_JAY, BirdkeeperJayIntro, BirdkeeperJayOutro
+	trainerbattle_single TRAINER_BIRDKEEPER_JAY, BirdkeeperJayIntro, BirdkeeperJayOutro
 	end
 
 
@@ -146,7 +146,7 @@ PuceCity_Gym_Wendy::
 # 122 "data/maps/AW_PuceCity_Gym/scripts.pory"
 	closemessage
 # 123 "data/maps/AW_PuceCity_Gym/scripts.pory"
-	trainerbattle_no_intro TRAINER_LEADER_WENDY, LeaderWendyOutro
+	trainerbattle_no_intro TRAINER_GYMLEADER_WENDY, LeaderWendyOutro
 # 124 "data/maps/AW_PuceCity_Gym/scripts.pory"
 	msgbox PuceCity_Gym_Wendy_Text_1
 # 130 "data/maps/AW_PuceCity_Gym/scripts.pory"

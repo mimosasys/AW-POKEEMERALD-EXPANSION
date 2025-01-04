@@ -997,7 +997,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .shinyPalette = gMonShinyPalette_Signoll,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 4,
-        .levelUpLearnset = sNoneLevelUpLearnset,
+        .levelUpLearnset = sSignollLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_POSSANA}),
     },
@@ -2974,7 +2974,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
     //
 
     
-    [SPECIES_MOSSCREE] = 
+    [SPECIES_MOSSCRUE] = 
     {
         .baseHP        = 62,
         .baseAttack    = 47,
@@ -2993,9 +2993,9 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL,EGG_GROUP_GRASS),
         .abilities = {ABILITY_WATER_ABSORB},
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Mosscree"),
+        .speciesName = _("Mosscrue"),
         .cryId = CRY_NONE,
-        .natDexNum = NATIONAL_DEX_MOSSCREE, 
+        .natDexNum = NATIONAL_DEX_MOSSCRUE, 
         .categoryName = _("Unknown"),
         .height = 10,
         .weight = 0,
@@ -3437,7 +3437,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = {ABILITY_SLUMBER},
+        .abilities = {ABILITY_SLUMBERER},
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Chirurge"),
         .cryId = CRY_NONE,
@@ -3518,6 +3518,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .shinyPalette = gMonShinyPalette_CircledQuestionMark,
         .iconSprite = gMonIcon_QuestionMark,
         .iconPalIndex = 4,
+        .isLegendary = TRUE,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
     },    

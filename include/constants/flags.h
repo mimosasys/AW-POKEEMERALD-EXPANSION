@@ -43,23 +43,23 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
+#define FLAG_AW_HELP_GEAR    0x20 // Unused Flag
+#define FLAG_AW_FINISH_TUT   0x21 // Unused Flag
+#define FLAG_AW_VISIT_MULBERRY    0x22 // Unused Flag
+#define FLAG_AW_START_TUT    0x23 // Unused Flag
+#define FLAG_AW_PICK_ALPACOIL    0x24 // Unused Flag
+#define FLAG_AW_PICK_SMACKOP    0x25 // Unused Flag
+#define FLAG_AW_PICK_PUPPIXY    0x26 // Unused Flag
+#define FLAG_AW_MID_TUT      0x27 // Unused Flag
+#define FLAG_AW_HIDE_CARLA_AVERY    0x28 // Unused Flag
+#define FLAG_AW_HIDE_MIKE_1    0x29 // Unused Flag
+#define FLAG_AW_HIDE_MIKE_2    0x2A // Unused Flag
+#define FLAG_AW_HIDE_MIKE_3    0x2B // Unused Flag
+#define FLAG_AW_HIDE_PROFS_PUCE_LAKE    0x2C // Unused Flag
+#define FLAG_AW_HIDE_PROFS_PUCE_LAKE2    0x2D // Unused Flag
+#define FLAG_AW_HIDE_GEAR    0x2E // Unused Flag
+#define FLAG_AW_START_GYM    0x2F // Unused Flag
+#define FLAG_AW_UNUSED       0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag

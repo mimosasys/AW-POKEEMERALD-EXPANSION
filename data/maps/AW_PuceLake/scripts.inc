@@ -392,7 +392,7 @@ PuceLake_MeetCarla_5:
 # 325 "data/maps/AW_PuceLake/scripts.pory"
 	goto_if_set FLAG_AW_PICK_SMACKOP, PuceLake_MeetCarla_11
 # 328 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_PUPPIXY, PuceLake_MikeLose
+	trainerbattle_no_intro TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY, PuceLake_MikeLose
 PuceLake_MeetCarla_9:
 # 331 "data/maps/AW_PuceLake/scripts.pory"
 	delay 30
@@ -463,7 +463,7 @@ PuceLake_MeetCarla_19:
 # 386 "data/maps/AW_PuceLake/scripts.pory"
 	closemessage
 # 388 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_no_intro TRAINER_JADEGRUNT_PUCE_LAKE_1, PuceLake_GruntLose
+	trainerbattle_no_intro TRAINER_TEAMJADE_GRUNT_PUCELAKE, PuceLake_GruntLose
 # 390 "data/maps/AW_PuceLake/scripts.pory"
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 # 391 "data/maps/AW_PuceLake/scripts.pory"
@@ -626,12 +626,12 @@ PuceLake_MeetCarla_6:
 
 PuceLake_MeetCarla_10:
 # 324 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_ALPACOIL, PuceLake_MikeLose
+	trainerbattle_no_intro TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL, PuceLake_MikeLose
 	goto PuceLake_MeetCarla_9
 
 PuceLake_MeetCarla_11:
 # 326 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_no_intro TRAINER_RIVAL_PUCELAKE_SMACKOP, PuceLake_MikeLose
+	trainerbattle_no_intro TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP, PuceLake_MikeLose
 	goto PuceLake_MeetCarla_9
 
 PuceLake_MeetCarla_16:
@@ -968,19 +968,19 @@ PuceLake_Trigger3_Lower::
 
 PuceLake_Trainer_SchoolgirlJessy::
 # 773 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_single TRAINER_JESSY, SchoolgirlJessyIntro, SchoolgirlJessyOutro
+	trainerbattle_single TRAINER_SCHOOLKIDF_JESSY, SchoolgirlJessyIntro, SchoolgirlJessyOutro
 	end
 
 
 PuceLake_Trainer_YoungsterTyler::
 # 778 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_single TRAINER_TYLER, YoungsterTylerIntro, YoungsterTylerOutro
+	trainerbattle_single TRAINER_YOUNGSTER_TYLER, YoungsterTylerIntro, YoungsterTylerOutro
 	end
 
 
 PuceLake_Trainer_LassAdela::
 # 783 "data/maps/AW_PuceLake/scripts.pory"
-	trainerbattle_single TRAINER_ADELA, LassAdelaIntro, LassAdelaOutro
+	trainerbattle_single TRAINER_LASS_ADELA, LassAdelaIntro, LassAdelaOutro
 	end
 
 

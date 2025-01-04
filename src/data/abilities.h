@@ -2408,4 +2408,46 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_TONE_DEAF] =
+    {
+        .name = _("Tone-Deaf"),
+        .description = COMPOUND_STRING("Ups and resists sound."),
+        .aiRating = 2,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_EXTREMOPHILE] = {
+        .name = _("Extremophile"),
+        .description = COMPOUND_STRING("Resists hot and cold."),
+        .aiRating = 2,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_COEVAL] = {
+        .name = _("Coeval"),
+        .description = COMPOUND_STRING("Moves have no cooldown."),
+        .aiRating = 8,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+    },
+    
+    [ABILITY_AMNESIAC] = {
+        .name = _("Amnesiac"),
+        .description = COMPOUND_STRING("Makes contact reduce PP."),
+        .aiRating = 8,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+    },
+
+    [ABILITY_SLUMBERER] = {
+        .name = _("Slumberer"),
+        .description = COMPOUND_STRING("Always asleep."),
+        .aiRating = 8,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+    },
 };

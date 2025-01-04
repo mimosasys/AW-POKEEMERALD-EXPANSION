@@ -423,7 +423,7 @@
             },
             {
 #line 206
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_GLIGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 208
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
