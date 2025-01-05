@@ -29,6 +29,7 @@ script Route108_Lower_Transition {
     applymovement(3,Carla_LeaveLab)
     closedoor(8,8)
     waitmovement(0)
+    delay(60)
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_MoveDown1)
     waitmovement(0)
