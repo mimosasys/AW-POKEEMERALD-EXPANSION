@@ -29,8 +29,8 @@ const u32 gMugshotImg_Carla[] = INCBIN_U32("graphics/trainers/front_pics/_AW/mug
 const u16 gMugshotPal_Carla[] = INCBIN_U16("graphics/trainers/front_pics/_AW/mugshots/carla.gbapal");
 
 static const struct Mugshot sMugshots[] = {
-    [MUGSHOT_AVERY] = {.x = 3, .y = 7, .width = 64, .height = 64, .image = gMugshotImg_Avery, .palette = gMugshotPal_Avery},
-    [MUGSHOT_CARLA] = {.x = 3, .y = 7, .width = 64, .height = 64, .image = gMugshotImg_Carla, .palette = gMugshotPal_Carla}
+    [MUGSHOT_AVERY] = {.x = 3, .y = 8, .width = 64, .height = 64, .image = gMugshotImg_Avery, .palette = gMugshotPal_Avery},
+    [MUGSHOT_CARLA] = {.x = 3, .y = 8, .width = 64, .height = 64, .image = gMugshotImg_Carla, .palette = gMugshotPal_Carla}
 };
 
 

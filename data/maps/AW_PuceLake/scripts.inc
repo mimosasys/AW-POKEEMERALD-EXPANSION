@@ -1602,12 +1602,12 @@ EmoteQuestion:
 
 PuceLake_MeetAvery_Text_0:
 # 16 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Hey, {PLAYER}! I knew you'd\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hey, {PLAYER}! I knew you'd\n"
 	.string "show up!$"
 
 PuceLake_MeetAvery_Text_1:
 # 25 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: Gear's quite a character, aren't\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Gear's quite a character, aren't\n"
 	.string "they? I'm glad they're safe.\p"
 	.string "Well, this is Puce Lake. The lake itself\n"
 	.string "is just around this path here, it's not\l"
@@ -1618,14 +1618,14 @@ PuceLake_MeetAvery_Text_1:
 
 PuceLake_MeetAvery_Text_2:
 # 33 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Avery, I haven't seen you leave\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Avery, I haven't seen you leave\n"
 	.string "the lab unless it's for an expedition.\p"
 	.string "I wish you came here to wind down, you\n"
 	.string "need it. You work yourself to the bone.$"
 
 PuceLake_MeetAvery_Text_3:
 # 40 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: It's important research, Carla.\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} It's important research, Carla.\n"
 	.string "And besides, I can't just leave the lab\l"
 	.string "unattended.\p"
 	.string "Not with Team Jade about. They'll try\n"
@@ -1633,7 +1633,7 @@ PuceLake_MeetAvery_Text_3:
 
 PuceLake_MeetAvery_Text_4:
 # 47 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: Haven't heard of them,\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Haven't heard of them,\n"
 	.string "{PLAYER}? They're a fellow\l"
 	.string "archaeology group that, instead of\l"
 	.string "doing their own research, seem intent\l"
@@ -1650,7 +1650,7 @@ PuceLake_MeetAvery_Text_4:
 
 PuceLake_MeetAvery_Text_5:
 # 56 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: ...You can tell he's really\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} ...You can tell he's really\n"
 	.string "passionate about this, can't you?\p"
 	.string "Um, we'll head on down to the lakeside.\n"
 	.string "You'll see the dig site on the south\l"
@@ -1664,22 +1664,22 @@ PuceLake_MeetAvery_Text_5:
 
 PuceLake_MeetAvery_Text_6:
 # 68 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Recieved the Pokédex from Professor\n"
+	.string "Recieved the {COLOR RED}Pokédex{COLOR DARK_GRAY} from Professor\n"
 	.string "Avery!$"
 
 PuceLake_MeetAvery_Text_7:
 # 80 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: And here's a little something\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And here's a little something\n"
 	.string "from me. It's nothing, really.$"
 
 PuceLake_MeetAvery_Text_8:
 # 87 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: Er... yes. We'll get to it. See you in\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Er... yes. We'll get to it. See you in\n"
 	.string "a bit, ok, {PLAYER}?$"
 
 PuceLake_MeetAvery_Text_9:
 # 96 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Uh, I don't mean to alarm you,\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Uh, I don't mean to alarm you,\n"
 	.string "but...$"
 
 PuceLake_MeetAvery_Text_10:
@@ -1756,7 +1756,7 @@ PuceLake_MikeTalk_Text_0:
 
 PuceLake_MeetCarla_Text_0:
 # 233 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Ah, there you are, {PLAYER}!\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Ah, there you are, {PLAYER}!\n"
 	.string "How was the walk?\p"
 	.string "Let me heal up that team of yours!$"
 
@@ -1769,18 +1769,18 @@ PuceLake_MeetCarla_Text_1:
 
 PuceLake_MeetCarla_Text_2:
 # 261 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Hi! You must be {PLAYER}'s\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hi! You must be {PLAYER}'s\n"
 	.string "friend, right?$"
 
 PuceLake_MeetCarla_Text_3:
 # 269 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Mike: H-hi ma'am... Y-yes, that's right.\p"
-	.string "Carla: Oh, don't be so formal, it's\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oh, don't be so formal, it's\n"
 	.string "alright! I'm the assistant to Professor\l"
 	.string "Avery Fern. He's an archaeologist from\l"
 	.string "around here.\p"
 	.string "Mike: Y-you're -\p"
-	.string "Carla: And {PLAYER} here is helping\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And {PLAYER} here is helping\n"
 	.string "out too! Avery asked her to help out\l"
 	.string "with this dig site! Ain't that exciting?$"
 
@@ -1808,7 +1808,7 @@ PuceLake_MeetCarla_Text_6:
 
 PuceLake_MeetCarla_Text_7:
 # 311 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Team Jade! How did I know you\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Team Jade! How did I know you\n"
 	.string "guys would show up?\p"
 	.string "{PLAYER}, it seems your friend here is\n"
 	.string "with those Jade guys. That's not good\l"
@@ -1850,7 +1850,7 @@ PuceLake_MeetCarla_Text_12:
 
 PuceLake_MeetCarla_Text_13:
 # 399 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: I got your back, {PLAYER}.\p"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} I got your back, {PLAYER}.\p"
 	.string "Fine, you menaces! We'll take you on!$"
 
 PuceLake_MeetCarla_Text_14:
@@ -1881,7 +1881,7 @@ PuceLake_MeetCarla_Text_19:
 
 PuceLake_MeetCarla_Text_20:
 # 478 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Carla: Phew, at least that's taken care\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Phew, at least that's taken care\n"
 	.string "of.\p"
 	.string "You're pretty good with your Pokémon,\n"
 	.string "{PLAYER}. It'll be good to have you\l"
@@ -1932,7 +1932,7 @@ PuceLake_TalkCarla_Text_0:
 
 PuceLake_GetToDigSite_Text_0:
 # 571 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: Sounds like there was a commotion\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Sounds like there was a commotion\n"
 	.string "up there!\p"
 	.string "You alright, {PLAYER}?\p"
 	.string "I'll bet it was Team Jade, wasn't it?\p"
@@ -1982,18 +1982,18 @@ PuceLake_GetToDigSite_Text_3:
 
 PuceLake_GetToDigSite_Text_4:
 # 614 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: What is it?\p"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} What is it?\p"
 	.string "Scientist: O-over here...!$"
 
 PuceLake_GetToDigSite_Text_5:
 # 633 "data/maps/AW_PuceLake/scripts.pory"
 	.string "Scientist: ...Do you see it?\p"
-	.string "Fern: See what?\p"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} See what?\p"
 	.string "Scientist: The... the carving...!$"
 
 PuceLake_GetToDigSite_Text_6:
 # 646 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: ...Oh my goodness.\p"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} ...Oh my goodness.\p"
 	.string "It... it's some sort of language. It has\n"
 	.string "to be.\p"
 	.string "The stone is... it's painted...!\p"
@@ -2007,7 +2007,7 @@ PuceLake_GetToDigSite_Text_7:
 
 PuceLake_GetToDigSite_Text_8:
 # 668 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Fern: {PLAYER}, sorry, this is a bit\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} {PLAYER}, sorry, this is a bit\n"
 	.string "bigger than I was expecting.\p"
 	.string "I was going to get you to help out with\n"
 	.string "tagging things, just to start you off...\p"

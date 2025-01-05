@@ -13,7 +13,7 @@ script PuceLake_MeetAvery {
     lockall
     setvar(VAR_AW_PROGRESS_2,1)
     msgbox(format(
-        "Carla: Hey, {PLAYER}! I knew you'd show up!"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hey, {PLAYER}! I knew you'd show up!"
         ))
     waitmessage
     closemessage
@@ -22,7 +22,7 @@ script PuceLake_MeetAvery {
     waitmovement(5)
     
     msgbox(format(
-        "Fern: Gear's quite a character, aren't they? I'm glad they're safe.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Gear's quite a character, aren't they? I'm glad they're safe.\p"
         "Well, this is Puce Lake. The lake itself is just around this path here, it's not far.\p"
         "It's quite a lovely place, actually. I come here to wind down after a hard day working!"
         ))
@@ -30,21 +30,21 @@ script PuceLake_MeetAvery {
     applymovement(4,WalkUpSpot)
     waitmovement(0)
     msgbox(format(
-        "Carla: Avery, I haven't seen you leave the lab unless it's for an expedition.\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Avery, I haven't seen you leave the lab unless it's for an expedition.\p"
         "I wish you came here to wind down, you need it. You work yourself to the bone."
         ))
     waitmessage
     applymovement(5,WalkDownSpot)
     waitmovement(0)
     msgbox(format(
-        "Fern: It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
         "Not with Team Jade about. They'll try steal our research again."
         ))
     waitmessage
     applymovement(4,FaceRight)
     applymovement(5,FaceRight)
     msgbox(format(
-        "Fern: Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
         "They've been around for a few years, and they've had a few successes, too.\p"
         "It's really set us back a lot. That's part of the reason we're so short-staffed. So many of them have just... given up, really.\p"
         "But I'm not giving up. I don't care if we have funding or not. I'm going to uncover the history of this region."
@@ -53,7 +53,7 @@ script PuceLake_MeetAvery {
     applymovement(4,WalkRightSpot)
     waitmovement(0)
     msgbox(format(
-        "Carla: ...You can tell he's really passionate about this, can't you?\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} ...You can tell he's really passionate about this, can't you?\p"
         "Um, we'll head on down to the lakeside. You'll see the dig site on the south side.\p"
         "I'll give you the tour once we're there! I hope you're excited to see it!\p"
         "Oh, and here's a little gift from Avery and I.\p"
@@ -65,7 +65,7 @@ script PuceLake_MeetAvery {
     waitmovement(0)
     playfanfare(MUS_OBTAIN_ITEM)
     msgbox(format(
-        "Recieved the Pokédex from Professor Avery!"
+        "Recieved the {COLOR RED}Pokédex{COLOR DARK_GRAY} from Professor Avery!"
     ))
     waitmessage
     waitfanfare
@@ -77,14 +77,14 @@ script PuceLake_MeetAvery {
     applymovement(5,WalkRightSpot)
     waitmovement(0)
     msgbox(format(
-        "Carla: And here's a little something from me. It's nothing, really."
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And here's a little something from me. It's nothing, really."
     ))
     giveitem(ITEM_POTION,5)
     waitmessage
     closemessage
     delay(15)
     msgbox(format(
-        "Fern: Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
         ))
     waitmessage
     applymovement(4,PuceLake_CarlaLeavePlayer1)
@@ -93,7 +93,7 @@ script PuceLake_MeetAvery {
     applymovement(4,FaceRight)
     waitmovement(0)
     msgbox(format(
-        "Carla: Uh, I don't mean to alarm you, but..."
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Uh, I don't mean to alarm you, but..."
         ))
     waitmessage
     fadeoutbgm(1)
@@ -230,7 +230,7 @@ script PuceLake_MeetCarla {
     applymovement(14,WalkRightSpot)
     waitmovement(0)
     msgbox(format(
-        "Carla: Ah, there you are, {PLAYER}! How was the walk?\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Ah, there you are, {PLAYER}! How was the walk?\p"
         "Let me heal up that team of yours!"
     ))
     waitmessage
@@ -258,7 +258,7 @@ script PuceLake_MeetCarla {
     }
 
     msgbox(format(
-        "Carla: Hi! You must be {PLAYER}'s friend, right?"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hi! You must be {PLAYER}'s friend, right?"
     ))
     waitmessage
     closemessage
@@ -267,10 +267,10 @@ script PuceLake_MeetCarla {
 
     msgbox(format(
         "Mike: H-hi ma'am... Y-yes, that's right.\p"
-        "Carla: Oh, don't be so formal, it's alright!"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oh, don't be so formal, it's alright!"
         "I'm the assistant to Professor Avery Fern. He's an archaeologist from around here.\p"
         "Mike: Y-you're -\p"
-        "Carla: And {PLAYER} here is helping out too! Avery asked her to help out with this dig site! Ain't that exciting?"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And {PLAYER} here is helping out too! Avery asked her to help out with this dig site! Ain't that exciting?"
     ))
     waitmessage
     closemessage
@@ -308,7 +308,7 @@ script PuceLake_MeetCarla {
     applymovement(14,WalkRightSpot)
     waitmovement(0)
     msgbox(format(
-        "Carla: Team Jade! How did I know you guys would show up?\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Team Jade! How did I know you guys would show up?\p"
         "{PLAYER}, it seems your friend here is with those Jade guys. That's not good for us."
     ))
     applymovement(12,WalkLeftSpot)
@@ -396,7 +396,7 @@ script PuceLake_MeetCarla {
     special(HealPlayerParty)
 
     msgbox(format(
-        "Carla: I got your back, {PLAYER}.\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} I got your back, {PLAYER}.\p"
         "Fine, you menaces! We'll take you on!"
     ))
     waitmessage
@@ -475,7 +475,7 @@ script PuceLake_MeetCarla {
     delay(30)
 
     msgbox(format(
-        "Carla: Phew, at least that's taken care of.\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Phew, at least that's taken care of.\p"
         "You're pretty good with your Pokémon, {PLAYER}. It'll be good to have you around."
     ))
     waitmessage
@@ -568,7 +568,7 @@ script PuceLake_GetToDigSite {
     applymovement(15,FacePlayer)
     waitmovement(0)
     msgbox(format(
-        "Fern: Sounds like there was a commotion up there!\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Sounds like there was a commotion up there!\p"
         "You alright, {PLAYER}?\p"
         "I'll bet it was Team Jade, wasn't it?\p"
         "Looks like you and Carla managed to fend them off, though.\p"
@@ -611,7 +611,7 @@ script PuceLake_GetToDigSite {
     applymovement(15,WalkDownSpot)
     waitmovement(0)
     msgbox(format(
-        "Fern: What is it?\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} What is it?\p"
         "Scientist: O-over here...!"
     ))
     waitmessage
@@ -631,7 +631,7 @@ script PuceLake_GetToDigSite {
 
     msgbox(format(
         "Scientist: ...Do you see it?\p"
-        "Fern: See what?\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} See what?\p"
         "Scientist: The... the carving...!"
     ))
     waitmessage
@@ -643,7 +643,7 @@ script PuceLake_GetToDigSite {
     waitmovement(0)
 
     msgbox(format(
-        "Fern: ...Oh my goodness.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} ...Oh my goodness.\p"
         "It... it's some sort of language. It has to be.\p"
         "The stone is... it's painted...!\p"
         "Terry, this is a major discovery!\p"
@@ -665,7 +665,7 @@ script PuceLake_GetToDigSite {
     waitmovement(0)
 
     msgbox(format(
-        "Fern: {PLAYER}, sorry, this is a bit bigger than I was expecting.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} {PLAYER}, sorry, this is a bit bigger than I was expecting.\p"
         "I was going to get you to help out with tagging things, just to start you off...\p"
         "But this has gotten way out of hand. I'm gonna have to ask you to let the professionals handle this one.\p"
         "A bit of a let down, I know, but just think!\p"

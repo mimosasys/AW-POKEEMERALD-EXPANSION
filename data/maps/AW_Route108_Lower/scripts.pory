@@ -34,7 +34,7 @@ script Route108_Lower_Transition {
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_MoveDown1)
     waitmovement(0)
     message(format(
-        "Fern: Well, {PLAYER}, this is Route 108.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, {PLAYER}, this is Route 108.\p"
     ))
     waitmessage
     closemessage
@@ -74,7 +74,7 @@ script Route108_Lower_Transition {
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookDown3)
     waitmovement(0)
     message(format(
-       "Fern: Now, all you have to do is take a step into that tall grass!\p"
+       "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Now, all you have to do is take a step into that tall grass!\p"
         "It's best to lower the other Pokémon's health a fair bit before throwing a ball, but who knows, you might get lucky!\p"
     ))
     waitmessage
@@ -82,7 +82,7 @@ script Route108_Lower_Transition {
     applymovement(3,Carla_GoToPlayer)
     waitmovement(0)
     message(format(
-        "Carla: You've got this! Go give it a shot! Catching Pokémon lets you make more friends!\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} You've got this! Go give it a shot! Catching Pokémon lets you make more friends!\p"
         "With the Pokémon, of course.\p"
     ))
     waitmessage
@@ -105,7 +105,7 @@ script Route108_Lower_Transition {
         special(HealPlayerParty)
 
         message(format(
-           "Carla: Hey! Nice job, good catch!\pIf you like, bring them on your travels with you, or you can put them in the PC for storage.\p"
+           "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hey! Nice job, good catch!\pIf you like, bring them on your travels with you, or you can put them in the PC for storage.\p"
         ))
         waitmessage
     } elif (var(VAR_RESULT) == B_OUTCOME_WON) {
@@ -113,7 +113,7 @@ script Route108_Lower_Transition {
         applymovement(2,Professor_GoToPlayer)
         special(HealPlayerParty)
         message(format(
-            "Carla: Oop, seems you were a bit enthusiastic.\pNevermind, you'll have plenty of other chances!\p"
+            "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oop, seems you were a bit enthusiastic.\pNevermind, you'll have plenty of other chances!\p"
             ))
        waitmessage
     } else {
@@ -121,7 +121,7 @@ script Route108_Lower_Transition {
         applymovement(2,Professor_GoToPlayer)
         special(HealPlayerParty)
         message(format(
-            "Carla: Aww, dang! That's too bad. It's ok, we'll heal your Pokémon right up!\p"
+            "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Aww, dang! That's too bad. It's ok, we'll heal your Pokémon right up!\p"
         ))
         waitmessage
     }
@@ -129,17 +129,17 @@ script Route108_Lower_Transition {
     applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
     delay(10)
     message(format(
-        "Fern: Well, you get the picture.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, you get the picture.\p"
         "Actually, I have something to ask of you. I hope it's not too much all at once.\p"
     ))
     waitmessage
     message(format(
-        "Carla: Oh, you mean...!\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oh, you mean...!\p"
         "That's a great idea!\p"
     ))
     waitmessage
     message(format(
-        "Fern: You see, {PLAYER}, our research team is a bit...\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} You see, {PLAYER}, our research team is a bit...\p"
         "How do I put this...\p"
         "Short of staff at the moment. Really, it's just Carla, me, and a few other hands.\p"
         "So... I was thinking that while you're here recovering, you could help us out!\p"
@@ -154,7 +154,7 @@ script Route108_Lower_Transition {
     applymovement(2,LookDown)
     special(RemoveCameraObject)
     message(format(
-        "Fern: ...! Oh! Well, thanks, {PLAYER}! It really will be such a big help for us!\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} ...! Oh! Well, thanks, {PLAYER}! It really will be such a big help for us!\p"
         "Actually, there's something that would be a big help already.\p"
         "A friend of mine, an inventor called Gear lives in Port Mulberry, and they've been fixing up a communication device for me.\p"
         "And, well, they're not picking up their phone. I hope nothing's happened to them.\p"
@@ -168,11 +168,11 @@ script Route108_Lower_Transition {
     applymovement(2,Professor_BackToLab)
     waitmovement(0)
     message(format(
-        "Fern: See you round, {PLAYER}!\p"
+        "{COLOR GREEN}Fern: See you round, {PLAYER}!\p"
     ))
     waitmessage
     message(format(
-        "Carla: Catch lots of Pokémon! And be nice to yours, ok?\p"
+        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Catch lots of Pokémon! And be nice to yours, ok?\p"
     ))
     waitmessage
     applymovement(2,Professor_BackToLab2)

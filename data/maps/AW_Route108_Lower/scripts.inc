@@ -619,7 +619,7 @@ Camera_LookUp3:
 
 Route108_Lower_Transition_Text_0:
 # 37 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: Well, {PLAYER}, this is Route\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, {PLAYER}, this is Route\n"
 	.string "108.\p"
 	.string "$"
 
@@ -647,7 +647,7 @@ Route108_Lower_Transition_Text_3:
 
 Route108_Lower_Transition_Text_4:
 # 77 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: Now, all you have to do is take a\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Now, all you have to do is take a\n"
 	.string "step into that tall grass!\p"
 	.string "It's best to lower the other Pokémon's\n"
 	.string "health a fair bit before throwing a ball,\l"
@@ -656,7 +656,7 @@ Route108_Lower_Transition_Text_4:
 
 Route108_Lower_Transition_Text_5:
 # 85 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: You've got this! Go give it a\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} You've got this! Go give it a\n"
 	.string "shot! Catching Pokémon lets you make\l"
 	.string "more friends!\p"
 	.string "With the Pokémon, of course.\p"
@@ -664,7 +664,7 @@ Route108_Lower_Transition_Text_5:
 
 Route108_Lower_Transition_Text_6:
 # 108 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: Hey! Nice job, good catch!\p"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hey! Nice job, good catch!\p"
 	.string "If you like, bring them on your travels\n"
 	.string "with you, or you can put them in the PC\l"
 	.string "for storage.\p"
@@ -672,7 +672,7 @@ Route108_Lower_Transition_Text_6:
 
 Route108_Lower_Transition_Text_7:
 # 116 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: Oop, seems you were a bit\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oop, seems you were a bit\n"
 	.string "enthusiastic.\p"
 	.string "Nevermind, you'll have plenty of other\n"
 	.string "chances!\p"
@@ -680,13 +680,13 @@ Route108_Lower_Transition_Text_7:
 
 Route108_Lower_Transition_Text_8:
 # 124 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: Aww, dang! That's too bad. It's\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Aww, dang! That's too bad. It's\n"
 	.string "ok, we'll heal your Pokémon right up!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_9:
 # 132 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: Well, you get the picture.\p"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, you get the picture.\p"
 	.string "Actually, I have something to ask of\n"
 	.string "you. I hope it's not too much all at\l"
 	.string "once.\p"
@@ -694,13 +694,13 @@ Route108_Lower_Transition_Text_9:
 
 Route108_Lower_Transition_Text_10:
 # 137 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: Oh, you mean...!\p"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oh, you mean...!\p"
 	.string "That's a great idea!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_11:
 # 142 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: You see, {PLAYER}, our research\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} You see, {PLAYER}, our research\n"
 	.string "team is a bit...\p"
 	.string "How do I put this...\p"
 	.string "Short of staff at the moment. Really,\n"
@@ -713,7 +713,7 @@ Route108_Lower_Transition_Text_11:
 
 Route108_Lower_Transition_Text_12:
 # 157 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: ...! Oh! Well, thanks, {PLAYER}!\n"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} ...! Oh! Well, thanks, {PLAYER}!\n"
 	.string "It really will be such a big help for us!\p"
 	.string "Actually, there's something that would\n"
 	.string "be a big help already.\p"
@@ -738,12 +738,12 @@ Route108_Lower_Transition_Text_12:
 
 Route108_Lower_Transition_Text_13:
 # 171 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Fern: See you round, {PLAYER}!\p"
+	.string "{COLOR GREEN}Fern: See you round, {PLAYER}!\p"
 	.string "$"
 
 Route108_Lower_Transition_Text_14:
 # 175 "data/maps/AW_Route108_Lower/scripts.pory"
-	.string "Carla: Catch lots of Pokémon! And be\n"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Catch lots of Pokémon! And be\n"
 	.string "nice to yours, ok?\p"
 	.string "$"
 

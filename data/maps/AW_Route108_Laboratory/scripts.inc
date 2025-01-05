@@ -75,713 +75,721 @@ Route108_Laboratory_FirstTime::
 # 49 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
 # 50 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
+	closemessage
 # 51 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, WalkLeftSpot
+	callnative ClearMugshot
 # 52 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, WalkLeftSpot
+# 53 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmovement 0
-# 54 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_CARLA
 # 55 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
+	setvar VAR_0x8000, MUGSHOT_CARLA
 # 56 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 57 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_FirstTime_Text_3
-# 59 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
 # 60 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 62 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
+	waitmessage
+# 61 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
 # 63 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 30
+	closemessage
 # 64 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, LookDown
+	delay 30
 # 65 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 2, LookDown
+# 66 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	delay 80
-# 67 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AVERY
 # 68 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
+	setvar VAR_0x8000, MUGSHOT_AVERY
 # 69 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 70 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_FirstTime_Text_4
-# 72 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
 # 73 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 74 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	callnative ClearMugshot
-# 75 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
 # 76 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 80
+	closemessage
 # 77 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, FacePlayer
+	delay 80
 # 78 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
+	applymovement 2, FacePlayer
 # 79 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 80 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_FirstTime_Text_5
-# 83 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
 # 84 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
+	waitmessage
 # 85 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
+	closemessage
 # 86 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 30
+	callnative ClearMugshot
 # 87 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, LookUp
-# 88 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
-# 89 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 10
-# 90 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 91 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_6
-# 94 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 95 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 96 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
-# 98 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_CARLA
-# 99 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 100 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, WalkRightSpot
-# 101 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
-# 102 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_7
-# 105 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 106 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 107 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 10
-# 109 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AVERY
-# 110 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 111 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, FacePlayer
-# 112 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_8
-# 115 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 116 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
-# 117 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 118 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 60
-# 119 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 120 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_9
-# 124 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 125 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 126 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 10
-# 127 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, LookLeft
-# 128 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
-# 130 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_CARLA
-# 131 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 132 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_10
-# 135 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 136 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 137 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, FacePlayer
-# 139 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_0x8000, MUGSHOT_AVERY
-# 140 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative DrawMugshot
-# 141 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_11
-# 145 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 146 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	callnative ClearMugshot
-# 147 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
-# 148 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, ProfessorToPokeballs
-# 149 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, CarlaToPokeballs
-# 150 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	delay 30
-# 151 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerToPokeballs
-# 152 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 88 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 2, LookUp
+# 89 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmovement 0
-# 153 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 90 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 10
+# 91 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	callnative DrawMugshot
-# 154 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_FirstTime_Text_12
-# 157 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 92 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_6
+# 95 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
-# 158 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 96 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	callnative ClearMugshot
-# 159 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 97 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	closemessage
+# 99 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_CARLA
+# 100 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 101 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, WalkRightSpot
+# 102 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmovement 0
+# 103 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_7
+# 106 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 107 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	closemessage
+# 108 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 109 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 10
+# 111 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_AVERY
+# 112 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 113 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 2, FacePlayer
+# 114 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_8
+# 117 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 118 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	closemessage
+# 119 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 120 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 60
+# 121 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 122 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_9
+# 126 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 127 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	closemessage
+# 128 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 129 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 10
+# 130 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, LookLeft
+# 131 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmovement 0
+# 133 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_CARLA
+# 134 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 135 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_10
+# 138 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 139 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 140 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 2, FacePlayer
+# 142 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_AVERY
+# 143 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 144 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_11
+# 148 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 149 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 150 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	closemessage
+# 151 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 2, ProfessorToPokeballs
+# 152 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, CarlaToPokeballs
+# 153 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 30
+# 154 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerToPokeballs
+# 155 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmovement 0
+# 156 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative DrawMugshot
+# 157 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_FirstTime_Text_12
+# 160 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 161 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	callnative ClearMugshot
+# 162 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	releaseall
 	return
 
 
 Route108_Laboratory_DontLeaveLeft::
-# 163 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	lock
-# 164 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, WalkLeftSpot
-# 165 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
 # 166 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 20
+	lock
 # 167 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_DontLeaveLeft_Text_0
-# 170 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 171 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_WalkLeft
-# 172 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, WalkLeftSpot
+# 168 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmovement 0
+# 169 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 20
+# 170 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_DontLeaveLeft_Text_0
 # 173 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 174 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Player_WalkLeft
+# 175 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmovement 0
+# 176 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 
 Route108_Laboratory_DontLeaveRight::
-# 177 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	lock
-# 178 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, WalkLeftSpot
-# 179 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
 # 180 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 20
+	lock
 # 181 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_DontLeaveRight_Text_0
-# 184 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 185 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_WalkUp
-# 186 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, WalkLeftSpot
+# 182 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmovement 0
+# 183 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 20
+# 184 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_DontLeaveRight_Text_0
 # 187 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 188 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Player_WalkUp
+# 189 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmovement 0
+# 190 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 
-# 190 "data/maps/AW_Route108_Laboratory/scripts.pory"
-Player_GetUp:
-# 191 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_in_place_slow_up
-# 192 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_in_place_slow_down
 # 193 "data/maps/AW_Route108_Laboratory/scripts.pory"
+Player_GetUp:
+# 194 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_in_place_slow_up
+# 195 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_in_place_slow_down
+# 196 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	face_left
 	step_end
 
 Route108_Laboratory_PickAlpacoil::
-# 197 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 200 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	lock
-# 198 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 201 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_AW_PROGRESS_1, 3
 	goto_if_eq Route108_Laboratory_PickAlpacoil_1
-# 219 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 222 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_PickAlpacoil_Text_1
-# 220 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 223 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
-# 221 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 224 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickAlpacoil_1:
-# 199 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 202 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	showmonpic SPECIES_ALPACOIL, 10, 3
-# 200 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 203 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	msgbox Route108_Laboratory_PickAlpacoil_Text_0, MSGBOX_YESNO
-# 204 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 207 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route108_Laboratory_PickAlpacoil_4
-# 215 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 218 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	hidemonpic
-# 216 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 219 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickAlpacoil_4:
-# 205 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playmoncry SPECIES_ALPACOIL, CRY_MODE_NORMAL
-# 206 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	givemon SPECIES_ALPACOIL, 5
-# 207 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
 # 208 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_ALPACOIL, CRY_MODE_NORMAL
 # 209 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	givemon SPECIES_ALPACOIL, 5
 # 210 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitfanfare
+	setflag FLAG_SYS_POKEMON_GET
 # 211 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	removeobject 3
+	waitmoncry
 # 212 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_AW_PICK_ALPACOIL
+	playfanfare MUS_OBTAIN_ITEM
 # 213 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitfanfare
+# 214 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	removeobject 3
+# 215 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setflag FLAG_AW_PICK_ALPACOIL
+# 216 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	call Route108_Laboratory_Yay
 	return
 
 
 Route108_Laboratory_PickSmackop::
-# 226 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 229 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	lock
-# 227 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 230 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_AW_PROGRESS_1, 3
 	goto_if_eq Route108_Laboratory_PickSmackop_1
-# 248 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 251 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_PickAlpacoil_Text_1
-# 249 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 252 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
-# 250 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 253 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickSmackop_1:
-# 228 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 231 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	showmonpic SPECIES_SMACKOP, 10, 3
-# 229 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 232 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	msgbox Route108_Laboratory_PickSmackop_Text_0, MSGBOX_YESNO
-# 233 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 236 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route108_Laboratory_PickSmackop_4
-# 244 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 247 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	hidemonpic
-# 245 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 248 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickSmackop_4:
-# 234 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playmoncry SPECIES_SMACKOP, CRY_MODE_NORMAL
-# 235 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	givemon SPECIES_SMACKOP, 5
-# 236 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
 # 237 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_SMACKOP, CRY_MODE_NORMAL
 # 238 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	givemon SPECIES_SMACKOP, 5
 # 239 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitfanfare
+	setflag FLAG_SYS_POKEMON_GET
 # 240 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	removeobject 4
+	waitmoncry
 # 241 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_AW_PICK_SMACKOP
+	playfanfare MUS_OBTAIN_ITEM
 # 242 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitfanfare
+# 243 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	removeobject 4
+# 244 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setflag FLAG_AW_PICK_SMACKOP
+# 245 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	call Route108_Laboratory_Yay
 	return
 
 
 Route108_Laboratory_PickPuppixy::
-# 255 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 258 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	lock
-# 256 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 259 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_AW_PROGRESS_1, 3
 	goto_if_eq Route108_Laboratory_PickPuppixy_1
-# 277 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 280 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	message Route108_Laboratory_PickAlpacoil_Text_1
-# 278 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 281 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
-# 279 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 282 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickPuppixy_1:
-# 257 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 260 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	showmonpic SPECIES_PUPPIXY, 10, 3
-# 258 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 261 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	msgbox Route108_Laboratory_PickPuppixy_Text_0, MSGBOX_YESNO
-# 262 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 265 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route108_Laboratory_PickPuppixy_4
-# 273 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 276 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	hidemonpic
-# 274 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 277 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_PickPuppixy_4:
-# 263 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playmoncry SPECIES_PUPPIXY, CRY_MODE_NORMAL
-# 264 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	givemon SPECIES_PUPPIXY, 5
-# 265 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
 # 266 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmoncry
+	playmoncry SPECIES_PUPPIXY, CRY_MODE_NORMAL
 # 267 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	givemon SPECIES_PUPPIXY, 5
 # 268 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitfanfare
+	setflag FLAG_SYS_POKEMON_GET
 # 269 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	removeobject 5
+	waitmoncry
 # 270 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setflag FLAG_AW_PICK_PUPPIXY
+	playfanfare MUS_OBTAIN_ITEM
 # 271 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitfanfare
+# 272 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	removeobject 5
+# 273 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setflag FLAG_AW_PICK_PUPPIXY
+# 274 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	call Route108_Laboratory_Yay
 	return
 
 
 Route108_Laboratory_Yay::
-# 284 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 287 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	setflag FLAG_AW_MID_TUT
-# 285 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	msgbox Route108_Laboratory_Yay_Text_0, MSGBOX_YESNO
 # 288 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	msgbox Route108_Laboratory_Yay_Text_0, MSGBOX_YESNO
+# 291 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq Route108_Laboratory_Yay_2
 Route108_Laboratory_Yay_1:
-# 291 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	closemessage
-# 292 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	hidemonpic
-# 293 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setvar VAR_AW_PROGRESS_1, 4
 # 294 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_Yay_Text_1
-# 297 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 298 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 1, WalkUpSpot
-# 299 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmovement 0
-# 300 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_Yay_Text_2
-# 303 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 304 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_Yay_Text_3
-# 307 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitmessage
-# 308 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	closemessage
-# 309 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	applymovement 2, ProfessorLeave
-# 310 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 295 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	hidemonpic
+# 296 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setvar VAR_AW_PROGRESS_1, 4
+# 297 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_Yay_Text_1
+# 300 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 301 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	applymovement 1, WalkUpSpot
+# 302 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmovement 0
+# 303 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_Yay_Text_2
+# 306 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
+# 307 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_Yay_Text_3
+# 310 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitmessage
 # 311 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playse SE_DOOR
+	closemessage
 # 312 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	removeobject 2
+	applymovement 2, ProfessorLeave
 # 313 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	delay 60
+	waitmovement 0
 # 314 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	release
+	playse SE_DOOR
 # 315 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	removeobject 2
+# 316 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	delay 60
+# 317 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	release
+# 318 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	hideobjectat 3, MAP_AW_ROUTE108_LOWER
 	return
 
 Route108_Laboratory_Yay_2:
-# 289 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 292 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	goto Route108_Laboratory_Yay_1
 
 
 Route108_Laboratory_TalkCarla::
-# 319 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 322 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	lock
-# 320 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 323 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	applymovement 1, FacePlayer
-# 321 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 324 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_AW_PROGRESS_1, 3
 	goto_if_eq Route108_Laboratory_TalkCarla_2
-# 327 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 330 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	compare VAR_AW_PROGRESS_1, 4
 	goto_if_eq Route108_Laboratory_TalkCarla_5
-# 333 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_TalkCarla_Text_2
 # 336 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_TalkCarla_Text_2
+# 339 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
 Route108_Laboratory_TalkCarla_1:
-# 339 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 342 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	release
 	return
 
 Route108_Laboratory_TalkCarla_2:
-# 322 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_TalkCarla_Text_0
 # 325 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_TalkCarla_Text_0
+# 328 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
 	goto Route108_Laboratory_TalkCarla_1
 
 Route108_Laboratory_TalkCarla_5:
-# 328 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	message Route108_Laboratory_TalkCarla_Text_1
 # 331 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	message Route108_Laboratory_TalkCarla_Text_1
+# 334 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitmessage
 	goto Route108_Laboratory_TalkCarla_1
 
 
 Route108_Laboratory_HealMachine::
-# 343 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	lockall
-# 344 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 345 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitstate
 # 346 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setrespawn HEAL_LOCATION_AW_ROUTE108
+	lockall
 # 347 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	special HealPlayerParty
+	fadescreen FADE_TO_BLACK
 # 348 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	playfanfare MUS_HEAL
-# 349 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	waitfanfare
-# 350 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 351 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitstate
+# 349 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	setrespawn HEAL_LOCATION_AW_ROUTE108
+# 350 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	special HealPlayerParty
+# 351 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	playfanfare MUS_HEAL
 # 352 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitfanfare
+# 353 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 354 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	waitstate
+# 355 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	releaseall
 	return
 
 
-# 355 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
 Route108_ProfessorEnter:
-# 356 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 357 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 357 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 357 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 357 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 357 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 358 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
 # 359 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_right
-# 359 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_right
-# 359 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_right
-# 359 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_right
+	walk_down
 # 360 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 360 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 360 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 360 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 360 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 361 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 361 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 361 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 361 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 361 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 362 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_right
+# 362 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_right
+# 362 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_right
+# 362 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_right
+# 363 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	face_right
 	step_end
 
-# 363 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 366 "data/maps/AW_Route108_Laboratory/scripts.pory"
 WalkLeftSpot:
-# 364 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_in_place_left
-# 364 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_in_place_left
-	step_end
-
 # 367 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_in_place_left
+# 367 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 370 "data/maps/AW_Route108_Laboratory/scripts.pory"
 WalkRightSpot:
-# 368 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 371 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_in_place_right
-# 368 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 371 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 371 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 374 "data/maps/AW_Route108_Laboratory/scripts.pory"
 LookUp:
-# 372 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 375 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	face_up
 	step_end
 
-# 375 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 378 "data/maps/AW_Route108_Laboratory/scripts.pory"
 LookLeft:
-# 376 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 379 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	face_left
 	step_end
 
-# 379 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
 ProfessorToPokeballs:
-# 380 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 380 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 380 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 380 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 380 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 381 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 382 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 383 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
 # 383 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 383 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 383 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 383 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 384 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 385 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 386 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	face_up
 	step_end
 
-# 386 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 389 "data/maps/AW_Route108_Laboratory/scripts.pory"
 CarlaToPokeballs:
-# 387 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 387 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 387 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 387 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 388 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 389 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 389 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
 # 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
+	walk_left
 # 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
+	walk_left
 # 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 392 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 392 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 390 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 391 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-	step_end
-
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 393 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
 # 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
-PlayerToPokeballs:
-# 395 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 396 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_down
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	walk_left
-# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 394 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
 	step_end
 
-# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
-Player_WalkLeft:
-# 403 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 397 "data/maps/AW_Route108_Laboratory/scripts.pory"
+PlayerToPokeballs:
+# 398 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_left
+# 399 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 400 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 401 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 401 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 401 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 401 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 401 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_down
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 402 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+# 403 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	face_up
 	step_end
 
 # 406 "data/maps/AW_Route108_Laboratory/scripts.pory"
+Player_WalkLeft:
+# 407 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	walk_left
+	step_end
+
+# 410 "data/maps/AW_Route108_Laboratory/scripts.pory"
 ProfessorLeave:
-# 407 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 411 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
-# 407 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 411 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	walk_down
 	step_end
 
@@ -805,18 +813,18 @@ Route108_Laboratory_FirstTime_Text_2:
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_3:
-# 57 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 58 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "???: Professor....\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_4:
-# 70 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 71 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "???: Hmm... Well, I've been wrong\n"
 	.string "before...\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_5:
-# 80 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 81 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "A- anyway..! I suppose I should\n"
 	.string "introduce myself.\p"
 	.string "My name is Avery Fern. I'm a professor\n"
@@ -824,23 +832,23 @@ Route108_Laboratory_FirstTime_Text_5:
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_6:
-# 92 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 93 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "And this is my assistant, Carla.\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_7:
-# 103 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Hi!\p"
+# 104 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hi!\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_8:
-# 113 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: And you are?\p"
+# 115 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} And you are?\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_9:
-# 121 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: Ah, {PLAYER}. Well, you are\n"
+# 123 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Ah, {PLAYER}. Well, you are\n"
 	.string "something of an enigma, that's for sure.\l"
 	.string "It's lovely to make your acquaintaince.\p"
 	.string "I think you should stay here a while,\n"
@@ -851,98 +859,98 @@ Route108_Laboratory_FirstTime_Text_9:
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_10:
-# 133 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Yeah. Hey, we should show\n"
+# 136 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Yeah. Hey, we should show\n"
 	.string "{PLAYER} around the lab!\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_11:
-# 142 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: You don't have a Pokémon, do you?\n"
+# 145 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} You don't have a Pokémon, do you?\n"
 	.string "We should probably do something about\l"
 	.string "that.\p"
 	.string "Here, come with me.\p"
 	.string "$"
 
 Route108_Laboratory_FirstTime_Text_12:
-# 155 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: Sorry, it's a bit of a mess. Here\n"
+# 158 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Sorry, it's a bit of a mess. Here\n"
 	.string "they are!\p"
 	.string "Take your pick.\p"
 	.string "$"
 
 Route108_Laboratory_DontLeaveLeft_Text_0:
-# 168 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Go on, choose one!\p"
+# 171 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on, choose one!\p"
 	.string "$"
 
 Route108_Laboratory_DontLeaveRight_Text_0:
-# 182 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Go on! Choose one!\p"
+# 185 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on! Choose one!\p"
 	.string "$"
 
 Route108_Laboratory_PickAlpacoil_Text_0:
-# 201 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 204 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "This is Alpacoil, the Steel Wool\n"
 	.string "Pokémon!\p"
 	.string "Would you like to take Alpacoil?\p"
 	.string "$"
 
 Route108_Laboratory_PickAlpacoil_Text_1:
-# 219 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 222 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "It's one of the Professor's Pokémon.\p"
 	.string "$"
 
 Route108_Laboratory_PickSmackop_Text_0:
-# 230 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 233 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "This is Smackop, the Fight Bird Pokémon!\p"
 	.string "Would you like to take Smackop?\p"
 	.string "$"
 
 Route108_Laboratory_PickPuppixy_Text_0:
-# 259 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 262 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "This is Puppixy, the Pink Armour\n"
 	.string "Pokémon!\p"
 	.string "Would you like to take Puppixy?\p"
 	.string "$"
 
 Route108_Laboratory_Yay_Text_0:
-# 286 "data/maps/AW_Route108_Laboratory/scripts.pory"
+# 289 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	.string "Would you like to give your Pokémon a\n"
 	.string "nickname?\p"
 	.string "$"
 
 Route108_Laboratory_Yay_Text_1:
-# 295 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: Well, that's that.\p"
+# 298 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, that's that.\p"
 	.string "$"
 
 Route108_Laboratory_Yay_Text_2:
-# 301 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: And what a cute Pokémon you\n"
+# 304 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And what a cute Pokémon you\n"
 	.string "chose!\p"
 	.string "$"
 
 Route108_Laboratory_Yay_Text_3:
-# 305 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Fern: Ok, now! Follow me outside, I'll\n"
+# 308 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Ok, now! Follow me outside, I'll\n"
 	.string "show you around the place.\p"
 	.string "$"
 
 Route108_Laboratory_TalkCarla_Text_0:
-# 323 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Go on! Make a choice! They're all\n"
+# 326 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on! Make a choice! They're all\n"
 	.string "wonderful creatures.\p"
 	.string "$"
 
 Route108_Laboratory_TalkCarla_Text_1:
-# 329 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: Go on, Professor Fern is waiting\n"
+# 332 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on, Professor Fern is waiting\n"
 	.string "for you! Let's go.\p"
 	.string "$"
 
 Route108_Laboratory_TalkCarla_Text_2:
-# 334 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	.string "Carla: What's up, {PLAYER}? I'm just\n"
+# 337 "data/maps/AW_Route108_Laboratory/scripts.pory"
+	.string "{COLOR BLUE}Carla:{COLOR DARK_GRAY} What's up, {PLAYER}? I'm just\n"
 	.string "doing my research, as usual.\p"
 	.string "$"
