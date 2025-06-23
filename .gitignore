@@ -49,3 +49,4 @@ tools/trainerproc/trainerproc
 /.vs
 .vs
 .git/index.lock
+__pycache__
