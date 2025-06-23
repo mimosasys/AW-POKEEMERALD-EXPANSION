@@ -48,3 +48,4 @@ tools/trainerproc/trainerproc
 /.vs
 /.vs
 .vs
+.git/index.lock
