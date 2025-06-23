@@ -603,7 +603,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({ EVO_ITEM_MALE, ITEM_LEAF_STONE, SPECIES_FOWLOTUS})
+        .evolutions = EVOLUTION({ EVO_ITEM, ITEM_LEAF_STONE, SPECIES_FOWLOTUS, CONDITIONS({IF_GENDER, MON_MALE})})
     },
     [SPECIES_FOWLOTUS] = 
     {
@@ -1049,7 +1049,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE , SPECIES_POSSIERRA})
+        .evolutions = EVOLUTION({EVO_LEVEL, 0 , SPECIES_POSSIERRA, CONDITIONS({IF_IN_MAPSEC, MAPSEC_NEW_MAUVILLE})})
     },
     [SPECIES_POSSIERRA] = 
     {
@@ -1599,7 +1599,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({ EVO_ITEM_HOLD, ITEM_METAL_COAT , SPECIES_RECORGOT})
+        .evolutions = EVOLUTION({ EVO_LEVEL, 0 , SPECIES_RECORGOT, CONDITIONS({IF_HOLD_ITEM, ITEM_PRISM_SCALE})})
     },
 
     //
@@ -1950,7 +1950,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_SKIRMUSH, SPECIES_PHANTOMOLT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PHANTOMOLT, CONDITIONS({IF_SPECIES_IN_PARTY,SPECIES_SKIRMUSH})}),
     },
     [SPECIES_PHANTOMOLT] =
     {
@@ -2042,7 +2042,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_BEETEMOLT, SPECIES_CORDYSPAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CORDYSPAR, CONDITIONS({IF_SPECIES_IN_PARTY,SPECIES_BEETEMOLT})}),
     },
     [SPECIES_CORDYSPAR] =
     {
@@ -2140,7 +2140,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_DAY, 32 , SPECIES_TARDEVAIL})
+        .evolutions = EVOLUTION({EVO_LEVEL, 32 , SPECIES_TARDEVAIL, CONDITIONS({IF_TIME, TIME_DAY})})
     },
     [SPECIES_TARDEVAIL] = 
     {
@@ -2200,7 +2200,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .speciesName = _("Luridirt"),
         .natDexNum = NATIONAL_DEX_LURIDIRT,
         .categoryName = _("Cursed"),
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 18, SPECIES_LURIDWELL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LURIDWELL, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
     [SPECIES_LURIDWELL] = 
     {   
@@ -2208,7 +2208,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .speciesName = _("Luridwell"),
         .natDexNum = NATIONAL_DEX_LURIDWELL,
         .categoryName = _("Cursed"),
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 33, SPECIES_DESOLONG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_DESOLONG, CONDITIONS({IF_TIME, TIME_NIGHT})}),
     },
     [SPECIES_DESOLONG] = 
     {   
@@ -2316,8 +2316,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_MALE, 16, SPECIES_UPSUNDER_M},
-                                {EVO_LEVEL_FEMALE, 16, SPECIES_UPSUNDER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_UPSUNDER_M, CONDITIONS({IF_GENDER,MON_MALE})},
+                                {EVO_LEVEL, 16, SPECIES_UPSUNDER, CONDITIONS({IF_GENDER,MON_FEMALE})}),
         .formSpeciesIdTable = sUpsittleFormSpeciesIdTable,
     },
     [SPECIES_UPSITTLE_N] = 
@@ -2858,8 +2858,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({ EVO_ITEM_HOLD, ITEM_DRAGON_SCALE, SPECIES_SMOULDRA},
-                                { EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_SMOULDRA}),
+        .evolutions = EVOLUTION({ EVO_LEVEL, 0, SPECIES_SMOULDRA, CONDITIONS({IF_HOLD_ITEM, ITEM_DRAGON_SCALE})},
+                                { EVO_TRADE, 0, SPECIES_SMOULDRA, CONDITIONS({IF_HOLD_ITEM, ITEM_DRAGON_SCALE})}),
         .formSpeciesIdTable = sSeadraFormSpeciesIdTable,                            
     },
     [SPECIES_SMOULDRA] = 
@@ -3066,7 +3066,7 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_MOSSTROMA})
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MOSSTROMA, CONDITIONS({IF_IN_MAP,MAP_PETALBURG_WOODS})})
     },
     [SPECIES_MOSSTROMA] = 
     {
@@ -3214,8 +3214,8 @@ const struct SpeciesInfo gSpeciesInfoGenAW[] =
         .iconPalIndex = 4,
         .levelUpLearnset = sNoneLevelUpLearnset,
         .teachableLearnset = sNoneTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 48, SPECIES_PHASMETAL},
-                                {EVO_LEVEL_MALE, 48, SPECIES_PHASMETAL_M}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_PHASMETAL, CONDITIONS({IF_GENDER,MON_FEMALE})},
+                                {EVO_LEVEL, 48, SPECIES_PHASMETAL_M, CONDITIONS({IF_GENDER,MON_MALE})}),
     },
     [SPECIES_PHASMETAL] = 
     {

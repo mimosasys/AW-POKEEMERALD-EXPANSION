@@ -294,28 +294,28 @@ const u16 gTrainerBackPicPalette_Leaf[] = INCBIN_U16("graphics/trainers/back_pic
 
 // AW TRAINERS
 const u32 gTrainerFrontPic_AW_P_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_male.4bpp.lz");
-const u32 gTrainerPalette_AW_P_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_male.gbapal.lz");
+const u16 gTrainerPalette_AW_P_Male[] = INCBIN_U16("graphics/trainers/front_pics/_AW/protag_male.gbapal");
 
 const u32 gTrainerFrontPic_AW_P_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_female.4bpp.lz");
-const u32 gTrainerPalette_AW_P_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_female.gbapal.lz");
+const u16 gTrainerPalette_AW_P_Female[] = INCBIN_U16("graphics/trainers/front_pics/_AW/protag_female.gbapal");
 
 const u32 gTrainerFrontPic_AW_P_Enby[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_enby.4bpp.lz");
-const u32 gTrainerPalette_AW_P_Enby[] = INCBIN_U32("graphics/trainers/front_pics/_AW/protag_enby.gbapal.lz");
+const u16 gTrainerPalette_AW_P_Enby[] = INCBIN_U16("graphics/trainers/front_pics/_AW/protag_enby.gbapal");
 
 const u32 gTrainerFrontPic_AW_JadeGrunt_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/jade_grunt_male.4bpp.lz");
-const u32 gTrainerPalette_AW_JadeGrunt_Male[] = INCBIN_U32("graphics/trainers/front_pics/_AW/jade_grunt_male.gbapal.lz");
+const u16 gTrainerPalette_AW_JadeGrunt_Male[] = INCBIN_U16("graphics/trainers/front_pics/_AW/jade_grunt_male.gbapal");
 
 const u32 gTrainerFrontPic_AW_JadeGrunt_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/jade_grunt_female.4bpp.lz");
-const u32 gTrainerPalette_AW_JadeGrunt_Female[] = INCBIN_U32("graphics/trainers/front_pics/_AW/jade_grunt_female.gbapal.lz");
+const u16 gTrainerPalette_AW_JadeGrunt_Female[] = INCBIN_U16("graphics/trainers/front_pics/_AW/jade_grunt_female.gbapal");
 
 const u32 gTrainerFrontPic_AW_Rival[] = INCBIN_U32("graphics/trainers/front_pics/_AW/rival.4bpp.lz");
-const u32 gTrainerPalette_AW_Rival[] = INCBIN_U32("graphics/trainers/front_pics/_AW/rival.gbapal.lz");
+const u16 gTrainerPalette_AW_Rival[] = INCBIN_U16("graphics/trainers/front_pics/_AW/rival.gbapal");
 
 const u32 gTrainerFrontPic_AW_LeaderWendy[] = INCBIN_U32("graphics/trainers/front_pics/_AW/leader_wendy.4bpp.lz");
-const u32 gTrainerPalette_AW_LeaderWendy[] = INCBIN_U32("graphics/trainers/front_pics/_AW/leader_wendy.gbapal.lz");
+const u16 gTrainerPalette_AW_LeaderWendy[] = INCBIN_U16("graphics/trainers/front_pics/_AW/leader_wendy.gbapal");
 
 const u32 gTrainerFrontPic_AW_LeaderWyatt[] = INCBIN_U32("graphics/trainers/front_pics/_AW/leader_wyatt.4bpp.lz");
-const u32 gTrainerPalette_AW_LeaderWyatt[] = INCBIN_U32("graphics/trainers/front_pics/_AW/leader_wyatt.gbapal.lz");
+const u16 gTrainerPalette_AW_LeaderWyatt[] = INCBIN_U16("graphics/trainers/front_pics/_AW/leader_wyatt.gbapal");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
