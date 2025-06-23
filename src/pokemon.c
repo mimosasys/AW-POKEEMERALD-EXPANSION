@@ -5783,7 +5783,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return AW_MUS_BATTLE_RIVAL;
-            if (!StringCompare(GetTrainerNameFromId(gTrainerBattleOpponent_A), gText_BattleWallyName))
+            if (!StringCompare(GetTrainerNameFromId(TRAINER_BATTLE_PARAM.opponentA), gText_BattleWallyName))
                 return AW_MUS_BATTLE_TRAINER;
             return AW_MUS_BATTLE_RIVAL;
         case TRAINER_CLASS_ELITE_FOUR:

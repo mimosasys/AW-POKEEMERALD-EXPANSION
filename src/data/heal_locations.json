@@ -131,6 +131,36 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
       "x": 3,
       "y": 52
+    },
+    {
+      "id": "HEAL_LOCATION_AW_VERDIGRIS_CITY",
+      "map": "MAP_AW_VERDIGRIS_CITY",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "HEAL_LOCATION_AW_PORT_MULBERRY",
+      "map": "MAP_AW_PORT_MULBERRY",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "HEAL_LOCATION_AW_PUCE_CITY",
+      "map": "MAP_AW_PUCE_CITY",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "HEAL_LOCATION_AW_ERIN_VILLAGE",
+      "map": "MAP_AW_ERIN_VILLAGE",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "HEAL_LOCATION_AW_ROUTE108_LOWER",
+      "map": "MAP_AW_ROUTE108_LOWER",
+      "x": 0,
+      "y": 0
     }
   ]
 }

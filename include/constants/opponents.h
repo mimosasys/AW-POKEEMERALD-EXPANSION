@@ -4,22 +4,17 @@
 #include "constants/battle_partner.h"
 
 #define TRAINER_NONE                          0
-
-// AW START REPLACING TRAINERS HERE
-
-#define TRAINER_SCHOOLKIDF_JESSY             1
-#define TRAINER_YOUNGSTER_TYLER              2
-#define TRAINER_LASS_ADELA                   3
-#define TRAINER_TEAMJADE_GRUNT_PUCELAKE      4
-#define TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL 5
-#define TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP  6
-#define TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY  7
-#define TRAINER_BIRDKEEPER_PARA              8
-#define TRAINER_BIRDKEEPER_ROBIN             9
-#define TRAINER_BIRDKEEPER_JAY               10
-#define TRAINER_GYMLEADER_WENDY              11
-
-//
+#define TRAINER_SAWYER_1                      1
+#define TRAINER_GRUNT_AQUA_HIDEOUT_1          2
+#define TRAINER_GRUNT_AQUA_HIDEOUT_2          3
+#define TRAINER_GRUNT_AQUA_HIDEOUT_3          4
+#define TRAINER_GRUNT_AQUA_HIDEOUT_4          5
+#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
+#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
+#define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
+#define TRAINER_GABRIELLE_1                   9
+#define TRAINER_GRUNT_PETALBURG_WOODS        10
+#define TRAINER_MARCEL                       11
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_4      14
@@ -863,13 +858,24 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_SCHOOLKIDF_JESSY            855
+#define TRAINER_YOUNGSTER_TYLER             856
+#define TRAINER_LASS_ADELA                  857
+#define TRAINER_TEAMJADE_GRUNT_PUCELAKE     858
+#define TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL 859
+#define TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP  860
+#define TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY  861
+#define TRAINER_BIRDKEEPER_PARA              862
+#define TRAINER_BIRDKEEPER_ROBIN             863
+#define TRAINER_BIRDKEEPER_JAY               864
+#define TRAINER_GYMLEADER_WENDY              865
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
-#define MAX_TRAINERS_COUNT                  864
+#define TRAINERS_COUNT                      866
+#define MAX_TRAINERS_COUNT                  900
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

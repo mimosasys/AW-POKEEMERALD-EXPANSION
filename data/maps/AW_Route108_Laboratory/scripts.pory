@@ -7,7 +7,7 @@ mapscripts AW_Route108_Laboratory_MapScripts {
 script Route108_Laboratory_OnWarp {
     fadeoutbgm(1)
     setvar(VAR_AW_PROGRESS_1,3)
-    setrespawn(HEAL_LOCATION_AW_ROUTE108)
+    setrespawn(HEAL_LOCATION_AW_ROUTE108_LOWER)
     call(Route108_Laboratory_FirstTime)
 }
 
@@ -346,7 +346,7 @@ script Route108_Laboratory_HealMachine {
     lockall
     fadescreen(FADE_TO_BLACK)
     waitstate
-    setrespawn(HEAL_LOCATION_AW_ROUTE108)
+    setrespawn(HEAL_LOCATION_AW_ROUTE108_LOWER)
     special(HealPlayerParty)
     playfanfare(MUS_HEAL)
     waitfanfare

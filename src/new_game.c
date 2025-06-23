@@ -130,7 +130,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(AW_ERIN_VILLAGE_YOUR_HOUSE), MAP_NUM(AW_ERIN_VILLAGE_YOUR_HOUSE), WARP_ID_NONE, 2, 3);
+    SetWarpDestination(MAP_GROUP(MAP_AW_ERIN_VILLAGE_YOUR_HOUSE), MAP_NUM(MAP_AW_ERIN_VILLAGE_YOUR_HOUSE), WARP_ID_NONE, 2, 3);
     WarpIntoMap();
 }
 

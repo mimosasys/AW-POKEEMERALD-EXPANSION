@@ -81,130 +81,177 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-=== TRAINER_SCHOOLKIDF_JESSY ===
-Name: Jessy
-Class: School Kid
-Pic: School Kid F
-Music: Girl
+=== TRAINER_SAWYER_1 ===
+Name: SAWYER
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Basic Trainer
 
-Skuarctic
-Level: 3
+Geodude
+Level: 21
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_YOUNGSTER_TYLER ===
-Name: Tyler
-Class: Youngster
-Pic: Youngster
-Music: Male
-
-Dewsel
-Level: 3
-
-=== TRAINER_LASS_ADELA ===
-Name: Adela
-Class: Lass
-Pic: Lass
-Music: Girl
-
-Purrloin
-Level: 4
-
-=== TRAINER_TEAMJADE_GRUNT_PUCELAKE ===
-Name: Grunt
-Class: Jade
-Pic: Aw Jadegrunt Male
+=== TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
 Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Skuarctic
-Level: 6
+Poochyena
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Purrloin
-Level: 7
+=== TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-=== TRAINER_BIRDKEEPER_PARA ===
-Name: Para
-Class: Bird Keeper
+Zubat
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Carvanha
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Carvanha
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Poochyena
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Carvanha
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
+
+Zubat
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GABRIELLE_1 ===
+Name: GABRIELLE
+Class: Pkmn Breeder
 Pic: Pokemon Breeder F
+Gender: Female
 Music: Female
+Double Battle: No
+AI: Check Bad Move
 
-Doduo
-Level: 7
+Skitty
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skuarctic
-Level: 8
+Poochyena
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BIRDKEEPER_ROBIN ===
-Name: Robin
-Class: Bird Keeper
-Pic: Bird Keeper
-Music: Male
+Zigzagoon
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Skuarctic
-Level: 8
+Lotad
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Noibat
-Level: 8		
+Seedot
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BIRDKEEPER_JAY ===
-Name: Jay
-Class: Bird Keeper
-Pic: Bird Keeper
-Music: Male
+Taillow
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Fowlily
-Level: 8
+=== TRAINER_GRUNT_PETALBURG_WOODS ===
+Name: GRUNT
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move
 
-Skuarctic
+Poochyena
 Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
+=== TRAINER_MARCEL ===
+Name: MARCEL
+Class: Cooltrainer
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Items: Hyper Potion
+Double Battle: No
+AI: Basic Trainer
 
-Purrloin
-Level: 5
+Manectric
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Smackop
-Level: 6
-Ability: Anger Point
-
-=== TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-
-Purrloin
-Level: 5
-
-Puppixy
-Level: 6
-Ability: Bulletproof
-
-=== TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-
-Purrloin
-Level: 5
-
-Alpacoil
-Level: 6
-Ability: Magic Bounce
-
-=== TRAINER_GYMLEADER_WENDY ===
-Name: Wendy
-Class: Leader
-Pic: Aw Leader Wendy
-
-Doduo
-Level: 10
-
-Fowlily
-Level: 11
-
-Gligar
-Level: 12
+Shiftry
+Level: 29
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
@@ -16826,3 +16873,128 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SCHOOLKIDF_JESSY ===
+Name: Jessy
+Class: School Kid
+Pic: School Kid F
+Music: Girl
+
+Skuarctic
+Level: 3
+
+=== TRAINER_YOUNGSTER_TYLER ===
+Name: Tyler
+Class: Youngster
+Pic: Youngster
+Music: Male
+
+Dewsel
+Level: 3
+
+=== TRAINER_LASS_ADELA ===
+Name: Adela
+Class: Lass
+Pic: Lass
+Music: Girl
+
+Purrloin
+Level: 4
+
+=== TRAINER_TEAMJADE_GRUNT_PUCELAKE ===
+Name: Grunt
+Class: Jade
+Pic: Aw Jadegrunt Male
+Music: Aqua
+
+Skuarctic
+Level: 6
+
+Purrloin
+Level: 7
+
+=== TRAINER_BIRDKEEPER_PARA ===
+Name: Para
+Class: Bird Keeper
+Pic: Pokemon Breeder F
+Music: Female
+
+Doduo
+Level: 7
+
+Skuarctic
+Level: 8
+
+=== TRAINER_BIRDKEEPER_ROBIN ===
+Name: Robin
+Class: Bird Keeper
+Pic: Bird Keeper
+Music: Male
+
+Skuarctic
+Level: 8
+
+Noibat
+Level: 8		
+
+=== TRAINER_BIRDKEEPER_JAY ===
+Name: Jay
+Class: Bird Keeper
+Pic: Bird Keeper
+Music: Male
+
+Fowlily
+Level: 8
+
+Skuarctic
+Level: 9
+
+=== TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL ===
+Name: Mike
+Class: Rival
+Pic: Aw Rival
+
+Purrloin
+Level: 5
+
+Smackop
+Level: 6
+Ability: Anger Point
+
+=== TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP ===
+Name: Mike
+Class: Rival
+Pic: Aw Rival
+
+Purrloin
+Level: 5
+
+Puppixy
+Level: 6
+Ability: Bulletproof
+
+=== TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY ===
+Name: Mike
+Class: Rival
+Pic: Aw Rival
+
+Purrloin
+Level: 5
+
+Alpacoil
+Level: 6
+Ability: Magic Bounce
+
+=== TRAINER_GYMLEADER_WENDY ===
+Name: Wendy
+Class: Leader
+Pic: Aw Leader Wendy
+
+Doduo
+Level: 10
+
+Fowlily
+Level: 11
+
+Gligar
+Level: 12

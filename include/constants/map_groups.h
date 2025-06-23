@@ -5,6 +5,10 @@
 // DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
 //
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // gMapGroup_AW_Towns
 #define MAP_AW_ERIN_VILLAGE   (0 | (0 << 8))
 #define MAP_AW_PORT_MULBERRY  (1 | (0 << 8))

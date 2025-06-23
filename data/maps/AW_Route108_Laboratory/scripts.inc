@@ -15,7 +15,7 @@ Route108_Laboratory_OnWarp::
 # 9 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	setvar VAR_AW_PROGRESS_1, 3
 # 10 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setrespawn HEAL_LOCATION_AW_ROUTE108
+	setrespawn HEAL_LOCATION_AW_ROUTE108_LOWER
 # 11 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	call Route108_Laboratory_FirstTime
 	return
@@ -543,7 +543,7 @@ Route108_Laboratory_HealMachine::
 # 348 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	waitstate
 # 349 "data/maps/AW_Route108_Laboratory/scripts.pory"
-	setrespawn HEAL_LOCATION_AW_ROUTE108
+	setrespawn HEAL_LOCATION_AW_ROUTE108_LOWER
 # 350 "data/maps/AW_Route108_Laboratory/scripts.pory"
 	special HealPlayerParty
 # 351 "data/maps/AW_Route108_Laboratory/scripts.pory"
