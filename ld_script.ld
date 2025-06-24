@@ -1281,6 +1281,7 @@ SECTIONS {
         sound/songs/midi/aw_mus_battle_jade_admin.o(.rodata);
         sound/songs/midi/aw_mus_poke_gym.o(.rodata);
         sound/songs/midi/aw_mus_route_108_lower.o(.rodata);
+        sound/songs/midi/aw_mus_battle_last_pokemon.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -135,20 +135,20 @@
     {
       "id": "HEAL_LOCATION_AW_VERDIGRIS_CITY",
       "map": "MAP_AW_VERDIGRIS_CITY",
-      "x": 0,
-      "y": 0
+      "x": 30,
+      "y": 18
     },
     {
       "id": "HEAL_LOCATION_AW_PORT_MULBERRY",
       "map": "MAP_AW_PORT_MULBERRY",
-      "x": 0,
-      "y": 0
+      "x": 12,
+      "y": 13
     },
     {
       "id": "HEAL_LOCATION_AW_PUCE_CITY",
       "map": "MAP_AW_PUCE_CITY",
-      "x": 0,
-      "y": 0
+      "x": 26,
+      "y": 18
     },
     {
       "id": "HEAL_LOCATION_AW_ERIN_VILLAGE",
@@ -159,8 +159,8 @@
     {
       "id": "HEAL_LOCATION_AW_ROUTE108_LOWER",
       "map": "MAP_AW_ROUTE108_LOWER",
-      "x": 0,
-      "y": 0
+      "x": 8,
+      "y": 9
     }
   ]
 }

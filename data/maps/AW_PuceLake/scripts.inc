@@ -2067,7 +2067,7 @@ SchoolgirlJessyOutro::
 
 YoungsterTylerIntro::
 # 816 "data/maps/AW_PuceLake/scripts.pory"
-	.string "Hey! You got Pokémon? Let's battle! I'll\n"
+	.string "Hey! You got Pokémon? Let's battle!{PLAY_BGM AW_MUS_BATTLE_JADE_ADMIN} I'll\n"
 	.string "win!$"
 
 YoungsterTylerOutro::
