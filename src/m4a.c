@@ -6,6 +6,9 @@ extern const u8 gCgb3Vol[];
 
 #define BSS_CODE __attribute__((section(".bss.code")))
 
+BSS_CODE ALIGNED(4) char SoundMainRAM_Buffer[0xB40] = {0}; // Mixer HQ Check
+BSS_CODE ALIGNED(4) u32 hq_buffer_ptr[0x2C0] = {0}; // Mixer HQ Check
+
 COMMON_DATA struct SoundInfo gSoundInfo = { 0 };
 COMMON_DATA struct PokemonCrySong gPokemonCrySongs[MAX_POKEMON_CRIES] = { 0 };
 COMMON_DATA struct MusicPlayerInfo gPokemonCryMusicPlayers[MAX_POKEMON_CRIES] = { 0 };
@@ -70,12 +73,14 @@ void m4aSoundInit(void)
 {
     s32 i;
 
+    CpuCopy32((void *)((s32)SoundMainRAM & ~1), SoundMainRAM_Buffer, sizeof(SoundMainRAM_Buffer));
+
     SoundInit(&gSoundInfo);
     MPlayExtender(gCgbChans);
     m4aSoundMode(SOUND_MODE_DA_BIT_8
         | SOUND_MODE_FREQ_13379
         | (12 << SOUND_MODE_MASVOL_SHIFT)
-        | (12 << SOUND_MODE_MAXCHN_SHIFT));
+        | (16 << SOUND_MODE_MAXCHN_SHIFT));
 
     for (i = 0; i < NUM_MUSIC_PLAYERS; i++)
     {
@@ -377,7 +382,7 @@ void SoundInit(struct SoundInfo* soundInfo)
     SOUND_INFO_PTR = soundInfo;
     CpuFill32(0, soundInfo, sizeof(struct SoundInfo));
 
-    soundInfo->maxChans = 8;
+    soundInfo->maxChans = 16;
     soundInfo->masterVolume = 15;
     soundInfo->plynote = ply_note;
     soundInfo->CgbSound = DummyFunc;

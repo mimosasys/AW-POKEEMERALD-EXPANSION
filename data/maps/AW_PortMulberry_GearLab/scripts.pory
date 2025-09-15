@@ -212,6 +212,10 @@ movement WalkDown1 {
     walk_down
 }
 
+movement WalkDown2 {
+    walk_down*2
+}
+
 movement KirliaSpin {
     face_left
     face_down

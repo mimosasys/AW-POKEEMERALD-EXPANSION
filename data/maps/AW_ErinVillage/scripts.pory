@@ -82,11 +82,11 @@ movement Rival_JumpInPlace {
     jump_in_place_down*2
 }
 
-script ErinVillage_OnBridge {
-    lockall
-    call(ErinVillage_RivalOnBridge)
-    releaseall
-}
+// script ErinVillage_OnBridge {
+//     lockall
+//     call(ErinVillage_RivalOnBridge)
+//     releaseall
+// }
 
 script ErinVillage_TalkToRival {
     msgbox(format(
@@ -103,7 +103,7 @@ script ErinVillage_TalkToRival {
         "The elders said we're allowed to go into their sacred cave!\p"
         "I've been waiting for this since your birthday! I wanted to go by myself, but...\p"
         "I really wanna do it together!\nThe two of us, yeah!\p"
-        "You remember where it is, right?\nI'll meet you on the bridge!\p"
+        "You remember where it is, right?\nI'll meet you at the bridge!\p"
     ))
     waitmessage
     applymovement(3,RivalExit)
@@ -111,68 +111,77 @@ script ErinVillage_TalkToRival {
     removeobject(3)
     setflag(FLAG_AW_START_TUT)
     setvar(VAR_AW_PROGRESS_1,2)
+
+    call(ErinVillage_GotoBridge)
 }
 
-script ErinVillage_RivalOnBridge {
-    message(format(
-        "{RIVAL}: Come on, it's just up ahea-"
-    ))
-    closemessage
-    special(StopMapMusic)
-    setvar(VAR_0x8004,2)
-    setvar(VAR_0x8005,6)
-    setvar(VAR_0x8006,6)
-    setvar(VAR_0x8007,10)
-    special(ShakeCamera)
-    waitstate
-    delay(30)
-    applymovement(OBJ_EVENT_ID_PLAYER,ShakeSurprise)
-    applymovement(4, ShakeSurprise)
-    message(format(
-        "Uhh... what was that?\p"
-        "It was coming from the cave...?\p"
-    ))
-    waitmessage
-    closemessage
-    applymovement(4,Rival_WalkBridge)
-    applymovement(OBJ_EVENT_ID_PLAYER, Player_WalkBridge)
-    waitmovement(0)
-    delay(30)
-    message(format(
-        "H- hey, we probably shouldn't stay here-"
-    ))
-    closemessage
-    setvar(VAR_0x8004,2)
-    setvar(VAR_0x8005,6)
-    setvar(VAR_0x8006,6)
-    setvar(VAR_0x8007,10)
-    special(ShakeCamera)
-    delay(40)
-    playse(SE_M_WING_ATTACK)
-    playse(SE_M_RAZOR_WIND)
-    special(SpawnCameraObject)
-    applymovement(4,Rival_FallOffBridge)
-    applymovement(OBJ_EVENT_ID_PLAYER,Player_FallOffBridge)
-    message(format("{PLAYER}!\p"))
-    waitmovement(0)
-    fadescreen(FADE_TO_WHITE)
-    message(format("???: Vibrava! There's someone falling!\p"))
-    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
-    waitmoncry
-    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
-    waitmoncry
-    delay(20)
-    playmoncry(SPECIES_VIBRAVA,CRY_MODE_FAINT)
-    delay(20)
-    playse(SE_M_FLY)
-    waitse
-    removeobject(4)
-    delay(120)
-    special(RemoveCameraObject)
-    warpwhitefade(MAP_AW_ROUTE108_LABORATORY,26,11)
-    delay(120)
-    // call(Route108_Laboratory_OnWarp)
+script ErinVillage_GotoBridge {
+    lockall
+
+    fadescreen(FADE_TO_BLACK)
+    warpsilent(MAP_AW_MT_EIGO_APPROACH,19,23)
 }
+
+// script ErinVillage_RivalOnBridge {
+//     message(format(
+//         "{RIVAL}: Come on, it's just up ahea-"
+//     ))
+//     closemessage
+//     special(StopMapMusic)
+//     setvar(VAR_0x8004,2)
+//     setvar(VAR_0x8005,6)
+//     setvar(VAR_0x8006,6)
+//     setvar(VAR_0x8007,10)
+//     special(ShakeCamera)
+//     waitstate
+//     delay(30)
+//     applymovement(OBJ_EVENT_ID_PLAYER,ShakeSurprise)
+//     applymovement(4, ShakeSurprise)
+//     message(format(
+//         "Uhh... what was that?\p"
+//         "It was coming from the cave...?\p"
+//     ))
+//     waitmessage
+//     closemessage
+//     applymovement(4,Rival_WalkBridge)
+//     applymovement(OBJ_EVENT_ID_PLAYER, Player_WalkBridge)
+//     waitmovement(0)
+//     delay(30)
+//     message(format(
+//         "H- hey, we probably shouldn't stay here-"
+//     ))
+//     closemessage
+//     setvar(VAR_0x8004,2)
+//     setvar(VAR_0x8005,6)
+//     setvar(VAR_0x8006,6)
+//     setvar(VAR_0x8007,10)
+//     special(ShakeCamera)
+//     delay(40)
+//     playse(SE_M_WING_ATTACK)
+//     playse(SE_M_RAZOR_WIND)
+//     special(SpawnCameraObject)
+//     applymovement(4,Rival_FallOffBridge)
+//     applymovement(OBJ_EVENT_ID_PLAYER,Player_FallOffBridge)
+//     message(format("{PLAYER}!\p"))
+//     waitmovement(0)
+//     fadescreen(FADE_TO_WHITE)
+//     message(format("???: Vibrava! There's someone falling!\p"))
+//     playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+//     waitmoncry
+//     playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+//     waitmoncry
+//     delay(20)
+//     playmoncry(SPECIES_VIBRAVA,CRY_MODE_FAINT)
+//     delay(20)
+//     playse(SE_M_FLY)
+//     waitse
+//     removeobject(4)
+//     delay(120)
+//     special(RemoveCameraObject)
+//     warpwhitefade(MAP_AW_ROUTE108_LABORATORY,26,11)
+//     delay(120)
+//     // call(Route108_Laboratory_OnWarp)
+// }
 
 movement RivalEnter_Left {
     walk_fast_down*3
@@ -197,7 +206,7 @@ movement RivalExit {
 
 movement ShakeSurprise {
     face_up
-    emote_double_exclamation_mark
+    emote_exclamation_mark
 }
 
 movement Rival_WalkBridge {

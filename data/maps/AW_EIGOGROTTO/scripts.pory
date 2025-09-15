@@ -1,0 +1,297 @@
+mapscripts AW_EIGOGROTTO_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_PROGRESS_1, 2: EigoGrotto_Intro
+    ]
+}
+
+script EigoGrotto_Intro {
+    lockall
+
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkUp1)
+    applymovement(4,WalkUp1)
+    waitmovement(0)
+
+    special(SpawnCameraObject)
+    applymovement(OBJ_EVENT_ID_CAMERA,WalkUp2)
+
+    applymovement(1,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "By the generosity of the owners of the land before us...\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(3,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "In the name of this wondrous mountain we call home...\p"
+    ))
+    waitmessage
+    closemessage
+
+    delay(30)
+
+    applymovement(2,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "It is once again time to share our history...!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,WalkUp1)
+    waitmovement(0)
+    message(format(
+        "You are not the first, and you shall not be the last!\p"
+        "That is what it means to have tradition!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,OracleDance1)
+    applymovement(3,OracleDance2)
+    applymovement(1,OracleDance3)
+    waitmovement(0)
+    applymovement(1,FaceDown)
+    message(format(
+        "But, surely you must know...!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,OracleDance2)
+    applymovement(3,OracleDance3)
+    applymovement(1,OracleDance1)
+    waitmovement(0)
+    applymovement(3,FaceDown)
+    message(format(
+        "You must make your own ways in this world...!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,OracleDance3)
+    applymovement(3,OracleDance1)
+    applymovement(1,OracleDance2)
+    waitmovement(0)
+    applymovement(2,FaceDown)
+    message(format(
+        "You must learn from those before you...!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,WalkDown1)
+    applymovement(3,WalkDownSpot)
+    applymovement(1,WalkDownSpot)
+    waitmovement(0)
+    message(format(
+        "Heed our words, yes! Yet, find your own voice!\p"
+        "That is what it means to have spirit!"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(1,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "Spirit - from one's awareness!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(3,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "Spirit - from one's memories!\p"
+    ))
+    waitmessage
+    closemessage
+
+    delay(30)
+
+    applymovement(2,WalkDownSpot)
+    waitmovement(0)
+    playse(SE_M_BELLY_DRUM)
+    waitse
+    message(format(
+        "Spirit - from the depths of one's own mind!\p"
+        "That is the esteemed wisdom of the elders before us, and those before them...\p"
+        "Have spirit, young ones, for only then will you become the one you were meant to be!\p"
+    ))
+    waitmessage
+    closemessage
+
+    playse(SE_M_HEAL_BELL)
+
+    delay(60)
+
+    applymovement(OBJ_EVENT_ID_CAMERA,WalkDown2)
+    waitmovement(0)
+
+    special(RemoveCameraObject)
+
+    delay(32)
+
+    applymovement(2,LookLeft)
+    waitmovement(0)
+    delay(32)
+    applymovement(2,FaceRight)
+    waitmovement(0)
+    delay(32)
+
+    message(format(
+        "Welcome, children.\p"
+        "That was an ancient performance, carried through our village for generations.\p"
+        "It is tradition that once you come of age, this performance is shared with you.\p"
+        "You may relax. It is tradition to do it... well, suddenly, you see.\p"
+        "Come, there is much history to be shared, kept safe within these very walls.\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(4,FaceRight)
+    applymovement(OBJ_EVENT_ID_PLAYER,LookLeft)
+    waitmovement(0)
+    delay(8)
+    applymovement(4,LookUp)
+    applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
+    waitmovement(0)
+    delay(16)
+
+    applymovement(4,WalkUp3)
+    applymovement(OBJ_EVENT_ID_PLAYER,WalkUp3)
+    applymovement(2,WalkUp2)
+    applymovement(3,WalkUp2)
+    applymovement(1,WalkUp2)
+    waitmovement(0)
+
+    message(format(
+        "Many thousands of years ago, this land was barren, and untouched.\p"
+        "Slowly, life from across the world gathered here, driven by the ocean currents and blown by the strong winds.\p"
+        "Many, many miles did they travel, and their weary eyes were met with the coasts of the land we all call home.\p"
+        "But bloom life did, and so sprung up culture, and community, and peoples.\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,FaceDown)
+    waitmovement(0)
+
+    message(format(
+        "And ours is a people that is tied to this very mountain. This very cave.\p"
+        "For, there are always those who dwell too much on the past. On their regrets. On how things should have been.\p"
+        "And some of those people try gather power to change that, guided solely by selfish reasoning.\p"  
+        "People such as those have awareness, yes, and memories, yes, but have not yet looked internally at themselves.\p"
+    ))
+    waitmessage
+    closemessage
+
+    message(format(
+        "Many hundreds of years ago now, a tragedy struck-"
+    ))
+    delay(90)
+    closemessage
+
+    special(StopMapMusic)
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,6)
+    setvar(VAR_0x8007,10)
+    special(ShakeCamera)
+    waitstate
+    delay(30)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,ShakeSurprise)
+    applymovement(1, ShakeSurprise)
+    applymovement(2, ShakeSurprise)
+    applymovement(3, ShakeSurprise)
+    applymovement(4, ShakeSurprise)
+
+    message(format(
+        "A- an earthquake...?\p"
+    ))
+    waitmessage
+
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,6)
+    setvar(VAR_0x8007,10)
+    special(ShakeCamera)
+    waitstate
+    delay(30)
+
+    message(format(
+        "We mustn't stay here, children.\p"
+        "Come, back to the village, quickly...!\p"
+    ))
+    waitmessage
+
+    fadescreen(FADE_TO_BLACK)
+
+    applymovement(1,EveryoneLeaveGrotto)
+    applymovement(2,EveryoneLeaveGrotto)
+    applymovement(3,EveryoneLeaveGrotto)
+    applymovement(4,EveryoneLeaveGrotto)
+    applymovement(OBJ_EVENT_ID_PLAYER,EveryoneLeaveGrotto)
+
+    delay(60)
+    setvar(VAR_AW_PROGRESS_1,3)
+
+    warpsilent(MAP_AW_MT_EIGO_APPROACH,0)
+
+    releaseall
+}
+
+movement WalkUp2 {
+    walk_up*2
+}
+
+movement WalkUp3 {
+    walk_up*3
+}
+
+movement OracleDance1 {
+    walk_slow_right*2
+    walk_slow_down*2
+    face_down
+    face_left
+    face_up
+    face_right
+}
+
+movement OracleDance2 {
+    walk_slow_left*4
+    face_up
+    face_right
+    face_down
+    face_left
+}
+
+movement OracleDance3 {
+    walk_slow_up*2
+    walk_slow_right*2
+    face_up
+    face_right
+    face_down
+    face_left
+}
+
+movement FaceDown {
+    face_down
+}
+
+movement EveryoneLeaveGrotto {
+    walk_down*4
+}

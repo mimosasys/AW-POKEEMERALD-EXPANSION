@@ -293,152 +293,160 @@ WalkDown1:
 	step_end
 
 # 215 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-KirliaSpin:
+WalkDown2:
 # 216 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_left
-# 217 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_down
-# 218 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_right
+	walk_down
+# 216 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+	step_end
+
 # 219 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_up
+KirliaSpin:
 # 220 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_up
-# 220 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_up
-	step_end
-
-# 223 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-KirliaGoToMachine:
-# 224 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_right
-# 225 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 225 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 226 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_left
-# 227 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 227 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-	step_end
-
-# 230 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-PlayerFaceRightExclaimed:
-# 231 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_left
+# 221 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_down
+# 222 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	face_right
-# 232 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 223 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_up
+# 224 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_up
+# 224 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 227 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+KirliaGoToMachine:
+# 228 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_right
+# 229 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 229 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 230 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_left
+# 231 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 231 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 234 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+PlayerFaceRightExclaimed:
+# 235 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_right
+# 236 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 235 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearLeaveMachine:
-# 236 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_faster_down
-# 236 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_faster_down
-	step_end
-
 # 239 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearCheckPhone:
+GearLeaveMachine:
 # 240 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_right
-# 241 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 241 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 241 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 241 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
+	walk_faster_down
+# 240 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_faster_down
 	step_end
 
+# 243 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearCheckPhone:
 # 244 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-PlayerTalkUp:
+	face_right
 # 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
+	walk_in_place_right
 # 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
+	walk_in_place_right
 # 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
+	walk_in_place_right
+# 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_right
 	step_end
 
 # 248 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearMeetPlayer:
+PlayerTalkUp:
 # 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+# 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+# 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 252 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearMeetPlayer:
+# 253 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_right
-# 250 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_down
-# 250 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_down
-# 251 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 255 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	face_player
 	step_end
 
-# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearGoToDesk:
-# 255 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-# 255 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 256 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 257 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_up
-# 257 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_up
 # 258 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearGoToDesk:
+# 259 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 259 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 261 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 261 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 262 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	face_left
 	step_end
 
-# 261 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-PlayerFollowGear:
-# 262 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_right
-# 263 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-# 263 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
 # 265 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+PlayerFollowGear:
+# 266 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_right
+# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 269 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_up
 	step_end
 

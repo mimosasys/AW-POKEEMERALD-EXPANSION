@@ -16,12 +16,13 @@
 #define MAP_AW_VERDIGRIS_CITY (3 | (0 << 8))
 
 // gMapGroup_AW_Routes
-#define MAP_AW_ROUTE108_LOWER  (0 | (1 << 8))
-#define MAP_AW_ROUTE110_FOREST (1 | (1 << 8))
-#define MAP_AW_ROUTE110_PATH   (2 | (1 << 8))
-#define MAP_AW_ROUTE111_EAST   (3 | (1 << 8))
-#define MAP_AW_ROUTE111_WEST   (4 | (1 << 8))
-#define MAP_AW_ROUTE112        (5 | (1 << 8))
+#define MAP_AW_ROUTE108_LOWER   (0 | (1 << 8))
+#define MAP_AW_ROUTE110_FOREST  (1 | (1 << 8))
+#define MAP_AW_ROUTE110_PATH    (2 | (1 << 8))
+#define MAP_AW_ROUTE111_EAST    (3 | (1 << 8))
+#define MAP_AW_ROUTE111_WEST    (4 | (1 << 8))
+#define MAP_AW_ROUTE112         (5 | (1 << 8))
+#define MAP_AW_MT_EIGO_APPROACH (6 | (1 << 8))
 
 // gMapGroup_AW_Indoors
 #define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE   (0 | (2 << 8))
@@ -35,6 +36,8 @@
 #define MAP_AW_PUCE_LAKE  (0 | (3 << 8))
 #define MAP_AW_TEST_AREA1 (1 | (3 << 8))
 #define MAP_AW_WIND_FARM  (2 | (3 << 8))
+#define MAP_AW_TOPAZ_LAB  (3 | (3 << 8))
+#define MAP_AW_EIGOGROTTO (4 | (3 << 8))
 
 // gMapGroup_TownsAndRoutes
 #define MAP_PETALBURG_CITY      (0 | (4 << 8))

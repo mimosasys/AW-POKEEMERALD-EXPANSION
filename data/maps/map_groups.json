@@ -51,7 +51,8 @@
     "AW_Route110_Path",
     "AW_Route111_East",
     "AW_Route111_West",
-    "AW_Route112"
+    "AW_Route112",
+    "AW_MtEigoApproach"
   ],
   "gMapGroup_AW_Indoors": [
     "AW_ErinVillage_YourHouse",
@@ -64,7 +65,9 @@
   "gMapGroup_AW_Misc": [
     "AW_PuceLake",
     "AW_TestArea1",
-    "AW_WindFarm"
+    "AW_WindFarm",
+    "AW_TopazLab",
+    "AW_EIGOGROTTO"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",

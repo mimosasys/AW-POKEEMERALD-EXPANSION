@@ -132,16 +132,6 @@ Rival_JumpInPlace:
 	jump_in_place_down
 	step_end
 
-ErinVillage_OnBridge::
-# 86 "data/maps/AW_ErinVillage/scripts.pory"
-	lockall
-# 87 "data/maps/AW_ErinVillage/scripts.pory"
-	call ErinVillage_RivalOnBridge
-# 88 "data/maps/AW_ErinVillage/scripts.pory"
-	releaseall
-	return
-
-
 ErinVillage_TalkToRival::
 # 92 "data/maps/AW_ErinVillage/scripts.pory"
 	msgbox ErinVillage_TalkToRival_Text_0, MSGBOX_YESNO
@@ -167,6 +157,8 @@ ErinVillage_TalkToRival_1:
 	setflag FLAG_AW_START_TUT
 # 113 "data/maps/AW_ErinVillage/scripts.pory"
 	setvar VAR_AW_PROGRESS_1, 2
+# 115 "data/maps/AW_ErinVillage/scripts.pory"
+	call ErinVillage_GotoBridge
 	return
 
 ErinVillage_TalkToRival_2:
@@ -177,233 +169,139 @@ ErinVillage_TalkToRival_2:
 	goto ErinVillage_TalkToRival_1
 
 
-ErinVillage_RivalOnBridge::
-# 117 "data/maps/AW_ErinVillage/scripts.pory"
-	message ErinVillage_RivalOnBridge_Text_0
-# 120 "data/maps/AW_ErinVillage/scripts.pory"
-	closemessage
+ErinVillage_GotoBridge::
+# 119 "data/maps/AW_ErinVillage/scripts.pory"
+	lockall
 # 121 "data/maps/AW_ErinVillage/scripts.pory"
-	special StopMapMusic
+	fadescreen FADE_TO_BLACK
 # 122 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8004, 2
-# 123 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8005, 6
-# 124 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8006, 6
-# 125 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8007, 10
-# 126 "data/maps/AW_ErinVillage/scripts.pory"
-	special ShakeCamera
-# 127 "data/maps/AW_ErinVillage/scripts.pory"
-	waitstate
-# 128 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 30
-# 129 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, ShakeSurprise
-# 130 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement 4, ShakeSurprise
-# 131 "data/maps/AW_ErinVillage/scripts.pory"
-	message ErinVillage_RivalOnBridge_Text_1
-# 135 "data/maps/AW_ErinVillage/scripts.pory"
-	waitmessage
-# 136 "data/maps/AW_ErinVillage/scripts.pory"
-	closemessage
-# 137 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement 4, Rival_WalkBridge
-# 138 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_WalkBridge
-# 139 "data/maps/AW_ErinVillage/scripts.pory"
-	waitmovement 0
-# 140 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 30
-# 141 "data/maps/AW_ErinVillage/scripts.pory"
-	message ErinVillage_RivalOnBridge_Text_2
-# 144 "data/maps/AW_ErinVillage/scripts.pory"
-	closemessage
-# 145 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8004, 2
-# 146 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8005, 6
-# 147 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8006, 6
-# 148 "data/maps/AW_ErinVillage/scripts.pory"
-	setvar VAR_0x8007, 10
-# 149 "data/maps/AW_ErinVillage/scripts.pory"
-	special ShakeCamera
-# 150 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 40
-# 151 "data/maps/AW_ErinVillage/scripts.pory"
-	playse SE_M_WING_ATTACK
-# 152 "data/maps/AW_ErinVillage/scripts.pory"
-	playse SE_M_RAZOR_WIND
-# 153 "data/maps/AW_ErinVillage/scripts.pory"
-	special SpawnCameraObject
-# 154 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement 4, Rival_FallOffBridge
-# 155 "data/maps/AW_ErinVillage/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Player_FallOffBridge
-# 156 "data/maps/AW_ErinVillage/scripts.pory"
-	message ErinVillage_RivalOnBridge_Text_3
-# 157 "data/maps/AW_ErinVillage/scripts.pory"
-	waitmovement 0
-# 158 "data/maps/AW_ErinVillage/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 159 "data/maps/AW_ErinVillage/scripts.pory"
-	message ErinVillage_RivalOnBridge_Text_4
-# 160 "data/maps/AW_ErinVillage/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
-# 161 "data/maps/AW_ErinVillage/scripts.pory"
-	waitmoncry
-# 162 "data/maps/AW_ErinVillage/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
-# 163 "data/maps/AW_ErinVillage/scripts.pory"
-	waitmoncry
-# 164 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 20
-# 165 "data/maps/AW_ErinVillage/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_FAINT
-# 166 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 20
-# 167 "data/maps/AW_ErinVillage/scripts.pory"
-	playse SE_M_FLY
-# 168 "data/maps/AW_ErinVillage/scripts.pory"
-	waitse
-# 169 "data/maps/AW_ErinVillage/scripts.pory"
-	removeobject 4
-# 170 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 120
-# 171 "data/maps/AW_ErinVillage/scripts.pory"
-	special RemoveCameraObject
-# 172 "data/maps/AW_ErinVillage/scripts.pory"
-	warpwhitefade MAP_AW_ROUTE108_LABORATORY, 26, 11
-# 173 "data/maps/AW_ErinVillage/scripts.pory"
-	delay 120
+	warpsilent MAP_AW_MT_EIGO_APPROACH, 19, 23
 	return
 
 
-# 177 "data/maps/AW_ErinVillage/scripts.pory"
+# 186 "data/maps/AW_ErinVillage/scripts.pory"
 RivalEnter_Left:
-# 178 "data/maps/AW_ErinVillage/scripts.pory"
+# 187 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_fast_down
-# 178 "data/maps/AW_ErinVillage/scripts.pory"
+# 187 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_fast_down
-# 178 "data/maps/AW_ErinVillage/scripts.pory"
+# 187 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_fast_down
-# 179 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_left
-# 180 "data/maps/AW_ErinVillage/scripts.pory"
-	face_player
-	step_end
-
-# 183 "data/maps/AW_ErinVillage/scripts.pory"
-RivalEnter_Centre:
-# 184 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 184 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 184 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 185 "data/maps/AW_ErinVillage/scripts.pory"
-	face_player
-	step_end
-
 # 188 "data/maps/AW_ErinVillage/scripts.pory"
-RivalEnter_Right:
+	walk_fast_left
 # 189 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 189 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 189 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_down
-# 190 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_right
-# 191 "data/maps/AW_ErinVillage/scripts.pory"
 	face_player
 	step_end
 
+# 192 "data/maps/AW_ErinVillage/scripts.pory"
+RivalEnter_Centre:
+# 193 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_down
+# 193 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_down
+# 193 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_down
 # 194 "data/maps/AW_ErinVillage/scripts.pory"
-RivalExit:
-# 195 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_up
-# 195 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_up
-# 195 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_up
-# 195 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_up
-# 195 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_fast_up
+	face_player
 	step_end
 
+# 197 "data/maps/AW_ErinVillage/scripts.pory"
+RivalEnter_Right:
 # 198 "data/maps/AW_ErinVillage/scripts.pory"
-ShakeSurprise:
+	walk_fast_down
+# 198 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_down
+# 198 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_down
 # 199 "data/maps/AW_ErinVillage/scripts.pory"
-	face_up
+	walk_fast_right
 # 200 "data/maps/AW_ErinVillage/scripts.pory"
-	emote_double_exclamation_mark
+	face_player
 	step_end
 
 # 203 "data/maps/AW_ErinVillage/scripts.pory"
-Rival_WalkBridge:
+RivalExit:
 # 204 "data/maps/AW_ErinVillage/scripts.pory"
-	walk_slow_up
+	walk_fast_up
+# 204 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_up
+# 204 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_up
+# 204 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_up
+# 204 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_fast_up
 	step_end
 
 # 207 "data/maps/AW_ErinVillage/scripts.pory"
+ShakeSurprise:
+# 208 "data/maps/AW_ErinVillage/scripts.pory"
+	face_up
+# 209 "data/maps/AW_ErinVillage/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 212 "data/maps/AW_ErinVillage/scripts.pory"
+Rival_WalkBridge:
+# 213 "data/maps/AW_ErinVillage/scripts.pory"
+	walk_slow_up
+	step_end
+
+# 216 "data/maps/AW_ErinVillage/scripts.pory"
 Player_WalkBridge:
-# 208 "data/maps/AW_ErinVillage/scripts.pory"
+# 217 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_up
-# 208 "data/maps/AW_ErinVillage/scripts.pory"
+# 217 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_up
-# 208 "data/maps/AW_ErinVillage/scripts.pory"
+# 217 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_up
 	step_end
 
-# 211 "data/maps/AW_ErinVillage/scripts.pory"
+# 220 "data/maps/AW_ErinVillage/scripts.pory"
 Rival_FallOffBridge:
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
-# 212 "data/maps/AW_ErinVillage/scripts.pory"
+# 221 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_left
 	step_end
 
-# 215 "data/maps/AW_ErinVillage/scripts.pory"
+# 224 "data/maps/AW_ErinVillage/scripts.pory"
 Player_FallOffBridge:
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
-# 216 "data/maps/AW_ErinVillage/scripts.pory"
+# 225 "data/maps/AW_ErinVillage/scripts.pory"
 	walk_faster_right
 	step_end
 
@@ -449,30 +347,5 @@ ErinVillage_TalkToRival_Text_3:
 	.string "I really wanna do it together!\n"
 	.string "The two of us, yeah!\p"
 	.string "You remember where it is, right?\n"
-	.string "I'll meet you on the bridge!\p"
-	.string "$"
-
-ErinVillage_RivalOnBridge_Text_0:
-# 118 "data/maps/AW_ErinVillage/scripts.pory"
-	.string "{RIVAL}: Come on, it's just up ahea-$"
-
-ErinVillage_RivalOnBridge_Text_1:
-# 132 "data/maps/AW_ErinVillage/scripts.pory"
-	.string "Uhh... what was that?\p"
-	.string "It was coming from the cave...?\p"
-	.string "$"
-
-ErinVillage_RivalOnBridge_Text_2:
-# 142 "data/maps/AW_ErinVillage/scripts.pory"
-	.string "H- hey, we probably shouldn't stay\n"
-	.string "here-$"
-
-ErinVillage_RivalOnBridge_Text_3:
-# 156 "data/maps/AW_ErinVillage/scripts.pory"
-	.string "{PLAYER}!\p"
-	.string "$"
-
-ErinVillage_RivalOnBridge_Text_4:
-# 159 "data/maps/AW_ErinVillage/scripts.pory"
-	.string "???: Vibrava! There's someone falling!\p"
+	.string "I'll meet you at the bridge!\p"
 	.string "$"

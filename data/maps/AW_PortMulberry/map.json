@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_AW_ROUTE108_LOWER",
-      "offset": 4,
+      "offset": 0,
       "direction": "left"
     }
   ],

@@ -1,12 +1,11 @@
 mapscripts AW_Route108_Laboratory_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_AW_PROGRESS_1, 2: Route108_Laboratory_OnWarp
+        VAR_AW_PROGRESS_1, 3: Route108_Laboratory_OnWarp
     ]
 }
 
 script Route108_Laboratory_OnWarp {
-    fadeoutbgm(1)
-    setvar(VAR_AW_PROGRESS_1,3)
+    special(StopMapMusic)
     setrespawn(HEAL_LOCATION_AW_ROUTE108_LOWER)
     call(Route108_Laboratory_FirstTime)
 }
@@ -196,92 +195,92 @@ movement Player_GetUp {
     face_left
 }
 
-script Route108_Laboratory_PickAlpacoil {
-    lock
-    if (var(VAR_AW_PROGRESS_1) == 3) {
-        showmonpic(SPECIES_ALPACOIL,10,3)
-        msgbox(format(
-            "This is Alpacoil, the Steel Wool Pokémon!\p"
-            "Would you like to take Alpacoil?\p"
-        ), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1) {
-            playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
-            givemon(SPECIES_ALPACOIL,5)
-            setflag(FLAG_SYS_POKEMON_GET)
-            waitmoncry
-            playfanfare(MUS_OBTAIN_ITEM)
-            waitfanfare
-            removeobject(3)
-            setflag(FLAG_AW_PICK_ALPACOIL)
-            call(Route108_Laboratory_Yay)
-        } else {
-            hidemonpic
-            release
-        }
-    } else {
-        message(format("It's one of the Professor's Pokémon.\p"))
-        waitmessage
-        release
-    }
-}
+// script Route108_Laboratory_PickAlpacoil {
+//     lock
+//     if (var(VAR_AW_PROGRESS_1) == 3) {
+//         showmonpic(SPECIES_ALPACOIL,10,3)
+//         msgbox(format(
+//             "This is Alpacoil, the Steel Wool Pokémon!\p"
+//             "Would you like to take Alpacoil?\p"
+//         ), MSGBOX_YESNO)
+//         if (var(VAR_RESULT) == 1) {
+//             playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
+//             givemon(SPECIES_ALPACOIL,5)
+//             setflag(FLAG_SYS_POKEMON_GET)
+//             waitmoncry
+//             playfanfare(MUS_OBTAIN_ITEM)
+//             waitfanfare
+//             removeobject(3)
+//             setflag(FLAG_AW_PICK_ALPACOIL)
+//             call(Route108_Laboratory_Yay)
+//         } else {
+//             hidemonpic
+//             release
+//         }
+//     } else {
+//         message(format("It's one of the Professor's Pokémon.\p"))
+//         waitmessage
+//         release
+//     }
+// }
 
-script Route108_Laboratory_PickSmackop {
-    lock
-    if (var(VAR_AW_PROGRESS_1) == 3) {
-        showmonpic(SPECIES_SMACKOP,10,3)
-        msgbox(format(
-            "This is Smackop, the Fight Bird Pokémon!\p"
-            "Would you like to take Smackop?\p"
-        ), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1) {
-            playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
-            givemon(SPECIES_SMACKOP,5)
-            setflag(FLAG_SYS_POKEMON_GET)
-            waitmoncry
-            playfanfare(MUS_OBTAIN_ITEM)
-            waitfanfare
-            removeobject(4)
-            setflag(FLAG_AW_PICK_SMACKOP)
-            call(Route108_Laboratory_Yay)
-        } else {
-            hidemonpic
-            release
-        }
-    } else {
-        message(format("It's one of the Professor's Pokémon.\p"))
-        waitmessage
-        release
-    }
-}
+// script Route108_Laboratory_PickSmackop {
+//     lock
+//     if (var(VAR_AW_PROGRESS_1) == 3) {
+//         showmonpic(SPECIES_SMACKOP,10,3)
+//         msgbox(format(
+//             "This is Smackop, the Fight Bird Pokémon!\p"
+//             "Would you like to take Smackop?\p"
+//         ), MSGBOX_YESNO)
+//         if (var(VAR_RESULT) == 1) {
+//             playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+//             givemon(SPECIES_SMACKOP,5)
+//             setflag(FLAG_SYS_POKEMON_GET)
+//             waitmoncry
+//             playfanfare(MUS_OBTAIN_ITEM)
+//             waitfanfare
+//             removeobject(4)
+//             setflag(FLAG_AW_PICK_SMACKOP)
+//             call(Route108_Laboratory_Yay)
+//         } else {
+//             hidemonpic
+//             release
+//         }
+//     } else {
+//         message(format("It's one of the Professor's Pokémon.\p"))
+//         waitmessage
+//         release
+//     }
+// }
 
-script Route108_Laboratory_PickPuppixy {
-    lock
-    if (var(VAR_AW_PROGRESS_1) == 3) {
-        showmonpic(SPECIES_PUPPIXY,10,3)
-        msgbox(format(
-            "This is Puppixy, the Pink Armour Pokémon!\p"
-            "Would you like to take Puppixy?\p"
-        ), MSGBOX_YESNO)
-        if (var(VAR_RESULT) == 1) {
-            playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
-            givemon(SPECIES_PUPPIXY,5)
-            setflag(FLAG_SYS_POKEMON_GET)
-            waitmoncry
-            playfanfare(MUS_OBTAIN_ITEM)
-            waitfanfare
-            removeobject(5)
-            setflag(FLAG_AW_PICK_PUPPIXY)
-            call(Route108_Laboratory_Yay)
-        } else {
-            hidemonpic
-            release
-        }
-    } else {
-        message(format("It's one of the Professor's Pokémon.\p"))
-        waitmessage
-        release
-    }
-}
+// script Route108_Laboratory_PickPuppixy {
+//     lock
+//     if (var(VAR_AW_PROGRESS_1) == 3) {
+//         showmonpic(SPECIES_PUPPIXY,10,3)
+//         msgbox(format(
+//             "This is Puppixy, the Pink Armour Pokémon!\p"
+//             "Would you like to take Puppixy?\p"
+//         ), MSGBOX_YESNO)
+//         if (var(VAR_RESULT) == 1) {
+//             playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+//             givemon(SPECIES_PUPPIXY,5)
+//             setflag(FLAG_SYS_POKEMON_GET)
+//             waitmoncry
+//             playfanfare(MUS_OBTAIN_ITEM)
+//             waitfanfare
+//             removeobject(5)
+//             setflag(FLAG_AW_PICK_PUPPIXY)
+//             call(Route108_Laboratory_Yay)
+//         } else {
+//             hidemonpic
+//             release
+//         }
+//     } else {
+//         message(format("It's one of the Professor's Pokémon.\p"))
+//         waitmessage
+//         release
+//     }
+// }
 
 script Route108_Laboratory_Yay {
     setflag(FLAG_AW_MID_TUT)

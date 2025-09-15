@@ -1684,7 +1684,7 @@
 #define SPECIES_CLAYBARA    AW_START + 40
 #define SPECIES_BRICCAPY    AW_START + 41
 #define SPECIES_BASILT      AW_START + 42
-//ROCK 2                    AW_START + 43
+#define SPECIES_HEXTUFF     AW_START + 43
 #define SPECIES_HEXTATURE   AW_START + 44
 //FIRE 1                    AW_START + 45
 //FIRE 2                    AW_START + 46
@@ -1705,9 +1705,9 @@
 #define SPECIES_SOLM        AW_START + 61
 #define SPECIES_CHASOLM     AW_START + 62
 #define SPECIES_GROTTOLM    AW_START + 63
-//FLYING 1                  AW_START + 64
-//FLYING 2                  AW_START + 65
-//FLYING 3                  AW_START + 66
+#define SPECIES_ECHORE      AW_START + 64
+#define SPECIES_RUBITE      AW_START + 65
+#define SPECIES_VAMPPHIRE   AW_START + 66
 #define SPECIES_GEENKY      AW_START + 67
 #define SPECIES_UNFAIREE    AW_START + 68
 #define SPECIES_BEETEMOLT   AW_START + 69
@@ -1723,8 +1723,8 @@
 #define SPECIES_MIRASTINE   AW_START + 79
 #define SPECIES_MIRASKEW    AW_START + 80
 #define SPECIES_CANUWAY     AW_START + 81
-//GHOST 2                   AW_START + 82
-//GHOST 3                   AW_START + 83
+#define SPECIES_STIKSAIL    AW_START + 82
+#define SPECIES_ARAUKEEL    AW_START + 83
 //GHOST 4 (unrelated)       AW_START + 84
 //GHOST 5                   AW_START + 85
 #define SPECIES_LURIDIRT    AW_START + 86

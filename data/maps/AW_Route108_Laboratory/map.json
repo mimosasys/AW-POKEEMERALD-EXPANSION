@@ -3,7 +3,7 @@
   "name": "AW_Route108_Laboratory",
   "layout": "LAYOUT_AW_ROUTE108_LABORATORY",
   "music": "AW_MUS_LABORATORY",
-  "region_map_section": "MAPSEC_AW_ROUTE_108",
+  "region_map_section": "MAPSEC_AW_LAB_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
@@ -41,52 +41,13 @@
       "flag": "FLAG_AW_FINISH_TUT"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 6,
-      "y": 15,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route108_Laboratory_PickAlpacoil",
-      "flag": "FLAG_AW_PICK_ALPACOIL"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 7,
-      "y": 15,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route108_Laboratory_PickSmackop",
-      "flag": "FLAG_AW_PICK_SMACKOP"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 8,
-      "y": 15,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route108_Laboratory_PickPuppixy",
-      "flag": "FLAG_AW_PICK_PUPPIXY"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_BRANDON",
-      "x": 13,
-      "y": 5,
+      "x": 6,
+      "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -98,14 +59,14 @@
       "x": 7,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_AW_ROUTE108_LOWER",
+      "dest_map": "MAP_AW_TOPAZ_LAB",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_AW_ROUTE108_LOWER",
+      "dest_map": "MAP_AW_TOPAZ_LAB",
       "dest_warp_id": "0"
     },
     {
@@ -114,6 +75,13 @@
       "elevation": 0,
       "dest_map": "MAP_AW_ROUTE108_LABORATORY",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_AW_TOPAZ_LAB",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -145,7 +113,5 @@
       "script": "Route108_Laboratory_OnWarp"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

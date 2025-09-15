@@ -1,0 +1,247 @@
+mapscripts AW_TopazLab_MapScripts {
+    // MAP_SCRIPT_ON_TRANSITION: Route108_HideOrShowTruck
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_PROGRESS_1, 4: TopazLab_Transition
+        // VAR_AW_PROGRESS_1, 5: Route108_HideOrShowTruck
+    ]
+}
+
+script TopazLab_Transition {
+    lockall
+
+    setvar(VAR_TEMP_0,0)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,FaceLeft)
+    applymovement(2,CarlaLeaveLab)
+    waitmovement
+
+    applymovement(1,WalkRightSpot)
+    waitmovement
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Well, this is the little plot of land where we've set up our lab.\p"
+        "We do archaeology mostly, so we're not around here that much, but when we are, we take care of hurt or abandoned Pokémon.\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(1,AveryGotoMons1)
+    waitmovement
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Speaking of, there's three down here I'd like you to get to know.\p"
+        "They're just around here, come have a look!\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(1,AveryGotoMons2)
+    waitmovement
+    applymovement(OBJ_EVENT_ID_PLAYER,PlayerGotoMons)
+    applymovement(2,CarlaGotoMons)
+    waitmovement
+
+    setvar(VAR_AW_PROGRESS_1,5)
+    releaseall
+}
+
+script TopazLab_LockedDoor {
+    lockall
+    message(format(
+        "{COLOR RED}TOPAZ LABORATORY STOREROOM\p"
+        "The door is locked.\p"
+    ))
+    waitmessage
+    releaseall
+}
+
+script TopazLab_TalkAlpacoil {
+    lock
+    showmonpic(SPECIES_ALPACOIL,10,3)
+    msgbox(format(
+            "This is Alpacoil, the Steel Wool Pokémon!\p"
+            "Give Alpacoil a pat?\p"
+        ), MSGBOX_YESNO)
+    waitmessage
+    hidemonpic
+
+    if (var(VAR_RESULT) == 1) {
+        playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
+        waitmoncry
+        applymovement(5,EmoteHeart)
+        waitmovement
+        
+        message(format("Alpacoil rubbed its nose against your legs and sniffed your shoes. It likes you!\p"))
+
+        setvar(VAR_TEMP_0,1)
+    }
+    waitmessage
+
+    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+        call(TopazLab_CheckAllStarters)
+    }
+
+    releaseall
+}
+
+script TopazLab_TalkSmackop {
+    lockall
+    showmonpic(SPECIES_SMACKOP,10,3)
+    msgbox(format(
+            "This is Smackop, the Fight Bird Pokémon!\p"
+            "Give Smackop a pat?\p"
+        ), MSGBOX_YESNO)
+    waitmessage
+        hidemonpic
+
+    if (var(VAR_RESULT) == 1) {
+        playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+        waitmoncry
+        applymovement(4,EmoteHeart)
+        waitmovement
+        
+        message(format("Smackop delightfully pecked at your feet, and looked into your eyes playfully. It likes you!\p"))
+        waitmessage
+
+        setvar(VAR_TEMP_1,1)
+    }
+    waitmessage
+
+    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+        call(TopazLab_CheckAllStarters)
+    }
+    
+    releaseall
+}
+
+script TopazLab_TalkPuppixy {
+    lockall
+    showmonpic(SPECIES_PUPPIXY,10,3)
+    msgbox(format(
+            "This is Puppixy, the Pink Armour Pokémon!\p"
+            "Give Puppixy a pat?\p"
+        ), MSGBOX_YESNO)
+    waitmessage
+    hidemonpic
+
+    if (var(VAR_RESULT) == 1) {
+        playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+        waitmoncry
+        applymovement(3,EmoteHeart)
+        waitmovement
+        
+        message(format("Puppixy wagged its tail and scratched at the ground in front of you. It likes you!\p"))
+        waitmessage
+
+        setvar(VAR_TEMP_2,1)
+    }
+    waitmessage
+
+    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+        call(TopazLab_CheckAllStarters)
+    }
+    
+    releaseall
+}
+
+script TopazLab_CheckAllStarters {
+    lockall
+    
+    fadescreen(FADE_TO_BLACK)
+    delay(80)
+
+    setobjectxy(OBJ_EVENT_ID_PLAYER,11,16)
+    setobjectxy(5,10,15)
+    setobjectxy(4,10,16)
+    setobjectxy(3,10,17)
+    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
+    applymovement(5,FaceRight)
+    applymovement(4,FaceRight)
+    applymovement(3,FaceRight)
+    waitmovement
+
+    fadescreen(FADE_FROM_BLACK)
+    delay(80)
+
+    applymovement(1,WalkLeftSpot)
+    waitmovement
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "So, what do you think? Aren't they fantastic?\p"
+        "You see, truth is, they're all rescues, too.\p"
+        "Unfortunately, since they're a bit nervous around people, it's been pretty hard to take care of them all.\p"
+        "So I was wondering, would you like to take care of one? It seems they've really taken a liking to you!\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,FaceLeft)
+    waitmovement
+
+    applymovement(5,WalkRightSpot)
+    playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
+    waitmoncry
+
+    applymovement(4,WalkRightSpot)
+    playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+    waitmoncry
+
+    applymovement(3,WalkRightSpot)
+    playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+    waitmoncry
+
+    applymovement(1,WalkLeftSpot)
+    waitmovement
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Go on, which one calls to you the most?\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    releaseall
+}
+
+movement CarlaLeaveLab {
+    walk_up*3
+    face_left
+}
+
+movement AveryGotoMons1 {
+    walk_left
+    walk_down*2
+    face_player
+}
+
+movement AveryGotoMons2 {
+    walk_down
+    walk_left*2
+}
+
+movement PlayerGotoMons {
+    walk_left*3
+    walk_down*3
+    walk_left*2
+}
+
+movement CarlaGotoMons {
+    walk_left*4
+    walk_down*4
+    walk_left*2 
+}
+
+movement EmoteHeart {
+    emote_heart
+}

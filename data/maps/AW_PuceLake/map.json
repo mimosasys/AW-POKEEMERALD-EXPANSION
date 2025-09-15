@@ -229,9 +229,7 @@
       "flag": "FLAG_AW_START_GYM"
     }
   ],
-  "warp_events": [
-
-  ],
+  "warp_events": [],
   "coord_events": [
     {
       "type": "trigger",

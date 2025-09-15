@@ -4415,9 +4415,9 @@
       "id": "LAYOUT_AW_ROUTE108_LOWER",
       "name": "AW_Route_108Lower_Layout",
       "width": 40,
-      "height": 40,
+      "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/AW_Route108_Lower/border.bin",
       "blockdata_filepath": "data/layouts/AW_Route108_Lower/map.bin"
     },
@@ -4425,7 +4425,7 @@
       "id": "LAYOUT_AW_ERIN_VILLAGE",
       "name": "AW_ErinVillage_Layout",
       "width": 30,
-      "height": 60,
+      "height": 38,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/AW_ErinVillage/border.bin",
@@ -4600,6 +4600,36 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/AW_WindFarm/border.bin",
       "blockdata_filepath": "data/layouts/AW_WindFarm/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_TOPAZ_LAB",
+      "name": "AW_TopazLab_Layout",
+      "width": 32,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AW_TopazLab/border.bin",
+      "blockdata_filepath": "data/layouts/AW_TopazLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_MT_EIGO_APPROACH",
+      "name": "AW_MtEigoApproach_Layout",
+      "width": 32,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/AW_MtEigoApproach/border.bin",
+      "blockdata_filepath": "data/layouts/AW_MtEigoApproach/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_EIGOGROTTO",
+      "name": "AW_EIGOGROTTO_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AW_EIGOGROTTO/border.bin",
+      "blockdata_filepath": "data/layouts/AW_EIGOGROTTO/map.bin"
     }
   ]
 }

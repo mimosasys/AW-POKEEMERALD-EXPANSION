@@ -42559,7 +42559,7 @@ F_TRAINER_FEMALE |
 #line 16995
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 16994
-            .lvl = 10,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -42570,7 +42570,7 @@ F_TRAINER_FEMALE |
 #line 16998
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 16997
-            .lvl = 11,
+            .lvl = 9,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -42578,12 +42578,14 @@ F_TRAINER_FEMALE |
 #line 16999
             .species = SPECIES_GLIGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 17001
+#line 17002
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 17000
-            .lvl = 12,
+            .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+#line 17001
+            .tags = MON_POOL_TAG_ACE,
             },
         },
     },

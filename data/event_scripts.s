@@ -1196,3 +1196,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AW_Route112/scripts.inc"
 
 	.include "data/maps/AW_WindFarm/scripts.inc"
+
+	.include "data/maps/AW_TopazLab/scripts.inc"
+
+	.include "data/maps/AW_MtEigoApproach/scripts.inc"
+
+	.include "data/maps/AW_EIGOGROTTO/scripts.inc"

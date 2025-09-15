@@ -1,0 +1,278 @@
+mapscripts AW_MtEigoApproach_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_AW_PROGRESS_1, 2: MtEigoApproach_CrossBridge1
+        VAR_AW_PROGRESS_1, 3: MtEigoApproach_CrossBridge2
+    ]
+}
+
+script MtEigoApproach_CrossBridge1 {
+    //special(SpawnCameraObject)
+    //setobjectxy(OBJ_EVENT_ID_CAMERA,16,17)
+    //setobjectxy(OBJ_EVENT_ID_PLAYER,19,22)
+    special(StopMapMusic)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerEnterBridge)
+    delay(60)
+    fadescreen(FADE_FROM_BLACK)
+    waitmovement(0)
+
+    //special(RemoveCameraObject)
+
+    message(format(
+        "{RIVAL}: Made it, hey?\p"
+        "Not far now...\p"
+    ))
+    waitmessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_CrossBridgeUp1)
+    applymovement(1,MtEigoApproach_CrossBridgeUp2)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    message(format(
+        "I can hear some commotion inside. They must be getting ready.\p"
+        "Quick, let's not leave them waiting!\p"
+    ))
+    waitmessage 
+
+    applymovement(1,MtEigoApproach_RivalGoIntoCave)
+    waitmovement()
+    playse(SE_EXIT)
+    removeobject(1)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerGoIntoCave)
+    waitmovement()
+    playse(SE_EXIT)
+    fadescreen(FADE_TO_BLACK)
+
+    warpsilent(MAP_AW_EIGOGROTTO,10,17)
+
+}
+
+script MtEigoApproach_CrossBridge2 {
+    lockall
+    special(StopMapMusic)
+
+    setflag(FLAG_AW_SHOWELDERS)
+
+    setobjectxy(1,15,4)
+    setobjectxy(2,15,4)
+    setobjectxy(3,15,4)
+    setobjectxy(4,15,4)
+    setobjectxy(OBJ_EVENT_ID_PLAYER,15,4)
+
+    hideobjectat(2,MAP_AW_MT_EIGO_APPROACH)
+    hideobjectat(3,MAP_AW_MT_EIGO_APPROACH)
+    hideobjectat(4,MAP_AW_MT_EIGO_APPROACH)
+    hideobjectat(1,MAP_AW_MT_EIGO_APPROACH)
+
+    fadescreen(FADE_FROM_BLACK)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerLeaveCave)
+    delay(32)
+    showobjectat(1,MAP_AW_MT_EIGO_APPROACH)
+    applymovement(1,MtEigoApproach_RivalLeaveCave)
+    delay(32)
+    showobjectat(2,MAP_AW_MT_EIGO_APPROACH)
+    applymovement(2,MtEigoApproach_Elder1LeaveCave)
+    delay(32)
+    showobjectat(3,MAP_AW_MT_EIGO_APPROACH)
+    applymovement(3,MtEigoApproach_Elder2LeaveCave)
+    delay(32)
+    showobjectat(4,MAP_AW_MT_EIGO_APPROACH)
+    applymovement(4,MtEigoApproach_Elder3LeaveCave)
+    waitmovement(4)
+
+    delay(32)
+    applymovement(2,WalkDownSpot)
+    waitmovement(0)
+    message(format(
+        "Quick, children! Across the bridge!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(2,MtEigoApproach_Elder1CrossBridge)
+    applymovement(3,MtEigoApproach_Elder2CrossBridge)
+    applymovement(4,MtEigoApproach_Elder3CrossBridge)
+    applymovement(1,MtEigoApproach_RivalNervous)
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerGoDown)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    message(format(
+        "{RIVAL}: {PLAYER}... I... I can't...\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerHelpRival)
+    waitmovement(0)
+
+    message(format(
+        "{RIVAL}: You'll... help me across?\p"
+        "Y-yeah! Let's go together!\p"
+    ))
+    waitmessage
+    closemessage
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_CrossBridgeDown1)
+    applymovement(1,MtEigoApproach_CrossBridgeDown1)
+    waitmovement(0)
+
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,6)
+    setvar(VAR_0x8007,10)
+    special(ShakeCamera)
+    waitstate
+    delay(30)
+
+    special(SpawnCameraObject)
+    special(ShakeCamera)
+    applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerFall)
+    applymovement(1,MtEigoApproach_PlayerFall)
+    delay(60)
+    fadescreen(FADE_TO_WHITE)
+    waitstate
+    delay(16)
+
+    message(format("???: Vibrava! There's someone falling!\p"))
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+    waitmoncry
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
+    waitmoncry
+    delay(20)
+    playmoncry(SPECIES_VIBRAVA,CRY_MODE_FAINT)
+    delay(20)
+    playse(SE_M_FLY)
+    waitse
+    removeobject(4)
+    delay(120)
+    special(RemoveCameraObject)
+    warpwhitefade(MAP_AW_ROUTE108_LABORATORY,26,11)
+    delay(120)
+
+    releaseall
+}
+
+movement MtEigoApproach_PlayerEnterBridge {
+    walk_up*3
+    walk_left*3
+    walk_up*3
+}
+
+movement MtEigoApproach_CrossBridgeUp1 {
+    walk_up*8
+}
+
+movement MtEigoApproach_CrossBridgeUp2 {
+    walk_up*9
+}
+
+movement MtEigoApproach_RivalGoIntoCave {
+    walk_up*2
+    walk_left*2
+    walk_up*2
+}
+
+movement MtEigoApproach_PlayerGoIntoCave {
+    walk_up*2
+    walk_left
+    walk_up*3
+}
+
+movement MtEigoApproach_PlayerLeaveCave {
+    walk_down*4
+}
+
+movement MtEigoApproach_RivalLeaveCave {
+    walk_down*3
+    walk_right
+    walk_down
+}
+
+movement MtEigoApproach_Elder1LeaveCave {
+    walk_down*3
+}
+
+movement MtEigoApproach_Elder2LeaveCave {
+    walk_down*2
+    walk_left
+    walk_down
+}
+
+movement MtEigoApproach_Elder3LeaveCave {
+    walk_down*2
+    walk_right
+    walk_down
+}
+
+movement MtEigoApproach_RivalNervous {
+    walk_slow_down
+}
+
+movement MtEigoApproach_PlayerGoDown {
+    walk_down*2
+    delay_16
+    face_up
+}
+
+movement MtEigoApproach_Elder1CrossBridge {
+    walk_fast_left
+    walk_fast_down*2
+    walk_fast_right*2
+    walk_fast_down*9
+    face_up
+}
+
+movement MtEigoApproach_Elder2CrossBridge {
+    walk_fast_down*2
+    walk_fast_right*2
+    walk_fast_down*8
+    walk_fast_right
+    walk_fast_down
+    face_up
+}
+
+movement MtEigoApproach_Elder3CrossBridge {
+    walk_fast_left*2
+    walk_fast_down*2
+    walk_fast_right*2
+    walk_fast_down*8
+    walk_fast_left
+    walk_fast_down
+    face_up
+}
+
+movement MtEigoApproach_PlayerHelpRival {
+    walk_up
+    face_right
+    delay_16
+    walk_in_place_down*3
+    delay_16
+    face_right
+    delay_16
+}
+
+movement MtEigoApproach_CrossBridgeDown1 {
+    walk_slow_down*2
+    delay_16
+    walk_slow_down*4
+}
+
+movement MtEigoApproach_PlayerFall {
+    face_left
+    face_right
+    face_up
+    face_left
+    walk_in_place_faster_right*3
+    walk_faster_left*12
+}
+
+movement MtEigoApproach_RivalFall {
+    face_right
+    face_left
+    face_up
+    face_right
+    walk_in_place_faster_left*3
+    walk_faster_right*12
+}

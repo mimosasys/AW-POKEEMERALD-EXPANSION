@@ -60,7 +60,7 @@
 #define FLAG_AW_HIDE_GEAR    0x2E // Unused Flag
 #define FLAG_AW_START_GYM    0x2F // Unused Flag
 #define FLAG_AW_UNUSED       0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
+#define FLAG_AW_SHOWELDERS   0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
