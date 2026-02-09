@@ -64,21 +64,22 @@ script PuceCity_Gym_Welcome {
     msgbox(format(
         "Fantastic! You're all registered!\p"
         "Now all you need to do is tackle the gym itself!\p"
-        "Since this is your first time in a Gym, there's not really a puzzle to it."
     ))
     waitmessage
     closemessage
     applymovement(6,WalkUpSpot)
     waitmovement(0)
     msgbox(format(
-        "I just stand at the other end of the room, while you defeat the 3 trainers between us."
+        "What's with those little gems next to the waterfalls, I wonder?\p"
+        "That's for me to know, and you to find out!"
     ))
     waitmessage
     closemessage
     applymovement(6,LookDown)
     waitmovement(0)
     msgbox(format(
-        "Then you get to fight me, and if you win, I give you a badge as proof of your victory.\p"
+        "Climb past them all, and you get to face me in battle, too.\p"
+        "And if you win, I give you a badge as proof of your victory.\p"
         "Sound good?\p"
         "Great! Then I'll get to my place!\p"
         "Good luck, {PLAYER}! I'll see you at the other end, yeah?"
@@ -89,38 +90,345 @@ script PuceCity_Gym_Welcome {
     applymovement(6,PuceCity_Gym_WendyWalkAway)
     waitmovement(0)
     setflag(FLAG_AW_START_GYM)
+    setvar(VAR_AW_PROGRESS_2,3)
+    setvar(VAR_TEMP_0,0)
     removeobject(6)
 
     releaseall
 }
 
+script PuceCity_Gym_Door1Trigger1 {
+    lock
+    if (var(VAR_TEMP_0) == 0) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_0,1)
+        }
+    } elif (var(VAR_TEMP_1 == 1)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor1)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_Door1Trigger2 {
+    lock
+    if (var(VAR_TEMP_1) == 0) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_1,1)
+        }
+    } elif (var(VAR_TEMP_0 == 1)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor1)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_OpenDoor1 {
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    delay(16)
+    playse(SE_SLIDING_DOOR)
+    waitse
+    setmetatile(7,17,0x0AF,FALSE)
+    setmetatile(7,18,0x0AF,FALSE)
+    setmetatile(8,17,0x0CF,FALSE)
+    setmetatile(8,18,0x0CF,FALSE)
+    special(DrawWholeMapView)
+    msgbox(format(
+        "The waterfall opened! There's a stairway!\p"
+    ))
+    waitmessage
+    closemessage
+}
+
+script PuceCity_Gym_Door2Trigger1 {
+    lock
+    if (var(VAR_TEMP_0) == 1) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_0,2)
+        }
+    } elif (var(VAR_TEMP_1 == 2)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor2)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_Door2Trigger2 {
+    lock
+    if (var(VAR_TEMP_1) == 1) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_1,2)
+        }
+    } elif (var(VAR_TEMP_0 == 2)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor2)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_OpenDoor2 {
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    delay(16)
+    playse(SE_SLIDING_DOOR)
+    waitse
+    setmetatile(12,13,0x0AF,FALSE)
+    setmetatile(12,14,0x0AF,FALSE)
+    setmetatile(13,13,0x0CF,FALSE)
+    setmetatile(13,14,0x0CF,FALSE)
+    special(DrawWholeMapView)
+    msgbox(format(
+        "The waterfall opened! There's a stairway!\p"
+    ))
+    waitmessage
+    closemessage
+}
+
+script PuceCity_Gym_Door3Trigger1 {
+    lock
+    if (var(VAR_TEMP_0) == 2) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_0,3)
+        }
+    } elif (var(VAR_TEMP_1 == 3)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor3)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_Door3Trigger2 {
+    lock
+    if (var(VAR_TEMP_1) == 2) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_1,3)
+        }
+    } elif (var(VAR_TEMP_0 == 3)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor3)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_OpenDoor3 {
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    delay(16)
+    playse(SE_SLIDING_DOOR)
+    waitse
+    setmetatile(16,7,0x0AF,FALSE)
+    setmetatile(16,8,0x0AF,FALSE)
+    setmetatile(17,7,0x0CF,FALSE)
+    setmetatile(17,8,0x0CF,FALSE)
+    special(DrawWholeMapView)
+    msgbox(format(
+        "The waterfall opened! There's a stairway!\p"
+    ))
+    waitmessage
+    closemessage
+}
+
+script PuceCity_Gym_Door4Trigger1 {
+    lock
+    if (var(VAR_TEMP_0) == 3) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_0,4)
+        }
+    } elif (var(VAR_TEMP_1 == 4)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor4)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_Door4Trigger2 {
+    lock
+    if (var(VAR_TEMP_1) == 3) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            closemessage
+            playse(SE_SWITCH)
+            waitse
+            setvar(VAR_TEMP_1,4)
+        }
+    } elif (var(VAR_TEMP_0 == 4)) {
+        msgbox(format(
+            "It's a switch!\p"
+            "Push it?"
+        ),MSGBOX_YESNO)
+        waitmessage
+        if (var(VAR_RESULT) == 1) {
+            call(PuceCity_Gym_OpenDoor4)
+        }
+    }
+    release
+}
+
+script PuceCity_Gym_OpenDoor4 {
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    playse(SE_M_WATERFALL)
+    waitse
+    delay(16)
+    playse(SE_SLIDING_DOOR)
+    waitse
+    setmetatile(5,7,0x0AF,FALSE)
+    setmetatile(5,8,0x0AF,FALSE)
+    setmetatile(6,7,0x0CF,FALSE)
+    setmetatile(6,8,0x0CF,FALSE)
+    setmetatile(7,7,0x0CF,FALSE)
+    setmetatile(7,8,0x0CF,FALSE)
+    special(DrawWholeMapView)
+    msgbox(format(
+        "The waterfall opened! There's a stairway!\p"
+    ))
+    waitmessage
+    closemessage
+}
+
 script PuceCity_Gym_Trainer1 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_PARA,BirdkeeperParaIntro,BirdkeeperParaOutro)
+    trainerbattle_single(TRAINER_LASS_TALIA,LassTaliaIntro,LassTaliaOutro)
     end
 }
 
 script PuceCity_Gym_Trainer2 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_ROBIN,BirdkeeperRobinIntro,BirdkeeperRobinOutro)
+    trainerbattle_single(TRAINER_SCHOOL_KID_CORAL,SchoolKidCoralIntro,SchoolKidCoralOutro)
     end
 }
 
 script PuceCity_Gym_Trainer3 {
-    trainerbattle_single(TRAINER_BIRDKEEPER_JAY,BirdkeeperJayIntro,BirdkeeperJayOutro)
+    trainerbattle_single(TRAINER_SAILOR_MARINO,SailorMarinoIntro,SailorMarinoOutro)
     end
 }
 
-script PuceCity_Gym_Wendy {
+script PuceCity_Gym_Brooke {
     lockall
     msgbox(format(
-        "Wendy: {PLAYER}! Nice job!\p"
+        "Brooke: {PLAYER}! Nice job!\p"
         "Now there's just one thing left to do in the gym!\p"
         "I gotta say, you're gonna be the first gym challenger I've had.\p"
-        "You ready? I'm flying at you, full force!\p"
-        "Gimme a good battle, won't'cha?"
+        "You ready? Gimme a good battle, won't'cha?"
     ))
     waitmessage
     closemessage
-    trainerbattle_no_intro(TRAINER_GYMLEADER_WENDY,LeaderWendyOutro)
+    trainerbattle_no_intro(TRAINER_GYMLEADER_BROOKE,LeaderBrookeOutro)
     msgbox(format(
         "Well, I can't say I'm all that surprised!\p"
         "That was some battle, alright, {PLAYER}. You sure have some skills!\p"
@@ -131,7 +439,7 @@ script PuceCity_Gym_Wendy {
     closemessage
     setflag(FLAG_BADGE01_GET)
     msgbox(format(
-        "Obtained the Gale Badge from Wendy!"
+        "Obtained the Current Badge from Wendy!"
     ))
     playfanfare(MUS_OBTAIN_BADGE)
     waitfanfare
@@ -147,51 +455,52 @@ script PuceCity_Gym_Wendy {
     ))
     waitmessage
     closemessage
-    setvar(VAR_AW_PROGRESS_1,9)
+    setvar(VAR_AW_PROGRESS_1,14)
     releaseall
 }
 
-text BirdkeeperParaIntro {
+text SchoolKidCoralIntro {
     format(
         "Hey! Welcome to the gym!\p"
         "Prepare to lose!"
     )
 }
 
-text BirdkeeperParaOutro {
+text SchoolKidCoralOutro {
     format(
         "I wasn't expecting that!"
     )
 }
 
-text BirdkeeperRobinIntro {
+text LassTaliaIntro {
     format(
-        "I'm a big fan of birds! That's why I'm here!"
+        "Think you've got the switches figured out?\p"
+        "Then, what does this one control?"
     )
 }
 
-text BirdkeeperRobinOutro {
+text LassTaliaOutro {
     format(
-        "Just... just fly away, won't you?!"
+        "Blast! Got splashed!"
     )
 }
 
-text BirdkeeperJayIntro {
+text SailorMarinoIntro {
     format(
-        "Not much longer now! Wendy's just over there!\p"
+        "Not much longer now! Brooke's just over there!\p"
         "But it's not over yet!"
     )
 }
 
-text BirdkeeperJayOutro {
+text SailorMarinoOutro {
     format(
         "Woah!"
     )
 }
 
-text LeaderWendyOutro {
+text LeaderBrookeOutro {
     format(
-        "Gah! My feathers, everywhere!"
+        "I... I've sunk!"
     )
 }
 
@@ -202,7 +511,7 @@ movement PuceCity_Gym_PlayerEnter {
 }
 
 movement PuceCity_Gym_WendyWalkAway {
-    walk_up
-    walk_right*4
-    walk_up*4
+    walk_up*2
+    jump_in_place_up*2
+    jump_2_up
 }

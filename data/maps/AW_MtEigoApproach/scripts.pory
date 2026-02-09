@@ -11,6 +11,8 @@ script MtEigoApproach_CrossBridge1 {
     //setobjectxy(OBJ_EVENT_ID_PLAYER,19,22)
     special(StopMapMusic)
 
+    setflag(FLAG_AW_SHOWELDERS)
+
     applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerEnterBridge)
     delay(60)
     fadescreen(FADE_FROM_BLACK)
@@ -33,6 +35,7 @@ script MtEigoApproach_CrossBridge1 {
         "Quick, let's not leave them waiting!\p"
     ))
     waitmessage 
+    closemessage
 
     applymovement(1,MtEigoApproach_RivalGoIntoCave)
     waitmovement()
@@ -52,32 +55,29 @@ script MtEigoApproach_CrossBridge2 {
     lockall
     special(StopMapMusic)
 
-    setflag(FLAG_AW_SHOWELDERS)
-
-    setobjectxy(1,15,4)
-    setobjectxy(2,15,4)
-    setobjectxy(3,15,4)
-    setobjectxy(4,15,4)
-    setobjectxy(OBJ_EVENT_ID_PLAYER,15,4)
+    clearflag(FLAG_AW_SHOWELDERS)
 
     hideobjectat(2,MAP_AW_MT_EIGO_APPROACH)
     hideobjectat(3,MAP_AW_MT_EIGO_APPROACH)
     hideobjectat(4,MAP_AW_MT_EIGO_APPROACH)
     hideobjectat(1,MAP_AW_MT_EIGO_APPROACH)
 
-    fadescreen(FADE_FROM_BLACK)
-
+    setobjectxy(OBJ_EVENT_ID_PLAYER,15,4)
     applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerLeaveCave)
     delay(32)
     showobjectat(1,MAP_AW_MT_EIGO_APPROACH)
+    setobjectxy(1,15,4)
     applymovement(1,MtEigoApproach_RivalLeaveCave)
     delay(32)
     showobjectat(2,MAP_AW_MT_EIGO_APPROACH)
+    setobjectxy(2,15,4)
     applymovement(2,MtEigoApproach_Elder1LeaveCave)
     delay(32)
     showobjectat(3,MAP_AW_MT_EIGO_APPROACH)
+    setobjectxy(3,15,4)
     applymovement(3,MtEigoApproach_Elder2LeaveCave)
     delay(32)
+    setobjectxy(4,15,4)
     showobjectat(4,MAP_AW_MT_EIGO_APPROACH)
     applymovement(4,MtEigoApproach_Elder3LeaveCave)
     waitmovement(4)
@@ -95,8 +95,10 @@ script MtEigoApproach_CrossBridge2 {
     applymovement(3,MtEigoApproach_Elder2CrossBridge)
     applymovement(4,MtEigoApproach_Elder3CrossBridge)
     applymovement(1,MtEigoApproach_RivalNervous)
+    delay(32)
     applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerGoDown)
     waitmovement(OBJ_EVENT_ID_PLAYER)
+    delay(32)
 
     message(format(
         "{RIVAL}: {PLAYER}... I... I can't...\p"
@@ -120,20 +122,47 @@ script MtEigoApproach_CrossBridge2 {
 
     setvar(VAR_0x8004,2)
     setvar(VAR_0x8005,6)
-    setvar(VAR_0x8006,6)
-    setvar(VAR_0x8007,10)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,12)
+    setvar(VAR_0x8007,2)
     special(ShakeCamera)
     waitstate
     delay(30)
 
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,12)
+    setvar(VAR_0x8007,2)
     special(SpawnCameraObject)
     special(ShakeCamera)
     applymovement(OBJ_EVENT_ID_PLAYER,MtEigoApproach_PlayerFall)
     applymovement(1,MtEigoApproach_PlayerFall)
     delay(60)
     fadescreen(FADE_TO_WHITE)
-    waitstate
-    delay(16)
+    delay(60)
 
     message(format("???: Vibrava! There's someone falling!\p"))
     playmoncry(SPECIES_VIBRAVA,CRY_MODE_NORMAL)
@@ -255,6 +284,7 @@ movement MtEigoApproach_PlayerHelpRival {
 
 movement MtEigoApproach_CrossBridgeDown1 {
     walk_slow_down*2
+    delay_16
     delay_16
     walk_slow_down*4
 }

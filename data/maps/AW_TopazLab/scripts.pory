@@ -1,14 +1,18 @@
 mapscripts AW_TopazLab_MapScripts {
-    // MAP_SCRIPT_ON_TRANSITION: Route108_HideOrShowTruck
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_AW_PROGRESS_1, 4: TopazLab_Transition
-        // VAR_AW_PROGRESS_1, 5: Route108_HideOrShowTruck
+        // VAR_AW_PROGRESS_1, 6: TopazLab_WhoToChoose
+        // VAR_AW_PROGRESS_1, 8: TopazLab_AfterChosen
     ]
 }
 
 script TopazLab_Transition {
-    lockall
+    lock
 
+    setflag(FLAG_AW_FINISH_TUT)
+    hideobjectat(8,MAP_AW_TOPAZ_LAB)
+    hideobjectat(9,MAP_AW_TOPAZ_LAB)
+    hideobjectat(10,MAP_AW_TOPAZ_LAB)
     setvar(VAR_TEMP_0,0)
 
     applymovement(OBJ_EVENT_ID_PLAYER,FaceLeft)
@@ -21,7 +25,7 @@ script TopazLab_Transition {
     setvar(VAR_0x8000,MUGSHOT_AVERY)
     callnative(DrawMugshot)
     message(format(
-        "Well, this is the little plot of land where we've set up our lab.\p"
+        "{COLOR GREEN}Fern: {COLOR DARK_GRAY}Well, this is the little plot of land where we've set up our lab.\p"
         "We do archaeology mostly, so we're not around here that much, but when we are, we take care of hurt or abandoned Pokémon.\p"
     ))
     waitmessage
@@ -48,7 +52,7 @@ script TopazLab_Transition {
     waitmovement
 
     setvar(VAR_AW_PROGRESS_1,5)
-    releaseall
+    release
 }
 
 script TopazLab_LockedDoor {
@@ -63,155 +67,518 @@ script TopazLab_LockedDoor {
 
 script TopazLab_TalkAlpacoil {
     lock
-    showmonpic(SPECIES_ALPACOIL,10,3)
-    msgbox(format(
-            "This is Alpacoil, the Steel Wool Pokémon!\p"
-            "Give Alpacoil a pat?\p"
-        ), MSGBOX_YESNO)
-    waitmessage
-    hidemonpic
+        showmonpic(SPECIES_ALPACOIL,10,3)
+        msgbox(format(
+                "This is Alpacoil, the Steel Wool Pokémon!\p"
+                "Give Alpacoil a pat?\p"
+            ), MSGBOX_YESNO)
+        waitmessage
+        hidemonpic
 
-    if (var(VAR_RESULT) == 1) {
-        playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
-        waitmoncry
-        applymovement(5,EmoteHeart)
-        waitmovement
-        
-        message(format("Alpacoil rubbed its nose against your legs and sniffed your shoes. It likes you!\p"))
+        if (var(VAR_RESULT) == 1) {
+            playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
+            waitmoncry
+            applymovement(5,EmoteHeart)
+            waitmovement
+            
+            message(format("Alpacoil rubbed its nose against your legs and sniffed your shoes.\pIt likes you!\p"))
+            waitmessage
+            closemessage
+            
+            setvar(VAR_TEMP_0,1)
+        }
+        waitmessage
 
-        setvar(VAR_TEMP_0,1)
-    }
-    waitmessage
-
-    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
-        call(TopazLab_CheckAllStarters)
-    }
+        if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+            call(TopazLab_CheckAllStarters)
+        }
 
     releaseall
 }
 
 script TopazLab_TalkSmackop {
-    lockall
-    showmonpic(SPECIES_SMACKOP,10,3)
-    msgbox(format(
-            "This is Smackop, the Fight Bird Pokémon!\p"
-            "Give Smackop a pat?\p"
-        ), MSGBOX_YESNO)
-    waitmessage
-        hidemonpic
+    lock
+        showmonpic(SPECIES_SMACKOP,10,3)
+        msgbox(format(
+                "This is Smackop, the Fight Bird Pokémon!\p"
+                "Give Smackop a pat?\p"
+            ), MSGBOX_YESNO)
+        waitmessage
+            hidemonpic
 
-    if (var(VAR_RESULT) == 1) {
-        playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
-        waitmoncry
-        applymovement(4,EmoteHeart)
-        waitmovement
-        
-        message(format("Smackop delightfully pecked at your feet, and looked into your eyes playfully. It likes you!\p"))
+        if (var(VAR_RESULT) == 1) {
+            playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+            waitmoncry
+            applymovement(4,EmoteHeart)
+            waitmovement
+            
+            message(format("Smackop delightfully pecked at your feet, and looked into your eyes playfully.\pIt likes you!\p"))
+            waitmessage
+            closemessage
+
+            setvar(VAR_TEMP_1,1)
+        }
         waitmessage
 
-        setvar(VAR_TEMP_1,1)
-    }
-    waitmessage
-
-    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
-        call(TopazLab_CheckAllStarters)
-    }
+        if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+            call(TopazLab_CheckAllStarters)
+        }
     
-    releaseall
+    release
 }
 
 script TopazLab_TalkPuppixy {
-    lockall
-    showmonpic(SPECIES_PUPPIXY,10,3)
-    msgbox(format(
-            "This is Puppixy, the Pink Armour Pokémon!\p"
-            "Give Puppixy a pat?\p"
-        ), MSGBOX_YESNO)
-    waitmessage
-    hidemonpic
+    lock
+        showmonpic(SPECIES_PUPPIXY,10,3)
+        msgbox(format(
+                "This is Puppixy, the Pink Armour Pokémon!\p"
+                "Give Puppixy a pat?\p"
+            ), MSGBOX_YESNO)
+        waitmessage
+        hidemonpic
 
-    if (var(VAR_RESULT) == 1) {
-        playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
-        waitmoncry
-        applymovement(3,EmoteHeart)
-        waitmovement
-        
-        message(format("Puppixy wagged its tail and scratched at the ground in front of you. It likes you!\p"))
+        if (var(VAR_RESULT) == 1) {
+            playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+            waitmoncry
+            applymovement(3,EmoteHeart)
+            waitmovement
+            
+            message(format("Puppixy wagged its tail and scratched at the ground in front of you.\pIt likes you!\p"))
+            waitmessage
+            closemessage
+
+            setvar(VAR_TEMP_2,1)
+        }
         waitmessage
 
-        setvar(VAR_TEMP_2,1)
-    }
-    waitmessage
-
-    if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
-        call(TopazLab_CheckAllStarters)
-    }
-    
-    releaseall
+        if (var(VAR_TEMP_0) == 1 && var(VAR_TEMP_1) == 1 && var(VAR_TEMP_2) == 1) {
+            call(TopazLab_CheckAllStarters)
+        }
+        
+    release
 }
 
 script TopazLab_CheckAllStarters {
-    lockall
-    
     fadescreen(FADE_TO_BLACK)
-    delay(80)
+    delay(60)
+
+    setflag(FLAG_AW_PICK_ALPACOIL)
+    setflag(FLAG_AW_PICK_PUPPIXY)
+    setflag(FLAG_AW_PICK_SMACKOP)
+    clearflag(FLAG_AW_MID_TUT)
+
+    setvar(VAR_AW_PROGRESS_1,6)
 
     setobjectxy(OBJ_EVENT_ID_PLAYER,11,16)
-    setobjectxy(5,10,15)
-    setobjectxy(4,10,16)
-    setobjectxy(3,10,17)
-    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
-    applymovement(5,FaceRight)
-    applymovement(4,FaceRight)
-    applymovement(3,FaceRight)
-    waitmovement
+    
+    special(SpawnCameraObject)
+    setobjectxy(OBJ_EVENT_ID_CAMERA,11,16)
+    special(RemoveCameraObject)
 
-    fadescreen(FADE_FROM_BLACK)
-    delay(80)
+    call(TopazLab_WhoToChoose)
+}
 
-    applymovement(1,WalkLeftSpot)
-    waitmovement
+script TopazLab_WhoToChoose {
+        lock
+
+        setobjectxyperm(1,13,15)
+        setobjectxyperm(2,13,16)
+
+        setobjectxyperm(3,15,4)
+        setobjectxyperm(4,15,4)
+        setobjectxyperm(5,15,4)
+
+        setobjectxyperm(8,10,15)
+        setobjectxyperm(9,10,16)
+        setobjectxyperm(10,10,17)
+
+        removeobject(1)
+        removeobject(2)
+
+        showobjectat(8,MAP_AW_TOPAZ_LAB)
+        showobjectat(9,MAP_AW_TOPAZ_LAB)
+        showobjectat(10,MAP_AW_TOPAZ_LAB)
+
+        applymovement(OBJ_EVENT_ID_PLAYER,LookRight)
+        
+        delay(60)
+
+        fadescreenspeed(FADE_FROM_BLACK,2)
+
+        applymovement(11,WalkLeftSpot)
+        waitmovement
+
+        setvar(VAR_0x8000,MUGSHOT_AVERY)
+        callnative(DrawMugshot)
+        message(format(
+            "{COLOR GREEN}Fern: {COLOR DARK_GRAY}So, what do you think? Aren't they fantastic?\p"
+            "You see, truth is, they're all rescues, too.\p"
+            "Unfortunately, since they're a bit nervous around people, it's been pretty hard to take care of them all.\p"
+            "So I was wondering, would you like to take care of one? It seems they've really taken a liking to you!\p"
+        ))
+        waitmessage
+        closemessage
+        callnative(ClearMugshot)
+
+        applymovement(OBJ_EVENT_ID_PLAYER,FaceLeft)
+        waitmovement
+
+        applymovement(8,WalkRightSpot)
+        playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
+        waitmoncry
+
+        applymovement(9,WalkRightSpot)
+        playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+        waitmoncry
+
+        applymovement(10,WalkRightSpot)
+        playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+        waitmoncry
+
+        applymovement(1,WalkLeftSpot)
+        waitmovement
+
+        setvar(VAR_0x8000,MUGSHOT_AVERY)
+        callnative(DrawMugshot)
+        message(format(
+            "Go on, which one calls to you the most?\p"
+        ))
+        waitmessage
+        closemessage
+        callnative(ClearMugshot)
+        // special(RemoveCameraObject)
+        
+        setvar(VAR_AW_PROGRESS_1,7)
+
+        release
+}
+
+script TopazLab_FernTalk {
+    lock
+    if (var(VAR_AW_PROGRESS_1) == 6) {
+        setvar(VAR_0x8000,MUGSHOT_AVERY)
+        callnative(DrawMugshot)
+        message(format(
+            "{COLOR GREEN}Fern: {COLOR DARK_GRAY}Go on, take your pick!\p"
+        ))
+        waitmessage
+        closemessage
+        callnative(ClearMugshot)
+    } 
+    elif (var(VAR_AW_PROGRESS_1) == 9) {
+        setvar(VAR_0x8000,MUGSHOT_AVERY)
+        callnative(DrawMugshot)
+        bufferpartymonnick(STR_VAR_1,0)
+        message(format(
+            "Well, I won't keep you! Go on and get out there!\pYou and {STR_VAR_1}'s first adventure awaits!\p"
+        ))
+        waitmessage
+        closemessage
+        callnative(ClearMugshot)
+    }
+    else {
+        setvar(VAR_0x8000,MUGSHOT_AVERY)
+        callnative(DrawMugshot)
+        message(format(
+            "{COLOR GREEN}Fern: {COLOR DARK_GRAY}Go on, introduce yourself to them!\p"
+            "Aren't they all gorgeous?\p"
+        ))
+        waitmessage
+        closemessage
+        callnative(ClearMugshot)
+    }
+    release
+}
+
+script TopazLab_Chosen {
+    lock 
+    fadescreen(FADE_TO_BLACK)
+    delay(60)
+
+    setvar(VAR_AW_PROGRESS_1,8)
+
+    setobjectxy(OBJ_EVENT_ID_PLAYER,11,16)
+    special(SpawnCameraObject)
+    setobjectxy(OBJ_EVENT_ID_CAMERA,11,16)
+    special(RemoveCameraObject)
+
+    call(TopazLab_AfterChosen)
+}
+
+script TopazLab_AfterChosen {
+    lock
+
+    setflag(FLAG_SYS_POKEMON_GET)
+    setflag(FLAG_TEMP_1)
+    removeobject(8)
+    removeobject(9)
+    removeobject(10)
+    removeobject(11)
+    removeobject(12) 
+
+    setobjectxyperm(3,7,19)
+    setobjectxyperm(4,5,16)
+    setobjectxyperm(5,8,15)
+
+    showobjectat(1,MAP_AW_TOPAZ_LAB)
+    showobjectat(2,MAP_AW_TOPAZ_LAB)
+    
+    applymovement(OBJ_EVENT_ID_PLAYER,LookRight)
+
+    setobjectxy(1,13,15)
+    setobjectxy(2,13,16)
+    setobjectmovementtype(2,MOVEMENT_TYPE_FACE_RIGHT)
+
+    delay(60)
+
+    fadescreenspeed(FADE_FROM_BLACK,2)
 
     setvar(VAR_0x8000,MUGSHOT_AVERY)
     callnative(DrawMugshot)
+    bufferleadmonspeciesname(STR_VAR_1)
+    msgbox(format(
+        "{COLOR GREEN}Fern: {COLOR DARK_GRAY} A great choice! I'm sure you and {STR_VAR_1} will get along just great!\p"
+        "Ah, but would you perhaps want to give {STR_VAR_1} a nickname?"
+    ),MSGBOX_YESNO)
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    if (var(VAR_RESULT) == 1) {
+        fadescreen(FADE_TO_BLACK)
+
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    bufferpartymonnick(STR_VAR_1,0)
     message(format(
-        "So, what do you think? Aren't they fantastic?\p"
-        "You see, truth is, they're all rescues, too.\p"
-        "Unfortunately, since they're a bit nervous around people, it's been pretty hard to take care of them all.\p"
-        "So I was wondering, would you like to take care of one? It seems they've really taken a liking to you!\p"
+        "{COLOR GREEN}Fern: {COLOR DARK_GRAY}Well, {PLAYER}, why don't you and {STR_VAR_1} get to know each other a little?\p"
+        "If you go out the front door of the lab, you'll reach Route 108.\p"
+        "And if you head east from there, you'll arrive at the town of Port Mulberry.\p"
+        "It's a quaint little place, and a good friend of mine lives there.\p"
     ))
     waitmessage
     closemessage
     callnative(ClearMugshot)
 
-    applymovement(OBJ_EVENT_ID_PLAYER,FaceLeft)
-    waitmovement
+    delay(16)
+    applymovement(1,WalkRightSpot)
+    waitmovement(0)
+    delay(16)
 
-    applymovement(5,WalkRightSpot)
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Actually, now that I think about it, I haven't heard from them in quite some time...\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(1,LookLeft)
+    waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    msgbox(format(
+        "{PLAYER}, could you do me a favour and go check on them?\p"
+        "Their name is Gear, and they live in a little laboratory of their own, all the way on the eastern side of\nPort Mulberry.\p"
+        "I'm sure you and {STR_VAR_1} will have a great time exploring the surrounding area.\p"
+        "C'mon, what do you say?"
+    ),MSGBOX_YESNO)
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    if (var(VAR_RESULT) != 1) {
+        call(TopazLab_AskPortMulberry)
+    }
+    
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Great! Well, here's some things to get you going.\p"
+        "You'll likely encounter some wild Pokémon out there, so you'll need these!\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    giveitem(ITEM_POTION,5)
+    giveitem(ITEM_POKE_BALL,5)
+
+    closemessage
+
+    bufferpartymonnick(STR_VAR_1,0)
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Well, I won't keep you! Go on and get out there!\pYou and {STR_VAR_1}'s first adventure awaits!\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    setflag(FLAG_AW_FINISH_TUT)
+
+    release
+}
+
+script TopazLab_AskPortMulberry {
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    msgbox(format(
+        "Please? I don't know if they're alright or not.\pAnd we're just on the verge of a big discovery here!\pWon't you go in my stead?\p"
+    ),MSGBOX_YESNO)
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    if (var(VAR_RESULT) != 1) {
+        call(TopazLab_AskPortMulberry)
+    }
+}
+
+script TopazLab_TryLeaveTop {
+    lock
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Hey! {PLAYER}! Don't leave yet!\p"
+        "Don't you want to meet these Pokémon?\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MoveDown1)
+    waitmovement(0)
+
+    release
+}
+
+script TopazLab_TryLeaveRight {
+    lock
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
+    message(format(
+        "Hey! {PLAYER}! Don't leave yet!\p"
+        "Don't you want to meet these Pokémon?\p"
+    ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(OBJ_EVENT_ID_PLAYER,MoveLeft1)
+    waitmovement(0)
+
+    release
+}
+
+script TopazLab_ChooseAlpacoil {
+    lock
+    showmonpic(SPECIES_ALPACOIL,10,3)
     playmoncry(SPECIES_ALPACOIL,CRY_MODE_NORMAL)
-    waitmoncry
-
-    applymovement(4,WalkRightSpot)
-    playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
-    waitmoncry
-
-    applymovement(3,WalkRightSpot)
-    playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
-    waitmoncry
-
-    applymovement(1,WalkLeftSpot)
-    waitmovement
-
-    setvar(VAR_0x8000,MUGSHOT_AVERY)
-    callnative(DrawMugshot)
-    message(format(
-        "Go on, which one calls to you the most?\p"
-    ))
+    msgbox(format(
+            "You want to go with Alpacoil?\p"
+        ), MSGBOX_YESNO)
     waitmessage
     closemessage
-    callnative(ClearMugshot)
+    hidemonpic
 
-    releaseall
+    if (var(VAR_RESULT)) {
+        removeobject(8)
+        givemon(SPECIES_ALPACOIL,5,ITEM_NONE,ITEM_CHERISH_BALL)
+        playfanfare(MUS_OBTAIN_BADGE)
+        message(format(
+            "{COLOR RED}Alpacoil joined your party!\p"
+        ))
+        waitfanfare
+        waitmessage
+        setvar(VAR_TEMP_0,0)
+        setvar(VAR_TEMP_1,0)
+        setvar(VAR_TEMP_2,0)
+        clearflag(FLAG_AW_PICK_PUPPIXY)
+        clearflag(FLAG_AW_PICK_SMACKOP)
+        setflag(FLAG_AW_FINISH_TUT)
+        setvar(VAR_AW_PROGRESS_1,8)
+
+        call(TopazLab_Chosen)
+    }
+
+    release
+}
+
+script TopazLab_ChooseSmackop {
+    lock
+    showmonpic(SPECIES_SMACKOP,10,3)
+    playmoncry(SPECIES_SMACKOP,CRY_MODE_NORMAL)
+    msgbox(format(
+            "You want to go with Smackop?\p"
+        ), MSGBOX_YESNO)
+    waitmessage
+    closemessage
+    hidemonpic
+
+    if (var(VAR_RESULT)) {
+        removeobject(9)
+        givemon(SPECIES_SMACKOP,5,ITEM_NONE,ITEM_CHERISH_BALL)
+        playfanfare(MUS_OBTAIN_BADGE)
+        message(format(
+            "{COLOR RED}Smackop joined your party!\p"
+        ))
+        waitfanfare
+        waitmessage
+        setvar(VAR_TEMP_0,0)
+        setvar(VAR_TEMP_1,0)
+        setvar(VAR_TEMP_2,0)
+        clearflag(FLAG_AW_PICK_PUPPIXY)
+        clearflag(FLAG_AW_PICK_ALPACOIL)
+        setflag(FLAG_TEMP_1)
+        setvar(VAR_AW_PROGRESS_1,8)
+
+        call(TopazLab_Chosen)
+    }
+
+    release
+}
+
+script TopazLab_ChoosePuppixy {
+    lock
+    showmonpic(SPECIES_PUPPIXY,10,3)
+    playmoncry(SPECIES_PUPPIXY,CRY_MODE_NORMAL)
+    msgbox(format(
+            "You want to go with Puppixy?\p"
+        ), MSGBOX_YESNO)
+    waitmessage
+    closemessage
+    hidemonpic
+
+    if (var(VAR_RESULT)) {
+        removeobject(10)
+        givemon(SPECIES_PUPPIXY,5,ITEM_NONE,ITEM_CHERISH_BALL)
+        playfanfare(MUS_OBTAIN_BADGE)
+        message(format(
+            "{COLOR RED}Puppixy joined your party!\p"
+        ))
+        waitfanfare
+        waitmessage
+        setvar(VAR_TEMP_0,0)
+        setvar(VAR_TEMP_1,0)
+        setvar(VAR_TEMP_2,0)
+        clearflag(FLAG_AW_PICK_ALPACOIL)
+        clearflag(FLAG_AW_PICK_SMACKOP)
+        setflag(FLAG_TEMP_1)
+        setvar(VAR_AW_PROGRESS_1,8)
+
+        call(TopazLab_Chosen)
+    }
+
+    release
 }
 
 movement CarlaLeaveLab {
@@ -233,7 +600,7 @@ movement AveryGotoMons2 {
 movement PlayerGotoMons {
     walk_left*3
     walk_down*3
-    walk_left*2
+    walk_left*3
 }
 
 movement CarlaGotoMons {
@@ -244,4 +611,8 @@ movement CarlaGotoMons {
 
 movement EmoteHeart {
     emote_heart
+}
+
+movement MoveLeft1 {
+    walk_left
 }

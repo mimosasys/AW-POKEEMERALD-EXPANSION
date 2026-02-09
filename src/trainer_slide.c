@@ -56,9 +56,9 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINERS_COUNT][TRAINER_
 {
     [DIFFICULTY_NORMAL] =
     {
-        [TRAINER_GYMLEADER_WENDY] =
+        [TRAINER_GYMLEADER_BROOKE] =
             {
-            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PLAY_BGM AW_MUS_BATTLE_LAST_POKEMON}This oughta ruffle your feathers!{PAUSE_UNTIL_PRESS}"), // find the id for the slide to be used.
+            [TRAINER_SLIDE_LAST_SWITCHIN] = COMPOUND_STRING("{PLAY_BGM AW_MUS_BATTLE_LAST_POKEMON}C'mon! This oughta sweep you away!{PAUSE_UNTIL_PRESS}"), // find the id for the slide to be used.
                         //[TRAINER_SLIDE_MEGA_EVOLUTION] = gText_ThatsTheWay, // You can use globals or COMPOUND_STRING to define text here.
             }
     },

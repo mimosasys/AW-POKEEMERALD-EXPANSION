@@ -6,488 +6,649 @@ AW_PortMulberry_GearLab_MapScripts::
 
 GearLab_HideGearObject::
 # 9 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	goto_if_unset FLAG_AW_VISIT_MULBERRY, GearLab_HideGearObject_1
+	return
+
+GearLab_HideGearObject_1:
+# 10 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setobjectxy 2, 0, 0
+# 11 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	hideobjectat 2, MAP_AW_PORT_MULBERRY_GEAR_LAB
 	return
 
 
 GearLab_WalkIntoMachine::
-# 13 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 16 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	lockall
-# 14 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 17 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	goto_if_set FLAG_AW_HELP_GEAR, GearLab_WalkIntoMachine_2
-# 20 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 27 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	applymovement 1, KirliaRunUp2
-# 21 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 28 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmovement 0
-# 22 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 29 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
-# 23 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 30 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmoncry
-# 24 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 1, KirliaRunDown2
-# 25 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 26 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	compare VAR_AW_PROGRESS_1, 6
-	goto_if_eq GearLab_WalkIntoMachine_5
 # 31 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, KirliaRunDown2
+# 32 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 33 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	compare VAR_AW_PROGRESS_1, 9
+	goto_if_eq GearLab_WalkIntoMachine_5
+# 38 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	msgbox GearLab_WalkIntoMachine_Text_2
 GearLab_WalkIntoMachine_1:
-# 36 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 43 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, WalkDown1
-# 37 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 44 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmovement 0
-# 38 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 45 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	releaseall
 	return
 
 GearLab_WalkIntoMachine_2:
-# 15 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 18 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_GEAR
+# 19 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative DrawMugshot
+# 20 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	msgbox GearLab_WalkIntoMachine_Text_0
+# 24 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 25 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative ClearMugshot
 	goto GearLab_WalkIntoMachine_1
 
 GearLab_WalkIntoMachine_5:
-# 27 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 34 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	msgbox GearLab_WalkIntoMachine_Text_1
 	goto GearLab_WalkIntoMachine_1
 
 
 GearLab_TalkToKirlia::
-# 42 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	lockall
-# 43 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
-# 44 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 1, Rival_JumpInPlace
-# 45 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 46 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_TalkToKirlia_Text_0
-# 47 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
-# 48 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 # 49 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_TalkToKirlia_Text_1
+	lockall
+# 50 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
+# 51 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, Rival_JumpInPlace
+# 52 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 53 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_TalkToKirlia_Text_0
 # 54 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
 # 55 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
-# 56 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_M_TELEPORT
-# 57 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
-# 58 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setobjectxy 1, 12, 5
-# 59 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	showobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
-# 60 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
-# 61 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 56 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmoncry
+# 57 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_TalkToKirlia_Text_1
 # 62 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerFaceRightExclaimed
-# 63 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 64 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 1, KirliaSpin
-# 65 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 66 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 1, KirliaSpin
-# 67 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 68 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 1, KirliaGoToMachine
-# 69 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 70 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
-# 71 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_M_CHARGE
-# 72 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
-# 73 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_TalkToKirlia_Text_2
-# 74 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
+# 63 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, KirliaSpin
+# 64 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 65 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 66 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_M_TELEPORT
+# 67 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 68 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setobjectxy 1, 12, 5
+# 69 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	showobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 70 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
+# 71 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmoncry
+# 72 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerFaceRightExclaimed
+# 73 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 74 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, KirliaSpin
 # 75 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setvar VAR_AW_PROGRESS_1, 6
+	waitmovement 0
 # 76 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, KirliaSpin
+# 77 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 78 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 1, KirliaGoToMachine
+# 79 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 80 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 81 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_M_CHARGE
+# 82 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 83 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_TalkToKirlia_Text_2
+# 84 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
+# 85 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_AW_PROGRESS_1, 10
+# 86 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	releaseall
 	return
 
 
 GearLab_UseMachine::
-# 80 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	lockall
-# 81 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	goto_if_set FLAG_AW_HELP_GEAR, GearLab_UseMachine_2
-# 85 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setflag FLAG_AW_HELP_GEAR
-# 86 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	special StopMapMusic
-# 87 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_CLICK
-# 88 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
-# 89 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 # 90 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmoncry
+	lockall
 # 91 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_M_CHARGE
-# 92 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
-# 93 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_M_COSMIC_POWER
-# 94 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
+	goto_if_set FLAG_AW_HELP_GEAR, GearLab_UseMachine_2
 # 95 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_M_EXPLOSION
+	setflag FLAG_AW_HELP_GEAR
 # 96 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
+	special StopMapMusic
 # 97 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_DING_DONG
+	playse SE_CLICK
 # 98 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitse
 # 99 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	clearflag FLAG_AW_HIDE_GEAR
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 # 100 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setobjectxy 2, 12, 1
+	waitmoncry
 # 101 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	showobjectat 2, MAP_AW_PORT_MULBERRY_GEAR_LAB
+	playse SE_M_CHARGE
 # 102 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 2, GearLeaveMachine
+	waitse
 # 103 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
+	playse SE_M_COSMIC_POWER
 # 104 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_1
+	waitse
+# 105 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_M_EXPLOSION
+# 106 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 107 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_DING_DONG
+# 108 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 109 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setobjectxy 2, 12, 1
+# 110 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	showobjectat 2, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 111 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, GearLeaveMachine
+# 112 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
 # 113 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
+	playse SE_WALL_HIT
 # 114 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 2, GearCheckPhone
+	waitse
 # 115 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 116 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_2
-# 120 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_1
+# 124 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
-# 121 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerTalkUp
-# 122 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 123 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_3
+# 125 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 126 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_POKENAV_ON
 # 127 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
+	waitse
 # 128 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_POKENAV_CALL
+	applymovement 2, GearCheckPhone
 # 129 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitse
+	waitmovement 0
 # 130 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_4
-# 139 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_2
+# 134 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
-# 140 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playse SE_POKENAV_HANG_UP
-# 141 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 135 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 136 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_POKENAV_CALL
+# 137 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitse
-# 142 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_5
-# 145 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 138 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	delay 60
+# 139 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_POKENAV_ON
+# 140 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 141 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_3
+# 150 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
-# 146 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 2, GearMeetPlayer
-# 147 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
-# 148 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_6
+# 151 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 152 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playse SE_POKENAV_HANG_UP
+# 153 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitse
+# 154 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, Common_Movement_FacePlayer
+# 155 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_4
+# 158 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
 # 159 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
+	specialvar VAR_RESULT, GetPlayerFacingDirection
 # 160 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement 2, GearGoToDesk
-# 161 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerFollowGear
-# 162 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmovement 0
+	compare VAR_RESULT, DIR_EAST
+	goto_if_eq GearLab_UseMachine_6
 # 163 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_7
-# 167 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
-# 168 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setflag FLAG_RECEIVED_POKENAV
-# 169 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setflag FLAG_SYS_POKENAV_GET
-# 170 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 171 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_8
-# 174 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitfanfare
-# 175 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
-# 176 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	special Overworld_PlaySpecialMapMusic
-# 177 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	msgbox GearLab_UseMachine_Text_9
-# 188 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	waitmessage
-# 189 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, GearMeetPlayer
+GearLab_UseMachine_5:
+# 165 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmovement 0
-# 190 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 166 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_GEAR
+# 167 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative DrawMugshot
+# 168 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_5
+# 179 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
+# 180 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 181 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative ClearMugshot
+# 183 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+# 184 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	compare VAR_RESULT, DIR_EAST
+	goto_if_eq GearLab_UseMachine_10
+# 188 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, GearGoToDesk
+# 189 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerFollowGear
+GearLab_UseMachine_9:
 # 191 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setobjectxyperm 2, 3, 5
-# 192 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	setvar VAR_AW_PROGRESS_1, 7
-GearLab_UseMachine_1:
+	waitmovement 0
+# 193 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_GEAR
 # 194 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative DrawMugshot
+# 195 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_6
+# 199 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
+# 200 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 201 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative ClearMugshot
+# 203 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setflag FLAG_RECEIVED_POKENAV
+# 204 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setflag FLAG_SYS_POKENAV_GET
+# 205 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 206 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_7
+# 209 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitfanfare
+# 210 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
+# 211 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 212 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	special Overworld_PlaySpecialMapMusic
+# 214 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_0x8000, MUGSHOT_GEAR
+# 215 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative DrawMugshot
+# 216 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	msgbox GearLab_UseMachine_Text_8
+# 228 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmessage
+# 229 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	closemessage
+# 230 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	callnative ClearMugshot
+# 232 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	waitmovement 0
+# 233 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	hideobjectat 1, MAP_AW_PORT_MULBERRY_GEAR_LAB
+# 234 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setobjectxyperm 2, 3, 5
+# 235 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	setvar VAR_AW_PROGRESS_1, 11
+GearLab_UseMachine_1:
+# 237 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	releaseall
 	return
 
 GearLab_UseMachine_2:
-# 82 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 92 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	msgbox GearLab_UseMachine_Text_0
-# 83 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 93 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	waitmessage
 	goto GearLab_UseMachine_1
 
+GearLab_UseMachine_6:
+# 161 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, GearMeetPlayer2
+	goto GearLab_UseMachine_5
+
+GearLab_UseMachine_10:
+# 185 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement 2, GearGoToDesk2
+# 186 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerFollowGear2
+	goto GearLab_UseMachine_9
+
 
 GearLab_TalkToGear::
-# 198 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 241 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	lockall
-# 199 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 242 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	applymovement 1, FacePlayer
-# 200 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 243 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	releaseall
 	return
 
 
-# 203 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 246 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 KirliaRunUp2:
-# 204 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 247 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_up
-# 204 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 247 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_up
-# 205 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_left
-# 205 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_left
-# 205 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_left
-	step_end
-
-# 207 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-KirliaRunDown2:
-# 208 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_down
-# 208 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_down
-	step_end
-
-# 211 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-WalkDown1:
-# 212 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-	step_end
-
-# 215 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-WalkDown2:
-# 216 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-# 216 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_down
-	step_end
-
-# 219 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-KirliaSpin:
-# 220 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_left
-# 221 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_down
-# 222 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_right
-# 223 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_up
-# 224 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_up
-# 224 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	jump_in_place_up
-	step_end
-
-# 227 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-KirliaGoToMachine:
-# 228 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_right
-# 229 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 229 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 230 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_left
-# 231 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-# 231 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_up
-	step_end
-
-# 234 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-PlayerFaceRightExclaimed:
-# 235 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_right
-# 236 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	emote_exclamation_mark
-	step_end
-
-# 239 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearLeaveMachine:
-# 240 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_faster_down
-# 240 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_faster_down
-	step_end
-
-# 243 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearCheckPhone:
-# 244 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_right
-# 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-# 245 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_right
-	step_end
-
 # 248 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-PlayerTalkUp:
-# 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
-# 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
-# 249 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_in_place_up
+	jump_in_place_left
+# 248 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_left
+# 248 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_left
 	step_end
 
-# 252 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearMeetPlayer:
-# 253 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_fast_right
-# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 250 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+KirliaRunDown2:
+# 251 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_down
-# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 251 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_fast_down
+	step_end
+
+# 254 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+WalkDown1:
 # 255 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	face_player
+	walk_down
 	step_end
 
 # 258 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-GearGoToDesk:
+WalkDown2:
 # 259 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_down
 # 259 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_down
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 260 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_left
-# 261 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_up
-# 261 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	walk_up
+	step_end
+
 # 262 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+KirliaSpin:
+# 263 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_left
+# 264 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_down
+# 265 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_right
+# 266 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_up
+# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_up
+# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	jump_in_place_up
+	step_end
+
+# 270 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+KirliaGoToMachine:
+# 271 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_right
+# 272 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 272 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 273 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_left
+# 274 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+# 274 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_up
+	step_end
+
+# 277 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+PlayerFaceRightExclaimed:
+# 278 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_right
+# 279 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	emote_exclamation_mark
+	step_end
+
+# 282 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearLeaveMachine:
+# 283 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_faster_down
+# 283 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_faster_down
+	step_end
+
+# 286 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearCheckPhone:
+# 287 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_right
+# 288 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_right
+# 288 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_right
+# 288 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_right
+# 288 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_right
+	step_end
+
+# 291 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+PlayerTalkUp:
+# 292 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+# 292 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+# 292 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 295 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearMeetPlayer:
+# 296 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_right
+# 297 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_down
+# 297 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_down
+# 298 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_player
+	step_end
+
+# 301 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearMeetPlayer2:
+# 302 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_right
+# 303 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_down
+# 303 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_down
+# 304 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_fast_left
+# 305 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_player
+	step_end
+
+# 308 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearGoToDesk:
+# 309 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 309 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 310 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 311 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 311 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 312 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	face_left
 	step_end
 
-# 265 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 315 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearGoToDesk2:
+# 316 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 316 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 317 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 318 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 318 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+# 319 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	face_left
+	step_end
+
+# 322 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 PlayerFollowGear:
-# 266 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 323 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_right
-# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 324 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_down
-# 267 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 324 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_down
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 268 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 325 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_left
-# 269 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 326 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_up
+	step_end
+
+# 329 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+PlayerFollowGear2:
+# 330 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	delay_16
+# 331 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	delay_16
+# 332 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 333 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 334 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 334 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_down
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 335 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	walk_left
+# 336 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	walk_up
 	step_end
 
 GearLab_WalkIntoMachine_Text_0:
-# 16 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 21 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "Gear: H-hey! I wouldn't go in there, if I\n"
 	.string "were you!\p"
 	.string "Y'know, u-unless you really wanna...$"
 
 GearLab_WalkIntoMachine_Text_1:
-# 28 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 35 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "It seems that's not what Kirlia wants\n"
 	.string "you to do...$"
 
 GearLab_WalkIntoMachine_Text_2:
-# 32 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 39 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "That Kirlia seems to want your\n"
 	.string "attention...$"
 
 GearLab_TalkToKirlia_Text_0:
-# 46 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 53 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "It seems this Kirlia is trying to tell\n"
 	.string "you something...?$"
 
 GearLab_TalkToKirlia_Text_1:
-# 50 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 58 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "Kirlia: ...\p"
 	.string "...\p"
 	.string "...!$"
 
 GearLab_TalkToKirlia_Text_2:
-# 73 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 83 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "Could it have to do with that machine?$"
 
 GearLab_UseMachine_Text_0:
-# 82 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 92 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "A screen lit up saying 'Please do not\n"
 	.string "push this button again.'$"
 
 GearLab_UseMachine_Text_1:
-# 105 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 116 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "???: Ugh... What... was I doing?\p"
 	.string "...\p"
 	.string "...\p"
@@ -498,21 +659,14 @@ GearLab_UseMachine_Text_1:
 	.string "It... it worked?$"
 
 GearLab_UseMachine_Text_2:
-# 117 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 131 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "???: Oh, crud, 14 missed messages from\n"
 	.string "Avery.\p"
 	.string "I hope he didn't want that communicator\n"
 	.string "quickly...$"
 
 GearLab_UseMachine_Text_3:
-# 124 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	.string "???: H-He did?! And you're his new\n"
-	.string "apprentice?!\p"
-	.string "Ohhh... Ohh, I am sooo done for... I'm\n"
-	.string "sooo late...$"
-
-GearLab_UseMachine_Text_4:
-# 131 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+# 142 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "???: AVERY! I- uh- mishaps at the lab-\n"
 	.string "I'm so sorry-\p"
 	.string "...\p"
@@ -522,13 +676,13 @@ GearLab_UseMachine_Text_4:
 	.string "Mm-hmm...\p"
 	.string "Phew, that's a relief...!$"
 
-GearLab_UseMachine_Text_5:
-# 143 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearLab_UseMachine_Text_4:
+# 156 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "???: Sooo... uhhh...$"
 
-GearLab_UseMachine_Text_6:
-# 149 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	.string "I'm Gear...! Nice to m-meet you?\p"
+GearLab_UseMachine_Text_5:
+# 169 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	.string "{COLOR LIGHT_BLUE}Gear: {COLOR DARK_GRAY}I'm Gear...! Nice to m-meet you?\p"
 	.string "S-so sorry about that... mess-up...\p"
 	.string "I got my machine working... but uh...\p"
 	.string "I couldn't exactly... uh...\p"
@@ -541,18 +695,18 @@ GearLab_UseMachine_Text_6:
 	.string "guess...\p"
 	.string "N-no pressure...$"
 
-GearLab_UseMachine_Text_7:
-# 164 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearLab_UseMachine_Text_6:
+# 196 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "It's uh... It's just here...\p"
 	.string "Avery said you could have this one. It's\n"
 	.string "just the spare I've been working on.$"
 
-GearLab_UseMachine_Text_8:
-# 172 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
-	.string "{PLAYER} received the PokéNav!$"
+GearLab_UseMachine_Text_7:
+# 207 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+	.string "{COLOR RED}{PLAYER} received the PokéNav!$"
 
-GearLab_UseMachine_Text_9:
-# 178 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
+GearLab_UseMachine_Text_8:
+# 217 "data/maps/AW_PortMulberry_GearLab/scripts.pory"
 	.string "You can check a map of the region with\n"
 	.string "it. And make and receive calls.\p"
 	.string "It's kinda archaic by today's\n"
@@ -565,6 +719,8 @@ GearLab_UseMachine_Text_9:
 	.string "and ...\p"
 	.string "S-sorry... I rambled again...\p"
 	.string "Just um... Show Avery the PokéNav, ok?\p"
+	.string "He said he's expecting you back at the\n"
+	.string "lab.\p"
 	.string "Catch you later... or maybe not... if you\n"
 	.string "feel like it...\p"
 	.string "I'm always gonna be right here... I-in my\n"

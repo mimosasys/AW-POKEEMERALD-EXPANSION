@@ -24,9 +24,9 @@ script PuceCity_CantGetIntoGym {
         msgbox(format(
             "Hey, kid! Wanting to challenge the gym?\p"
             "Oh, you aren't registered with the league...\p"
-            "You're going to need to do that before you can challenge Wendy.\p"
+            "You're going to need to do that before you can challenge Brooke.\p"
             "Sorry, pal.\p"
-            "Actually, Wendy's not even here right now.\p"
+            "Actually, Brooke's not even here right now.\p"
             "She's off at the lake. Maybe see if she can help you out?"
         ))
         waitmessage
@@ -35,7 +35,7 @@ script PuceCity_CantGetIntoGym {
     } else {
         msgbox(format(
             "Hey, sorry, I can't let you in unless you're set up with the Pokémon league.\p"
-            "Oh, Wendy said she'll sort it out?\p"
+            "Oh, Brooke said she'll sort it out?\p"
             "Great! She's just gotten back now!\p"
             "Head on in, and good luck with the gym!"
         ))
@@ -46,6 +46,10 @@ script PuceCity_CantGetIntoGym {
     // applymovement(OBJ_EVENT_ID_PLAYER,WalkUp1)
     // waitmovement(0)
     releaseall
+}
+
+script PuceCity_FinishGym {
+    
 }
 
 movement WalkUp1 {

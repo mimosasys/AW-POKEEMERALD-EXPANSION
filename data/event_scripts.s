@@ -1202,3 +1202,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/AW_MtEigoApproach/scripts.inc"
 
 	.include "data/maps/AW_EIGOGROTTO/scripts.inc"
+
+	.include "data/maps/AW_PortMulberry_PokeMart/scripts.inc"
+
+	.include "data/maps/AW_Zaffreton/scripts.inc"
+
+	.include "data/maps/AW_Route102/scripts.inc"

@@ -563,8 +563,9 @@
 #define AW_MUS_ROUTE_111            625
 #define AW_MUS_PKMN_CENTER          626
 #define AW_MUS_BATTLE_LAST_POKEMON  627
+#define AW_MUS_POKEMART             628
 
-#define END_MUS                     AW_MUS_BATTLE_LAST_POKEMON
+#define END_MUS                     AW_MUS_POKEMART
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

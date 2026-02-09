@@ -17,11 +17,6 @@
       "map": "MAP_AW_ROUTE111_WEST",
       "offset": -36,
       "direction": "up"
-    },
-    {
-      "map": "MAP_AW_VERDIGRIS_CITY",
-      "offset": -1,
-      "direction": "right"
     }
   ],
   "object_events": [

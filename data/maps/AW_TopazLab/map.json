@@ -2,7 +2,7 @@
   "id": "MAP_AW_TOPAZ_LAB",
   "name": "AW_TopazLab",
   "layout": "LAYOUT_AW_TOPAZ_LAB",
-  "music": "AW_MUS_BATTLE_GYM",
+  "music": "AW_MUS_ROUTE_108_LOWER",
   "region_map_section": "MAPSEC_AW_LAB_1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -14,8 +14,8 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_AW_ROUTE108_LOWER",
-      "offset": 10,
+      "map": "MAP_AW_PORT_MULBERRY",
+      "offset": 12,
       "direction": "down"
     }
   ],
@@ -30,7 +30,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TopazLab_FernTalk",
       "flag": "FLAG_AW_FINISH_TUT"
     },
     {
@@ -57,7 +57,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TopazLab_TalkPuppixy",
-      "flag": "0"
+      "flag": "FLAG_AW_PICK_PUPPIXY"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SMACKOP)",
@@ -70,20 +70,20 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TopazLab_TalkSmackop",
-      "flag": "0"
+      "flag": "FLAG_AW_PICK_SMACKOP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ALPACOIL)",
-      "x": 9,
+      "x": 8,
       "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
-      "movement_range_x": 1,
+      "movement_range_x": 2,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TopazLab_TalkAlpacoil",
-      "flag": "0"
+      "flag": "FLAG_AW_PICK_ALPACOIL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKUARCTIC)",
@@ -110,6 +110,71 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ALPACOIL)",
+      "x": 0,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 3,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TopazLab_ChooseAlpacoil",
+      "flag": "FLAG_AW_MID_TUT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SMACKOP)",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TopazLab_ChooseSmackop",
+      "flag": "FLAG_AW_MID_TUT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PUPPIXY)",
+      "x": 2,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TopazLab_ChoosePuppixy",
+      "flag": "FLAG_AW_MID_TUT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRANDON",
+      "x": 0,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TopazLab_FernTalk",
+      "flag": "FLAG_AW_MID_TUT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 1,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_AW_MID_TUT"
     }
   ],
   "warp_events": [
@@ -125,17 +190,90 @@
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_AW_ROUTE108_LABORATORY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "3"
     },
     {
       "x": 18,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_AW_ROUTE108_LABORATORY",
-      "dest_warp_id": "1"
+      "dest_warp_id": "3"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "7",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "7",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "7",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "7",
+      "script": "TopazLab_TryLeaveRight"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "5",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "5",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "5",
+      "script": "TopazLab_TryLeaveTop"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "5",
+      "script": "TopazLab_TryLeaveRight"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",
@@ -143,7 +281,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NULL"
+      "script": "TopazLab_LockedDoor"
     }
   ]
 }

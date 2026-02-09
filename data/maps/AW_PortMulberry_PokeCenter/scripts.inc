@@ -43,8 +43,10 @@ PortMulberry_PokeCenter_NPC2::
 
 
 AW_CommonPokeCenter::
-# 41 "data/maps/AW_PortMulberry_PokeCenter/scripts.pory"
+# 40 "data/maps/AW_PortMulberry_PokeCenter/scripts.pory"
 	lockall
+# 41 "data/maps/AW_PortMulberry_PokeCenter/scripts.pory"
+	hidefollower
 # 42 "data/maps/AW_PortMulberry_PokeCenter/scripts.pory"
 	msgbox AW_CommonPokeCenter_Text_0, MSGBOX_YESNO
 # 46 "data/maps/AW_PortMulberry_PokeCenter/scripts.pory"
@@ -106,7 +108,7 @@ PortMulberry_PokeCenter_NPC2_Text_0:
 	.string "Woah! I didn't hear you coming, I was so\n"
 	.string "engrossed in this book!\p"
 	.string "What book is it?\p"
-	.string "'House of Leavanny'.\p"
+	.string "'{COLOR BLUE}House {COLOR DARK_GRAY}of Leavanny'.\p"
 	.string "Ugh, it makes my head spin...\p"
 	.string "But I can't stop reading!$"
 

@@ -27,10 +27,15 @@ const u16 gMugshotPal_Avery[] = INCBIN_U16("graphics/trainers/front_pics/_AW/mug
 // Carla
 const u32 gMugshotImg_Carla[] = INCBIN_U32("graphics/trainers/front_pics/_AW/mugshots/carla.4bpp.lz");
 const u16 gMugshotPal_Carla[] = INCBIN_U16("graphics/trainers/front_pics/_AW/mugshots/carla.gbapal");
+// Gear
+const u32 gMugshotImg_Gear[] = INCBIN_U32("graphics/trainers/front_pics/_AW/mugshots/gear.4bpp.lz");
+const u16 gMugshotPal_Gear[] = INCBIN_U16("graphics/trainers/front_pics/_AW/mugshots/gear.gbapal");
 
 static const struct Mugshot sMugshots[] = {
-    [MUGSHOT_AVERY] = {.x = 3, .y = 8, .width = 64, .height = 64, .image = gMugshotImg_Avery, .palette = gMugshotPal_Avery},
-    [MUGSHOT_CARLA] = {.x = 3, .y = 8, .width = 64, .height = 64, .image = gMugshotImg_Carla, .palette = gMugshotPal_Carla}
+    [MUGSHOT_AVERY] = {.x = 3, .y = 6, .width = 64, .height = 64, .image = gMugshotImg_Avery, .palette = gMugshotPal_Avery},
+    [MUGSHOT_CARLA] = {.x = 3, .y = 6, .width = 64, .height = 64, .image = gMugshotImg_Carla, .palette = gMugshotPal_Carla},
+    [MUGSHOT_GEAR] = {.x = 3, .y = 6, .width = 64, .height = 64, .image = gMugshotImg_Gear, .palette = gMugshotPal_Gear}
+
 };
 
 

@@ -14,11 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_AW_ROUTE108_LOWER",
-      "offset": 8,
-      "direction": "up"
-    },
-    {
       "map": "MAP_AW_PUCE_LAKE",
       "offset": 2,
       "direction": "left"
@@ -105,8 +100,8 @@
       "x": 17,
       "y": 29,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "1",
       "script": "PuceCity_Artist"
     },
     {
@@ -114,8 +109,8 @@
       "x": 18,
       "y": 29,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "1",
       "script": "PuceCity_Artist"
     },
     {
@@ -123,26 +118,8 @@
       "x": 19,
       "y": 29,
       "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
-      "script": "PuceCity_Artist"
-    },
-    {
-      "type": "trigger",
-      "x": 20,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
-      "script": "PuceCity_Artist"
-    },
-    {
-      "type": "trigger",
-      "x": 21,
-      "y": 29,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "8",
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "1",
       "script": "PuceCity_Artist"
     },
     {
@@ -150,9 +127,81 @@
       "x": 28,
       "y": 11,
       "elevation": 0,
+      "var": "VAR_AW_PROGRESS_2",
+      "var_value": "3",
+      "script": "PuceCity_CantGetIntoGym"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "1",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "1",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 29,
+      "elevation": 0,
       "var": "VAR_AW_GYM_PROGRESS",
       "var_value": "0",
-      "script": "PuceCity_CantGetIntoGym"
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "0",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "0",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "0",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_AW_GYM_PROGRESS",
+      "var_value": "0",
+      "script": "PuceCity_Artist"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_AW_PROGRESS_1",
+      "var_value": "14",
+      "script": "PuceCity_FinishGym"
     }
   ],
   "bg_events": []

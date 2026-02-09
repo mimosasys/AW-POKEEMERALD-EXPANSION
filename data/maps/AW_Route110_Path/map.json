@@ -17,11 +17,6 @@
       "map": "MAP_AW_ROUTE110_FOREST",
       "offset": 28,
       "direction": "up"
-    },
-    {
-      "map": "MAP_AW_VERDIGRIS_CITY",
-      "offset": 2,
-      "direction": "left"
     }
   ],
   "object_events": [

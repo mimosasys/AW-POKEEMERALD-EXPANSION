@@ -1714,39 +1714,39 @@
     {
       "id": "MAPSEC_AW_PORT_MULBERRY",
       "name": "Port Mulberry",
-      "x": 25,
-      "y": 9,
+      "x": 8,
+      "y": 10,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_PUCE_CITY",
       "name": "Puce City",
-      "x": 24,
-      "y": 10,
+      "x": 5,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_VERDIGRIS_CITY",
       "name": "Verdigris City",
-      "x": 21,
-      "y": 12,
+      "x": 7,
+      "y": 13,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_ZAFFRETON",
       "name": "Zaffreton",
-      "x": 18,
-      "y": 10,
+      "x": 4,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_MAZARINE_ISLAND",
       "name": "Mazarine Island",
-      "x": 14,
+      "x": 11,
       "y": 11,
       "width": 1,
       "height": 1
@@ -1754,186 +1754,186 @@
     {
       "id": "MAPSEC_AW_ALABASTER_CITY",
       "name": "Alabaster City",
-      "x": 13,
-      "y": 4,
-      "width": 1,
+      "x": 11,
+      "y": 9,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_EBURNEAN_CITY",
       "name": "Eburnean City",
-      "x": 19,
-      "y": 2,
+      "x": 10,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_GAMBOGE_CITY",
       "name": "Gamboge City",
-      "x": 10,
-      "y": 10,
+      "x": 17,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_NACARAT_TOWN",
       "name": "Nacarat Town",
-      "x": 7,
-      "y": 11,
+      "x": 19,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_AMETHYST_CITY",
       "name": "Amethyst City",
-      "x": 10,
-      "y": 14,
+      "x": 20,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_GOSSAMER_CITY",
       "name": "Gossamer City",
-      "x": 7,
-      "y": 5,
+      "x": 18,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_MALACHITE_TOWN",
       "name": "Malachite Town",
-      "x": 23,
-      "y": 5,
+      "x": 19,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_ROUTE_101",
       "name": "Route 101",
-      "x": 7,
-      "y": 6,
-      "width": 3,
-      "height": 5
+      "x": 5,
+      "y": 7,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_102",
       "name": "Route 102",
-      "x": 8,
-      "y": 11,
-      "width": 2,
-      "height": 4
+      "x": 5,
+      "y": 9,
+      "width": 3,
+      "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_103",
       "name": "Route 103",
-      "x": 11,
-      "y": 10,
-      "width": 3,
-      "height": 1
+      "x": 7,
+      "y": 11,
+      "width": 1,
+      "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_104",
       "name": "Route 104",
-      "x": 14,
-      "y": 9,
-      "width": 1,
+      "x": 9,
+      "y": 10,
+      "width": 5,
       "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_105",
       "name": "Route 105",
-      "x": 14,
-      "y": 4,
+      "x": 11,
+      "y": 8,
       "width": 2,
-      "height": 4
+      "height": 1
     },
     {
       "id": "MAPSEC_AW_ROUTE_106",
       "name": "Route 106",
-      "x": 13,
-      "y": 2,
-      "width": 6,
+      "x": 11,
+      "y": 4,
+      "width": 2,
       "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_107",
       "name": "Route 107",
-      "x": 19,
+      "x": 12,
       "y": 3,
-      "width": 3,
-      "height": 5
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_AW_ROUTE_108",
       "name": "Route 108",
-      "x": 22,
-      "y": 7,
-      "width": 3,
-      "height": 3
+      "x": 11,
+      "y": 2,
+      "width": 5,
+      "height": 1
     },
     {
       "id": "MAPSEC_AW_ROUTE_109",
       "name": "Route 109",
-      "x": 22,
-      "y": 5,
+      "x": 16,
+      "y": 2,
       "width": 1,
       "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_110",
       "name": "Route 110",
-      "x": 22,
-      "y": 11,
-      "width": 3,
+      "x": 18,
+      "y": 3,
+      "width": 1,
       "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_111",
       "name": "Route 111",
-      "x": 18,
-      "y": 11,
-      "width": 3,
-      "height": 2
+      "x": 19,
+      "y": 4,
+      "width": 1,
+      "height": 3
     },
     {
       "id": "MAPSEC_AW_ROUTE_112",
       "name": "Route 112",
-      "x": 20,
-      "y": 10,
-      "width": 1,
-      "height": 1
+      "x": 14,
+      "y": 11,
+      "width": 4,
+      "height": 2
     },
     {
       "id": "MAPSEC_AW_ROUTE_113",
       "name": "Route 113",
-      "x": 15,
-      "y": 11,
-      "width": 3,
+      "x": 13,
+      "y": 4,
+      "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_POKEMON_LEAGUE",
       "name": "Pokémon League",
-      "x": 3,
-      "y": 2,
+      "x": 23,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_AW_VICTORY_ROAD",
       "name": "Victory Road",
-      "x": 3,
-      "y": 3,
+      "x": 19,
+      "y": 8,
       "width": 4,
       "height": 4
     },
     {
       "id": "MAPSEC_AW_MT_EIGO",
       "name": "Mt. Eigo",
-      "x": 18,
-      "y": 9,
-      "width": 1,
-      "height": 1
+      "x": 15,
+      "y": 6,
+      "width": 3,
+      "height": 3
     },
     {
       "id": "MAPSEC_AW_EIGO_GROTTO",
@@ -1946,7 +1946,7 @@
     {
       "id": "MAPSEC_AW_LAB_1",
       "name": "Topaz Laboratory",
-      "x": 24,
+      "x": 8,
       "y": 9,
       "width": 1,
       "height": 1
@@ -1962,15 +1962,15 @@
     {
       "id": "MAPSEC_AW_WILDLIFE_RESERVE",
       "name": "Wildlife Reserve",
-      "x": 12,
-      "y": 3,
-      "width": 1,
+      "x": 9,
+      "y": 2,
+      "width": 2,
       "height": 2
     },
     {
       "id": "MAPSEC_AW_WIND_FARM",
       "name": "Wind Farm",
-      "x": 20,
+      "x": 3,
       "y": 9,
       "width": 1,
       "height": 1
@@ -1978,9 +1978,9 @@
     {
       "id": "MAPSEC_AW_MT_EIGO_CAVERNS",
       "name": "Mt. Eigo Caverns",
-      "x": 14,
-      "y": 7,
-      "width": 1,
+      "x": 12,
+      "y": 6,
+      "width": 2,
       "height": 2
     },
     {
@@ -1994,18 +1994,18 @@
     {
       "id": "MAPSEC_AW_GLACIER",
       "name": "Glacier",
-      "x": 13,
-      "y": 0,
-      "width": 6,
-      "height": 2
+      "x": 11,
+      "y": 1,
+      "width": 4,
+      "height": 1
     },
     {
       "id": "MAPSEC_AW_PUCE_LAKE",
       "name": "Lake Puce",
-      "x": 23,
-      "y": 10,
-      "width": 1,
-      "height": 1
+      "x": 4,
+      "y": 4,
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_AW_EBURNEAN_LAKE",

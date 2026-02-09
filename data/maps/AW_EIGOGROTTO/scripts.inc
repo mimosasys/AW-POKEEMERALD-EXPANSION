@@ -23,471 +23,530 @@ EigoGrotto_Intro::
 # 15 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	applymovement OBJ_EVENT_ID_CAMERA, WalkUp2
 # 17 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, WalkDownSpot
-# 18 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 19 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 20 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 21 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_0
-# 24 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 25 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 27 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, WalkDownSpot
-# 28 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 29 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 30 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 31 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_1
-# 34 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 35 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 37 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 30
-# 39 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, WalkDownSpot
-# 40 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 41 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 42 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 43 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_2
-# 46 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 47 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 49 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, WalkUp1
-# 50 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 51 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_3
-# 55 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 56 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 58 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, OracleDance1
-# 59 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, OracleDance2
-# 60 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, OracleDance3
-# 61 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 62 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, FaceDown
-# 63 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_4
-# 66 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 67 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 69 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, OracleDance2
-# 70 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, OracleDance3
-# 71 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, OracleDance1
-# 72 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 73 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, FaceDown
-# 74 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_5
-# 77 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 78 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 80 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, OracleDance3
-# 81 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, OracleDance1
-# 82 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, OracleDance2
-# 83 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 84 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, FaceDown
-# 85 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_6
-# 88 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 89 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 91 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, WalkDown1
-# 92 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, WalkDownSpot
-# 93 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, WalkDownSpot
-# 94 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 95 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_7
-# 99 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 100 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 102 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, WalkDownSpot
-# 103 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 104 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 105 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 106 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_8
-# 109 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 110 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 112 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, WalkDownSpot
-# 113 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 114 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 115 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 116 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_9
-# 119 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 120 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 122 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 30
-# 124 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, WalkDownSpot
-# 125 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
-# 126 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_BELLY_DRUM
-# 127 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitse
-# 128 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_10
-# 133 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 134 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 136 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	playse SE_M_HEAL_BELL
-# 138 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	delay 60
-# 140 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_CAMERA, WalkDown2
+# 18 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, WalkDownSpot
+# 19 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 20 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 21 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 22 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_0
+# 25 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 26 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 28 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, WalkDownSpot
+# 29 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 30 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 31 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 32 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_1
+# 35 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 36 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 38 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 30
+# 40 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, WalkDownSpot
+# 41 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 42 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 43 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 44 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_2
+# 47 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 48 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 50 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, WalkUp1
+# 51 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 52 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_3
+# 56 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 57 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 59 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, OracleDance1
+# 60 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, OracleDance2
+# 61 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, OracleDance3
+# 62 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 63 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, FaceDown
+# 64 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_4
+# 67 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 68 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 70 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, OracleDance2
+# 71 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, OracleDance3
+# 72 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, OracleDance1
+# 73 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 74 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, FaceDown
+# 75 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_5
+# 78 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 79 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 81 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, OracleDance3
+# 82 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, OracleDance1
+# 83 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, OracleDance2
+# 84 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 85 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, FaceDown
+# 86 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_6
+# 89 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 90 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 92 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, WalkDown1
+# 93 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, WalkDownSpot
+# 94 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, WalkDownSpot
+# 95 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 96 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_7
+# 100 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 101 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 103 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, WalkDownSpot
+# 104 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 105 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 106 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 107 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_8
+# 110 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 111 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 113 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, WalkDownSpot
+# 114 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 115 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 116 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 117 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_9
+# 120 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 121 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 123 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 30
+# 125 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, WalkDownSpot
+# 126 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 127 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_BELLY_DRUM
+# 128 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitse
+# 129 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_10
+# 134 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 135 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 137 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	playse SE_M_HEAL_BELL
+# 139 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 60
 # 141 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement OBJ_EVENT_ID_CAMERA, WalkDown2
+# 142 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmovement 0
-# 143 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 144 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	special RemoveCameraObject
-# 145 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 146 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	delay 32
-# 147 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, LookLeft
 # 148 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
+	applymovement 2, LookLeft
 # 149 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 32
-# 150 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, FaceRight
-# 151 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmovement 0
+# 150 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 32
+# 151 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, FaceRight
 # 152 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 153 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	delay 32
 # 154 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_11
-# 161 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 162 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 164 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 4, FaceRight
-# 165 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LookLeft
-# 166 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, FaceDown
+# 155 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmovement 0
-# 167 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 8
+# 156 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 32
+# 158 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_11
+# 165 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 166 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
 # 168 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 4, LookUp
+	applymovement 4, FaceRight
 # 169 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, LookUp
+	applymovement OBJ_EVENT_ID_PLAYER, LookLeft
 # 170 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmovement 0
 # 171 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 16
+	delay 32
+# 172 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 4, LookUp
 # 173 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 4, WalkUp3
+	applymovement OBJ_EVENT_ID_PLAYER, LookUp
 # 174 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, WalkUp3
+	waitmovement 0
 # 175 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, WalkUp2
-# 176 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, WalkUp2
+	delay 32
 # 177 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, WalkUp2
+	applymovement 4, WalkUp3
 # 178 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, WalkUp3
+# 179 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, WalkUp2
 # 180 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_12
-# 186 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 187 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 189 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, FaceDown
-# 190 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, WalkUp2
+# 181 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, WalkUp2
+# 182 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmovement 0
-# 192 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 184 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_12
+# 190 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 191 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
+# 193 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, FaceDown
+# 194 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmovement 0
+# 196 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	message EigoGrotto_Intro_Text_13
-# 198 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 202 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitmessage
-# 199 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 203 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	closemessage
-# 201 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_14
-# 204 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 90
 # 205 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	closemessage
-# 207 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	special StopMapMusic
+	message EigoGrotto_Intro_Text_14
 # 208 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8004, 2
+	delay 16
 # 209 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8005, 6
-# 210 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8006, 6
+	closemessage
 # 211 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8007, 10
+	special StopMapMusic
 # 212 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	special ShakeCamera
-# 213 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitstate
-# 214 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 30
-# 216 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, ShakeSurprise
-# 217 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, ShakeSurprise
-# 218 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, ShakeSurprise
-# 219 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, ShakeSurprise
-# 220 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 4, ShakeSurprise
-# 222 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_15
-# 225 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
-# 227 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	setvar VAR_0x8004, 2
-# 228 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 213 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	setvar VAR_0x8005, 6
-# 229 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8006, 6
-# 230 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_0x8007, 10
-# 231 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 214 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8006, 5
+# 215 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8007, 2
+# 216 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	special ShakeCamera
-# 232 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 217 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	waitstate
-# 233 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 218 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8004, 2
+# 219 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8005, 6
+# 220 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8006, 5
+# 221 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8007, 2
+# 222 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	special ShakeCamera
+# 223 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitstate
+# 224 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8004, 2
+# 225 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8005, 6
+# 226 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8006, 12
+# 227 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_0x8007, 2
+# 228 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	special ShakeCamera
+# 229 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitstate
+# 230 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	delay 30
+# 232 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, ShakeSurprise
+# 233 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, ShakeSurprise
+# 234 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, ShakeSurprise
 # 235 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	message EigoGrotto_Intro_Text_16
-# 239 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	waitmessage
+	applymovement 3, ShakeSurprise
+# 236 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 4, ShakeSurprise
+# 238 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_15
 # 241 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	fadescreen FADE_TO_BLACK
-# 243 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 1, EveryoneLeaveGrotto
+	waitmessage
+# 242 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	closemessage
 # 244 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 2, EveryoneLeaveGrotto
+	setvar VAR_0x8004, 2
 # 245 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 3, EveryoneLeaveGrotto
+	setvar VAR_0x8005, 6
 # 246 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement 4, EveryoneLeaveGrotto
+	setvar VAR_0x8006, 6
 # 247 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, EveryoneLeaveGrotto
+	setvar VAR_0x8007, 10
+# 248 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	special ShakeCamera
 # 249 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	delay 60
+	waitstate
 # 250 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	setvar VAR_AW_PROGRESS_1, 3
+	delay 30
 # 252 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	message EigoGrotto_Intro_Text_16
+# 256 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	waitmessage
+# 258 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 1, EveryoneLeaveGrotto
+# 259 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 2, EveryoneLeaveGrotto
+# 260 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 3, EveryoneLeaveGrotto
+# 261 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement 4, EveryoneLeaveGrotto
+# 262 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, EveryoneLeaveGrotto
+# 264 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay 20
+# 265 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 266 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	setvar VAR_AW_PROGRESS_1, 3
+# 268 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	warpsilent MAP_AW_MT_EIGO_APPROACH, 0
-# 254 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 270 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	releaseall
 	return
 
 
-# 257 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 273 "data/maps/AW_EIGOGROTTO/scripts.pory"
 WalkUp2:
-# 258 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_up
-# 258 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_up
-	step_end
-
-# 261 "data/maps/AW_EIGOGROTTO/scripts.pory"
-WalkUp3:
-# 262 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_up
-# 262 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_up
-# 262 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_up
-	step_end
-
-# 265 "data/maps/AW_EIGOGROTTO/scripts.pory"
-OracleDance1:
-# 266 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_right
-# 266 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_right
-# 267 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_down
-# 267 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_down
-# 268 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_down
-# 269 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_left
-# 270 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_up
-# 271 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_right
-	step_end
-
 # 274 "data/maps/AW_EIGOGROTTO/scripts.pory"
-OracleDance2:
-# 275 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_left
-# 275 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_left
-# 275 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_left
-# 275 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_left
-# 276 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_up
+	walk_up
+# 274 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_up
+	step_end
+
 # 277 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_right
+WalkUp3:
 # 278 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_down
-# 279 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_left
+	walk_up
+# 278 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_up
+# 278 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_up
 	step_end
 
+# 281 "data/maps/AW_EIGOGROTTO/scripts.pory"
+OracleDance1:
 # 282 "data/maps/AW_EIGOGROTTO/scripts.pory"
-OracleDance3:
-# 283 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_up
-# 283 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	walk_slow_up
-# 284 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_slow_right
-# 284 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 282 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_slow_right
+# 283 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_down
+# 283 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_down
+# 284 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
 # 285 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_up
-# 286 "data/maps/AW_EIGOGROTTO/scripts.pory"
-	face_right
-# 287 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	face_down
+# 286 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 287 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_left
 # 288 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 289 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_up
+# 290 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 291 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_right
+	step_end
+
+# 294 "data/maps/AW_EIGOGROTTO/scripts.pory"
+OracleDance2:
+# 295 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_left
+# 295 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_left
+# 295 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_left
+# 295 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_left
+# 296 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 297 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_up
+# 298 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 299 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_right
+# 300 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 301 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_down
+# 302 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 303 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	face_left
 	step_end
 
-# 291 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 306 "data/maps/AW_EIGOGROTTO/scripts.pory"
+OracleDance3:
+# 307 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_up
+# 307 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_up
+# 308 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_right
+# 308 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	walk_slow_right
+# 309 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 310 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_up
+# 311 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 312 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_right
+# 313 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 314 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_down
+# 315 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	delay_16
+# 316 "data/maps/AW_EIGOGROTTO/scripts.pory"
+	face_left
+	step_end
+
+# 319 "data/maps/AW_EIGOGROTTO/scripts.pory"
 FaceDown:
-# 292 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 320 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	face_down
 	step_end
 
-# 295 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 323 "data/maps/AW_EIGOGROTTO/scripts.pory"
 EveryoneLeaveGrotto:
-# 296 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 324 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_down
-# 296 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 324 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_down
-# 296 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 324 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_down
-# 296 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 324 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	walk_down
 	step_end
 
 EigoGrotto_Intro_Text_0:
-# 22 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 23 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "By the generosity of the owners of the\n"
 	.string "land before us...\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_1:
-# 32 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 33 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "In the name of this wondrous mountain\n"
 	.string "we call home...\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_2:
-# 44 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 45 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "It is once again time to share our\n"
 	.string "history...!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_3:
-# 52 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 53 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "You are not the first, and you shall not\n"
 	.string "be the last!\p"
 	.string "That is what it means to have tradition!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_4:
-# 64 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 65 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "But, surely you must know...!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_5:
-# 75 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 76 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "You must make your own ways in this\n"
 	.string "world...!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_6:
-# 86 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 87 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "You must learn from those before you...!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_7:
-# 96 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 97 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Heed our words, yes! Yet, find your own\n"
 	.string "voice!\p"
-	.string "That is what it means to have spirit!$"
+	.string "That is what it means to have spirit!\p"
+	.string "$"
 
 EigoGrotto_Intro_Text_8:
-# 107 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 108 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Spirit - from one's awareness!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_9:
-# 117 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 118 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Spirit - from one's memories!\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_10:
-# 129 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 130 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Spirit - from the depths of one's own\n"
 	.string "mind!\p"
 	.string "That is the esteemed wisdom of the\n"
@@ -499,7 +558,7 @@ EigoGrotto_Intro_Text_10:
 	.string "$"
 
 EigoGrotto_Intro_Text_11:
-# 155 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 159 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Welcome, children.\p"
 	.string "That was an ancient performance,\n"
 	.string "carried through our village for\l"
@@ -515,7 +574,7 @@ EigoGrotto_Intro_Text_11:
 	.string "$"
 
 EigoGrotto_Intro_Text_12:
-# 181 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 185 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Many thousands of years ago, this land\n"
 	.string "was barren, and untouched.\p"
 	.string "Slowly, life from across the world\n"
@@ -529,7 +588,7 @@ EigoGrotto_Intro_Text_12:
 	.string "$"
 
 EigoGrotto_Intro_Text_13:
-# 193 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 197 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "And ours is a people that is tied to this\n"
 	.string "very mountain. This very cave.\p"
 	.string "For, there are always those who dwell\n"
@@ -544,17 +603,17 @@ EigoGrotto_Intro_Text_13:
 	.string "$"
 
 EigoGrotto_Intro_Text_14:
-# 202 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 206 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "Many hundreds of years ago now, a\n"
 	.string "tragedy struck-$"
 
 EigoGrotto_Intro_Text_15:
-# 223 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 239 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "A- an earthquake...?\p"
 	.string "$"
 
 EigoGrotto_Intro_Text_16:
-# 236 "data/maps/AW_EIGOGROTTO/scripts.pory"
+# 253 "data/maps/AW_EIGOGROTTO/scripts.pory"
 	.string "We mustn't stay here, children.\p"
 	.string "Come, back to the village, quickly...!\p"
 	.string "$"

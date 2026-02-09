@@ -630,6 +630,7 @@ gSongTable::
 	song aw_mus_route_111, 0, 0
 	song aw_mus_pkmn_center, 0, 0
 	song aw_mus_battle_last_pokemon, 0, 0
+	song aw_mus_pokemart, 0, 0
 
 	.align 2
 dummy_song_header:

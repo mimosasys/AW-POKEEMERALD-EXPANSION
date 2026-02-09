@@ -3,5 +3,6 @@
 
 #define MUGSHOT_AVERY 0
 #define MUGSHOT_CARLA 1
+#define MUGSHOT_GEAR  2
 
 #endif

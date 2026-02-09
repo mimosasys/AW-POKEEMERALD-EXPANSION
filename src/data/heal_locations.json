@@ -141,7 +141,7 @@
     {
       "id": "HEAL_LOCATION_AW_PORT_MULBERRY",
       "map": "MAP_AW_PORT_MULBERRY",
-      "x": 12,
+      "x": 23,
       "y": 13
     },
     {
@@ -155,18 +155,6 @@
       "map": "MAP_AW_ERIN_VILLAGE",
       "x": 13,
       "y": 22
-    },
-    {
-      "id": "HEAL_LOCATION_AW_ROUTE108_LOWER",
-      "map": "MAP_AW_ROUTE108_LOWER",
-      "x": 8,
-      "y": 9
-    },
-    {
-      "id": "HEAL_LOCATION_AW_ROUTE108_LOWER_2",
-      "map": "MAP_AW_ROUTE108_LOWER",
-      "x": 8,
-      "y": 9
     },
     {
       "id": "HEAL_LOCATION_AW_TOPAZ_LAB",

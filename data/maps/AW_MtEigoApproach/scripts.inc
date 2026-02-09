@@ -15,97 +15,99 @@ MtEigoApproach_CrossBridge1::
 # 12 "data/maps/AW_MtEigoApproach/scripts.pory"
 	special StopMapMusic
 # 14 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerEnterBridge
-# 15 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 60
+	setflag FLAG_AW_SHOWELDERS
 # 16 "data/maps/AW_MtEigoApproach/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerEnterBridge
 # 17 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 60
+# 18 "data/maps/AW_MtEigoApproach/scripts.pory"
+	fadescreen FADE_FROM_BLACK
+# 19 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmovement 0
-# 21 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 23 "data/maps/AW_MtEigoApproach/scripts.pory"
 	message MtEigoApproach_CrossBridge1_Text_0
-# 25 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmessage
 # 27 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_CrossBridgeUp1
-# 28 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement 1, MtEigoApproach_CrossBridgeUp2
-# 29 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmovement OBJ_EVENT_ID_PLAYER
-# 31 "data/maps/AW_MtEigoApproach/scripts.pory"
-	message MtEigoApproach_CrossBridge1_Text_1
-# 35 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmessage
+# 29 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_CrossBridgeUp1
+# 30 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement 1, MtEigoApproach_CrossBridgeUp2
+# 31 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitmovement OBJ_EVENT_ID_PLAYER
+# 33 "data/maps/AW_MtEigoApproach/scripts.pory"
+	message MtEigoApproach_CrossBridge1_Text_1
 # 37 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement 1, MtEigoApproach_RivalGoIntoCave
+	waitmessage
 # 38 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmovement
-# 39 "data/maps/AW_MtEigoApproach/scripts.pory"
-	playse SE_EXIT
+	closemessage
 # 40 "data/maps/AW_MtEigoApproach/scripts.pory"
-	removeobject 1
-# 42 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerGoIntoCave
-# 43 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement 1, MtEigoApproach_RivalGoIntoCave
+# 41 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmovement
-# 44 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 42 "data/maps/AW_MtEigoApproach/scripts.pory"
 	playse SE_EXIT
+# 43 "data/maps/AW_MtEigoApproach/scripts.pory"
+	removeobject 1
 # 45 "data/maps/AW_MtEigoApproach/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerGoIntoCave
+# 46 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitmovement
 # 47 "data/maps/AW_MtEigoApproach/scripts.pory"
+	playse SE_EXIT
+# 48 "data/maps/AW_MtEigoApproach/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 50 "data/maps/AW_MtEigoApproach/scripts.pory"
 	warpsilent MAP_AW_EIGOGROTTO, 10, 17
 	return
 
 
 MtEigoApproach_CrossBridge2::
-# 52 "data/maps/AW_MtEigoApproach/scripts.pory"
-	lockall
-# 53 "data/maps/AW_MtEigoApproach/scripts.pory"
-	special StopMapMusic
 # 55 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setflag FLAG_AW_SHOWELDERS
-# 57 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setobjectxy 1, 15, 4
+	lockall
+# 56 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special StopMapMusic
 # 58 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setobjectxy 2, 15, 4
-# 59 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setobjectxy 3, 15, 4
+	clearflag FLAG_AW_SHOWELDERS
 # 60 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setobjectxy 4, 15, 4
-# 61 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setobjectxy OBJ_EVENT_ID_PLAYER, 15, 4
-# 63 "data/maps/AW_MtEigoApproach/scripts.pory"
 	hideobjectat 2, MAP_AW_MT_EIGO_APPROACH
-# 64 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 61 "data/maps/AW_MtEigoApproach/scripts.pory"
 	hideobjectat 3, MAP_AW_MT_EIGO_APPROACH
-# 65 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 62 "data/maps/AW_MtEigoApproach/scripts.pory"
 	hideobjectat 4, MAP_AW_MT_EIGO_APPROACH
-# 66 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 63 "data/maps/AW_MtEigoApproach/scripts.pory"
 	hideobjectat 1, MAP_AW_MT_EIGO_APPROACH
-# 68 "data/maps/AW_MtEigoApproach/scripts.pory"
-	fadescreen FADE_FROM_BLACK
-# 70 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 65 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setobjectxy OBJ_EVENT_ID_PLAYER, 15, 4
+# 66 "data/maps/AW_MtEigoApproach/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerLeaveCave
+# 67 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 32
+# 68 "data/maps/AW_MtEigoApproach/scripts.pory"
+	showobjectat 1, MAP_AW_MT_EIGO_APPROACH
+# 69 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setobjectxy 1, 15, 4
+# 70 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement 1, MtEigoApproach_RivalLeaveCave
 # 71 "data/maps/AW_MtEigoApproach/scripts.pory"
 	delay 32
 # 72 "data/maps/AW_MtEigoApproach/scripts.pory"
-	showobjectat 1, MAP_AW_MT_EIGO_APPROACH
-# 73 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement 1, MtEigoApproach_RivalLeaveCave
-# 74 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 32
-# 75 "data/maps/AW_MtEigoApproach/scripts.pory"
 	showobjectat 2, MAP_AW_MT_EIGO_APPROACH
-# 76 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 73 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setobjectxy 2, 15, 4
+# 74 "data/maps/AW_MtEigoApproach/scripts.pory"
 	applymovement 2, MtEigoApproach_Elder1LeaveCave
-# 77 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 75 "data/maps/AW_MtEigoApproach/scripts.pory"
 	delay 32
-# 78 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 76 "data/maps/AW_MtEigoApproach/scripts.pory"
 	showobjectat 3, MAP_AW_MT_EIGO_APPROACH
-# 79 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 77 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setobjectxy 3, 15, 4
+# 78 "data/maps/AW_MtEigoApproach/scripts.pory"
 	applymovement 3, MtEigoApproach_Elder2LeaveCave
-# 80 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 79 "data/maps/AW_MtEigoApproach/scripts.pory"
 	delay 32
+# 80 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setobjectxy 4, 15, 4
 # 81 "data/maps/AW_MtEigoApproach/scripts.pory"
 	showobjectat 4, MAP_AW_MT_EIGO_APPROACH
 # 82 "data/maps/AW_MtEigoApproach/scripts.pory"
@@ -133,508 +135,568 @@ MtEigoApproach_CrossBridge2::
 # 97 "data/maps/AW_MtEigoApproach/scripts.pory"
 	applymovement 1, MtEigoApproach_RivalNervous
 # 98 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerGoDown
+	delay 32
 # 99 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerGoDown
+# 100 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmovement OBJ_EVENT_ID_PLAYER
 # 101 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 32
+# 103 "data/maps/AW_MtEigoApproach/scripts.pory"
 	message MtEigoApproach_CrossBridge2_Text_1
-# 104 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 106 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmessage
-# 105 "data/maps/AW_MtEigoApproach/scripts.pory"
-	closemessage
 # 107 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerHelpRival
-# 108 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmovement 0
-# 110 "data/maps/AW_MtEigoApproach/scripts.pory"
-	message MtEigoApproach_CrossBridge2_Text_2
-# 114 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmessage
-# 115 "data/maps/AW_MtEigoApproach/scripts.pory"
 	closemessage
-# 117 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_CrossBridgeDown1
-# 118 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement 1, MtEigoApproach_CrossBridgeDown1
-# 119 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 109 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerHelpRival
+# 110 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitmovement 0
+# 112 "data/maps/AW_MtEigoApproach/scripts.pory"
+	message MtEigoApproach_CrossBridge2_Text_2
+# 116 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitmessage
+# 117 "data/maps/AW_MtEigoApproach/scripts.pory"
+	closemessage
+# 119 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_CrossBridgeDown1
+# 120 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement 1, MtEigoApproach_CrossBridgeDown1
 # 121 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setvar VAR_0x8004, 2
-# 122 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setvar VAR_0x8005, 6
+	waitmovement 0
 # 123 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setvar VAR_0x8006, 6
+	setvar VAR_0x8004, 2
 # 124 "data/maps/AW_MtEigoApproach/scripts.pory"
-	setvar VAR_0x8007, 10
+	setvar VAR_0x8005, 6
 # 125 "data/maps/AW_MtEigoApproach/scripts.pory"
-	special ShakeCamera
+	setvar VAR_0x8006, 5
 # 126 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitstate
+	setvar VAR_0x8007, 2
 # 127 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 30
-# 129 "data/maps/AW_MtEigoApproach/scripts.pory"
-	special SpawnCameraObject
-# 130 "data/maps/AW_MtEigoApproach/scripts.pory"
 	special ShakeCamera
-# 131 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerFall
-# 132 "data/maps/AW_MtEigoApproach/scripts.pory"
-	applymovement 1, MtEigoApproach_PlayerFall
-# 133 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 60
-# 134 "data/maps/AW_MtEigoApproach/scripts.pory"
-	fadescreen FADE_TO_WHITE
-# 135 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 128 "data/maps/AW_MtEigoApproach/scripts.pory"
 	waitstate
+# 129 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8004, 2
+# 130 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8005, 6
+# 131 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8006, 5
+# 132 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8007, 2
+# 133 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special ShakeCamera
+# 134 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitstate
+# 135 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8004, 2
 # 136 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 16
+	setvar VAR_0x8005, 6
+# 137 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8006, 12
 # 138 "data/maps/AW_MtEigoApproach/scripts.pory"
-	message MtEigoApproach_CrossBridge2_Text_3
+	setvar VAR_0x8007, 2
 # 139 "data/maps/AW_MtEigoApproach/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
+	special ShakeCamera
 # 140 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmoncry
+	waitstate
 # 141 "data/maps/AW_MtEigoApproach/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
-# 142 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitmoncry
+	delay 30
 # 143 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 20
+	setvar VAR_0x8004, 2
 # 144 "data/maps/AW_MtEigoApproach/scripts.pory"
-	playmoncry SPECIES_VIBRAVA, CRY_MODE_FAINT
+	setvar VAR_0x8005, 6
 # 145 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 20
+	setvar VAR_0x8006, 5
 # 146 "data/maps/AW_MtEigoApproach/scripts.pory"
-	playse SE_M_FLY
+	setvar VAR_0x8007, 2
 # 147 "data/maps/AW_MtEigoApproach/scripts.pory"
-	waitse
+	special ShakeCamera
 # 148 "data/maps/AW_MtEigoApproach/scripts.pory"
-	removeobject 4
+	waitstate
 # 149 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 120
+	setvar VAR_0x8004, 2
 # 150 "data/maps/AW_MtEigoApproach/scripts.pory"
-	special RemoveCameraObject
+	setvar VAR_0x8005, 6
 # 151 "data/maps/AW_MtEigoApproach/scripts.pory"
-	warpwhitefade MAP_AW_ROUTE108_LABORATORY, 26, 11
+	setvar VAR_0x8006, 5
 # 152 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay 120
+	setvar VAR_0x8007, 2
+# 153 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special ShakeCamera
 # 154 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitstate
+# 155 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8004, 2
+# 156 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8005, 6
+# 157 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8006, 12
+# 158 "data/maps/AW_MtEigoApproach/scripts.pory"
+	setvar VAR_0x8007, 2
+# 159 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special SpawnCameraObject
+# 160 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special ShakeCamera
+# 161 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, MtEigoApproach_PlayerFall
+# 162 "data/maps/AW_MtEigoApproach/scripts.pory"
+	applymovement 1, MtEigoApproach_PlayerFall
+# 163 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 60
+# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
+	fadescreen FADE_TO_WHITE
+# 165 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 60
+# 167 "data/maps/AW_MtEigoApproach/scripts.pory"
+	message MtEigoApproach_CrossBridge2_Text_3
+# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
+	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
+# 169 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitmoncry
+# 170 "data/maps/AW_MtEigoApproach/scripts.pory"
+	playmoncry SPECIES_VIBRAVA, CRY_MODE_NORMAL
+# 171 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitmoncry
+# 172 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 20
+# 173 "data/maps/AW_MtEigoApproach/scripts.pory"
+	playmoncry SPECIES_VIBRAVA, CRY_MODE_FAINT
+# 174 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 20
+# 175 "data/maps/AW_MtEigoApproach/scripts.pory"
+	playse SE_M_FLY
+# 176 "data/maps/AW_MtEigoApproach/scripts.pory"
+	waitse
+# 177 "data/maps/AW_MtEigoApproach/scripts.pory"
+	removeobject 4
+# 178 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 120
+# 179 "data/maps/AW_MtEigoApproach/scripts.pory"
+	special RemoveCameraObject
+# 180 "data/maps/AW_MtEigoApproach/scripts.pory"
+	warpwhitefade MAP_AW_ROUTE108_LABORATORY, 26, 11
+# 181 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay 120
+# 183 "data/maps/AW_MtEigoApproach/scripts.pory"
 	releaseall
 	return
 
 
-# 157 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 186 "data/maps/AW_MtEigoApproach/scripts.pory"
 MtEigoApproach_PlayerEnterBridge:
-# 158 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 158 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 158 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 159 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 159 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 159 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 160 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 160 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 160 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-	step_end
-
-# 163 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_CrossBridgeUp1:
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 164 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-	step_end
-
-# 167 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_CrossBridgeUp2:
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 168 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-	step_end
-
-# 171 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_RivalGoIntoCave:
-# 172 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 172 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 173 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 173 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 174 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 174 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-	step_end
-
-# 177 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_PlayerGoIntoCave:
-# 178 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 178 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 179 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_left
-# 180 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 180 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-# 180 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
-	step_end
-
-# 183 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_PlayerLeaveCave:
-# 184 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 184 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 184 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 184 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-	step_end
-
 # 187 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_RivalLeaveCave:
+	walk_up
+# 187 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 187 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
 # 188 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 188 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 188 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 189 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_right
-# 190 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-	step_end
-
-# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder1LeaveCave:
-# 194 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 194 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 194 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-	step_end
-
-# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder2LeaveCave:
-# 198 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 198 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 199 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_left
+# 188 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
+# 188 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
+# 189 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 189 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 189 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+	step_end
+
+# 192 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_CrossBridgeUp1:
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 193 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+	step_end
+
+# 196 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_CrossBridgeUp2:
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 197 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+	step_end
+
 # 200 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-	step_end
-
+MtEigoApproach_RivalGoIntoCave:
+# 201 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 201 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 202 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
+# 202 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
 # 203 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder3LeaveCave:
-# 204 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 204 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 205 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_right
+	walk_up
+# 203 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+	step_end
+
 # 206 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_PlayerGoIntoCave:
+# 207 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 207 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 208 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
+# 209 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 209 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 209 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+	step_end
+
+# 212 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_PlayerLeaveCave:
+# 213 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 213 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 213 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 213 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_down
 	step_end
 
-# 209 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 216 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_RivalLeaveCave:
+# 217 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 217 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 217 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 218 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_right
+# 219 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+	step_end
+
+# 222 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_Elder1LeaveCave:
+# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+	step_end
+
+# 226 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_Elder2LeaveCave:
+# 227 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 227 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 228 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_left
+# 229 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+	step_end
+
+# 232 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_Elder3LeaveCave:
+# 233 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 233 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 234 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_right
+# 235 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+	step_end
+
+# 238 "data/maps/AW_MtEigoApproach/scripts.pory"
 MtEigoApproach_RivalNervous:
-# 210 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 239 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_slow_down
 	step_end
 
-# 213 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_PlayerGoDown:
-# 214 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 214 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_down
-# 215 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay_16
-# 216 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_up
-	step_end
-
-# 219 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder1CrossBridge:
-# 220 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_left
-# 221 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 221 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 222 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 222 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 223 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 224 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_up
-	step_end
-
-# 227 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder2CrossBridge:
-# 228 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 228 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 229 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 229 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 230 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 231 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 232 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 233 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_up
-	step_end
-
-# 236 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_Elder3CrossBridge:
-# 237 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_left
-# 237 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_left
-# 238 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 238 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 239 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 239 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_right
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 240 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
-# 241 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_left
 # 242 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_fast_down
+MtEigoApproach_PlayerGoDown:
 # 243 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 243 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_down
+# 244 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+# 245 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_up
 	step_end
 
-# 246 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_PlayerHelpRival:
-# 247 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_up
 # 248 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_right
+MtEigoApproach_Elder1CrossBridge:
 # 249 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay_16
+	walk_fast_left
 # 250 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_in_place_down
+	walk_fast_down
 # 250 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_in_place_down
-# 250 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_in_place_down
+	walk_fast_down
 # 251 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay_16
+	walk_fast_right
+# 251 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_right
 # 252 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_right
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 252 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
 # 253 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay_16
+	face_up
 	step_end
 
 # 256 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_CrossBridgeDown1:
+MtEigoApproach_Elder2CrossBridge:
 # 257 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
+	walk_fast_down
 # 257 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
+	walk_fast_down
 # 258 "data/maps/AW_MtEigoApproach/scripts.pory"
-	delay_16
+	walk_fast_right
+# 258 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_right
 # 259 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
+	walk_fast_down
 # 259 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
+	walk_fast_down
 # 259 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
+	walk_fast_down
 # 259 "data/maps/AW_MtEigoApproach/scripts.pory"
-	walk_slow_down
-	step_end
-
+	walk_fast_down
+# 259 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 259 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 259 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 259 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 260 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_right
+# 261 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
 # 262 "data/maps/AW_MtEigoApproach/scripts.pory"
-MtEigoApproach_PlayerFall:
-# 263 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_left
-# 264 "data/maps/AW_MtEigoApproach/scripts.pory"
-	face_right
-# 265 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_up
+	step_end
+
+# 265 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_Elder3CrossBridge:
 # 266 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_left
+# 266 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_left
+# 267 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 267 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_right
+# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_right
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 269 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 270 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_left
+# 271 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_fast_down
+# 272 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_up
+	step_end
+
+# 275 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_PlayerHelpRival:
+# 276 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_up
+# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_right
+# 278 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+# 279 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_in_place_down
+# 279 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_in_place_down
+# 279 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_in_place_down
+# 280 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+# 281 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_right
+# 282 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+	step_end
+
+# 285 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_CrossBridgeDown1:
+# 286 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+# 286 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+# 287 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+# 288 "data/maps/AW_MtEigoApproach/scripts.pory"
+	delay_16
+# 289 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+# 289 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+# 289 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+# 289 "data/maps/AW_MtEigoApproach/scripts.pory"
+	walk_slow_down
+	step_end
+
+# 292 "data/maps/AW_MtEigoApproach/scripts.pory"
+MtEigoApproach_PlayerFall:
+# 293 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_left
-# 267 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 294 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_right
+# 295 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_up
+# 296 "data/maps/AW_MtEigoApproach/scripts.pory"
+	face_left
+# 297 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_right
-# 267 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 297 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_right
-# 267 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 297 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_right
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
-# 268 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 298 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_left
 	step_end
 
-# 271 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 301 "data/maps/AW_MtEigoApproach/scripts.pory"
 MtEigoApproach_RivalFall:
-# 272 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 302 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_right
-# 273 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 303 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_left
-# 274 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 304 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_up
-# 275 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 305 "data/maps/AW_MtEigoApproach/scripts.pory"
 	face_right
-# 276 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 306 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_left
-# 276 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 306 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_left
-# 276 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 306 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_in_place_faster_left
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
-# 277 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 307 "data/maps/AW_MtEigoApproach/scripts.pory"
 	walk_faster_right
 	step_end
 
 MtEigoApproach_CrossBridge1_Text_0:
-# 22 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 24 "data/maps/AW_MtEigoApproach/scripts.pory"
 	.string "{RIVAL}: Made it, hey?\p"
 	.string "Not far now...\p"
 	.string "$"
 
 MtEigoApproach_CrossBridge1_Text_1:
-# 32 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 34 "data/maps/AW_MtEigoApproach/scripts.pory"
 	.string "I can hear some commotion inside. They\n"
 	.string "must be getting ready.\p"
 	.string "Quick, let's not leave them waiting!\p"
@@ -646,17 +708,17 @@ MtEigoApproach_CrossBridge2_Text_0:
 	.string "$"
 
 MtEigoApproach_CrossBridge2_Text_1:
-# 102 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 104 "data/maps/AW_MtEigoApproach/scripts.pory"
 	.string "{RIVAL}: {PLAYER}... I... I can't...\p"
 	.string "$"
 
 MtEigoApproach_CrossBridge2_Text_2:
-# 111 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 113 "data/maps/AW_MtEigoApproach/scripts.pory"
 	.string "{RIVAL}: You'll... help me across?\p"
 	.string "Y-yeah! Let's go together!\p"
 	.string "$"
 
 MtEigoApproach_CrossBridge2_Text_3:
-# 138 "data/maps/AW_MtEigoApproach/scripts.pory"
+# 167 "data/maps/AW_MtEigoApproach/scripts.pory"
 	.string "???: Vibrava! There's someone falling!\p"
 	.string "$"

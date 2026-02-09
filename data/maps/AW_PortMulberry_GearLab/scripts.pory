@@ -6,16 +6,23 @@ mapscripts AW_PortMulberry_GearLab_MapScripts {
 }
 
 script GearLab_HideGearObject {
-    hideobjectat(2,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+    if (!flag(FLAG_AW_VISIT_MULBERRY)) {
+        setobjectxy(2,0,0)
+        hideobjectat(2,MAP_AW_PORT_MULBERRY_GEAR_LAB)
+    }
 }
 
 script GearLab_WalkIntoMachine {
     lockall
     if (flag(FLAG_AW_HELP_GEAR)) {
+        setvar(VAR_0x8000,MUGSHOT_GEAR)
+        callnative(DrawMugshot)
         msgbox(format(
             "Gear: H-hey! I wouldn't go in there, if I were you!\p"
             "Y'know, u-unless you really wanna..."
         ))
+        closemessage
+        callnative(ClearMugshot)
     } else {
         applymovement(1,KirliaRunUp2)
         waitmovement(0)
@@ -23,7 +30,7 @@ script GearLab_WalkIntoMachine {
         waitmoncry
         applymovement(1,KirliaRunDown2)
         waitmovement(0)
-        if (var(VAR_AW_PROGRESS_1)==6) {
+        if (var(VAR_AW_PROGRESS_1)==9) {
             msgbox(format(
                 "It seems that's not what Kirlia wants you to do..."
             ))
@@ -46,12 +53,15 @@ script GearLab_TalkToKirlia {
     msgbox(format("It seems this Kirlia is trying to tell you something...?"))
     waitmessage
     playmoncry(SPECIES_KIRLIA,CRY_MODE_NORMAL)
+    waitmoncry
     msgbox(format(
         "Kirlia: ...\p"
         "...\p"
         "...!"
         ))
     waitmessage
+    applymovement(1,KirliaSpin)
+    waitmovement(0)
     hideobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
     playse(SE_M_TELEPORT)
     waitse
@@ -72,7 +82,7 @@ script GearLab_TalkToKirlia {
     waitse
     msgbox(format("Could it have to do with that machine?"))
     waitmessage
-    setvar(VAR_AW_PROGRESS_1,6)
+    setvar(VAR_AW_PROGRESS_1,10)
     releaseall
 }
 
@@ -96,11 +106,12 @@ script GearLab_UseMachine {
         waitse
         playse(SE_DING_DONG)
         waitse
-        clearflag(FLAG_AW_HIDE_GEAR)
         setobjectxy(2,12,1)
         showobjectat(2,MAP_AW_PORT_MULBERRY_GEAR_LAB)
         applymovement(2,GearLeaveMachine)
         waitmovement(0)
+        playse(SE_WALL_HIT)
+        waitse
         msgbox(format(
             "???: Ugh... What... was I doing?\p"
             "...\p"
@@ -111,6 +122,9 @@ script GearLab_UseMachine {
             "It... it worked?"
             ))
         waitmessage
+        closemessage
+        playse(SE_POKENAV_ON)
+        waitse
         applymovement(2,GearCheckPhone)
         waitmovement(0)
         msgbox(format(
@@ -118,14 +132,11 @@ script GearLab_UseMachine {
             "I hope he didn't want that communicator quickly..."
             ))
         waitmessage
-        applymovement(OBJ_EVENT_ID_PLAYER,PlayerTalkUp)
-        waitmovement(0)
-        msgbox(format(
-            "???: H-He did?! And you're his new apprentice?!\p"
-            "Ohhh... Ohh, I am sooo done for... I'm sooo late..."
-            ))
-        waitmessage
+        closemessage
         playse(SE_POKENAV_CALL)
+        waitse
+        delay(60)
+        playse(SE_POKENAV_ON)
         waitse
         msgbox(format(
             "???: AVERY! I- uh- mishaps at the lab- I'm so sorry-\p"
@@ -137,16 +148,25 @@ script GearLab_UseMachine {
             "Phew, that's a relief...!"
             ))
         waitmessage
+        closemessage
         playse(SE_POKENAV_HANG_UP)
         waitse
+        applymovement(2,Common_Movement_FacePlayer)
         msgbox(format(
             "???: Sooo... uhhh..."
             ))
         waitmessage
-        applymovement(2,GearMeetPlayer)
+        specialvar(VAR_RESULT,GetPlayerFacingDirection)
+        if (var(VAR_RESULT) == DIR_EAST) {
+            applymovement(2,GearMeetPlayer2)
+        } else {
+            applymovement(2,GearMeetPlayer)
+        }
         waitmovement(0)
+        setvar(VAR_0x8000,MUGSHOT_GEAR)
+        callnative(DrawMugshot)
         msgbox(format(
-            "I'm Gear...! Nice to m-meet you?\p"
+            "{COLOR LIGHT_BLUE}Gear: {COLOR DARK_GRAY}I'm Gear...! Nice to m-meet you?\p"
             "S-so sorry about that... mess-up...\p"
             "I got my machine working... but uh...\p"
             "I couldn't exactly... uh...\p"
@@ -157,23 +177,42 @@ script GearLab_UseMachine {
             "N-no pressure..."
             ))
         waitmessage
-        applymovement(2,GearGoToDesk)
-        applymovement(OBJ_EVENT_ID_PLAYER,PlayerFollowGear)
+        closemessage
+        callnative(ClearMugshot)
+
+        specialvar(VAR_RESULT,GetPlayerFacingDirection)
+        if (var(VAR_RESULT) == DIR_EAST) {
+            applymovement(2,GearGoToDesk2)
+            applymovement(OBJ_EVENT_ID_PLAYER,PlayerFollowGear2)
+        } else {
+            applymovement(2,GearGoToDesk)
+            applymovement(OBJ_EVENT_ID_PLAYER,PlayerFollowGear)
+        }
         waitmovement(0)
+
+        setvar(VAR_0x8000,MUGSHOT_GEAR)
+        callnative(DrawMugshot)
         msgbox(format(
             "It's uh... It's just here...\p"
             "Avery said you could have this one. It's just the spare I've been working on."
             ))
         waitmessage
+        closemessage
+        callnative(ClearMugshot)
+
         setflag(FLAG_RECEIVED_POKENAV)
         setflag(FLAG_SYS_POKENAV_GET)
         playfanfare(MUS_OBTAIN_ITEM)
         msgbox(format(
-            "{PLAYER} received the PokéNav!"
+            "{COLOR RED}{PLAYER} received the PokéNav!"
             ))
         waitfanfare
         waitmessage
+        closemessage
         special(Overworld_PlaySpecialMapMusic)
+        
+        setvar(VAR_0x8000,MUGSHOT_GEAR)
+        callnative(DrawMugshot)
         msgbox(format(
             "You can check a map of the region with it. And make and receive calls.\p"
             "It's kinda archaic by today's standards, but that's why I'm working on it.\p"
@@ -182,14 +221,18 @@ script GearLab_UseMachine {
             "...\p"
             "S-sorry... I rambled again...\p"
             "Just um... Show Avery the PokéNav, ok?\p"
+            "He said he's expecting you back at the lab.\p"
             "Catch you later... or maybe not... if you feel like it...\p"
             "I'm always gonna be right here... I-in my lab... where I like it."
             ))
         waitmessage
+        closemessage
+        callnative(ClearMugshot)
+
         waitmovement(0)
         hideobjectat(1,MAP_AW_PORT_MULBERRY_GEAR_LAB)
         setobjectxyperm(2,3,5)
-        setvar(VAR_AW_PROGRESS_1,7)
+        setvar(VAR_AW_PROGRESS_1,11)
     }
     releaseall
 }
@@ -255,9 +298,23 @@ movement GearMeetPlayer {
     face_player
 }
 
+movement GearMeetPlayer2 {
+    walk_fast_right
+    walk_fast_down*2
+    walk_fast_left
+    face_player
+}
+
 movement GearGoToDesk {
     walk_down*2
     walk_left*10
+    walk_up*2
+    face_left
+}
+
+movement GearGoToDesk2 {
+    walk_down*2
+    walk_left*9
     walk_up*2
     face_left
 }
@@ -266,5 +323,15 @@ movement PlayerFollowGear {
     walk_right
     walk_down*2
     walk_left*10
+    walk_up
+}
+
+movement PlayerFollowGear2 {
+    delay_16
+    delay_16
+    walk_down
+    walk_left
+    walk_down*2
+    walk_left*7
     walk_up
 }

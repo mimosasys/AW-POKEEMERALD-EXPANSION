@@ -84,34 +84,6 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [
-    {
-      "type": "trigger",
-      "x": 7,
-      "y": 18,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "3",
-      "script": "Route108_Laboratory_DontLeaveLeft"
-    },
-    {
-      "type": "trigger",
-      "x": 8,
-      "y": 18,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "3",
-      "script": "Route108_Laboratory_DontLeaveRight"
-    },
-    {
-      "type": "trigger",
-      "x": 26,
-      "y": 11,
-      "elevation": 0,
-      "var": "VAR_AW_PROGRESS_1",
-      "var_value": "2",
-      "script": "Route108_Laboratory_OnWarp"
-    }
-  ],
+  "coord_events": [],
   "bg_events": []
 }

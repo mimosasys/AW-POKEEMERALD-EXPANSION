@@ -27,7 +27,7 @@ script PortMulberry_PokeCenter_NPC2 {
     msgbox(format(
         "Woah! I didn't hear you coming, I was so engrossed in this book!\p"
         "What book is it?\p"
-        "'House of Leavanny'.\p"
+        "'{COLOR BLUE}House {COLOR DARK_GRAY}of Leavanny'.\p"
         "Ugh, it makes my head spin...\p"
         "But I can't stop reading!"
     ))
@@ -36,9 +36,9 @@ script PortMulberry_PokeCenter_NPC2 {
     releaseall
 }
 
-
 script AW_CommonPokeCenter {
     lockall
+    hidefollower()
     msgbox(format(
         "Hi, welcome to the Pokémon Center!\p"
         "Would you like us to heal your Pokémon?"

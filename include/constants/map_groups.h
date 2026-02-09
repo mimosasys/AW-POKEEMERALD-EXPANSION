@@ -14,6 +14,7 @@
 #define MAP_AW_PORT_MULBERRY  (1 | (0 << 8))
 #define MAP_AW_PUCE_CITY      (2 | (0 << 8))
 #define MAP_AW_VERDIGRIS_CITY (3 | (0 << 8))
+#define MAP_AW_ZAFFRETON      (4 | (0 << 8))
 
 // gMapGroup_AW_Routes
 #define MAP_AW_ROUTE108_LOWER   (0 | (1 << 8))
@@ -23,6 +24,7 @@
 #define MAP_AW_ROUTE111_WEST    (4 | (1 << 8))
 #define MAP_AW_ROUTE112         (5 | (1 << 8))
 #define MAP_AW_MT_EIGO_APPROACH (6 | (1 << 8))
+#define MAP_AW_ROUTE102         (7 | (1 << 8))
 
 // gMapGroup_AW_Indoors
 #define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE   (0 | (2 << 8))
@@ -31,6 +33,7 @@
 #define MAP_AW_PUCE_CITY_GYM             (3 | (2 << 8))
 #define MAP_AW_PORT_MULBERRY_POKE_CENTER (4 | (2 << 8))
 #define MAP_AW_PUCE_CITY_POKE_CENTER     (5 | (2 << 8))
+#define MAP_AW_PORT_MULBERRY_POKE_MART   (6 | (2 << 8))
 
 // gMapGroup_AW_Misc
 #define MAP_AW_PUCE_LAKE  (0 | (3 << 8))

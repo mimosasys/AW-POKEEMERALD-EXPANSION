@@ -43,7 +43,8 @@
     "AW_ErinVillage",
     "AW_PortMulberry",
     "AW_PuceCity",
-    "AW_VerdigrisCity"
+    "AW_VerdigrisCity",
+    "AW_Zaffreton"
   ],
   "gMapGroup_AW_Routes": [
     "AW_Route108_Lower",
@@ -52,7 +53,8 @@
     "AW_Route111_East",
     "AW_Route111_West",
     "AW_Route112",
-    "AW_MtEigoApproach"
+    "AW_MtEigoApproach",
+    "AW_Route102"
   ],
   "gMapGroup_AW_Indoors": [
     "AW_ErinVillage_YourHouse",
@@ -60,7 +62,8 @@
     "AW_PortMulberry_GearLab",
     "AW_PuceCity_Gym",
     "AW_PortMulberry_PokeCenter",
-    "AW_PuceCity_PokeCenter"
+    "AW_PuceCity_PokeCenter",
+    "AW_PortMulberry_PokeMart"
   ],
   "gMapGroup_AW_Misc": [
     "AW_PuceLake",

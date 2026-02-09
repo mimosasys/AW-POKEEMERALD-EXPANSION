@@ -235,7 +235,7 @@ Camera_LookRight3:
 	step_end
 
 # 156 "data/maps/AW_Route108_Lower/scripts.pory"
-Camera_MoveDown1:
+MoveDown1:
 # 157 "data/maps/AW_Route108_Lower/scripts.pory"
 	walk_down
 	step_end
@@ -299,10 +299,9 @@ Route108_DidYouKnow_Text_0:
 # 76 "data/maps/AW_Route108_Lower/scripts.pory"
 	.string "Did you know? Route 108 continues up\n"
 	.string "here!\p"
-	.string "Well, I say that, but you can't exactly\n"
-	.string "get over this ledge to see it.\p"
-	.string "Route 109 is up there somewhere too,\n"
-	.string "but I've never been.\p"
+	.string "Well, I say that, the gate here's closed.\p"
+	.string "Huh? No, I've got no idea why. Strange,\n"
+	.string "isn't it?\p"
 	.string "$"
 
 Route108_YoullMeetTrainers_Text_0:

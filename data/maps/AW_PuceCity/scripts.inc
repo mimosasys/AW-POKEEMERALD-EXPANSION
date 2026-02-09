@@ -53,9 +53,13 @@ PuceCity_CantGetIntoGym_2:
 	goto PuceCity_CantGetIntoGym_1
 
 
-# 51 "data/maps/AW_PuceCity/scripts.pory"
+PuceCity_FinishGym::
+	return
+
+
+# 55 "data/maps/AW_PuceCity/scripts.pory"
 WalkUp1:
-# 52 "data/maps/AW_PuceCity/scripts.pory"
+# 56 "data/maps/AW_PuceCity/scripts.pory"
 	walk_up
 	step_end
 
@@ -73,9 +77,9 @@ PuceCity_CantGetIntoGym_Text_0:
 	.string "Oh, you aren't registered with the\n"
 	.string "league...\p"
 	.string "You're going to need to do that before\n"
-	.string "you can challenge Wendy.\p"
+	.string "you can challenge Brooke.\p"
 	.string "Sorry, pal.\p"
-	.string "Actually, Wendy's not even here right\n"
+	.string "Actually, Brooke's not even here right\n"
 	.string "now.\p"
 	.string "She's off at the lake. Maybe see if she\n"
 	.string "can help you out?$"
@@ -84,6 +88,6 @@ PuceCity_CantGetIntoGym_Text_1:
 # 37 "data/maps/AW_PuceCity/scripts.pory"
 	.string "Hey, sorry, I can't let you in unless\n"
 	.string "you're set up with the Pokémon league.\p"
-	.string "Oh, Wendy said she'll sort it out?\p"
+	.string "Oh, Brooke said she'll sort it out?\p"
 	.string "Great! She's just gotten back now!\p"
 	.string "Head on in, and good luck with the gym!$"

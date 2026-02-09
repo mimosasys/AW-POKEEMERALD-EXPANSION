@@ -1,12 +1,19 @@
 mapscripts AW_Route108_Laboratory_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Route108_Laboratory_FinishTut
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_AW_PROGRESS_1, 3: Route108_Laboratory_OnWarp
     ]
 }
 
+script Route108_Laboratory_FinishTut {
+    if (var(VAR_AW_PROGRESS_1)>=9) {
+        setflag(FLAG_AW_FINISH_TUT)
+    }
+}
+
 script Route108_Laboratory_OnWarp {
     special(StopMapMusic)
-    setrespawn(HEAL_LOCATION_AW_ROUTE108_LOWER)
+    setrespawn(HEAL_LOCATION_AW_TOPAZ_LAB)
     call(Route108_Laboratory_FirstTime)
 }
 
@@ -17,6 +24,7 @@ script Route108_Laboratory_FirstTime {
     waitmessage
 
     setvar(VAR_0x8000,MUGSHOT_CARLA)
+    setvar(VAR_0x8001,2)
     callnative(DrawMugshot)
     message(format(
         "???: Professor! Professor! They're awake.\p"
@@ -119,7 +127,7 @@ script Route108_Laboratory_FirstTime {
     delay(60)
     callnative(DrawMugshot)
     message(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Ah, {PLAYER}. Well, you are something of an enigma, that's for sure. It's lovely to make your acquaintaince.\p"
+        "Ah, {PLAYER}. Well, you are something of an enigma, that's for sure. It's lovely to make your acquaintaince.\p"
         "I think you should stay here a while, just to make sure you recover properly.\pVibrava caught you, but I can't say whether or not you were hurt on the way down.\p"
     ))
     waitmessage
@@ -140,53 +148,26 @@ script Route108_Laboratory_FirstTime {
 
     setvar(VAR_0x8000,MUGSHOT_AVERY)
     callnative(DrawMugshot)
+    applymovement(2,FacePlayer)
     message(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} You don't have a Pokémon, do you? We should probably do something about that.\p"
-        "Here, come with me.\p"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Great idea, Carla. Here, {PLAYER}, follow me.\p"
     ))
     waitmessage
-    callnative(ClearMugshot)
     closemessage
+    callnative(ClearMugshot)
+
     applymovement(2,ProfessorToPokeballs)
     applymovement(1,CarlaToPokeballs)
-    delay(30)
     applymovement(OBJ_EVENT_ID_PLAYER,PlayerToPokeballs)
-    waitmovement(0)
-    callnative(DrawMugshot)
-    message(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Sorry, it's a bit of a mess. Here they are!\pTake your pick.\p"
-    ))
-    waitmessage
-    callnative(ClearMugshot)
+    waitmovement(2)
+    hideobjectat(2,MAP_AW_ROUTE108_LABORATORY)
+    waitmovement(1)
+    hideobjectat(1,MAP_AW_ROUTE108_LABORATORY)
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+    warp(MAP_AW_TOPAZ_LAB,1)
+
+    setvar(VAR_AW_PROGRESS_1,4)
     releaseall
-}
-
-script Route108_Laboratory_DontLeaveLeft {
-    lock
-    applymovement(1,WalkLeftSpot)
-    waitmovement(0)
-    delay(20)
-    message(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on, choose one!\p"
-    ))
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER,Player_WalkLeft)
-    waitmovement(0)
-    release
-}
-
-script Route108_Laboratory_DontLeaveRight {
-    lock
-    applymovement(1,WalkLeftSpot)
-    waitmovement(0)
-    delay(20)
-    message(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Go on! Choose one!\p"
-    ))
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER,Player_WalkUp)
-    waitmovement(0)
-    release
 }
 
 movement Player_GetUp {
@@ -282,41 +263,6 @@ movement Player_GetUp {
 //     }
 // }
 
-script Route108_Laboratory_Yay {
-    setflag(FLAG_AW_MID_TUT)
-    msgbox(format(
-        "Would you like to give your Pokémon a nickname?\p"
-    ), MSGBOX_YESNO)
-    if (var(VAR_RESULT) == 1) {
-        call(Common_EventScript_NameReceivedPartyMon)
-    }
-    closemessage
-    hidemonpic
-    setvar(VAR_AW_PROGRESS_1,4)
-    message(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, that's that.\p"
-    ))
-    waitmessage
-    applymovement(1,WalkUpSpot)
-    waitmovement(0)
-    message(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And what a cute Pokémon you chose!\p"
-    ))
-    waitmessage
-    message(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Ok, now! Follow me outside, I'll show you around the place.\p"
-    ))
-    waitmessage
-    closemessage
-    applymovement(2,ProfessorLeave)
-    waitmovement(0)
-    playse(SE_DOOR)
-    removeobject(2)
-    delay(60)
-    release
-    hideobjectat(3,MAP_AW_ROUTE108_LOWER)
-}
-
 script Route108_Laboratory_TalkCarla {
     lock
     applymovement(1,FacePlayer)
@@ -345,7 +291,7 @@ script Route108_Laboratory_HealMachine {
     lockall
     fadescreen(FADE_TO_BLACK)
     waitstate
-    setrespawn(HEAL_LOCATION_AW_ROUTE108_LOWER)
+    setrespawn(HEAL_LOCATION_AW_TOPAZ_LAB)
     special(HealPlayerParty)
     playfanfare(MUS_HEAL)
     waitfanfare
@@ -378,28 +324,36 @@ movement LookLeft {
     face_left
 }
 
+movement LookRight {
+    face_right
+}
+
 movement ProfessorToPokeballs {
     walk_left*5
-    walk_down*6
-    walk_left*11
-    face_up
+    walk_up*2
+    walk_left*6
+    walk_up
+    walk_left*2
+    walk_up*6
 }
 
 movement CarlaToPokeballs {
-    walk_left*4
-    walk_down
+    walk_left*7
+    walk_up
+    walk_left*6
+    walk_up
     walk_left*2
-    walk_down*7
-    walk_left*10
+    walk_up*6
 }
 
 movement PlayerToPokeballs {
-    walk_left*1
-    walk_down*1
-    walk_left*7
-    walk_down*5
-    walk_left*10
-    face_up
+    walk_up
+    walk_left*8
+    walk_up
+    walk_left*6
+    walk_up
+    walk_left*2
+    walk_up*6
 }
 
 movement Player_WalkLeft {

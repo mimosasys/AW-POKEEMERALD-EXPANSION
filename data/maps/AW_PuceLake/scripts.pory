@@ -11,47 +11,56 @@ script PuceLake_MeetAvery_OnTransition {
 
 script PuceLake_MeetAvery {
     lockall
-    setvar(VAR_AW_PROGRESS_2,1)
+
+    setvar(VAR_0x8000,MUGSHOT_CARLA)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hey, {PLAYER}! I knew you'd show up!"
         ))
     waitmessage
     closemessage
+    callnative(ClearMugshot)
+
     applymovement(4,PuceLake_CarlaGotoPlayer)
     applymovement(5,PuceLake_AveryGotoPlayer)
     waitmovement(5)
     
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Gear's quite a character, aren't they? I'm glad they're safe.\p"
+        "Accidentally turning themselves into a Pokemon? Can't say I've heard that one before.\p"
+        "But I also can't say that's out of character for them.\p"
         "Well, this is Puce Lake. The lake itself is just around this path here, it's not far.\p"
         "It's quite a lovely place, actually. I come here to wind down after a hard day working!"
         ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
     applymovement(4,WalkUpSpot)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_CARLA)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Avery, I haven't seen you leave the lab unless it's for an expedition.\p"
         "I wish you came here to wind down, you need it. You work yourself to the bone."
         ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
     applymovement(5,WalkDownSpot)
     waitmovement(0)
-    msgbox(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} It's important research, Carla. And besides, I can't just leave the lab unattended.\p"
-        "Not with Team Jade about. They'll try steal our research again."
-        ))
-    waitmessage
-    applymovement(4,FaceRight)
-    applymovement(5,FaceRight)
-    msgbox(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Haven't heard of them, {PLAYER}? They're a fellow archaeology group that, instead of doing their own research, seem intent on stealing mine.\p"
-        "They've been around for a few years, and they've had a few successes, too.\p"
-        "It's really set us back a lot. That's part of the reason we're so short-staffed. So many of them have just... given up, really.\p"
-        "But I'm not giving up. I don't care if we have funding or not. I'm going to uncover the history of this region."
-        ))
-    waitmessage
+
+    delay(32)
+
     applymovement(4,WalkRightSpot)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_CARLA)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR BLUE}Carla:{COLOR DARK_GRAY} ...You can tell he's really passionate about this, can't you?\p"
         "Um, we'll head on down to the lakeside. You'll see the dig site on the south side.\p"
@@ -61,13 +70,17 @@ script PuceLake_MeetAvery {
         ))
     waitmessage
     closemessage
+    callnative(ClearMugshot)
+
     applymovement(5,WalkRightSpot)
     waitmovement(0)
     playfanfare(MUS_OBTAIN_ITEM)
+
     msgbox(format(
-        "Recieved the {COLOR RED}Pokédex{COLOR DARK_GRAY} from Professor Avery!"
+        "Received the {COLOR RED}Pokédex{COLOR DARK_GRAY} from Professor Fern!"
     ))
     waitmessage
+
     waitfanfare
     setflag(FLAG_SYS_POKEDEX_GET)
 	special(SetUnlockedPokedexFlags)
@@ -76,465 +89,55 @@ script PuceLake_MeetAvery {
     delay(15)
     applymovement(5,WalkRightSpot)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_CARLA)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And here's a little something from me. It's nothing, really."
     ))
+    waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
     giveitem(ITEM_POTION,5)
     waitmessage
     closemessage
+
     delay(15)
+
     msgbox(format(
         "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Er... yes. We'll get to it. See you in a bit, ok, {PLAYER}?"
         ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
     applymovement(4,PuceLake_CarlaLeavePlayer1)
     applymovement(5,PuceLake_AveryLeavePlayer)
-    waitmovement(5)
-    applymovement(4,FaceRight)
     waitmovement(0)
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Uh, I don't mean to alarm you, but..."
-        ))
-    waitmessage
-    fadeoutbgm(1)
-    msgbox(format(    
-        "There's a boy behind you who's been staring at you this whole time.\p"
-        "Do you know him?"
-        ))
-    waitmessage
-    closemessage
-    applymovement(4,PuceLake_CarlaLeavePlayer2)
-    waitmovement(0)
-
-    special(SpawnCameraObject)
-    clearflag(FLAG_AW_HIDE_MIKE_1)
-    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
-    applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookRight3)
-    waitmovement(0)
-    msgbox(format(
-        "Mike: ...{PLAYER}?"
-        ))
-    waitmessage
-    closemessage
-    applymovement(6,PuceLake_MikeGotoPlayer)
-    waitmovement(0)
-    if (var(VAR_TEMP_0) == 0) {
-        applymovement(6,PuceLake_MikeGotoPlayer2)
-    } else {
-        applymovement(6,PuceLake_MikeGotoPlayer3)
-    }
-    applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookLeft3)
-    waitmovement(0)
-    special(RemoveCameraObject)
-    msgbox(format(
-        "Mike: {PLAYER}! O-oh my goodness! I- I thought- I thought you'd...\p"
-        "I- I'm so glad you're alright!\p"
-        "I thought I was going to die... and then this Pokémon swooped out of nowhere and saved me!\p"
-        "When I woke up, I was in some laboratory, and this guy -\p"
-        "Professor Conifer, that's his name -\p"
-        "He made sure I was ok...\p"
-        "I- I mean, I'm still a bit bruised, but..."
-        ))
-    waitmessage
-    closemessage
-    applymovement(6,EmoteExclamation)
-    waitmovement(0)
-    msgbox(format(
-        "N- no way! That's what happened to you, too?!\p"
-        "..."
-        ))
-    waitmessage
-    closemessage
-    applymovement(6,LookDown)
-    waitmovement(0)
-    msgbox(format(
-        "That must have been him, then..."
-    ))
-    waitmessage
-    fadeinbgm(1)
-    closemessage
-    applymovement(6,FaceLeft)
-    waitmovement(0)
-    msgbox(format(
-        "U- uh... Anyway!\p"
-        "Let's walk together, ok? Take in the lakeside air!"
-    ))
-    waitmessage
-    closemessage
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
-    applymovement(6,WalkLeft1)
-    waitmovement(0)
-    msgbox(format(
-        "Ow, on second thoughts, you go on ahead. My legs are still hurting...\p"
-        "I'll catch up, ok?"
-    ))
-    waitmessage
 
     setflag(FLAG_AW_HIDE_PROFS_PUCE_LAKE)
+
+    setvar(VAR_AW_PROGRESS_2,1)
     removeobject(4)
     removeobject(5)
     releaseall
     end
 }
 
-script PuceLake_MikeTalk {
-    lockall
-    setflag(FLAG_AW_HIDE_MIKE_1)
-    clearflag(FLAG_AW_HIDE_MIKE_2)
-    setvar(VAR_AW_PROGRESS_2,2)
-
-    removeobject(6,MAP_AW_PUCE_LAKE)
-    addobject(10)
-
-    applymovement(10,PuceLake_MikeGotoPlayer4)
-    waitmovement(0)
-    if (var(VAR_TEMP_2)==0) {
-        applymovement(10,PuceLake_MikeGotoPlayer5)
-        waitmovement(0)
-        applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
-    } else {
-        applymovement(10,PuceLake_MikeGotoPlayer6)
-        waitmovement(0)
-        applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
-    }
-    msgbox(format(
-        "Mike: Phew! Made it!\p"
-        "Gah... now my legs hurt again... I'm gonna rest for a bit...\p"
-        "Wanna talk?\p"
-        "I uh... When I got saved by that professor, he told me some things.\p"
-        "He said that there's this other professor named Fern, and they're enemies.\p"
-        "That's... that's the professor that saved you, isn't it?\p"
-        "Just um... be careful around him, ok?\p"
-        "Milo - that's Professor Conifer - doesn't trust him, and he told me not to either.\p"
-        "He sounds pretty shady... he said they used to be close, but...\p"
-        "They haven't talked in years, and now they're enemies.\p"
-        "I wonder what happened between them?\p"
-        "...\p"
-        "You keep going ahead, ok?\p"
-        "My legs still need a bit more time, hah..."
-    ))    
-    waitmessage
-    releaseall
-    end
-}
-
-script PuceLake_MeetCarla {
-    removeobject(10)
-    setflag(FLAG_AW_HIDE_MIKE_2)
-    clearflag(FLAG_AW_HIDE_MIKE_3)
-    addobject(11)
-    addobject(12)
-    addobject(13)
-
-    lockall
-    applymovement(14,WalkRightSpot)
-    waitmovement(0)
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Ah, there you are, {PLAYER}! How was the walk?\p"
-        "Let me heal up that team of yours!"
-    ))
-    waitmessage
-    closemessage
-    playfanfare(SE_USE_ITEM)
-    waitfanfare
-    special(HealPlayerParty)
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeftSpot)
-    msgbox(format(
-        "Who was that guy, by the way?\p"
-        "Oh, a friend of yours? Neat!\p"
-        "Looks like he's caught up with you. I'll say hi!"
-    ))
-    waitmessage
-    closemessage
-    
-    applymovement(11,PuceLake_MikeGotoPlayer7)
-    waitmovement(0)
-    if (var(VAR_TEMP_3)==0) {
-        applymovement(11,PuceLake_MikeGotoPlayer8)
-        waitmovement(0)
-    } else {
-        applymovement(11,PuceLake_MikeGotoPlayer9)
-        waitmovement(0)
-    }
-
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Hi! You must be {PLAYER}'s friend, right?"
-    ))
-    waitmessage
-    closemessage
-    applymovement(11,WalkLeftSpot)
-    waitmovement(0)
-
-    msgbox(format(
-        "Mike: H-hi ma'am... Y-yes, that's right.\p"
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Oh, don't be so formal, it's alright!"
-        "I'm the assistant to Professor Avery Fern. He's an archaeologist from around here.\p"
-        "Mike: Y-you're -\p"
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} And {PLAYER} here is helping out too! Avery asked her to help out with this dig site! Ain't that exciting?"
-    ))
-    waitmessage
-    closemessage
-    fadeoutbgm(1)
-    delay(30)
-    applymovement(11,LookUp)
-    applymovement(OBJ_EVENT_ID_PLAYER,LookDown)
-    delay(30)
-    msgbox(format(
-        "Mike: {PLAYER}...? Y-you're helping him?\p"
-        "He's shady! No good! That's what Conifer told me!\p"
-        "I... What do I do?!"
-    ))
-    waitmessage
-    closemessage
-    playbgm(MUS_ENCOUNTER_AQUA,FALSE)
-    applymovement(12,PuceLake_Grunt1Enter)
-    applymovement(13,PuceLake_Grunt2Enter)
-    waitmovement(13)
-    msgbox(format(
-        "Jade Grunt 1: Ha-HA! Knew we'd find you lot here.\p"
-        "Finding another important site, taking the contents for yourself...\p"
-        "Jade Grunt 2: We simply won't let you! This site belongs to Team Jade!"
-    ))
-    waitmessage
-    applymovement(11,WalkRightSpot)
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkRightSpot)
-    waitmovement(0)
-    msgbox(format(
-        "Mike: You guys..! You came!\p"
-        "Grunt 1: Yes, yes, we heard, Mikey."
-    ))
-    waitmessage
-    closemessage
-    applymovement(14,WalkRightSpot)
-    waitmovement(0)
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Team Jade! How did I know you guys would show up?\p"
-        "{PLAYER}, it seems your friend here is with those Jade guys. That's not good for us."
-    ))
-    applymovement(12,WalkLeftSpot)
-    msgbox(format(
-        "Grunt 1: Listen here - what do you do with people standing in your way?\p"
-        "Mike: ...?\p"
-        "Grunt 2: You challenge them to a battle! The prof did give you a Pokémon, right?\p"
-        "Mike: Y-yeah!\p"
-        "Grunt 1: We'll deal with the assistant, you deal with the kid. Got it?\p"
-        "Mike: I... ok..!"
-    ))
-    waitmessage
-    applymovement(11,FacePlayer)
-    waitmovement(0)
-    if (var(VAR_TEMP_3)==0) {
-        applymovement(OBJ_EVENT_ID_PLAYER,LookDown)
-        waitmovement(0)
-    } else {
-        applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
-        waitmovement(0)
-    }
-    msgbox(format(
-        "Mike: {PLAYER}, I...\p"
-        "I challenge you to a battle!"
-    ))
-    waitmessage
-    closemessage
-
-    if (flag(FLAG_AW_PICK_ALPACOIL)) {
-        trainerbattle_no_intro(TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL,PuceLake_MikeLose)
-    } elif (flag(FLAG_AW_PICK_SMACKOP)) {
-        trainerbattle_no_intro(TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP,PuceLake_MikeLose)
-    } else {
-        trainerbattle_no_intro(TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY,PuceLake_MikeLose)
-    }
-    
-    delay(30)
-    if (var(VAR_TEMP_3)==0) {
-        applymovement(11,WalkUpSpot)
-        waitmovement(0)
-    } else {
-        applymovement(11,WalkDownSpot)
-        waitmovement(0)
-    }
-
-    playbgm(MUS_ENCOUNTER_AQUA,FALSE)
-    msgbox(format(
-        "Mike: I... I couldn't do it..."
-    ))
-    waitmessage
-    closemessage
-    applymovement(13,WalkLeftSpot)
-    waitmovement(0)
-    msgbox(format(
-        "Grunt 2: Well, kid, you did your best. That's important.\p"
-        "It's alright, we'll handle this. Stand back."
-    ))
-    waitmessage
-    closemessage
-
-    applymovement(12,PuceLake_Grunt1MakeWay)
-    applymovement(13,PuceLake_Grunt2MakeWay)
-    waitmovement(0)
-    applymovement(11,PuceLake_MikeGetOut)
-    waitmovement(0)
-    applymovement(12,PuceLake_Grunt1ComeBack)
-    applymovement(13,PuceLake_Grunt2ComeBack)
-
-    msgbox(format(
-        "Grunt 1: Alrighty then. Prepare to feel the power of Team Jade!"
-    ))
-    waitmessage
-    closemessage
-
-    if (var(VAR_TEMP_3)==0) {
-        applymovement(14,PuceLake_CarlaJoin1)
-        waitmovement(0)
-    } else {
-        applymovement(14,PuceLake_CarlaJoin2)
-        waitmovement(0)
-    }
-
-    playfanfare(SE_USE_ITEM)
-    waitfanfare
-    special(HealPlayerParty)
-
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} I got your back, {PLAYER}.\p"
-        "Fine, you menaces! We'll take you on!"
-    ))
-    waitmessage
-    closemessage
-
-    trainerbattle_no_intro(TRAINER_TEAMJADE_GRUNT_PUCELAKE,PuceLake_GruntLose)
-
-    playbgm(MUS_ENCOUNTER_AQUA,FALSE)
-    delay(30)
-
-    applymovement(12,WalkLeftSpot)
-    waitmovement(0)
-    msgbox(format(
-        "Grunt 1: Aw jeez..."
-    ))
-    waitmessage
-    closemessage
-    applymovement(13,WalkLeftSpot)
-    waitmovement(0)
-    msgbox(format(
-        "Grunt 2: You lost too...?"
-    ))
-    waitmessage
-    closemessage
-
-    delay(30)
-    
-    applymovement(12,LookDown)
-    applymovement(13,LookUp)
-    delay(40)
-    applymovement(12,LookLeft)
-    applymovement(13,LookLeft)
-    delay(80)
-    
-    applymovement(12,PuceLake_GruntsRun)
-    applymovement(13,PuceLake_GruntsRun)
-    msgbox(format(
-        "Grunt 2: Gotta go!"
-    ))
-    waitmovement(13)
-    waitmessage
-    closemessage
-
-    delay(60)
-    applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
-    delay(60)
-    applymovement(11,FaceLeft)
-    waitmovement(0)
-    fadeoutbgm(1)
-    msgbox(format(
-        "Mike: {PLAYER}... I..."
-    ))
-    waitmessage
-    closemessage
-
-    applymovement(13,PuceLake_GruntGrabMike1)
-    waitmovement(0)
-    msgbox(format(
-        "Grunt 2: Hey, we have to report what happened to the prof!\p"
-        "You're not gonna skimp duties, are ya?"
-    ))
-    waitmessage
-    applymovement(13,PuceLake_GruntGrabMike2)
-    applymovement(11,PuceLake_GruntGrabMike2)
-    msgbox(format(
-        "Mike: {PLAYER}!..."
-    ))
-    delay(30)
-    applymovement(14,LookUp)
-    applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
-    waitmessage
-    closemessage
-
-    playbgm(AW_MUS_PUCE_LAKE,TRUE)
-
-    delay(30)
-
-    msgbox(format(
-        "{COLOR BLUE}Carla:{COLOR DARK_GRAY} Phew, at least that's taken care of.\p"
-        "You're pretty good with your Pokémon, {PLAYER}. It'll be good to have you around."
-    ))
-    waitmessage
-
-    if (var(VAR_TEMP_3)==0) {
-        applymovement(OBJ_EVENT_ID_PLAYER,LookDown)
-        waitmovement(0)
-    } else {
-        applymovement(14,LookDown)
-        waitmovement(0)
-    }
-
-    msgbox(format(
-        "Your friend seems like a nice guy, really.\p"
-        "It's a shame he's caught up with those no-goods. I'm sure you'll see him again, don't worry.\p"
-        "Now, finally - the dig site!"
-    ))
-    waitmessage
-
-    applymovement(OBJ_EVENT_ID_PLAYER,LookLeft)
-    applymovement(14,LookLeft)
-    waitmovement(0)
-
-    msgbox(format(
-        "It's just over there. Avery should be sorting things out.\p"
-        "Head over when you're ready, I understand if you might need a bit of a rest after all that!"
-    ))
-    waitmessage
-
-    //setvar(VAR_AW_PROGRESS_1,9)
-    setvar(VAR_AW_PROGRESS_2,3)
-    setflag(FLAG_AW_HIDE_MIKE_3)
-    setflag(FLAG_AW_HIDE_MIKE_2)
-    setflag(FLAG_AW_HIDE_MIKE_1)
-    removeobject(11)
-    removeobject(12)
-    removeobject(13)
-
-    if (var(VAR_TEMP_3) == 0) {
-        setobjectxyperm(14,35,23)
-    } else {
-        setobjectxyperm(14,35,22)
-    }
-    releaseall
-    end
-}
-
-script PuceLake_TalkWendy {
+script PuceLake_TalkBrooke {
     lockall
     faceplayer
     msgbox(format(
+        "Ain't the lake just so peaceful?\p"
         "Hm? Hey, you're a young trainer!\p"
-        "The name's Wendy, 'n I'm the gym leader of Puce City.\p"
+        "The name's Brooke, 'n I'm the gym leader of Puce City.\p"
         "You wanna challenge the gym, hey?\p"
         "'nfortunately, I can't just let anyone fight me out of the blue like this.\p"
         "You've gotta be registered with the league first, ya see.\p"
         "And, well, I'm sorta new to this whole gym leader thing.\p"
         "Look, it's tempting to just get straight into it, I admit, but there's all sorts of regulations and things I gotta follow.\p"
-        "If ya wanna get registered, fly on over to the gym when I'm back.\p"
+        "If ya wanna get registered, head on over to the gym when I'm back.\p"
         "I'm just, uh, on my lunch break.\p"
         "Guess I'll see ya 'round?"
     ))
@@ -545,11 +148,14 @@ script PuceLake_TalkWendy {
 script PuceLake_TalkCarla {
     lockall
     faceplayer
+    setvar(VAR_0x8000,MUGSHOT_CARLA)
+    callnative(DrawMugshot)
     msgbox(format(
         "Avery's just across there, at the dig site.\p"
         "Head over when you're ready!"
     ))
     waitmessage
+    callnative(ClearMugshot)
     releaseall
 }
 
@@ -565,21 +171,25 @@ script PuceLake_Trigger4_Right {
 
 script PuceLake_GetToDigSite {
     lockall
-    applymovement(15,FacePlayer)
+    applymovement(9,FacePlayer)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Sounds like there was a commotion up there!\p"
-        "You alright, {PLAYER}?\p"
-        "I'll bet it was Team Jade, wasn't it?\p"
-        "Looks like you and Carla managed to fend them off, though.\p"
-        "Great job, really. They're real menaces, I'll say."
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} Well, here we are. This is our dig site."
     ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
+
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA,Camera_LookDown3)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
-        "Well, here we are. This is our dig site.\p"
         "We've managed to mark out the region of interest. Now we're into the important task of actually seeing what we've struck.\p"
         "You see, a kid from Puce City found a strange artefact on this very beach, and since we were close-by, he came to us.\p"
         "And, well, I was stunned. It looked hand-carved, but...\p"
@@ -588,8 +198,14 @@ script PuceLake_GetToDigSite {
         "Things like this are exactly why I came to --- in the first place, five years ago."
     ))
     waitmessage
-    applymovement(15,LookDown)
+    closemessage
+    callnative(ClearMugshot)
+
+    applymovement(9,LookDown)
     waitmovement(0)
+    
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
         "I hate to say it, but our current dig team is a bit of a rag-tag group.\p"
         "We had to bring everyone together rather quickly.\p"
@@ -598,23 +214,31 @@ script PuceLake_GetToDigSite {
     ))
     waitmessage
     closemessage
+    callnative(ClearMugshot)
 
     delay(15)
 
     applymovement(2,PuceLake_Scientist1)
     fadeoutbgm(1)
     waitmovement(0)
+
     msgbox(format(
         "Scientist: P-Professor...! I- I think I've found something of importance!"
     ))
     waitmessage
-    applymovement(15,WalkDownSpot)
+    closemessage
+
+    applymovement(9,WalkDownSpot)
     waitmovement(0)
+
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} What is it?\p"
-        "Scientist: O-over here...!"
+        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} What is it?"
     ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
 
     applymovement(2,PuceLake_Scientist2)
     applymovement(15,PuceLake_AveryFollowScientist)
@@ -629,19 +253,23 @@ script PuceLake_GetToDigSite {
     }
     waitmovement(0)
 
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
         "Scientist: ...Do you see it?\p"
-        "{COLOR GREEN}Fern:{COLOR DARK_GRAY} See what?\p"
-        "Scientist: The... the carving...!"
+        "The... the carving...!"
     ))
     waitmessage
+    closemessage
 
-    applymovement(15,EmoteQuestion)
+    applymovement(9,EmoteQuestion)
     waitmovement(0)
     delay(60)
-    applymovement(15,EmoteExclamation)
+    applymovement(9,EmoteExclamation)
     waitmovement(0)
 
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR GREEN}Fern:{COLOR DARK_GRAY} ...Oh my goodness.\p"
         "It... it's some sort of language. It has to be.\p"
@@ -650,6 +278,8 @@ script PuceLake_GetToDigSite {
         "We have to get to work bringing this back to the lab!"
     ))
     waitmessage
+    closemessage
+    callnative(ClearMugshot)
 
     applymovement(2,WalkRightSpot)
     waitmovement(0)
@@ -658,12 +288,15 @@ script PuceLake_GetToDigSite {
         "Scientist: Y-yes! Of course!"
     ))
     waitmessage
+    closemessage
 
-    applymovement(15,PuceLake_AveryGotoPlayer2)
+    applymovement(9,PuceLake_AveryGotoPlayer2)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER,FaceRight)
     waitmovement(0)
 
+    setvar(VAR_0x8000,MUGSHOT_AVERY)
+    callnative(DrawMugshot)
     msgbox(format(
         "{COLOR GREEN}Fern:{COLOR DARK_GRAY} {PLAYER}, sorry, this is a bit bigger than I was expecting.\p"
         "I was going to get you to help out with tagging things, just to start you off...\p"
@@ -675,6 +308,7 @@ script PuceLake_GetToDigSite {
     ))
     waitmessage
     closemessage
+    callnative(ClearMugshot)
 
     fadescreen(FADE_TO_BLACK)
     delay(60)
@@ -690,12 +324,12 @@ script PuceLake_GetToDigSite {
     fadeinbgm(1)
     applymovement(OBJ_EVENT_ID_PLAYER,PuceLake_PlayerLeave)
     waitmovement(0)
-    applymovement(16,PuceLake_WendyGotoPlayer)
+    applymovement(10,PuceLake_BrookeGotoPlayer)
     waitmovement(0)
 
     msgbox(format(
-        "Wendy: Hey! I, uh...\p"
-        "I saw you take out those other trainers back there.\p"
+        "Brooke: Hey! I, uh...\p"
+        "I saw you battling those trainers back there.\p"
         "You've got some guts, you know?\p"
         "If you want another challenge, head on over to my gym.\p"
         "I'll get you set up with the league registry and everything!\p"
@@ -704,13 +338,14 @@ script PuceLake_GetToDigSite {
     waitmessage
     closemessage
 
-    applymovement(16,PuceLake_WendyLeave)
+    applymovement(16,PuceLake_BrookeLeave)
     //setflag(FLAG_GYM_)
-    setvar(VAR_AW_PROGRESS_2,4)
-    setvar(VAR_AW_PROGRESS_1,9)
+    setvar(VAR_AW_PROGRESS_2,2)
+    setvar(VAR_AW_GYM_PROGRESS,1)
+    setvar(VAR_AW_PROGRESS_1,13)
     waitmovement(0)
-    setobjectxyperm(16,0,0)
-    removeobject(16)
+    setobjectxyperm(10,0,0)
+    removeobject(10)
 
     releaseall
 }
@@ -724,66 +359,16 @@ script PuceLake_DigSiteSign {
     releaseall
 }
 
-script PuceLake_DontLeaveYet1 {
-    lockall
-    applymovement(6,FacePlayer)
-    waitmovement(0)
-    msgbox(format(
-        "Mike: {PLAYER}? Come on, you go ahead.\p"
-        "...My legs just hurt, that's all. I'll catch up."
-    ))
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
-    waitmovement(0)
-    releaseall
-}
-
-script PuceLake_DontLeaveYet2 {
-    lockall
-    applymovement(10,FacePlayer)
-    waitmovement(0)
-    msgbox(format(
-        "Mike: I'm alright, {PLAYER}, don't worry.\p"
-        "I'll catch up!"
-    ))
-    waitmessage
-    applymovement(OBJ_EVENT_ID_PLAYER,WalkLeft1)
-    waitmovement(0)
-    releaseall
-}
-
 script PuceLake_Trigger1_Upper {
     setvar(VAR_TEMP_0,0)
-    goto_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
+    call(PuceLake_MeetAvery)
     end
 }
 
 script PuceLake_Trigger1_Lower {
     setvar(VAR_TEMP_0,1)
-    goto_if_eq(VAR_AW_PROGRESS_2,0,PuceLake_MeetAvery)
+    call(PuceLake_MeetAvery)
     end
-}
-
-script PuceLake_Trigger2_Upper {
-    setvar(VAR_TEMP_2,0)
-    goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
-    end   
-}
-
-script PuceLake_Trigger2_Lower {
-    setvar(VAR_TEMP_2,1)
-    goto_if_eq(VAR_AW_PROGRESS_2,1,PuceLake_MikeTalk)
-    end  
-}
-
-script PuceLake_Trigger3_Upper {
-    setvar(VAR_TEMP_3,0)
-    goto(PuceLake_MeetCarla)
-}
-
-script PuceLake_Trigger3_Lower {
-    setvar(VAR_TEMP_3,1)
-    goto(PuceLake_MeetCarla)
 }
 
 script PuceLake_Trainer_SchoolgirlJessy {
@@ -837,18 +422,6 @@ text LassAdelaOutro {
     )
 }
 
-text PuceLake_MikeLose {
-    format(
-        "{PLAYER}...!"
-    )
-}
-
-text PuceLake_GruntLose {
-    format(
-        "Wah! No wonder the newbie lost!"
-    )
-}
-
 movement PuceLake_CarlaGotoPlayer {
     walk_up*6
     face_right
@@ -870,9 +443,6 @@ movement PuceLake_AveryLeavePlayer {
 
 movement PuceLake_CarlaLeavePlayer1 {
     face_left
-}
-
-movement PuceLake_CarlaLeavePlayer2 {
     walk_down*6
 }
 
@@ -1047,11 +617,11 @@ movement PuceLake_PlayerLeave {
     walk_up*6
 }
 
-movement PuceLake_WendyGotoPlayer {
+movement PuceLake_BrookeGotoPlayer {
     walk_down*2
 }
 
-movement PuceLake_WendyLeave {
+movement PuceLake_BrookeLeave {
     walk_right*3
     walk_down
     walk_right*3

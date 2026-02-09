@@ -74,8 +74,8 @@ script Route108_DidYouKnow {
     waitmovement(0)
     message(format(
         "Did you know? Route 108 continues up here!\p"
-        "Well, I say that, but you can't exactly get over this ledge to see it.\p"
-        "Route 109 is up there somewhere too, but I've never been.\p"
+        "Well, I say that, the gate here's closed.\p"
+        "Huh? No, I've got no idea why. Strange, isn't it?\p"
     ))
     waitmessage
     releaseall
@@ -153,7 +153,7 @@ movement Camera_LookRight3 {
     walk_right*6
 }
 
-movement Camera_MoveDown1 {
+movement MoveDown1 {
     walk_down
 }
 

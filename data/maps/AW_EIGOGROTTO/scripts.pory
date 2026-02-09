@@ -14,6 +14,7 @@ script EigoGrotto_Intro {
     special(SpawnCameraObject)
     applymovement(OBJ_EVENT_ID_CAMERA,WalkUp2)
 
+    delay(60)
     applymovement(1,WalkDownSpot)
     waitmovement(0)
     playse(SE_M_BELLY_DRUM)
@@ -94,7 +95,7 @@ script EigoGrotto_Intro {
     waitmovement(0)
     message(format(
         "Heed our words, yes! Yet, find your own voice!\p"
-        "That is what it means to have spirit!"
+        "That is what it means to have spirit!\p"
     ))
     waitmessage
     closemessage
@@ -150,6 +151,9 @@ script EigoGrotto_Intro {
     applymovement(2,FaceRight)
     waitmovement(0)
     delay(32)
+    applymovement(2,FaceDown)
+    waitmovement(0)
+    delay(32)
 
     message(format(
         "Welcome, children.\p"
@@ -164,11 +168,11 @@ script EigoGrotto_Intro {
     applymovement(4,FaceRight)
     applymovement(OBJ_EVENT_ID_PLAYER,LookLeft)
     waitmovement(0)
-    delay(8)
+    delay(32)
     applymovement(4,LookUp)
     applymovement(OBJ_EVENT_ID_PLAYER,LookUp)
     waitmovement(0)
-    delay(16)
+    delay(32)
 
     applymovement(4,WalkUp3)
     applymovement(OBJ_EVENT_ID_PLAYER,WalkUp3)
@@ -201,14 +205,26 @@ script EigoGrotto_Intro {
     message(format(
         "Many hundreds of years ago now, a tragedy struck-"
     ))
-    delay(90)
+    delay(16)
     closemessage
 
     special(StopMapMusic)
     setvar(VAR_0x8004,2)
     setvar(VAR_0x8005,6)
-    setvar(VAR_0x8006,6)
-    setvar(VAR_0x8007,10)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,5)
+    setvar(VAR_0x8007,2)
+    special(ShakeCamera)
+    waitstate
+    setvar(VAR_0x8004,2)
+    setvar(VAR_0x8005,6)
+    setvar(VAR_0x8006,12)
+    setvar(VAR_0x8007,2)
     special(ShakeCamera)
     waitstate
     delay(30)
@@ -223,6 +239,7 @@ script EigoGrotto_Intro {
         "A- an earthquake...?\p"
     ))
     waitmessage
+    closemessage
 
     setvar(VAR_0x8004,2)
     setvar(VAR_0x8005,6)
@@ -238,15 +255,14 @@ script EigoGrotto_Intro {
     ))
     waitmessage
 
-    fadescreen(FADE_TO_BLACK)
-
     applymovement(1,EveryoneLeaveGrotto)
     applymovement(2,EveryoneLeaveGrotto)
     applymovement(3,EveryoneLeaveGrotto)
     applymovement(4,EveryoneLeaveGrotto)
     applymovement(OBJ_EVENT_ID_PLAYER,EveryoneLeaveGrotto)
 
-    delay(60)
+    delay(20)
+    fadescreen(FADE_TO_BLACK)
     setvar(VAR_AW_PROGRESS_1,3)
 
     warpsilent(MAP_AW_MT_EIGO_APPROACH,0)
@@ -265,26 +281,38 @@ movement WalkUp3 {
 movement OracleDance1 {
     walk_slow_right*2
     walk_slow_down*2
+    delay_16
     face_down
+    delay_16
     face_left
+    delay_16
     face_up
+    delay_16
     face_right
 }
 
 movement OracleDance2 {
     walk_slow_left*4
+    delay_16
     face_up
+    delay_16
     face_right
+    delay_16
     face_down
+    delay_16
     face_left
 }
 
 movement OracleDance3 {
     walk_slow_up*2
     walk_slow_right*2
+    delay_16
     face_up
+    delay_16
     face_right
+    delay_16
     face_down
+    delay_16
     face_left
 }
 

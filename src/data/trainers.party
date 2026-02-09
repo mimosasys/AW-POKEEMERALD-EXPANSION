@@ -16901,101 +16901,50 @@ Music: Girl
 Purrloin
 Level: 4
 
-=== TRAINER_TEAMJADE_GRUNT_PUCELAKE ===
-Name: Grunt
-Class: Jade
-Pic: Aw Jadegrunt Male
-Music: Aqua
-
-Skuarctic
-Level: 6
-
-Purrloin
-Level: 7
-
-=== TRAINER_BIRDKEEPER_PARA ===
-Name: Para
-Class: Bird Keeper
-Pic: Pokemon Breeder F
+=== TRAINER_LASS_TALIA ===
+Name: Talia
+Class: Lass
+Pic: Lass
 Music: Female
 
-Doduo
-Level: 7
+Dewsel
+Level: 5
 
-Skuarctic
-Level: 8
+=== TRAINER_SCHOOL_KID_CORAL ===
+Name: Coral
+Class: School Kid
+Pic: School Kid F
+Music: Female
 
-=== TRAINER_BIRDKEEPER_ROBIN ===
-Name: Robin
-Class: Bird Keeper
-Pic: Bird Keeper
+Tympole
+Level: 5
+
+Wimpod
+Level: 6		
+
+=== TRAINER_SAILOR_MARINO ===
+Name: Marino
+Class: Sailor
+Pic: Sailor
 Music: Male
 
-Skuarctic
-Level: 8
-
-Noibat
-Level: 8		
-
-=== TRAINER_BIRDKEEPER_JAY ===
-Name: Jay
-Class: Bird Keeper
-Pic: Bird Keeper
-Music: Male
-
-Fowlily
-Level: 8
-
-Skuarctic
-Level: 9
-
-=== TRAINER_RIVAL_MIKE_PUCELAKE_ALPACOIL ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-
-Purrloin
+Dewsel
 Level: 5
 
-Smackop
+Slowpoke
 Level: 6
-Ability: Anger Point
 
-=== TRAINER_RIVAL_MIKE_PUCELAKE_SMACKOP ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-
-Purrloin
-Level: 5
-
-Puppixy
-Level: 6
-Ability: Bulletproof
-
-=== TRAINER_RIVAL_MIKE_PUCELAKE_PUPPIXY ===
-Name: Mike
-Class: Rival
-Pic: Aw Rival
-
-Purrloin
-Level: 5
-
-Alpacoil
-Level: 6
-Ability: Magic Bounce
-
-=== TRAINER_GYMLEADER_WENDY ===
-Name: Wendy
+=== TRAINER_GYMLEADER_BROOKE ===
+Name: Brooke
 Class: Leader
 Pic: Aw Leader Wendy
 
-Doduo
-Level: 9
+Dewsel
+Level: 7
 
-Fowlily
-Level: 9
+Piplup
+Level: 7
 
-Gligar
-Level: 10
+Psyduck_AW
+Level: 8
 Tags: Ace

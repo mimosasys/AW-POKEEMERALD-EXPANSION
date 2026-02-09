@@ -4514,10 +4514,10 @@
     {
       "id": "LAYOUT_AW_PUCE_CITY_GYM",
       "name": "AW_PuceCity_Gym_Layout",
-      "width": 20,
-      "height": 22,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PuceGym",
+      "width": 23,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SootopolisGym",
       "border_filepath": "data/layouts/AW_PuceCity_Gym/border.bin",
       "blockdata_filepath": "data/layouts/AW_PuceCity_Gym/map.bin"
     },
@@ -4554,7 +4554,7 @@
     {
       "id": "LAYOUT_AW_VERDIGRIS_CITY",
       "name": "AW_VerdigrisCity_Layout",
-      "width": 46,
+      "width": 48,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_EverGrande",
@@ -4630,6 +4630,36 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AW_EIGOGROTTO/border.bin",
       "blockdata_filepath": "data/layouts/AW_EIGOGROTTO/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_PORT_MULBERRY_POKE_MART",
+      "name": "AW_PortMulberry_PokeMart_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/AW_PortMulberry_PokeMart/border.bin",
+      "blockdata_filepath": "data/layouts/AW_PortMulberry_PokeMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ZAFFRETON",
+      "name": "AW_Zaffreton_Layout",
+      "width": 46,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/AW_Zaffreton/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Zaffreton/map.bin"
+    },
+    {
+      "id": "LAYOUT_AW_ROUTE102",
+      "name": "AW_Route102_Layout",
+      "width": 46,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AW_Route102/border.bin",
+      "blockdata_filepath": "data/layouts/AW_Route102/map.bin"
     }
   ]
 }
