@@ -4657,7 +4657,7 @@
       "width": 46,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/AW_Route102/border.bin",
       "blockdata_filepath": "data/layouts/AW_Route102/map.bin"
     }
