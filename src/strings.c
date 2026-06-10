@@ -43,6 +43,7 @@ ALIGNED(4) const u8 gText_PickCancel[] = _("{DPAD_UPDOWN}PICK {A_BUTTON}{B_BUTTO
 ALIGNED(4) const u8 gText_AButtonExit[] = _("{A_BUTTON}EXIT");
 const u8 gText_Boy[] = _("BOY");
 const u8 gText_Girl[] = _("GIRL");
+// const u8 gText_Enby[] = _("ENBY");
 const u8 gText_ThisIsAPokemon[] = _("This is what we call a “POKéMON.”{PAUSE 96}\p");
 const u8 gText_5MarksPokemon[] = _("????? POKéMON");
 const u8 gText_UnkHeight[] = _("{CLEAR_TO 12}??'??”");
@@ -173,6 +174,9 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the POKéMON LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
+const u8 gText_Male[] = _("MALE");
+const u8 gText_Female[] = _("FEMALE");
+const u8 gText_NonBinary[] = _("NON-BINARY");
 
 const u8 *const gBagMenu_ReturnToStrings[] =
 {

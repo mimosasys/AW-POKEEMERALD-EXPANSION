@@ -9,625 +9,1130 @@
 // DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
 //
 
-// gMapGroup_AW_Towns
-#define MAP_AW_ERIN_VILLAGE   (0 | (0 << 8))
-#define MAP_AW_PORT_MULBERRY  (1 | (0 << 8))
-#define MAP_AW_PUCE_CITY      (2 | (0 << 8))
-#define MAP_AW_VERDIGRIS_CITY (3 | (0 << 8))
-#define MAP_AW_ZAFFRETON      (4 | (0 << 8))
+enum
+{
+    // gMapGroup_AW_Towns
+    MAP_AW_ERIN_VILLAGE   = (0 | (0 << 8)),
+    MAP_AW_PORT_MULBERRY  = (1 | (0 << 8)),
+    MAP_AW_PUCE_CITY      = (2 | (0 << 8)),
+    MAP_AW_VERDIGRIS_CITY = (3 | (0 << 8)),
+    MAP_AW_ZAFFRETON      = (4 | (0 << 8)),
 
-// gMapGroup_AW_Routes
-#define MAP_AW_ROUTE108_LOWER   (0 | (1 << 8))
-#define MAP_AW_ROUTE110_FOREST  (1 | (1 << 8))
-#define MAP_AW_ROUTE110_PATH    (2 | (1 << 8))
-#define MAP_AW_ROUTE111_EAST    (3 | (1 << 8))
-#define MAP_AW_ROUTE111_WEST    (4 | (1 << 8))
-#define MAP_AW_ROUTE112         (5 | (1 << 8))
-#define MAP_AW_MT_EIGO_APPROACH (6 | (1 << 8))
-#define MAP_AW_ROUTE102         (7 | (1 << 8))
+    // gMapGroup_AW_Routes
+    MAP_AW_ROUTE108_LOWER   = (0 | (1 << 8)),
+    MAP_AW_ROUTE110_FOREST  = (1 | (1 << 8)),
+    MAP_AW_ROUTE110_PATH    = (2 | (1 << 8)),
+    MAP_AW_ROUTE111_EAST    = (3 | (1 << 8)),
+    MAP_AW_ROUTE111_WEST    = (4 | (1 << 8)),
+    MAP_AW_ROUTE112         = (5 | (1 << 8)),
+    MAP_AW_MT_EIGO_APPROACH = (6 | (1 << 8)),
+    MAP_AW_ROUTE102         = (7 | (1 << 8)),
 
-// gMapGroup_AW_Indoors
-#define MAP_AW_ERIN_VILLAGE_YOUR_HOUSE   (0 | (2 << 8))
-#define MAP_AW_ROUTE108_LABORATORY       (1 | (2 << 8))
-#define MAP_AW_PORT_MULBERRY_GEAR_LAB    (2 | (2 << 8))
-#define MAP_AW_PUCE_CITY_GYM             (3 | (2 << 8))
-#define MAP_AW_PORT_MULBERRY_POKE_CENTER (4 | (2 << 8))
-#define MAP_AW_PUCE_CITY_POKE_CENTER     (5 | (2 << 8))
-#define MAP_AW_PORT_MULBERRY_POKE_MART   (6 | (2 << 8))
+    // gMapGroup_AW_Indoors
+    MAP_AW_ERIN_VILLAGE_YOUR_HOUSE   = (0 | (2 << 8)),
+    MAP_AW_ROUTE108_LABORATORY       = (1 | (2 << 8)),
+    MAP_AW_PORT_MULBERRY_GEAR_LAB    = (2 | (2 << 8)),
+    MAP_AW_PUCE_CITY_GYM             = (3 | (2 << 8)),
+    MAP_AW_PORT_MULBERRY_POKE_CENTER = (4 | (2 << 8)),
+    MAP_AW_PUCE_CITY_POKE_CENTER     = (5 | (2 << 8)),
+    MAP_AW_PORT_MULBERRY_POKE_MART   = (6 | (2 << 8)),
 
-// gMapGroup_AW_Misc
-#define MAP_AW_PUCE_LAKE  (0 | (3 << 8))
-#define MAP_AW_TEST_AREA1 (1 | (3 << 8))
-#define MAP_AW_WIND_FARM  (2 | (3 << 8))
-#define MAP_AW_TOPAZ_LAB  (3 | (3 << 8))
-#define MAP_AW_EIGOGROTTO (4 | (3 << 8))
+    // gMapGroup_AW_Misc
+    MAP_AW_PUCE_LAKE  = (0 | (3 << 8)),
+    MAP_AW_TEST_AREA1 = (1 | (3 << 8)),
+    MAP_AW_WIND_FARM  = (2 | (3 << 8)),
+    MAP_AW_TOPAZ_LAB  = (3 | (3 << 8)),
+    MAP_AW_EIGOGROTTO = (4 | (3 << 8)),
 
-// gMapGroup_TownsAndRoutes
-#define MAP_PETALBURG_CITY      (0 | (4 << 8))
-#define MAP_SLATEPORT_CITY      (1 | (4 << 8))
-#define MAP_MAUVILLE_CITY       (2 | (4 << 8))
-#define MAP_RUSTBORO_CITY       (3 | (4 << 8))
-#define MAP_FORTREE_CITY        (4 | (4 << 8))
-#define MAP_LILYCOVE_CITY       (5 | (4 << 8))
-#define MAP_MOSSDEEP_CITY       (6 | (4 << 8))
-#define MAP_SOOTOPOLIS_CITY     (7 | (4 << 8))
-#define MAP_EVER_GRANDE_CITY    (8 | (4 << 8))
-#define MAP_LITTLEROOT_TOWN     (9 | (4 << 8))
-#define MAP_OLDALE_TOWN         (10 | (4 << 8))
-#define MAP_DEWFORD_TOWN        (11 | (4 << 8))
-#define MAP_LAVARIDGE_TOWN      (12 | (4 << 8))
-#define MAP_FALLARBOR_TOWN      (13 | (4 << 8))
-#define MAP_VERDANTURF_TOWN     (14 | (4 << 8))
-#define MAP_PACIFIDLOG_TOWN     (15 | (4 << 8))
-#define MAP_ROUTE101            (16 | (4 << 8))
-#define MAP_ROUTE102            (17 | (4 << 8))
-#define MAP_ROUTE103            (18 | (4 << 8))
-#define MAP_ROUTE104            (19 | (4 << 8))
-#define MAP_ROUTE105            (20 | (4 << 8))
-#define MAP_ROUTE106            (21 | (4 << 8))
-#define MAP_ROUTE107            (22 | (4 << 8))
-#define MAP_ROUTE108            (23 | (4 << 8))
-#define MAP_ROUTE109            (24 | (4 << 8))
-#define MAP_ROUTE110            (25 | (4 << 8))
-#define MAP_ROUTE111            (26 | (4 << 8))
-#define MAP_ROUTE112            (27 | (4 << 8))
-#define MAP_ROUTE113            (28 | (4 << 8))
-#define MAP_ROUTE114            (29 | (4 << 8))
-#define MAP_ROUTE115            (30 | (4 << 8))
-#define MAP_ROUTE116            (31 | (4 << 8))
-#define MAP_ROUTE117            (32 | (4 << 8))
-#define MAP_ROUTE118            (33 | (4 << 8))
-#define MAP_ROUTE119            (34 | (4 << 8))
-#define MAP_ROUTE120            (35 | (4 << 8))
-#define MAP_ROUTE121            (36 | (4 << 8))
-#define MAP_ROUTE122            (37 | (4 << 8))
-#define MAP_ROUTE123            (38 | (4 << 8))
-#define MAP_ROUTE124            (39 | (4 << 8))
-#define MAP_ROUTE125            (40 | (4 << 8))
-#define MAP_ROUTE126            (41 | (4 << 8))
-#define MAP_ROUTE127            (42 | (4 << 8))
-#define MAP_ROUTE128            (43 | (4 << 8))
-#define MAP_ROUTE129            (44 | (4 << 8))
-#define MAP_ROUTE130            (45 | (4 << 8))
-#define MAP_ROUTE131            (46 | (4 << 8))
-#define MAP_ROUTE132            (47 | (4 << 8))
-#define MAP_ROUTE133            (48 | (4 << 8))
-#define MAP_ROUTE134            (49 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE124 (50 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE126 (51 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE127 (52 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE128 (53 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE129 (54 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE105 (55 | (4 << 8))
-#define MAP_UNDERWATER_ROUTE125 (56 | (4 << 8))
+    // gMapGroup_TownsAndRoutes
+    MAP_PETALBURG_CITY      = (0 | (4 << 8)),
+    MAP_SLATEPORT_CITY      = (1 | (4 << 8)),
+    MAP_MAUVILLE_CITY       = (2 | (4 << 8)),
+    MAP_RUSTBORO_CITY       = (3 | (4 << 8)),
+    MAP_FORTREE_CITY        = (4 | (4 << 8)),
+    MAP_LILYCOVE_CITY       = (5 | (4 << 8)),
+    MAP_MOSSDEEP_CITY       = (6 | (4 << 8)),
+    MAP_SOOTOPOLIS_CITY     = (7 | (4 << 8)),
+    MAP_EVER_GRANDE_CITY    = (8 | (4 << 8)),
+    MAP_LITTLEROOT_TOWN     = (9 | (4 << 8)),
+    MAP_OLDALE_TOWN         = (10 | (4 << 8)),
+    MAP_DEWFORD_TOWN        = (11 | (4 << 8)),
+    MAP_LAVARIDGE_TOWN      = (12 | (4 << 8)),
+    MAP_FALLARBOR_TOWN      = (13 | (4 << 8)),
+    MAP_VERDANTURF_TOWN     = (14 | (4 << 8)),
+    MAP_PACIFIDLOG_TOWN     = (15 | (4 << 8)),
+    MAP_ROUTE101            = (16 | (4 << 8)),
+    MAP_ROUTE102            = (17 | (4 << 8)),
+    MAP_ROUTE103            = (18 | (4 << 8)),
+    MAP_ROUTE104            = (19 | (4 << 8)),
+    MAP_ROUTE105            = (20 | (4 << 8)),
+    MAP_ROUTE106            = (21 | (4 << 8)),
+    MAP_ROUTE107            = (22 | (4 << 8)),
+    MAP_ROUTE108            = (23 | (4 << 8)),
+    MAP_ROUTE109            = (24 | (4 << 8)),
+    MAP_ROUTE110            = (25 | (4 << 8)),
+    MAP_ROUTE111            = (26 | (4 << 8)),
+    MAP_ROUTE112            = (27 | (4 << 8)),
+    MAP_ROUTE113            = (28 | (4 << 8)),
+    MAP_ROUTE114            = (29 | (4 << 8)),
+    MAP_ROUTE115            = (30 | (4 << 8)),
+    MAP_ROUTE116            = (31 | (4 << 8)),
+    MAP_ROUTE117            = (32 | (4 << 8)),
+    MAP_ROUTE118            = (33 | (4 << 8)),
+    MAP_ROUTE119            = (34 | (4 << 8)),
+    MAP_ROUTE120            = (35 | (4 << 8)),
+    MAP_ROUTE121            = (36 | (4 << 8)),
+    MAP_ROUTE122            = (37 | (4 << 8)),
+    MAP_ROUTE123            = (38 | (4 << 8)),
+    MAP_ROUTE124            = (39 | (4 << 8)),
+    MAP_ROUTE125            = (40 | (4 << 8)),
+    MAP_ROUTE126            = (41 | (4 << 8)),
+    MAP_ROUTE127            = (42 | (4 << 8)),
+    MAP_ROUTE128            = (43 | (4 << 8)),
+    MAP_ROUTE129            = (44 | (4 << 8)),
+    MAP_ROUTE130            = (45 | (4 << 8)),
+    MAP_ROUTE131            = (46 | (4 << 8)),
+    MAP_ROUTE132            = (47 | (4 << 8)),
+    MAP_ROUTE133            = (48 | (4 << 8)),
+    MAP_ROUTE134            = (49 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE124 = (50 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE126 = (51 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE127 = (52 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE128 = (53 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE129 = (54 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE105 = (55 | (4 << 8)),
+    MAP_UNDERWATER_ROUTE125 = (56 | (4 << 8)),
 
-// gMapGroup_IndoorLittleroot
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (5 << 8))
-#define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F    (1 | (5 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        (2 | (5 << 8))
-#define MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        (3 | (5 << 8))
-#define MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB (4 | (5 << 8))
+    // gMapGroup_IndoorLittleroot
+    MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (5 << 8)),
+    MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F    = (1 | (5 << 8)),
+    MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F        = (2 | (5 << 8)),
+    MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F        = (3 | (5 << 8)),
+    MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB = (4 | (5 << 8)),
 
-// gMapGroup_IndoorOldale
-#define MAP_OLDALE_TOWN_HOUSE1            (0 | (6 << 8))
-#define MAP_OLDALE_TOWN_HOUSE2            (1 | (6 << 8))
-#define MAP_OLDALE_TOWN_POKEMON_CENTER_1F (2 | (6 << 8))
-#define MAP_OLDALE_TOWN_POKEMON_CENTER_2F (3 | (6 << 8))
-#define MAP_OLDALE_TOWN_MART              (4 | (6 << 8))
+    // gMapGroup_IndoorOldale
+    MAP_OLDALE_TOWN_HOUSE1            = (0 | (6 << 8)),
+    MAP_OLDALE_TOWN_HOUSE2            = (1 | (6 << 8)),
+    MAP_OLDALE_TOWN_POKEMON_CENTER_1F = (2 | (6 << 8)),
+    MAP_OLDALE_TOWN_POKEMON_CENTER_2F = (3 | (6 << 8)),
+    MAP_OLDALE_TOWN_MART              = (4 | (6 << 8)),
 
-// gMapGroup_IndoorDewford
-#define MAP_DEWFORD_TOWN_HOUSE1            (0 | (7 << 8))
-#define MAP_DEWFORD_TOWN_POKEMON_CENTER_1F (1 | (7 << 8))
-#define MAP_DEWFORD_TOWN_POKEMON_CENTER_2F (2 | (7 << 8))
-#define MAP_DEWFORD_TOWN_GYM               (3 | (7 << 8))
-#define MAP_DEWFORD_TOWN_HALL              (4 | (7 << 8))
-#define MAP_DEWFORD_TOWN_HOUSE2            (5 | (7 << 8))
+    // gMapGroup_IndoorDewford
+    MAP_DEWFORD_TOWN_HOUSE1            = (0 | (7 << 8)),
+    MAP_DEWFORD_TOWN_POKEMON_CENTER_1F = (1 | (7 << 8)),
+    MAP_DEWFORD_TOWN_POKEMON_CENTER_2F = (2 | (7 << 8)),
+    MAP_DEWFORD_TOWN_GYM               = (3 | (7 << 8)),
+    MAP_DEWFORD_TOWN_HALL              = (4 | (7 << 8)),
+    MAP_DEWFORD_TOWN_HOUSE2            = (5 | (7 << 8)),
 
-// gMapGroup_IndoorLavaridge
-#define MAP_LAVARIDGE_TOWN_HERB_SHOP         (0 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_GYM_1F            (1 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_GYM_B1F           (2 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_HOUSE             (3 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_MART              (4 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F (5 | (8 << 8))
-#define MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F (6 | (8 << 8))
+    // gMapGroup_IndoorLavaridge
+    MAP_LAVARIDGE_TOWN_HERB_SHOP         = (0 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_GYM_1F            = (1 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_GYM_B1F           = (2 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_HOUSE             = (3 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_MART              = (4 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F = (5 | (8 << 8)),
+    MAP_LAVARIDGE_TOWN_POKEMON_CENTER_2F = (6 | (8 << 8)),
 
-// gMapGroup_IndoorFallarbor
-#define MAP_FALLARBOR_TOWN_MART                    (0 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY       (1 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR    (2 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM (3 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F       (4 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       (5 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_COZMOS_HOUSE            (6 | (9 << 8))
-#define MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE   (7 | (9 << 8))
+    // gMapGroup_IndoorFallarbor
+    MAP_FALLARBOR_TOWN_MART                    = (0 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_BATTLE_TENT_LOBBY       = (1 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_BATTLE_TENT_CORRIDOR    = (2 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM = (3 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F       = (4 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_POKEMON_CENTER_2F       = (5 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_COZMOS_HOUSE            = (6 | (9 << 8)),
+    MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE   = (7 | (9 << 8)),
 
-// gMapGroup_IndoorVerdanturf
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       (0 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR    (1 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM (2 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_MART                    (3 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F       (4 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F       (5 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_WANDAS_HOUSE            (6 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE (7 | (10 << 8))
-#define MAP_VERDANTURF_TOWN_HOUSE                   (8 | (10 << 8))
+    // gMapGroup_IndoorVerdanturf
+    MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY       = (0 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_BATTLE_TENT_CORRIDOR    = (1 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_BATTLE_TENT_BATTLE_ROOM = (2 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_MART                    = (3 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F       = (4 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_POKEMON_CENTER_2F       = (5 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_WANDAS_HOUSE            = (6 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE = (7 | (10 << 8)),
+    MAP_VERDANTURF_TOWN_HOUSE                   = (8 | (10 << 8)),
 
-// gMapGroup_IndoorPacifidlog
-#define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F (0 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F (1 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_HOUSE1            (2 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_HOUSE2            (3 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_HOUSE3            (4 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_HOUSE4            (5 | (11 << 8))
-#define MAP_PACIFIDLOG_TOWN_HOUSE5            (6 | (11 << 8))
+    // gMapGroup_IndoorPacifidlog
+    MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F = (0 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_2F = (1 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_HOUSE1            = (2 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_HOUSE2            = (3 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_HOUSE3            = (4 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_HOUSE4            = (5 | (11 << 8)),
+    MAP_PACIFIDLOG_TOWN_HOUSE5            = (6 | (11 << 8)),
 
-// gMapGroup_IndoorPetalburg
-#define MAP_PETALBURG_CITY_WALLYS_HOUSE      (0 | (12 << 8))
-#define MAP_PETALBURG_CITY_GYM               (1 | (12 << 8))
-#define MAP_PETALBURG_CITY_HOUSE1            (2 | (12 << 8))
-#define MAP_PETALBURG_CITY_HOUSE2            (3 | (12 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_1F (4 | (12 << 8))
-#define MAP_PETALBURG_CITY_POKEMON_CENTER_2F (5 | (12 << 8))
-#define MAP_PETALBURG_CITY_MART              (6 | (12 << 8))
+    // gMapGroup_IndoorPetalburg
+    MAP_PETALBURG_CITY_WALLYS_HOUSE      = (0 | (12 << 8)),
+    MAP_PETALBURG_CITY_GYM               = (1 | (12 << 8)),
+    MAP_PETALBURG_CITY_HOUSE1            = (2 | (12 << 8)),
+    MAP_PETALBURG_CITY_HOUSE2            = (3 | (12 << 8)),
+    MAP_PETALBURG_CITY_POKEMON_CENTER_1F = (4 | (12 << 8)),
+    MAP_PETALBURG_CITY_POKEMON_CENTER_2F = (5 | (12 << 8)),
+    MAP_PETALBURG_CITY_MART              = (6 | (12 << 8)),
 
-// gMapGroup_IndoorSlateport
-#define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      (0 | (13 << 8))
-#define MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F      (1 | (13 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY       (2 | (13 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR    (3 | (13 << 8))
-#define MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM (4 | (13 << 8))
-#define MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE       (5 | (13 << 8))
-#define MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB        (6 | (13 << 8))
-#define MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F       (7 | (13 << 8))
-#define MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F       (8 | (13 << 8))
-#define MAP_SLATEPORT_CITY_HARBOR                  (9 | (13 << 8))
-#define MAP_SLATEPORT_CITY_HOUSE                   (10 | (13 << 8))
-#define MAP_SLATEPORT_CITY_POKEMON_CENTER_1F       (11 | (13 << 8))
-#define MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       (12 | (13 << 8))
-#define MAP_SLATEPORT_CITY_MART                    (13 | (13 << 8))
+    // gMapGroup_IndoorSlateport
+    MAP_SLATEPORT_CITY_STERNS_SHIPYARD_1F      = (0 | (13 << 8)),
+    MAP_SLATEPORT_CITY_STERNS_SHIPYARD_2F      = (1 | (13 << 8)),
+    MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY       = (2 | (13 << 8)),
+    MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR    = (3 | (13 << 8)),
+    MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM = (4 | (13 << 8)),
+    MAP_SLATEPORT_CITY_NAME_RATERS_HOUSE       = (5 | (13 << 8)),
+    MAP_SLATEPORT_CITY_POKEMON_FAN_CLUB        = (6 | (13 << 8)),
+    MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_1F       = (7 | (13 << 8)),
+    MAP_SLATEPORT_CITY_OCEANIC_MUSEUM_2F       = (8 | (13 << 8)),
+    MAP_SLATEPORT_CITY_HARBOR                  = (9 | (13 << 8)),
+    MAP_SLATEPORT_CITY_HOUSE                   = (10 | (13 << 8)),
+    MAP_SLATEPORT_CITY_POKEMON_CENTER_1F       = (11 | (13 << 8)),
+    MAP_SLATEPORT_CITY_POKEMON_CENTER_2F       = (12 | (13 << 8)),
+    MAP_SLATEPORT_CITY_MART                    = (13 | (13 << 8)),
 
-// gMapGroup_IndoorMauville
-#define MAP_MAUVILLE_CITY_GYM               (0 | (14 << 8))
-#define MAP_MAUVILLE_CITY_BIKE_SHOP         (1 | (14 << 8))
-#define MAP_MAUVILLE_CITY_HOUSE1            (2 | (14 << 8))
-#define MAP_MAUVILLE_CITY_GAME_CORNER       (3 | (14 << 8))
-#define MAP_MAUVILLE_CITY_HOUSE2            (4 | (14 << 8))
-#define MAP_MAUVILLE_CITY_POKEMON_CENTER_1F (5 | (14 << 8))
-#define MAP_MAUVILLE_CITY_POKEMON_CENTER_2F (6 | (14 << 8))
-#define MAP_MAUVILLE_CITY_MART              (7 | (14 << 8))
+    // gMapGroup_IndoorMauville
+    MAP_MAUVILLE_CITY_GYM               = (0 | (14 << 8)),
+    MAP_MAUVILLE_CITY_BIKE_SHOP         = (1 | (14 << 8)),
+    MAP_MAUVILLE_CITY_HOUSE1            = (2 | (14 << 8)),
+    MAP_MAUVILLE_CITY_GAME_CORNER       = (3 | (14 << 8)),
+    MAP_MAUVILLE_CITY_HOUSE2            = (4 | (14 << 8)),
+    MAP_MAUVILLE_CITY_POKEMON_CENTER_1F = (5 | (14 << 8)),
+    MAP_MAUVILLE_CITY_POKEMON_CENTER_2F = (6 | (14 << 8)),
+    MAP_MAUVILLE_CITY_MART              = (7 | (14 << 8)),
 
-// gMapGroup_IndoorRustboro
-#define MAP_RUSTBORO_CITY_DEVON_CORP_1F     (0 | (15 << 8))
-#define MAP_RUSTBORO_CITY_DEVON_CORP_2F     (1 | (15 << 8))
-#define MAP_RUSTBORO_CITY_DEVON_CORP_3F     (2 | (15 << 8))
-#define MAP_RUSTBORO_CITY_GYM               (3 | (15 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_SCHOOL    (4 | (15 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_CENTER_1F (5 | (15 << 8))
-#define MAP_RUSTBORO_CITY_POKEMON_CENTER_2F (6 | (15 << 8))
-#define MAP_RUSTBORO_CITY_MART              (7 | (15 << 8))
-#define MAP_RUSTBORO_CITY_FLAT1_1F          (8 | (15 << 8))
-#define MAP_RUSTBORO_CITY_FLAT1_2F          (9 | (15 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE1            (10 | (15 << 8))
-#define MAP_RUSTBORO_CITY_CUTTERS_HOUSE     (11 | (15 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE2            (12 | (15 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_1F          (13 | (15 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_2F          (14 | (15 << 8))
-#define MAP_RUSTBORO_CITY_FLAT2_3F          (15 | (15 << 8))
-#define MAP_RUSTBORO_CITY_HOUSE3            (16 | (15 << 8))
+    // gMapGroup_IndoorRustboro
+    MAP_RUSTBORO_CITY_DEVON_CORP_1F     = (0 | (15 << 8)),
+    MAP_RUSTBORO_CITY_DEVON_CORP_2F     = (1 | (15 << 8)),
+    MAP_RUSTBORO_CITY_DEVON_CORP_3F     = (2 | (15 << 8)),
+    MAP_RUSTBORO_CITY_GYM               = (3 | (15 << 8)),
+    MAP_RUSTBORO_CITY_POKEMON_SCHOOL    = (4 | (15 << 8)),
+    MAP_RUSTBORO_CITY_POKEMON_CENTER_1F = (5 | (15 << 8)),
+    MAP_RUSTBORO_CITY_POKEMON_CENTER_2F = (6 | (15 << 8)),
+    MAP_RUSTBORO_CITY_MART              = (7 | (15 << 8)),
+    MAP_RUSTBORO_CITY_FLAT1_1F          = (8 | (15 << 8)),
+    MAP_RUSTBORO_CITY_FLAT1_2F          = (9 | (15 << 8)),
+    MAP_RUSTBORO_CITY_HOUSE1            = (10 | (15 << 8)),
+    MAP_RUSTBORO_CITY_CUTTERS_HOUSE     = (11 | (15 << 8)),
+    MAP_RUSTBORO_CITY_HOUSE2            = (12 | (15 << 8)),
+    MAP_RUSTBORO_CITY_FLAT2_1F          = (13 | (15 << 8)),
+    MAP_RUSTBORO_CITY_FLAT2_2F          = (14 | (15 << 8)),
+    MAP_RUSTBORO_CITY_FLAT2_3F          = (15 | (15 << 8)),
+    MAP_RUSTBORO_CITY_HOUSE3            = (16 | (15 << 8)),
 
-// gMapGroup_IndoorFortree
-#define MAP_FORTREE_CITY_HOUSE1            (0 | (16 << 8))
-#define MAP_FORTREE_CITY_GYM               (1 | (16 << 8))
-#define MAP_FORTREE_CITY_POKEMON_CENTER_1F (2 | (16 << 8))
-#define MAP_FORTREE_CITY_POKEMON_CENTER_2F (3 | (16 << 8))
-#define MAP_FORTREE_CITY_MART              (4 | (16 << 8))
-#define MAP_FORTREE_CITY_HOUSE2            (5 | (16 << 8))
-#define MAP_FORTREE_CITY_HOUSE3            (6 | (16 << 8))
-#define MAP_FORTREE_CITY_HOUSE4            (7 | (16 << 8))
-#define MAP_FORTREE_CITY_HOUSE5            (8 | (16 << 8))
-#define MAP_FORTREE_CITY_DECORATION_SHOP   (9 | (16 << 8))
+    // gMapGroup_IndoorFortree
+    MAP_FORTREE_CITY_HOUSE1            = (0 | (16 << 8)),
+    MAP_FORTREE_CITY_GYM               = (1 | (16 << 8)),
+    MAP_FORTREE_CITY_POKEMON_CENTER_1F = (2 | (16 << 8)),
+    MAP_FORTREE_CITY_POKEMON_CENTER_2F = (3 | (16 << 8)),
+    MAP_FORTREE_CITY_MART              = (4 | (16 << 8)),
+    MAP_FORTREE_CITY_HOUSE2            = (5 | (16 << 8)),
+    MAP_FORTREE_CITY_HOUSE3            = (6 | (16 << 8)),
+    MAP_FORTREE_CITY_HOUSE4            = (7 | (16 << 8)),
+    MAP_FORTREE_CITY_HOUSE5            = (8 | (16 << 8)),
+    MAP_FORTREE_CITY_DECORATION_SHOP   = (9 | (16 << 8)),
 
-// gMapGroup_IndoorLilycove
-#define MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F        (0 | (17 << 8))
-#define MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_2F        (1 | (17 << 8))
-#define MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F        (2 | (17 << 8))
-#define MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F        (3 | (17 << 8))
-#define MAP_LILYCOVE_CITY_CONTEST_LOBBY             (4 | (17 << 8))
-#define MAP_LILYCOVE_CITY_CONTEST_HALL              (5 | (17 << 8))
-#define MAP_LILYCOVE_CITY_POKEMON_CENTER_1F         (6 | (17 << 8))
-#define MAP_LILYCOVE_CITY_POKEMON_CENTER_2F         (7 | (17 << 8))
-#define MAP_LILYCOVE_CITY_UNUSED_MART               (8 | (17 << 8))
-#define MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB  (9 | (17 << 8))
-#define MAP_LILYCOVE_CITY_HARBOR                    (10 | (17 << 8))
-#define MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE       (11 | (17 << 8))
-#define MAP_LILYCOVE_CITY_HOUSE1                    (12 | (17 << 8))
-#define MAP_LILYCOVE_CITY_HOUSE2                    (13 | (17 << 8))
-#define MAP_LILYCOVE_CITY_HOUSE3                    (14 | (17 << 8))
-#define MAP_LILYCOVE_CITY_HOUSE4                    (15 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F       (16 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_2F       (17 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_3F       (18 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F       (19 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F       (20 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP  (21 | (17 << 8))
-#define MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR (22 | (17 << 8))
+    // gMapGroup_IndoorLilycove
+    MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F        = (0 | (17 << 8)),
+    MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_2F        = (1 | (17 << 8)),
+    MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_1F        = (2 | (17 << 8)),
+    MAP_LILYCOVE_CITY_LILYCOVE_MUSEUM_2F        = (3 | (17 << 8)),
+    MAP_LILYCOVE_CITY_CONTEST_LOBBY             = (4 | (17 << 8)),
+    MAP_LILYCOVE_CITY_CONTEST_HALL              = (5 | (17 << 8)),
+    MAP_LILYCOVE_CITY_POKEMON_CENTER_1F         = (6 | (17 << 8)),
+    MAP_LILYCOVE_CITY_POKEMON_CENTER_2F         = (7 | (17 << 8)),
+    MAP_LILYCOVE_CITY_UNUSED_MART               = (8 | (17 << 8)),
+    MAP_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB  = (9 | (17 << 8)),
+    MAP_LILYCOVE_CITY_HARBOR                    = (10 | (17 << 8)),
+    MAP_LILYCOVE_CITY_MOVE_DELETERS_HOUSE       = (11 | (17 << 8)),
+    MAP_LILYCOVE_CITY_HOUSE1                    = (12 | (17 << 8)),
+    MAP_LILYCOVE_CITY_HOUSE2                    = (13 | (17 << 8)),
+    MAP_LILYCOVE_CITY_HOUSE3                    = (14 | (17 << 8)),
+    MAP_LILYCOVE_CITY_HOUSE4                    = (15 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F       = (16 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_2F       = (17 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_3F       = (18 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_4F       = (19 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_5F       = (20 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP  = (21 | (17 << 8)),
+    MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ELEVATOR = (22 | (17 << 8)),
 
-// gMapGroup_IndoorMossdeep
-#define MAP_MOSSDEEP_CITY_GYM               (0 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_HOUSE1            (1 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_HOUSE2            (2 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F (3 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F (4 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_MART              (5 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_HOUSE3            (6 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_STEVENS_HOUSE     (7 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_HOUSE4            (8 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_SPACE_CENTER_1F   (9 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_SPACE_CENTER_2F   (10 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_GAME_CORNER_1F    (11 | (18 << 8))
-#define MAP_MOSSDEEP_CITY_GAME_CORNER_B1F   (12 | (18 << 8))
+    // gMapGroup_IndoorMossdeep
+    MAP_MOSSDEEP_CITY_GYM               = (0 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_HOUSE1            = (1 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_HOUSE2            = (2 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F = (3 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_POKEMON_CENTER_2F = (4 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_MART              = (5 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_HOUSE3            = (6 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_STEVENS_HOUSE     = (7 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_HOUSE4            = (8 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_SPACE_CENTER_1F   = (9 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_SPACE_CENTER_2F   = (10 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_GAME_CORNER_1F    = (11 | (18 << 8)),
+    MAP_MOSSDEEP_CITY_GAME_CORNER_B1F   = (12 | (18 << 8)),
 
-// gMapGroup_IndoorSootopolis
-#define MAP_SOOTOPOLIS_CITY_GYM_1F                   (0 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_GYM_B1F                  (1 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F        (2 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F        (3 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_MART                     (4 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE1                   (5 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE2                   (6 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE3                   (7 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE4                   (8 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE5                   (9 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE6                   (10 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_HOUSE7                   (11 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE   (12 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F  (13 | (19 << 8))
-#define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F (14 | (19 << 8))
+    // gMapGroup_IndoorSootopolis
+    MAP_SOOTOPOLIS_CITY_GYM_1F                   = (0 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_GYM_B1F                  = (1 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_1F        = (2 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_POKEMON_CENTER_2F        = (3 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_MART                     = (4 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE1                   = (5 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE2                   = (6 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE3                   = (7 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE4                   = (8 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE5                   = (9 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE6                   = (10 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_HOUSE7                   = (11 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE   = (12 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F  = (13 | (19 << 8)),
+    MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F = (14 | (19 << 8)),
 
-// gMapGroup_IndoorEverGrande
-#define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM      (0 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_PHOEBES_ROOM      (1 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_GLACIAS_ROOM      (2 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_DRAKES_ROOM       (3 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM    (4 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL1             (5 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL2             (6 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL3             (7 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL4             (8 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL5             (9 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F (10 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_HALL_OF_FAME      (11 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F (12 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F (13 | (20 << 8))
-#define MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_2F (14 | (20 << 8))
+    // gMapGroup_IndoorEverGrande
+    MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM      = (0 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_PHOEBES_ROOM      = (1 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_GLACIAS_ROOM      = (2 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_DRAKES_ROOM       = (3 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_CHAMPIONS_ROOM    = (4 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL1             = (5 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL2             = (6 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL3             = (7 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL4             = (8 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL5             = (9 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F = (10 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_HALL_OF_FAME      = (11 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F = (12 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_POKEMON_CENTER_2F = (13 | (20 << 8)),
+    MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_2F = (14 | (20 << 8)),
 
-// gMapGroup_IndoorRoute104
-#define MAP_ROUTE104_MR_BRINEYS_HOUSE         (0 | (21 << 8))
-#define MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP (1 | (21 << 8))
+    // gMapGroup_IndoorRoute104
+    MAP_ROUTE104_MR_BRINEYS_HOUSE         = (0 | (21 << 8)),
+    MAP_ROUTE104_PRETTY_PETAL_FLOWER_SHOP = (1 | (21 << 8)),
 
-// gMapGroup_IndoorRoute111
-#define MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE (0 | (22 << 8))
-#define MAP_ROUTE111_OLD_LADYS_REST_STOP     (1 | (22 << 8))
+    // gMapGroup_IndoorRoute111
+    MAP_ROUTE111_WINSTRATE_FAMILYS_HOUSE = (0 | (22 << 8)),
+    MAP_ROUTE111_OLD_LADYS_REST_STOP     = (1 | (22 << 8)),
 
-// gMapGroup_IndoorRoute112
-#define MAP_ROUTE112_CABLE_CAR_STATION   (0 | (23 << 8))
-#define MAP_MT_CHIMNEY_CABLE_CAR_STATION (1 | (23 << 8))
+    // gMapGroup_IndoorRoute112
+    MAP_ROUTE112_CABLE_CAR_STATION   = (0 | (23 << 8)),
+    MAP_MT_CHIMNEY_CABLE_CAR_STATION = (1 | (23 << 8)),
 
-// gMapGroup_IndoorRoute114
-#define MAP_ROUTE114_FOSSIL_MANIACS_HOUSE  (0 | (24 << 8))
-#define MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL (1 | (24 << 8))
-#define MAP_ROUTE114_LANETTES_HOUSE        (2 | (24 << 8))
+    // gMapGroup_IndoorRoute114
+    MAP_ROUTE114_FOSSIL_MANIACS_HOUSE  = (0 | (24 << 8)),
+    MAP_ROUTE114_FOSSIL_MANIACS_TUNNEL = (1 | (24 << 8)),
+    MAP_ROUTE114_LANETTES_HOUSE        = (2 | (24 << 8)),
 
-// gMapGroup_IndoorRoute116
-#define MAP_ROUTE116_TUNNELERS_REST_HOUSE (0 | (25 << 8))
+    // gMapGroup_IndoorRoute116
+    MAP_ROUTE116_TUNNELERS_REST_HOUSE = (0 | (25 << 8)),
 
-// gMapGroup_IndoorRoute117
-#define MAP_ROUTE117_POKEMON_DAY_CARE (0 | (26 << 8))
+    // gMapGroup_IndoorRoute117
+    MAP_ROUTE117_POKEMON_DAY_CARE = (0 | (26 << 8)),
 
-// gMapGroup_IndoorRoute121
-#define MAP_ROUTE121_SAFARI_ZONE_ENTRANCE (0 | (27 << 8))
+    // gMapGroup_IndoorRoute121
+    MAP_ROUTE121_SAFARI_ZONE_ENTRANCE = (0 | (27 << 8)),
 
-// gMapGroup_Dungeons
-#define MAP_METEOR_FALLS_1F_1R                       (0 | (28 << 8))
-#define MAP_METEOR_FALLS_1F_2R                       (1 | (28 << 8))
-#define MAP_METEOR_FALLS_B1F_1R                      (2 | (28 << 8))
-#define MAP_METEOR_FALLS_B1F_2R                      (3 | (28 << 8))
-#define MAP_RUSTURF_TUNNEL                           (4 | (28 << 8))
-#define MAP_UNDERWATER_SOOTOPOLIS_CITY               (5 | (28 << 8))
-#define MAP_DESERT_RUINS                             (6 | (28 << 8))
-#define MAP_GRANITE_CAVE_1F                          (7 | (28 << 8))
-#define MAP_GRANITE_CAVE_B1F                         (8 | (28 << 8))
-#define MAP_GRANITE_CAVE_B2F                         (9 | (28 << 8))
-#define MAP_GRANITE_CAVE_STEVENS_ROOM                (10 | (28 << 8))
-#define MAP_PETALBURG_WOODS                          (11 | (28 << 8))
-#define MAP_MT_CHIMNEY                               (12 | (28 << 8))
-#define MAP_JAGGED_PASS                              (13 | (28 << 8))
-#define MAP_FIERY_PATH                               (14 | (28 << 8))
-#define MAP_MT_PYRE_1F                               (15 | (28 << 8))
-#define MAP_MT_PYRE_2F                               (16 | (28 << 8))
-#define MAP_MT_PYRE_3F                               (17 | (28 << 8))
-#define MAP_MT_PYRE_4F                               (18 | (28 << 8))
-#define MAP_MT_PYRE_5F                               (19 | (28 << 8))
-#define MAP_MT_PYRE_6F                               (20 | (28 << 8))
-#define MAP_MT_PYRE_EXTERIOR                         (21 | (28 << 8))
-#define MAP_MT_PYRE_SUMMIT                           (22 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_1F                          (23 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_B1F                         (24 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_B2F                         (25 | (28 << 8))
-#define MAP_UNDERWATER_SEAFLOOR_CAVERN               (26 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ENTRANCE                 (27 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM1                    (28 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM2                    (29 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM3                    (30 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM4                    (31 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM5                    (32 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM6                    (33 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM7                    (34 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM8                    (35 | (28 << 8))
-#define MAP_SEAFLOOR_CAVERN_ROOM9                    (36 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_ENTRANCE                  (37 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_1F                        (38 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1 (39 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2 (40 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3 (41 | (28 << 8))
-#define MAP_CAVE_OF_ORIGIN_B1F                       (42 | (28 << 8))
-#define MAP_VICTORY_ROAD_1F                          (43 | (28 << 8))
-#define MAP_VICTORY_ROAD_B1F                         (44 | (28 << 8))
-#define MAP_VICTORY_ROAD_B2F                         (45 | (28 << 8))
-#define MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM        (46 | (28 << 8))
-#define MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM           (47 | (28 << 8))
-#define MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM          (48 | (28 << 8))
-#define MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM           (49 | (28 << 8))
-#define MAP_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM       (50 | (28 << 8))
-#define MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM          (51 | (28 << 8))
-#define MAP_NEW_MAUVILLE_ENTRANCE                    (52 | (28 << 8))
-#define MAP_NEW_MAUVILLE_INSIDE                      (53 | (28 << 8))
-#define MAP_ABANDONED_SHIP_DECK                      (54 | (28 << 8))
-#define MAP_ABANDONED_SHIP_CORRIDORS_1F              (55 | (28 << 8))
-#define MAP_ABANDONED_SHIP_ROOMS_1F                  (56 | (28 << 8))
-#define MAP_ABANDONED_SHIP_CORRIDORS_B1F             (57 | (28 << 8))
-#define MAP_ABANDONED_SHIP_ROOMS_B1F                 (58 | (28 << 8))
-#define MAP_ABANDONED_SHIP_ROOMS2_B1F                (59 | (28 << 8))
-#define MAP_ABANDONED_SHIP_UNDERWATER1               (60 | (28 << 8))
-#define MAP_ABANDONED_SHIP_ROOM_B1F                  (61 | (28 << 8))
-#define MAP_ABANDONED_SHIP_ROOMS2_1F                 (62 | (28 << 8))
-#define MAP_ABANDONED_SHIP_CAPTAINS_OFFICE           (63 | (28 << 8))
-#define MAP_ABANDONED_SHIP_UNDERWATER2               (64 | (28 << 8))
-#define MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS    (65 | (28 << 8))
-#define MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS        (66 | (28 << 8))
-#define MAP_ISLAND_CAVE                              (67 | (28 << 8))
-#define MAP_ANCIENT_TOMB                             (68 | (28 << 8))
-#define MAP_UNDERWATER_ROUTE134                      (69 | (28 << 8))
-#define MAP_UNDERWATER_SEALED_CHAMBER                (70 | (28 << 8))
-#define MAP_SEALED_CHAMBER_OUTER_ROOM                (71 | (28 << 8))
-#define MAP_SEALED_CHAMBER_INNER_ROOM                (72 | (28 << 8))
-#define MAP_SCORCHED_SLAB                            (73 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1            (74 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP2            (75 | (28 << 8))
-#define MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP3            (76 | (28 << 8))
-#define MAP_SKY_PILLAR_ENTRANCE                      (77 | (28 << 8))
-#define MAP_SKY_PILLAR_OUTSIDE                       (78 | (28 << 8))
-#define MAP_SKY_PILLAR_1F                            (79 | (28 << 8))
-#define MAP_SKY_PILLAR_2F                            (80 | (28 << 8))
-#define MAP_SKY_PILLAR_3F                            (81 | (28 << 8))
-#define MAP_SKY_PILLAR_4F                            (82 | (28 << 8))
-#define MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM             (83 | (28 << 8))
-#define MAP_SKY_PILLAR_5F                            (84 | (28 << 8))
-#define MAP_SKY_PILLAR_TOP                           (85 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_1F                         (86 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_2F_1R                      (87 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_2F_2R                      (88 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_3F_1R                      (89 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_3F_2R                      (90 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_4F                         (91 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_3F_3R                      (92 | (28 << 8))
-#define MAP_MAGMA_HIDEOUT_2F_3R                      (93 | (28 << 8))
-#define MAP_MIRAGE_TOWER_1F                          (94 | (28 << 8))
-#define MAP_MIRAGE_TOWER_2F                          (95 | (28 << 8))
-#define MAP_MIRAGE_TOWER_3F                          (96 | (28 << 8))
-#define MAP_MIRAGE_TOWER_4F                          (97 | (28 << 8))
-#define MAP_DESERT_UNDERPASS                         (98 | (28 << 8))
-#define MAP_ARTISAN_CAVE_B1F                         (99 | (28 << 8))
-#define MAP_ARTISAN_CAVE_1F                          (100 | (28 << 8))
-#define MAP_UNDERWATER_MARINE_CAVE                   (101 | (28 << 8))
-#define MAP_MARINE_CAVE_ENTRANCE                     (102 | (28 << 8))
-#define MAP_MARINE_CAVE_END                          (103 | (28 << 8))
-#define MAP_TERRA_CAVE_ENTRANCE                      (104 | (28 << 8))
-#define MAP_TERRA_CAVE_END                           (105 | (28 << 8))
-#define MAP_ALTERING_CAVE                            (106 | (28 << 8))
-#define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (28 << 8))
+    // gMapGroup_Dungeons
+    MAP_METEOR_FALLS_1F_1R                       = (0 | (28 << 8)),
+    MAP_METEOR_FALLS_1F_2R                       = (1 | (28 << 8)),
+    MAP_METEOR_FALLS_B1F_1R                      = (2 | (28 << 8)),
+    MAP_METEOR_FALLS_B1F_2R                      = (3 | (28 << 8)),
+    MAP_RUSTURF_TUNNEL                           = (4 | (28 << 8)),
+    MAP_UNDERWATER_SOOTOPOLIS_CITY               = (5 | (28 << 8)),
+    MAP_DESERT_RUINS                             = (6 | (28 << 8)),
+    MAP_GRANITE_CAVE_1F                          = (7 | (28 << 8)),
+    MAP_GRANITE_CAVE_B1F                         = (8 | (28 << 8)),
+    MAP_GRANITE_CAVE_B2F                         = (9 | (28 << 8)),
+    MAP_GRANITE_CAVE_STEVENS_ROOM                = (10 | (28 << 8)),
+    MAP_PETALBURG_WOODS                          = (11 | (28 << 8)),
+    MAP_MT_CHIMNEY                               = (12 | (28 << 8)),
+    MAP_JAGGED_PASS                              = (13 | (28 << 8)),
+    MAP_FIERY_PATH                               = (14 | (28 << 8)),
+    MAP_MT_PYRE_1F                               = (15 | (28 << 8)),
+    MAP_MT_PYRE_2F                               = (16 | (28 << 8)),
+    MAP_MT_PYRE_3F                               = (17 | (28 << 8)),
+    MAP_MT_PYRE_4F                               = (18 | (28 << 8)),
+    MAP_MT_PYRE_5F                               = (19 | (28 << 8)),
+    MAP_MT_PYRE_6F                               = (20 | (28 << 8)),
+    MAP_MT_PYRE_EXTERIOR                         = (21 | (28 << 8)),
+    MAP_MT_PYRE_SUMMIT                           = (22 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_1F                          = (23 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_B1F                         = (24 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_B2F                         = (25 | (28 << 8)),
+    MAP_UNDERWATER_SEAFLOOR_CAVERN               = (26 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ENTRANCE                 = (27 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM1                    = (28 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM2                    = (29 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM3                    = (30 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM4                    = (31 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM5                    = (32 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM6                    = (33 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM7                    = (34 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM8                    = (35 | (28 << 8)),
+    MAP_SEAFLOOR_CAVERN_ROOM9                    = (36 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_ENTRANCE                  = (37 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_1F                        = (38 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1 = (39 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2 = (40 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3 = (41 | (28 << 8)),
+    MAP_CAVE_OF_ORIGIN_B1F                       = (42 | (28 << 8)),
+    MAP_VICTORY_ROAD_1F                          = (43 | (28 << 8)),
+    MAP_VICTORY_ROAD_B1F                         = (44 | (28 << 8)),
+    MAP_VICTORY_ROAD_B2F                         = (45 | (28 << 8)),
+    MAP_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM        = (46 | (28 << 8)),
+    MAP_SHOAL_CAVE_LOW_TIDE_INNER_ROOM           = (47 | (28 << 8)),
+    MAP_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM          = (48 | (28 << 8)),
+    MAP_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM           = (49 | (28 << 8)),
+    MAP_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM       = (50 | (28 << 8)),
+    MAP_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM          = (51 | (28 << 8)),
+    MAP_NEW_MAUVILLE_ENTRANCE                    = (52 | (28 << 8)),
+    MAP_NEW_MAUVILLE_INSIDE                      = (53 | (28 << 8)),
+    MAP_ABANDONED_SHIP_DECK                      = (54 | (28 << 8)),
+    MAP_ABANDONED_SHIP_CORRIDORS_1F              = (55 | (28 << 8)),
+    MAP_ABANDONED_SHIP_ROOMS_1F                  = (56 | (28 << 8)),
+    MAP_ABANDONED_SHIP_CORRIDORS_B1F             = (57 | (28 << 8)),
+    MAP_ABANDONED_SHIP_ROOMS_B1F                 = (58 | (28 << 8)),
+    MAP_ABANDONED_SHIP_ROOMS2_B1F                = (59 | (28 << 8)),
+    MAP_ABANDONED_SHIP_UNDERWATER1               = (60 | (28 << 8)),
+    MAP_ABANDONED_SHIP_ROOM_B1F                  = (61 | (28 << 8)),
+    MAP_ABANDONED_SHIP_ROOMS2_1F                 = (62 | (28 << 8)),
+    MAP_ABANDONED_SHIP_CAPTAINS_OFFICE           = (63 | (28 << 8)),
+    MAP_ABANDONED_SHIP_UNDERWATER2               = (64 | (28 << 8)),
+    MAP_ABANDONED_SHIP_HIDDEN_FLOOR_CORRIDORS    = (65 | (28 << 8)),
+    MAP_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS        = (66 | (28 << 8)),
+    MAP_ISLAND_CAVE                              = (67 | (28 << 8)),
+    MAP_ANCIENT_TOMB                             = (68 | (28 << 8)),
+    MAP_UNDERWATER_ROUTE134                      = (69 | (28 << 8)),
+    MAP_UNDERWATER_SEALED_CHAMBER                = (70 | (28 << 8)),
+    MAP_SEALED_CHAMBER_OUTER_ROOM                = (71 | (28 << 8)),
+    MAP_SEALED_CHAMBER_INNER_ROOM                = (72 | (28 << 8)),
+    MAP_SCORCHED_SLAB                            = (73 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP1            = (74 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP2            = (75 | (28 << 8)),
+    MAP_AQUA_HIDEOUT_UNUSED_RUBY_MAP3            = (76 | (28 << 8)),
+    MAP_SKY_PILLAR_ENTRANCE                      = (77 | (28 << 8)),
+    MAP_SKY_PILLAR_OUTSIDE                       = (78 | (28 << 8)),
+    MAP_SKY_PILLAR_1F                            = (79 | (28 << 8)),
+    MAP_SKY_PILLAR_2F                            = (80 | (28 << 8)),
+    MAP_SKY_PILLAR_3F                            = (81 | (28 << 8)),
+    MAP_SKY_PILLAR_4F                            = (82 | (28 << 8)),
+    MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM             = (83 | (28 << 8)),
+    MAP_SKY_PILLAR_5F                            = (84 | (28 << 8)),
+    MAP_SKY_PILLAR_TOP                           = (85 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_1F                         = (86 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_2F_1R                      = (87 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_2F_2R                      = (88 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_3F_1R                      = (89 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_3F_2R                      = (90 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_4F                         = (91 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_3F_3R                      = (92 | (28 << 8)),
+    MAP_MAGMA_HIDEOUT_2F_3R                      = (93 | (28 << 8)),
+    MAP_MIRAGE_TOWER_1F                          = (94 | (28 << 8)),
+    MAP_MIRAGE_TOWER_2F                          = (95 | (28 << 8)),
+    MAP_MIRAGE_TOWER_3F                          = (96 | (28 << 8)),
+    MAP_MIRAGE_TOWER_4F                          = (97 | (28 << 8)),
+    MAP_DESERT_UNDERPASS                         = (98 | (28 << 8)),
+    MAP_ARTISAN_CAVE_B1F                         = (99 | (28 << 8)),
+    MAP_ARTISAN_CAVE_1F                          = (100 | (28 << 8)),
+    MAP_UNDERWATER_MARINE_CAVE                   = (101 | (28 << 8)),
+    MAP_MARINE_CAVE_ENTRANCE                     = (102 | (28 << 8)),
+    MAP_MARINE_CAVE_END                          = (103 | (28 << 8)),
+    MAP_TERRA_CAVE_ENTRANCE                      = (104 | (28 << 8)),
+    MAP_TERRA_CAVE_END                           = (105 | (28 << 8)),
+    MAP_ALTERING_CAVE                            = (106 | (28 << 8)),
+    MAP_METEOR_FALLS_STEVENS_CAVE                = (107 | (28 << 8)),
 
-// gMapGroup_IndoorDynamic
-#define MAP_SECRET_BASE_RED_CAVE1    (0 | (29 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE1  (1 | (29 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE1   (2 | (29 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE1 (3 | (29 << 8))
-#define MAP_SECRET_BASE_TREE1        (4 | (29 << 8))
-#define MAP_SECRET_BASE_SHRUB1       (5 | (29 << 8))
-#define MAP_SECRET_BASE_RED_CAVE2    (6 | (29 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE2  (7 | (29 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE2   (8 | (29 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE2 (9 | (29 << 8))
-#define MAP_SECRET_BASE_TREE2        (10 | (29 << 8))
-#define MAP_SECRET_BASE_SHRUB2       (11 | (29 << 8))
-#define MAP_SECRET_BASE_RED_CAVE3    (12 | (29 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE3  (13 | (29 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE3   (14 | (29 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE3 (15 | (29 << 8))
-#define MAP_SECRET_BASE_TREE3        (16 | (29 << 8))
-#define MAP_SECRET_BASE_SHRUB3       (17 | (29 << 8))
-#define MAP_SECRET_BASE_RED_CAVE4    (18 | (29 << 8))
-#define MAP_SECRET_BASE_BROWN_CAVE4  (19 | (29 << 8))
-#define MAP_SECRET_BASE_BLUE_CAVE4   (20 | (29 << 8))
-#define MAP_SECRET_BASE_YELLOW_CAVE4 (21 | (29 << 8))
-#define MAP_SECRET_BASE_TREE4        (22 | (29 << 8))
-#define MAP_SECRET_BASE_SHRUB4       (23 | (29 << 8))
-#define MAP_BATTLE_COLOSSEUM_2P      (24 | (29 << 8))
-#define MAP_TRADE_CENTER             (25 | (29 << 8))
-#define MAP_RECORD_CORNER            (26 | (29 << 8))
-#define MAP_BATTLE_COLOSSEUM_4P      (27 | (29 << 8))
-#define MAP_CONTEST_HALL             (28 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL1     (29 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL2     (30 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL3     (31 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL4     (32 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL5     (33 | (29 << 8))
-#define MAP_UNUSED_CONTEST_HALL6     (34 | (29 << 8))
-#define MAP_CONTEST_HALL_BEAUTY      (35 | (29 << 8))
-#define MAP_CONTEST_HALL_TOUGH       (36 | (29 << 8))
-#define MAP_CONTEST_HALL_COOL        (37 | (29 << 8))
-#define MAP_CONTEST_HALL_SMART       (38 | (29 << 8))
-#define MAP_CONTEST_HALL_CUTE        (39 | (29 << 8))
-#define MAP_INSIDE_OF_TRUCK          (40 | (29 << 8))
-#define MAP_SS_TIDAL_CORRIDOR        (41 | (29 << 8))
-#define MAP_SS_TIDAL_LOWER_DECK      (42 | (29 << 8))
-#define MAP_SS_TIDAL_ROOMS           (43 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE01  (44 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE02  (45 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE03  (46 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE04  (47 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE05  (48 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE06  (49 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE07  (50 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE08  (51 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE09  (52 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE10  (53 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE11  (54 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE12  (55 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE13  (56 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE14  (57 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE15  (58 | (29 << 8))
-#define MAP_BATTLE_PYRAMID_SQUARE16  (59 | (29 << 8))
-#define MAP_UNION_ROOM               (60 | (29 << 8))
+    // gMapGroup_IndoorDynamic
+    MAP_SECRET_BASE_RED_CAVE1    = (0 | (29 << 8)),
+    MAP_SECRET_BASE_BROWN_CAVE1  = (1 | (29 << 8)),
+    MAP_SECRET_BASE_BLUE_CAVE1   = (2 | (29 << 8)),
+    MAP_SECRET_BASE_YELLOW_CAVE1 = (3 | (29 << 8)),
+    MAP_SECRET_BASE_TREE1        = (4 | (29 << 8)),
+    MAP_SECRET_BASE_SHRUB1       = (5 | (29 << 8)),
+    MAP_SECRET_BASE_RED_CAVE2    = (6 | (29 << 8)),
+    MAP_SECRET_BASE_BROWN_CAVE2  = (7 | (29 << 8)),
+    MAP_SECRET_BASE_BLUE_CAVE2   = (8 | (29 << 8)),
+    MAP_SECRET_BASE_YELLOW_CAVE2 = (9 | (29 << 8)),
+    MAP_SECRET_BASE_TREE2        = (10 | (29 << 8)),
+    MAP_SECRET_BASE_SHRUB2       = (11 | (29 << 8)),
+    MAP_SECRET_BASE_RED_CAVE3    = (12 | (29 << 8)),
+    MAP_SECRET_BASE_BROWN_CAVE3  = (13 | (29 << 8)),
+    MAP_SECRET_BASE_BLUE_CAVE3   = (14 | (29 << 8)),
+    MAP_SECRET_BASE_YELLOW_CAVE3 = (15 | (29 << 8)),
+    MAP_SECRET_BASE_TREE3        = (16 | (29 << 8)),
+    MAP_SECRET_BASE_SHRUB3       = (17 | (29 << 8)),
+    MAP_SECRET_BASE_RED_CAVE4    = (18 | (29 << 8)),
+    MAP_SECRET_BASE_BROWN_CAVE4  = (19 | (29 << 8)),
+    MAP_SECRET_BASE_BLUE_CAVE4   = (20 | (29 << 8)),
+    MAP_SECRET_BASE_YELLOW_CAVE4 = (21 | (29 << 8)),
+    MAP_SECRET_BASE_TREE4        = (22 | (29 << 8)),
+    MAP_SECRET_BASE_SHRUB4       = (23 | (29 << 8)),
+    MAP_BATTLE_COLOSSEUM_2P      = (24 | (29 << 8)),
+    MAP_TRADE_CENTER             = (25 | (29 << 8)),
+    MAP_RECORD_CORNER            = (26 | (29 << 8)),
+    MAP_BATTLE_COLOSSEUM_4P      = (27 | (29 << 8)),
+    MAP_CONTEST_HALL             = (28 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL1     = (29 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL2     = (30 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL3     = (31 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL4     = (32 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL5     = (33 | (29 << 8)),
+    MAP_UNUSED_CONTEST_HALL6     = (34 | (29 << 8)),
+    MAP_CONTEST_HALL_BEAUTY      = (35 | (29 << 8)),
+    MAP_CONTEST_HALL_TOUGH       = (36 | (29 << 8)),
+    MAP_CONTEST_HALL_COOL        = (37 | (29 << 8)),
+    MAP_CONTEST_HALL_SMART       = (38 | (29 << 8)),
+    MAP_CONTEST_HALL_CUTE        = (39 | (29 << 8)),
+    MAP_INSIDE_OF_TRUCK          = (40 | (29 << 8)),
+    MAP_SS_TIDAL_CORRIDOR        = (41 | (29 << 8)),
+    MAP_SS_TIDAL_LOWER_DECK      = (42 | (29 << 8)),
+    MAP_SS_TIDAL_ROOMS           = (43 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE01  = (44 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE02  = (45 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE03  = (46 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE04  = (47 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE05  = (48 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE06  = (49 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE07  = (50 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE08  = (51 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE09  = (52 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE10  = (53 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE11  = (54 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE12  = (55 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE13  = (56 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE14  = (57 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE15  = (58 | (29 << 8)),
+    MAP_BATTLE_PYRAMID_SQUARE16  = (59 | (29 << 8)),
+    MAP_UNION_ROOM               = (60 | (29 << 8)),
 
-// gMapGroup_SpecialArea
-#define MAP_SAFARI_ZONE_NORTHWEST                           (0 | (30 << 8))
-#define MAP_SAFARI_ZONE_NORTH                               (1 | (30 << 8))
-#define MAP_SAFARI_ZONE_SOUTHWEST                           (2 | (30 << 8))
-#define MAP_SAFARI_ZONE_SOUTH                               (3 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_OUTSIDE_WEST                    (4 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY              (5 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR           (6 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_CORRIDOR           (7 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM        (8 | (30 << 8))
-#define MAP_SOUTHERN_ISLAND_EXTERIOR                        (9 | (30 << 8))
-#define MAP_SOUTHERN_ISLAND_INTERIOR                        (10 | (30 << 8))
-#define MAP_SAFARI_ZONE_REST_HOUSE                          (11 | (30 << 8))
-#define MAP_SAFARI_ZONE_NORTHEAST                           (12 | (30 << 8))
-#define MAP_SAFARI_ZONE_SOUTHEAST                           (13 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_OUTSIDE_EAST                    (14 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM (15 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR     (16 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM  (17 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY               (18 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR            (19 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM     (20 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM         (21 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY             (22 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR          (23 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM       (24 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY            (25 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR            (26 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP              (27 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY              (28 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR           (29 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM        (30 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY            (31 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM  (32 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM      (33 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY               (34 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR            (35 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM     (36 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL         (37 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL          (38 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS      (39 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_RANKING_HALL                    (40 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE1                         (41 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_EXCHANGE_SERVICE_CORNER         (42 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE2                         (43 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE3                         (44 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE4                         (45 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_SCOTTS_HOUSE                    (46 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE5                         (47 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE6                         (48 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE7                         (49 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_RECEPTION_GATE                  (50 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE8                         (51 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_LOUNGE9                         (52 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F               (53 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_POKEMON_CENTER_2F               (54 | (30 << 8))
-#define MAP_BATTLE_FRONTIER_MART                            (55 | (30 << 8))
-#define MAP_FARAWAY_ISLAND_ENTRANCE                         (56 | (30 << 8))
-#define MAP_FARAWAY_ISLAND_INTERIOR                         (57 | (30 << 8))
-#define MAP_BIRTH_ISLAND_EXTERIOR                           (58 | (30 << 8))
-#define MAP_BIRTH_ISLAND_HARBOR                             (59 | (30 << 8))
-#define MAP_TRAINER_HILL_ENTRANCE                           (60 | (30 << 8))
-#define MAP_TRAINER_HILL_1F                                 (61 | (30 << 8))
-#define MAP_TRAINER_HILL_2F                                 (62 | (30 << 8))
-#define MAP_TRAINER_HILL_3F                                 (63 | (30 << 8))
-#define MAP_TRAINER_HILL_4F                                 (64 | (30 << 8))
-#define MAP_TRAINER_HILL_ROOF                               (65 | (30 << 8))
-#define MAP_NAVEL_ROCK_EXTERIOR                             (66 | (30 << 8))
-#define MAP_NAVEL_ROCK_HARBOR                               (67 | (30 << 8))
-#define MAP_NAVEL_ROCK_ENTRANCE                             (68 | (30 << 8))
-#define MAP_NAVEL_ROCK_B1F                                  (69 | (30 << 8))
-#define MAP_NAVEL_ROCK_FORK                                 (70 | (30 << 8))
-#define MAP_NAVEL_ROCK_UP1                                  (71 | (30 << 8))
-#define MAP_NAVEL_ROCK_UP2                                  (72 | (30 << 8))
-#define MAP_NAVEL_ROCK_UP3                                  (73 | (30 << 8))
-#define MAP_NAVEL_ROCK_UP4                                  (74 | (30 << 8))
-#define MAP_NAVEL_ROCK_TOP                                  (75 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN01                               (76 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN02                               (77 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN03                               (78 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN04                               (79 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN05                               (80 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN06                               (81 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN07                               (82 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN08                               (83 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN09                               (84 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN10                               (85 | (30 << 8))
-#define MAP_NAVEL_ROCK_DOWN11                               (86 | (30 << 8))
-#define MAP_NAVEL_ROCK_BOTTOM                               (87 | (30 << 8))
-#define MAP_TRAINER_HILL_ELEVATOR                           (88 | (30 << 8))
+    // gMapGroup_SpecialArea
+    MAP_SAFARI_ZONE_NORTHWEST                           = (0 | (30 << 8)),
+    MAP_SAFARI_ZONE_NORTH                               = (1 | (30 << 8)),
+    MAP_SAFARI_ZONE_SOUTHWEST                           = (2 | (30 << 8)),
+    MAP_SAFARI_ZONE_SOUTH                               = (3 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_OUTSIDE_WEST                    = (4 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_LOBBY              = (5 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_ELEVATOR           = (6 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_CORRIDOR           = (7 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_BATTLE_ROOM        = (8 | (30 << 8)),
+    MAP_SOUTHERN_ISLAND_EXTERIOR                        = (9 | (30 << 8)),
+    MAP_SOUTHERN_ISLAND_INTERIOR                        = (10 | (30 << 8)),
+    MAP_SAFARI_ZONE_REST_HOUSE                          = (11 | (30 << 8)),
+    MAP_SAFARI_ZONE_NORTHEAST                           = (12 | (30 << 8)),
+    MAP_SAFARI_ZONE_SOUTHEAST                           = (13 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_OUTSIDE_EAST                    = (14 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM = (15 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_CORRIDOR     = (16 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_BATTLE_ROOM  = (17 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_DOME_LOBBY               = (18 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_DOME_CORRIDOR            = (19 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_DOME_PRE_BATTLE_ROOM     = (20 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_DOME_BATTLE_ROOM         = (21 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PALACE_LOBBY             = (22 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PALACE_CORRIDOR          = (23 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM       = (24 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY            = (25 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR            = (26 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP              = (27 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_ARENA_LOBBY              = (28 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_ARENA_CORRIDOR           = (29 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_ARENA_BATTLE_ROOM        = (30 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY            = (31 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_FACTORY_PRE_BATTLE_ROOM  = (32 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_FACTORY_BATTLE_ROOM      = (33 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY               = (34 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_CORRIDOR            = (35 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_THREE_PATH_ROOM     = (36 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_NORMAL         = (37 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_FINAL          = (38 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS      = (39 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_RANKING_HALL                    = (40 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE1                         = (41 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_EXCHANGE_SERVICE_CORNER         = (42 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE2                         = (43 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE3                         = (44 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE4                         = (45 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_SCOTTS_HOUSE                    = (46 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE5                         = (47 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE6                         = (48 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE7                         = (49 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_RECEPTION_GATE                  = (50 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE8                         = (51 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_LOUNGE9                         = (52 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F               = (53 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_POKEMON_CENTER_2F               = (54 | (30 << 8)),
+    MAP_BATTLE_FRONTIER_MART                            = (55 | (30 << 8)),
+    MAP_FARAWAY_ISLAND_ENTRANCE                         = (56 | (30 << 8)),
+    MAP_FARAWAY_ISLAND_INTERIOR                         = (57 | (30 << 8)),
+    MAP_BIRTH_ISLAND_EXTERIOR                           = (58 | (30 << 8)),
+    MAP_BIRTH_ISLAND_HARBOR                             = (59 | (30 << 8)),
+    MAP_TRAINER_HILL_ENTRANCE                           = (60 | (30 << 8)),
+    MAP_TRAINER_HILL_1F                                 = (61 | (30 << 8)),
+    MAP_TRAINER_HILL_2F                                 = (62 | (30 << 8)),
+    MAP_TRAINER_HILL_3F                                 = (63 | (30 << 8)),
+    MAP_TRAINER_HILL_4F                                 = (64 | (30 << 8)),
+    MAP_TRAINER_HILL_ROOF                               = (65 | (30 << 8)),
+    MAP_NAVEL_ROCK_EXTERIOR                             = (66 | (30 << 8)),
+    MAP_NAVEL_ROCK_HARBOR                               = (67 | (30 << 8)),
+    MAP_NAVEL_ROCK_ENTRANCE                             = (68 | (30 << 8)),
+    MAP_NAVEL_ROCK_B1F                                  = (69 | (30 << 8)),
+    MAP_NAVEL_ROCK_FORK                                 = (70 | (30 << 8)),
+    MAP_NAVEL_ROCK_UP1                                  = (71 | (30 << 8)),
+    MAP_NAVEL_ROCK_UP2                                  = (72 | (30 << 8)),
+    MAP_NAVEL_ROCK_UP3                                  = (73 | (30 << 8)),
+    MAP_NAVEL_ROCK_UP4                                  = (74 | (30 << 8)),
+    MAP_NAVEL_ROCK_TOP                                  = (75 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN01                               = (76 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN02                               = (77 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN03                               = (78 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN04                               = (79 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN05                               = (80 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN06                               = (81 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN07                               = (82 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN08                               = (83 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN09                               = (84 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN10                               = (85 | (30 << 8)),
+    MAP_NAVEL_ROCK_DOWN11                               = (86 | (30 << 8)),
+    MAP_NAVEL_ROCK_BOTTOM                               = (87 | (30 << 8)),
+    MAP_TRAINER_HILL_ELEVATOR                           = (88 | (30 << 8)),
 
-// gMapGroup_IndoorRoute104Prototype
-#define MAP_ROUTE104_PROTOTYPE                          (0 | (31 << 8))
-#define MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP (1 | (31 << 8))
+    // gMapGroup_IndoorRoute104Prototype
+    MAP_ROUTE104_PROTOTYPE                          = (0 | (31 << 8)),
+    MAP_ROUTE104_PROTOTYPE_PRETTY_PETAL_FLOWER_SHOP = (1 | (31 << 8)),
 
-// gMapGroup_IndoorRoute109
-#define MAP_ROUTE109_SEASHORE_HOUSE (0 | (32 << 8))
+    // gMapGroup_IndoorRoute109
+    MAP_ROUTE109_SEASHORE_HOUSE = (0 | (32 << 8)),
 
-// gMapGroup_IndoorRoute110
-#define MAP_ROUTE110_TRICK_HOUSE_ENTRANCE                (0 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_END                     (1 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_CORRIDOR                (2 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE1                 (3 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE2                 (4 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE3                 (5 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE4                 (6 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE5                 (7 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE6                 (8 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE7                 (9 | (33 << 8))
-#define MAP_ROUTE110_TRICK_HOUSE_PUZZLE8                 (10 | (33 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE (11 | (33 << 8))
-#define MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE (12 | (33 << 8))
+    // gMapGroup_IndoorRoute110
+    MAP_ROUTE110_TRICK_HOUSE_ENTRANCE                = (0 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_END                     = (1 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_CORRIDOR                = (2 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE1                 = (3 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE2                 = (4 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE3                 = (5 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE4                 = (6 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE5                 = (7 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE6                 = (8 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE7                 = (9 | (33 << 8)),
+    MAP_ROUTE110_TRICK_HOUSE_PUZZLE8                 = (10 | (33 << 8)),
+    MAP_ROUTE110_SEASIDE_CYCLING_ROAD_SOUTH_ENTRANCE = (11 | (33 << 8)),
+    MAP_ROUTE110_SEASIDE_CYCLING_ROAD_NORTH_ENTRANCE = (12 | (33 << 8)),
 
-// gMapGroup_IndoorRoute113
-#define MAP_ROUTE113_GLASS_WORKSHOP (0 | (34 << 8))
+    // gMapGroup_IndoorRoute113
+    MAP_ROUTE113_GLASS_WORKSHOP = (0 | (34 << 8)),
 
-// gMapGroup_IndoorRoute123
-#define MAP_ROUTE123_BERRY_MASTERS_HOUSE (0 | (35 << 8))
+    // gMapGroup_IndoorRoute123
+    MAP_ROUTE123_BERRY_MASTERS_HOUSE = (0 | (35 << 8)),
 
-// gMapGroup_IndoorRoute119
-#define MAP_ROUTE119_WEATHER_INSTITUTE_1F (0 | (36 << 8))
-#define MAP_ROUTE119_WEATHER_INSTITUTE_2F (1 | (36 << 8))
-#define MAP_ROUTE119_HOUSE                (2 | (36 << 8))
+    // gMapGroup_IndoorRoute119
+    MAP_ROUTE119_WEATHER_INSTITUTE_1F = (0 | (36 << 8)),
+    MAP_ROUTE119_WEATHER_INSTITUTE_2F = (1 | (36 << 8)),
+    MAP_ROUTE119_HOUSE                = (2 | (36 << 8)),
 
-// gMapGroup_IndoorRoute124
-#define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (37 << 8))
+    // gMapGroup_IndoorRoute124
+    MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE = (0 | (37 << 8)),
 
-#define MAP_GROUPS_COUNT 38
+    // gMapGroup_Link_Frlg
+    MAP_BATTLE_COLOSSEUM_2P_FRLG = (0 | (38 << 8)),
+    MAP_TRADE_CENTER_FRLG        = (1 | (38 << 8)),
+    MAP_RECORD_CORNER_FRLG       = (2 | (38 << 8)),
+    MAP_BATTLE_COLOSSEUM_4P_FRLG = (3 | (38 << 8)),
+    MAP_UNION_ROOM_FRLG          = (4 | (38 << 8)),
+
+    // gMapGroup_Dungeons_Frlg
+    MAP_VIRIDIAN_FOREST                      = (0 | (39 << 8)),
+    MAP_MT_MOON_1F                           = (1 | (39 << 8)),
+    MAP_MT_MOON_B1F                          = (2 | (39 << 8)),
+    MAP_MT_MOON_B2F                          = (3 | (39 << 8)),
+    MAP_SSANNE_EXTERIOR                      = (4 | (39 << 8)),
+    MAP_SSANNE_1F_CORRIDOR                   = (5 | (39 << 8)),
+    MAP_SSANNE_2F_CORRIDOR                   = (6 | (39 << 8)),
+    MAP_SSANNE_3F_CORRIDOR                   = (7 | (39 << 8)),
+    MAP_SSANNE_B1F_CORRIDOR                  = (8 | (39 << 8)),
+    MAP_SSANNE_DECK                          = (9 | (39 << 8)),
+    MAP_SSANNE_KITCHEN                       = (10 | (39 << 8)),
+    MAP_SSANNE_CAPTAINS_OFFICE               = (11 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM1                      = (12 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM2                      = (13 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM3                      = (14 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM4                      = (15 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM5                      = (16 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM7                      = (17 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM1                      = (18 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM2                      = (19 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM3                      = (20 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM4                      = (21 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM5                      = (22 | (39 << 8)),
+    MAP_SSANNE_2F_ROOM6                      = (23 | (39 << 8)),
+    MAP_SSANNE_B1F_ROOM1                     = (24 | (39 << 8)),
+    MAP_SSANNE_B1F_ROOM2                     = (25 | (39 << 8)),
+    MAP_SSANNE_B1F_ROOM3                     = (26 | (39 << 8)),
+    MAP_SSANNE_B1F_ROOM4                     = (27 | (39 << 8)),
+    MAP_SSANNE_B1F_ROOM5                     = (28 | (39 << 8)),
+    MAP_SSANNE_1F_ROOM6                      = (29 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_NORTH_ENTRANCE      = (30 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL  = (31 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE      = (32 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_WEST_ENTRANCE       = (33 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_EAST_WEST_TUNNEL    = (34 | (39 << 8)),
+    MAP_UNDERGROUND_PATH_EAST_ENTRANCE       = (35 | (39 << 8)),
+    MAP_DIGLETTS_CAVE_NORTH_ENTRANCE         = (36 | (39 << 8)),
+    MAP_DIGLETTS_CAVE_B1F                    = (37 | (39 << 8)),
+    MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE         = (38 | (39 << 8)),
+    MAP_VICTORY_ROAD_1F_FRLG                 = (39 | (39 << 8)),
+    MAP_VICTORY_ROAD_2F                      = (40 | (39 << 8)),
+    MAP_VICTORY_ROAD_3F                      = (41 | (39 << 8)),
+    MAP_ROCKET_HIDEOUT_B1F                   = (42 | (39 << 8)),
+    MAP_ROCKET_HIDEOUT_B2F                   = (43 | (39 << 8)),
+    MAP_ROCKET_HIDEOUT_B3F                   = (44 | (39 << 8)),
+    MAP_ROCKET_HIDEOUT_B4F                   = (45 | (39 << 8)),
+    MAP_ROCKET_HIDEOUT_ELEVATOR              = (46 | (39 << 8)),
+    MAP_SILPH_CO_1F                          = (47 | (39 << 8)),
+    MAP_SILPH_CO_2F                          = (48 | (39 << 8)),
+    MAP_SILPH_CO_3F                          = (49 | (39 << 8)),
+    MAP_SILPH_CO_4F                          = (50 | (39 << 8)),
+    MAP_SILPH_CO_5F                          = (51 | (39 << 8)),
+    MAP_SILPH_CO_6F                          = (52 | (39 << 8)),
+    MAP_SILPH_CO_7F                          = (53 | (39 << 8)),
+    MAP_SILPH_CO_8F                          = (54 | (39 << 8)),
+    MAP_SILPH_CO_9F                          = (55 | (39 << 8)),
+    MAP_SILPH_CO_10F                         = (56 | (39 << 8)),
+    MAP_SILPH_CO_11F                         = (57 | (39 << 8)),
+    MAP_SILPH_CO_ELEVATOR                    = (58 | (39 << 8)),
+    MAP_POKEMON_MANSION_1F                   = (59 | (39 << 8)),
+    MAP_POKEMON_MANSION_2F                   = (60 | (39 << 8)),
+    MAP_POKEMON_MANSION_3F                   = (61 | (39 << 8)),
+    MAP_POKEMON_MANSION_B1F                  = (62 | (39 << 8)),
+    MAP_SAFARI_ZONE_CENTER                   = (63 | (39 << 8)),
+    MAP_SAFARI_ZONE_EAST                     = (64 | (39 << 8)),
+    MAP_SAFARI_ZONE_NORTH_FRLG               = (65 | (39 << 8)),
+    MAP_SAFARI_ZONE_WEST                     = (66 | (39 << 8)),
+    MAP_SAFARI_ZONE_CENTER_REST_HOUSE        = (67 | (39 << 8)),
+    MAP_SAFARI_ZONE_EAST_REST_HOUSE          = (68 | (39 << 8)),
+    MAP_SAFARI_ZONE_NORTH_REST_HOUSE         = (69 | (39 << 8)),
+    MAP_SAFARI_ZONE_WEST_REST_HOUSE          = (70 | (39 << 8)),
+    MAP_SAFARI_ZONE_SECRET_HOUSE             = (71 | (39 << 8)),
+    MAP_CERULEAN_CAVE_1F                     = (72 | (39 << 8)),
+    MAP_CERULEAN_CAVE_2F                     = (73 | (39 << 8)),
+    MAP_CERULEAN_CAVE_B1F                    = (74 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_LORELEIS_ROOM         = (75 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_BRUNOS_ROOM           = (76 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_AGATHAS_ROOM          = (77 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_LANCES_ROOM           = (78 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_CHAMPIONS_ROOM        = (79 | (39 << 8)),
+    MAP_POKEMON_LEAGUE_HALL_OF_FAME          = (80 | (39 << 8)),
+    MAP_ROCK_TUNNEL_1F                       = (81 | (39 << 8)),
+    MAP_ROCK_TUNNEL_B1F                      = (82 | (39 << 8)),
+    MAP_SEAFOAM_ISLANDS_1F                   = (83 | (39 << 8)),
+    MAP_SEAFOAM_ISLANDS_B1F                  = (84 | (39 << 8)),
+    MAP_SEAFOAM_ISLANDS_B2F                  = (85 | (39 << 8)),
+    MAP_SEAFOAM_ISLANDS_B3F                  = (86 | (39 << 8)),
+    MAP_SEAFOAM_ISLANDS_B4F                  = (87 | (39 << 8)),
+    MAP_POKEMON_TOWER_1F                     = (88 | (39 << 8)),
+    MAP_POKEMON_TOWER_2F                     = (89 | (39 << 8)),
+    MAP_POKEMON_TOWER_3F                     = (90 | (39 << 8)),
+    MAP_POKEMON_TOWER_4F                     = (91 | (39 << 8)),
+    MAP_POKEMON_TOWER_5F                     = (92 | (39 << 8)),
+    MAP_POKEMON_TOWER_6F                     = (93 | (39 << 8)),
+    MAP_POKEMON_TOWER_7F                     = (94 | (39 << 8)),
+    MAP_POWER_PLANT                          = (95 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B4F               = (96 | (39 << 8)),
+    MAP_MT_EMBER_EXTERIOR                    = (97 | (39 << 8)),
+    MAP_MT_EMBER_SUMMIT_PATH_1F              = (98 | (39 << 8)),
+    MAP_MT_EMBER_SUMMIT_PATH_2F              = (99 | (39 << 8)),
+    MAP_MT_EMBER_SUMMIT_PATH_3F              = (100 | (39 << 8)),
+    MAP_MT_EMBER_SUMMIT                      = (101 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B5F               = (102 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_1F                = (103 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B1F               = (104 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B2F               = (105 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B3F               = (106 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B1F_STAIRS        = (107 | (39 << 8)),
+    MAP_MT_EMBER_RUBY_PATH_B2F_STAIRS        = (108 | (39 << 8)),
+    MAP_THREE_ISLAND_BERRY_FOREST            = (109 | (39 << 8)),
+    MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE    = (110 | (39 << 8)),
+    MAP_FOUR_ISLAND_ICEFALL_CAVE_1F          = (111 | (39 << 8)),
+    MAP_FOUR_ISLAND_ICEFALL_CAVE_B1F         = (112 | (39 << 8)),
+    MAP_FOUR_ISLAND_ICEFALL_CAVE_BACK        = (113 | (39 << 8)),
+    MAP_FIVE_ISLAND_ROCKET_WAREHOUSE         = (114 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_1F            = (115 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_B1F           = (116 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_B2F           = (117 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_B3F           = (118 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_B4F           = (119 | (39 << 8)),
+    MAP_SIX_ISLAND_DOTTED_HOLE_SAPPHIRE_ROOM = (120 | (39 << 8)),
+    MAP_SIX_ISLAND_PATTERN_BUSH              = (121 | (39 << 8)),
+    MAP_SIX_ISLAND_ALTERING_CAVE             = (122 | (39 << 8)),
+
+    // gMapGroup_SpecialArea_Frlg
+    MAP_NAVEL_ROCK_EXTERIOR_FRLG                  = (0 | (40 << 8)),
+    MAP_TRAINER_TOWER_1F                          = (1 | (40 << 8)),
+    MAP_TRAINER_TOWER_2F                          = (2 | (40 << 8)),
+    MAP_TRAINER_TOWER_3F                          = (3 | (40 << 8)),
+    MAP_TRAINER_TOWER_4F                          = (4 | (40 << 8)),
+    MAP_TRAINER_TOWER_5F                          = (5 | (40 << 8)),
+    MAP_TRAINER_TOWER_6F                          = (6 | (40 << 8)),
+    MAP_TRAINER_TOWER_7F                          = (7 | (40 << 8)),
+    MAP_TRAINER_TOWER_8F                          = (8 | (40 << 8)),
+    MAP_TRAINER_TOWER_ROOF                        = (9 | (40 << 8)),
+    MAP_TRAINER_TOWER_LOBBY                       = (10 | (40 << 8)),
+    MAP_TRAINER_TOWER_ELEVATOR                    = (11 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ENTRANCE            = (12 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM1               = (13 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM2               = (14 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM3               = (15 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM4               = (16 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM5               = (17 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM6               = (18 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM7               = (19 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM8               = (20 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM9               = (21 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM10              = (22 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM11              = (23 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM12              = (24 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM13              = (25 | (40 << 8)),
+    MAP_FIVE_ISLAND_LOST_CAVE_ROOM14              = (26 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_MONEAN_CHAMBER  = (27 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_LIPTOO_CHAMBER  = (28 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_WEEPTH_CHAMBER  = (29 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_DILFORD_CHAMBER = (30 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_SCUFIB_CHAMBER  = (31 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_RIXY_CHAMBER    = (32 | (40 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS_VIAPOIS_CHAMBER = (33 | (40 << 8)),
+    MAP_THREE_ISLAND_DUNSPARCE_TUNNEL             = (34 | (40 << 8)),
+    MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY    = (35 | (40 << 8)),
+    MAP_NAVEL_ROCK_1F                             = (36 | (40 << 8)),
+    MAP_NAVEL_ROCK_SUMMIT                         = (37 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_FRLG                      = (38 | (40 << 8)),
+    MAP_NAVEL_ROCK_SUMMIT_PATH_2F                 = (39 | (40 << 8)),
+    MAP_NAVEL_ROCK_SUMMIT_PATH_3F                 = (40 | (40 << 8)),
+    MAP_NAVEL_ROCK_SUMMIT_PATH_4F                 = (41 | (40 << 8)),
+    MAP_NAVEL_ROCK_SUMMIT_PATH_5F                 = (42 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B1F                  = (43 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B2F                  = (44 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B3F                  = (45 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B4F                  = (46 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B5F                  = (47 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B6F                  = (48 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B7F                  = (49 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B8F                  = (50 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B9F                  = (51 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B10F                 = (52 | (40 << 8)),
+    MAP_NAVEL_ROCK_BASE_PATH_B11F                 = (53 | (40 << 8)),
+    MAP_NAVEL_ROCK_B1F_FRLG                       = (54 | (40 << 8)),
+    MAP_NAVEL_ROCK_FORK_FRLG                      = (55 | (40 << 8)),
+    MAP_BIRTH_ISLAND_EXTERIOR_FRLG                = (56 | (40 << 8)),
+    MAP_ONE_ISLAND_KINDLE_ROAD_EMBER_SPA          = (57 | (40 << 8)),
+    MAP_BIRTH_ISLAND_HARBOR_FRLG                  = (58 | (40 << 8)),
+    MAP_NAVEL_ROCK_HARBOR_FRLG                    = (59 | (40 << 8)),
+
+    // gMapGroup_TownsAndRoutes_Frlg
+    MAP_PALLET_TOWN                          = (0 | (41 << 8)),
+    MAP_VIRIDIAN_CITY                        = (1 | (41 << 8)),
+    MAP_PEWTER_CITY                          = (2 | (41 << 8)),
+    MAP_CERULEAN_CITY                        = (3 | (41 << 8)),
+    MAP_LAVENDER_TOWN                        = (4 | (41 << 8)),
+    MAP_VERMILION_CITY                       = (5 | (41 << 8)),
+    MAP_CELADON_CITY                         = (6 | (41 << 8)),
+    MAP_FUCHSIA_CITY                         = (7 | (41 << 8)),
+    MAP_CINNABAR_ISLAND                      = (8 | (41 << 8)),
+    MAP_INDIGO_PLATEAU_EXTERIOR              = (9 | (41 << 8)),
+    MAP_SAFFRON_CITY                         = (10 | (41 << 8)),
+    MAP_SAFFRON_CITY_CONNECTION              = (11 | (41 << 8)),
+    MAP_ONE_ISLAND                           = (12 | (41 << 8)),
+    MAP_TWO_ISLAND                           = (13 | (41 << 8)),
+    MAP_THREE_ISLAND                         = (14 | (41 << 8)),
+    MAP_FOUR_ISLAND                          = (15 | (41 << 8)),
+    MAP_FIVE_ISLAND                          = (16 | (41 << 8)),
+    MAP_SEVEN_ISLAND                         = (17 | (41 << 8)),
+    MAP_SIX_ISLAND                           = (18 | (41 << 8)),
+    MAP_ROUTE1                               = (19 | (41 << 8)),
+    MAP_ROUTE2                               = (20 | (41 << 8)),
+    MAP_ROUTE3                               = (21 | (41 << 8)),
+    MAP_ROUTE4                               = (22 | (41 << 8)),
+    MAP_ROUTE5                               = (23 | (41 << 8)),
+    MAP_ROUTE6                               = (24 | (41 << 8)),
+    MAP_ROUTE7                               = (25 | (41 << 8)),
+    MAP_ROUTE8                               = (26 | (41 << 8)),
+    MAP_ROUTE9                               = (27 | (41 << 8)),
+    MAP_ROUTE10                              = (28 | (41 << 8)),
+    MAP_ROUTE11                              = (29 | (41 << 8)),
+    MAP_ROUTE12                              = (30 | (41 << 8)),
+    MAP_ROUTE13                              = (31 | (41 << 8)),
+    MAP_ROUTE14                              = (32 | (41 << 8)),
+    MAP_ROUTE15                              = (33 | (41 << 8)),
+    MAP_ROUTE16                              = (34 | (41 << 8)),
+    MAP_ROUTE17                              = (35 | (41 << 8)),
+    MAP_ROUTE18                              = (36 | (41 << 8)),
+    MAP_ROUTE19                              = (37 | (41 << 8)),
+    MAP_ROUTE20                              = (38 | (41 << 8)),
+    MAP_ROUTE21_NORTH                        = (39 | (41 << 8)),
+    MAP_ROUTE21_SOUTH                        = (40 | (41 << 8)),
+    MAP_ROUTE22                              = (41 | (41 << 8)),
+    MAP_ROUTE23                              = (42 | (41 << 8)),
+    MAP_ROUTE24                              = (43 | (41 << 8)),
+    MAP_ROUTE25                              = (44 | (41 << 8)),
+    MAP_ONE_ISLAND_KINDLE_ROAD               = (45 | (41 << 8)),
+    MAP_ONE_ISLAND_TREASURE_BEACH            = (46 | (41 << 8)),
+    MAP_TWO_ISLAND_CAPE_BRINK                = (47 | (41 << 8)),
+    MAP_THREE_ISLAND_BOND_BRIDGE             = (48 | (41 << 8)),
+    MAP_THREE_ISLAND_PORT                    = (49 | (41 << 8)),
+    MAP_FIVE_ISLAND_RESORT_GORGEOUS          = (50 | (41 << 8)),
+    MAP_FIVE_ISLAND_WATER_LABYRINTH          = (51 | (41 << 8)),
+    MAP_FIVE_ISLAND_MEADOW                   = (52 | (41 << 8)),
+    MAP_FIVE_ISLAND_MEMORIAL_PILLAR          = (53 | (41 << 8)),
+    MAP_SIX_ISLAND_OUTCAST_ISLAND            = (54 | (41 << 8)),
+    MAP_SIX_ISLAND_GREEN_PATH                = (55 | (41 << 8)),
+    MAP_SIX_ISLAND_WATER_PATH                = (56 | (41 << 8)),
+    MAP_SIX_ISLAND_RUIN_VALLEY               = (57 | (41 << 8)),
+    MAP_SEVEN_ISLAND_TRAINER_TOWER           = (58 | (41 << 8)),
+    MAP_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE = (59 | (41 << 8)),
+    MAP_SEVEN_ISLAND_SEVAULT_CANYON          = (60 | (41 << 8)),
+    MAP_SEVEN_ISLAND_TANOBY_RUINS            = (61 | (41 << 8)),
+
+    // gMapGroup_IndoorPallet_Frlg
+    MAP_PALLET_TOWN_PLAYERS_HOUSE_1F   = (0 | (42 << 8)),
+    MAP_PALLET_TOWN_PLAYERS_HOUSE_2F   = (1 | (42 << 8)),
+    MAP_PALLET_TOWN_RIVALS_HOUSE       = (2 | (42 << 8)),
+    MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB = (3 | (42 << 8)),
+
+    // gMapGroup_IndoorViridian_Frlg
+    MAP_VIRIDIAN_CITY_HOUSE             = (0 | (43 << 8)),
+    MAP_VIRIDIAN_CITY_GYM               = (1 | (43 << 8)),
+    MAP_VIRIDIAN_CITY_SCHOOL            = (2 | (43 << 8)),
+    MAP_VIRIDIAN_CITY_MART              = (3 | (43 << 8)),
+    MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F = (4 | (43 << 8)),
+    MAP_VIRIDIAN_CITY_POKEMON_CENTER_2F = (5 | (43 << 8)),
+
+    // gMapGroup_IndoorPewter_Frlg
+    MAP_PEWTER_CITY_MUSEUM_1F         = (0 | (44 << 8)),
+    MAP_PEWTER_CITY_MUSEUM_2F         = (1 | (44 << 8)),
+    MAP_PEWTER_CITY_GYM               = (2 | (44 << 8)),
+    MAP_PEWTER_CITY_MART              = (3 | (44 << 8)),
+    MAP_PEWTER_CITY_HOUSE1            = (4 | (44 << 8)),
+    MAP_PEWTER_CITY_POKEMON_CENTER_1F = (5 | (44 << 8)),
+    MAP_PEWTER_CITY_POKEMON_CENTER_2F = (6 | (44 << 8)),
+    MAP_PEWTER_CITY_HOUSE2            = (7 | (44 << 8)),
+
+    // gMapGroup_IndoorCerulean_Frlg
+    MAP_CERULEAN_CITY_HOUSE1            = (0 | (45 << 8)),
+    MAP_CERULEAN_CITY_HOUSE2            = (1 | (45 << 8)),
+    MAP_CERULEAN_CITY_HOUSE3            = (2 | (45 << 8)),
+    MAP_CERULEAN_CITY_POKEMON_CENTER_1F = (3 | (45 << 8)),
+    MAP_CERULEAN_CITY_POKEMON_CENTER_2F = (4 | (45 << 8)),
+    MAP_CERULEAN_CITY_GYM               = (5 | (45 << 8)),
+    MAP_CERULEAN_CITY_BIKE_SHOP         = (6 | (45 << 8)),
+    MAP_CERULEAN_CITY_MART              = (7 | (45 << 8)),
+    MAP_CERULEAN_CITY_HOUSE4            = (8 | (45 << 8)),
+    MAP_CERULEAN_CITY_HOUSE5            = (9 | (45 << 8)),
+
+    // gMapGroup_IndoorLavender_Frlg
+    MAP_LAVENDER_TOWN_POKEMON_CENTER_1F       = (0 | (46 << 8)),
+    MAP_LAVENDER_TOWN_POKEMON_CENTER_2F       = (1 | (46 << 8)),
+    MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE = (2 | (46 << 8)),
+    MAP_LAVENDER_TOWN_HOUSE1                  = (3 | (46 << 8)),
+    MAP_LAVENDER_TOWN_HOUSE2                  = (4 | (46 << 8)),
+    MAP_LAVENDER_TOWN_MART                    = (5 | (46 << 8)),
+
+    // gMapGroup_IndoorVermilion_Frlg
+    MAP_VERMILION_CITY_HOUSE1            = (0 | (47 << 8)),
+    MAP_VERMILION_CITY_POKEMON_CENTER_1F = (1 | (47 << 8)),
+    MAP_VERMILION_CITY_POKEMON_CENTER_2F = (2 | (47 << 8)),
+    MAP_VERMILION_CITY_POKEMON_FAN_CLUB  = (3 | (47 << 8)),
+    MAP_VERMILION_CITY_HOUSE2            = (4 | (47 << 8)),
+    MAP_VERMILION_CITY_MART              = (5 | (47 << 8)),
+    MAP_VERMILION_CITY_GYM               = (6 | (47 << 8)),
+    MAP_VERMILION_CITY_HOUSE3            = (7 | (47 << 8)),
+
+    // gMapGroup_IndoorCeladon_Frlg
+    MAP_CELADON_CITY_DEPARTMENT_STORE_1F       = (0 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_2F       = (1 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_3F       = (2 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_4F       = (3 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_5F       = (4 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_ROOF     = (5 | (48 << 8)),
+    MAP_CELADON_CITY_DEPARTMENT_STORE_ELEVATOR = (6 | (48 << 8)),
+    MAP_CELADON_CITY_CONDOMINIUMS_1F           = (7 | (48 << 8)),
+    MAP_CELADON_CITY_CONDOMINIUMS_2F           = (8 | (48 << 8)),
+    MAP_CELADON_CITY_CONDOMINIUMS_3F           = (9 | (48 << 8)),
+    MAP_CELADON_CITY_CONDOMINIUMS_ROOF         = (10 | (48 << 8)),
+    MAP_CELADON_CITY_CONDOMINIUMS_ROOF_ROOM    = (11 | (48 << 8)),
+    MAP_CELADON_CITY_POKEMON_CENTER_1F         = (12 | (48 << 8)),
+    MAP_CELADON_CITY_POKEMON_CENTER_2F         = (13 | (48 << 8)),
+    MAP_CELADON_CITY_GAME_CORNER               = (14 | (48 << 8)),
+    MAP_CELADON_CITY_GAME_CORNER_PRIZE_ROOM    = (15 | (48 << 8)),
+    MAP_CELADON_CITY_GYM                       = (16 | (48 << 8)),
+    MAP_CELADON_CITY_RESTAURANT                = (17 | (48 << 8)),
+    MAP_CELADON_CITY_HOUSE1                    = (18 | (48 << 8)),
+    MAP_CELADON_CITY_HOTEL                     = (19 | (48 << 8)),
+
+    // gMapGroup_IndoorFuchsia_Frlg
+    MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE = (0 | (49 << 8)),
+    MAP_FUCHSIA_CITY_MART                 = (1 | (49 << 8)),
+    MAP_FUCHSIA_CITY_SAFARI_ZONE_OFFICE   = (2 | (49 << 8)),
+    MAP_FUCHSIA_CITY_GYM                  = (3 | (49 << 8)),
+    MAP_FUCHSIA_CITY_HOUSE1               = (4 | (49 << 8)),
+    MAP_FUCHSIA_CITY_POKEMON_CENTER_1F    = (5 | (49 << 8)),
+    MAP_FUCHSIA_CITY_POKEMON_CENTER_2F    = (6 | (49 << 8)),
+    MAP_FUCHSIA_CITY_WARDENS_HOUSE        = (7 | (49 << 8)),
+    MAP_FUCHSIA_CITY_HOUSE2               = (8 | (49 << 8)),
+    MAP_FUCHSIA_CITY_HOUSE3               = (9 | (49 << 8)),
+
+    // gMapGroup_IndoorCinnabar_Frlg
+    MAP_CINNABAR_ISLAND_GYM                         = (0 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_LAB_ENTRANCE        = (1 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_LAB_LOUNGE          = (2 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_LAB_RESEARCH_ROOM   = (3 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM = (4 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_CENTER_1F           = (5 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_POKEMON_CENTER_2F           = (6 | (50 << 8)),
+    MAP_CINNABAR_ISLAND_MART                        = (7 | (50 << 8)),
+
+    // gMapGroup_IndoorIndigoPlateau_Frlg
+    MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F = (0 | (51 << 8)),
+    MAP_INDIGO_PLATEAU_POKEMON_CENTER_2F = (1 | (51 << 8)),
+
+    // gMapGroup_IndoorSaffron_Frlg
+    MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F        = (0 | (52 << 8)),
+    MAP_SAFFRON_CITY_COPYCATS_HOUSE_2F        = (1 | (52 << 8)),
+    MAP_SAFFRON_CITY_DOJO                     = (2 | (52 << 8)),
+    MAP_SAFFRON_CITY_GYM                      = (3 | (52 << 8)),
+    MAP_SAFFRON_CITY_HOUSE                    = (4 | (52 << 8)),
+    MAP_SAFFRON_CITY_MART                     = (5 | (52 << 8)),
+    MAP_SAFFRON_CITY_POKEMON_CENTER_1F        = (6 | (52 << 8)),
+    MAP_SAFFRON_CITY_POKEMON_CENTER_2F        = (7 | (52 << 8)),
+    MAP_SAFFRON_CITY_MR_PSYCHICS_HOUSE        = (8 | (52 << 8)),
+    MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB = (9 | (52 << 8)),
+
+    // gMapGroup_IndoorRoute2_Frlg
+    MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE = (0 | (53 << 8)),
+    MAP_ROUTE2_HOUSE                          = (1 | (53 << 8)),
+    MAP_ROUTE2_EAST_BUILDING                  = (2 | (53 << 8)),
+    MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE = (3 | (53 << 8)),
+
+    // gMapGroup_IndoorRoute4_Frlg
+    MAP_ROUTE4_POKEMON_CENTER_1F = (0 | (54 << 8)),
+    MAP_ROUTE4_POKEMON_CENTER_2F = (1 | (54 << 8)),
+
+    // gMapGroup_IndoorRoute5_Frlg
+    MAP_ROUTE5_POKEMON_DAY_CARE = (0 | (55 << 8)),
+    MAP_ROUTE5_SOUTH_ENTRANCE   = (1 | (55 << 8)),
+
+    // gMapGroup_IndoorRoute6_Frlg
+    MAP_ROUTE6_NORTH_ENTRANCE = (0 | (56 << 8)),
+
+    // gMapGroup_IndoorRoute7_Frlg
+    MAP_ROUTE7_EAST_ENTRANCE = (0 | (57 << 8)),
+
+    // gMapGroup_IndoorRoute8_Frlg
+    MAP_ROUTE8_WEST_ENTRANCE = (0 | (58 << 8)),
+
+    // gMapGroup_IndoorRoute10_Frlg
+    MAP_ROUTE10_POKEMON_CENTER_1F = (0 | (59 << 8)),
+    MAP_ROUTE10_POKEMON_CENTER_2F = (1 | (59 << 8)),
+
+    // gMapGroup_IndoorRoute11_Frlg
+    MAP_ROUTE11_EAST_ENTRANCE_1F = (0 | (60 << 8)),
+    MAP_ROUTE11_EAST_ENTRANCE_2F = (1 | (60 << 8)),
+
+    // gMapGroup_IndoorRoute12_Frlg
+    MAP_ROUTE12_NORTH_ENTRANCE_1F = (0 | (61 << 8)),
+    MAP_ROUTE12_NORTH_ENTRANCE_2F = (1 | (61 << 8)),
+    MAP_ROUTE12_FISHING_HOUSE     = (2 | (61 << 8)),
+
+    // gMapGroup_IndoorRoute15_Frlg
+    MAP_ROUTE15_WEST_ENTRANCE_1F = (0 | (62 << 8)),
+    MAP_ROUTE15_WEST_ENTRANCE_2F = (1 | (62 << 8)),
+
+    // gMapGroup_IndoorRoute16_Frlg
+    MAP_ROUTE16_HOUSE             = (0 | (63 << 8)),
+    MAP_ROUTE16_NORTH_ENTRANCE_1F = (1 | (63 << 8)),
+    MAP_ROUTE16_NORTH_ENTRANCE_2F = (2 | (63 << 8)),
+
+    // gMapGroup_IndoorRoute18_Frlg
+    MAP_ROUTE18_EAST_ENTRANCE_1F = (0 | (64 << 8)),
+    MAP_ROUTE18_EAST_ENTRANCE_2F = (1 | (64 << 8)),
+
+    // gMapGroup_IndoorRoute22_Frlg
+    MAP_ROUTE22_NORTH_ENTRANCE = (0 | (65 << 8)),
+
+    // gMapGroup_IndoorRoute25_Frlg
+    MAP_ROUTE25_SEA_COTTAGE = (0 | (66 << 8)),
+
+    // gMapGroup_IndoorSevenIsland_Frlg
+    MAP_SEVEN_ISLAND_HOUSE_ROOM1       = (0 | (67 << 8)),
+    MAP_SEVEN_ISLAND_HOUSE_ROOM2       = (1 | (67 << 8)),
+    MAP_SEVEN_ISLAND_MART              = (2 | (67 << 8)),
+    MAP_SEVEN_ISLAND_POKEMON_CENTER_1F = (3 | (67 << 8)),
+    MAP_SEVEN_ISLAND_POKEMON_CENTER_2F = (4 | (67 << 8)),
+    MAP_SEVEN_ISLAND_HARBOR            = (5 | (67 << 8)),
+
+    // gMapGroup_IndoorOneIsland_Frlg
+    MAP_ONE_ISLAND_POKEMON_CENTER_1F = (0 | (68 << 8)),
+    MAP_ONE_ISLAND_POKEMON_CENTER_2F = (1 | (68 << 8)),
+    MAP_ONE_ISLAND_HOUSE1            = (2 | (68 << 8)),
+    MAP_ONE_ISLAND_HOUSE2            = (3 | (68 << 8)),
+    MAP_ONE_ISLAND_HARBOR            = (4 | (68 << 8)),
+
+    // gMapGroup_IndoorTwoIsland_Frlg
+    MAP_TWO_ISLAND_JOYFUL_GAME_CORNER = (0 | (69 << 8)),
+    MAP_TWO_ISLAND_HOUSE              = (1 | (69 << 8)),
+    MAP_TWO_ISLAND_POKEMON_CENTER_1F  = (2 | (69 << 8)),
+    MAP_TWO_ISLAND_POKEMON_CENTER_2F  = (3 | (69 << 8)),
+    MAP_TWO_ISLAND_HARBOR             = (4 | (69 << 8)),
+
+    // gMapGroup_IndoorThreeIsland_Frlg
+    MAP_THREE_ISLAND_HOUSE1            = (0 | (70 << 8)),
+    MAP_THREE_ISLAND_POKEMON_CENTER_1F = (1 | (70 << 8)),
+    MAP_THREE_ISLAND_POKEMON_CENTER_2F = (2 | (70 << 8)),
+    MAP_THREE_ISLAND_MART              = (3 | (70 << 8)),
+    MAP_THREE_ISLAND_HOUSE2            = (4 | (70 << 8)),
+    MAP_THREE_ISLAND_HOUSE3            = (5 | (70 << 8)),
+    MAP_THREE_ISLAND_HOUSE4            = (6 | (70 << 8)),
+    MAP_THREE_ISLAND_HOUSE5            = (7 | (70 << 8)),
+
+    // gMapGroup_IndoorFourIsland_Frlg
+    MAP_FOUR_ISLAND_POKEMON_DAY_CARE  = (0 | (71 << 8)),
+    MAP_FOUR_ISLAND_POKEMON_CENTER_1F = (1 | (71 << 8)),
+    MAP_FOUR_ISLAND_POKEMON_CENTER_2F = (2 | (71 << 8)),
+    MAP_FOUR_ISLAND_HOUSE1            = (3 | (71 << 8)),
+    MAP_FOUR_ISLAND_LORELEIS_HOUSE    = (4 | (71 << 8)),
+    MAP_FOUR_ISLAND_HARBOR            = (5 | (71 << 8)),
+    MAP_FOUR_ISLAND_HOUSE2            = (6 | (71 << 8)),
+    MAP_FOUR_ISLAND_MART              = (7 | (71 << 8)),
+
+    // gMapGroup_IndoorFiveIsland_Frlg
+    MAP_FIVE_ISLAND_POKEMON_CENTER_1F = (0 | (72 << 8)),
+    MAP_FIVE_ISLAND_POKEMON_CENTER_2F = (1 | (72 << 8)),
+    MAP_FIVE_ISLAND_HARBOR            = (2 | (72 << 8)),
+    MAP_FIVE_ISLAND_HOUSE1            = (3 | (72 << 8)),
+    MAP_FIVE_ISLAND_HOUSE2            = (4 | (72 << 8)),
+
+    // gMapGroup_IndoorSixIsland_Frlg
+    MAP_SIX_ISLAND_POKEMON_CENTER_1F = (0 | (73 << 8)),
+    MAP_SIX_ISLAND_POKEMON_CENTER_2F = (1 | (73 << 8)),
+    MAP_SIX_ISLAND_HARBOR            = (2 | (73 << 8)),
+    MAP_SIX_ISLAND_HOUSE             = (3 | (73 << 8)),
+    MAP_SIX_ISLAND_MART              = (4 | (73 << 8)),
+
+    // gMapGroup_IndoorThreeIslandRoute_Frlg
+    MAP_THREE_ISLAND_HARBOR = (0 | (74 << 8)),
+
+    // gMapGroup_IndoorFiveIslandRoute_Frlg
+    MAP_FIVE_ISLAND_RESORT_GORGEOUS_HOUSE = (0 | (75 << 8)),
+
+    // gMapGroup_IndoorTwoIslandRoute_Frlg
+    MAP_TWO_ISLAND_CAPE_BRINK_HOUSE = (0 | (76 << 8)),
+
+    // gMapGroup_IndoorSixIslandRoute_Frlg
+    MAP_SIX_ISLAND_WATER_PATH_HOUSE1 = (0 | (77 << 8)),
+    MAP_SIX_ISLAND_WATER_PATH_HOUSE2 = (1 | (77 << 8)),
+
+    // gMapGroup_IndoorSevenIslandRoute_Frlg
+    MAP_SEVEN_ISLAND_SEVAULT_CANYON_HOUSE = (0 | (78 << 8)),
+
+};
+
+//Constants for unused maps
+
+#define MAP_GROUPS_COUNT 79
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

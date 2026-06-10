@@ -860,7 +860,7 @@
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
 #define TRAINER_SCHOOLKIDF_JESSY            855
-#define TRAINER_YOUNGSTER_TYLER             856
+// #define TRAINER_YOUNGSTER_TYLER             856
 #define TRAINER_LASS_ADELA                  857
 #define TRAINER_LASS_TALIA                  858
 #define TRAINER_SCHOOL_KID_CORAL            859

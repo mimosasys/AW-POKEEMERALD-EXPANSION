@@ -37,6 +37,7 @@ enum Gender
     GENDER_ANY,
     GENDER_MALE,
     GENDER_FEMALE,
+    // GENDER_ENBY,
 };
 
 enum BattleType
@@ -874,6 +875,11 @@ static bool token_gender(struct Parser *p, const struct Token *t, enum Gender *g
         *g = GENDER_FEMALE;
         return true;
     }
+    // else if (is_literal_token(t, "E") || is_literal_token(t, "Enby"))
+    // {
+    //     *g = GENDER_ENBY;
+    //     return true;
+    // }
     else
     {
         return set_parse_error(p, t->location, "invalid gender");

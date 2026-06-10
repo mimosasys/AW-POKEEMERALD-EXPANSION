@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/global.h"
 #include "constants/trainers.h"
 
 static enum TrainerPicID GetEmeraldTrainerPic(enum Gender gender)

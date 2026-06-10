@@ -213,7 +213,7 @@ extern const u8 gText_Birch_AreYouReady[];
 
 // AW TEXT
 
-extern const u8 gText_BirchEnby[];
+//extern const u8 gText_BirchEnby[];
 extern const u8 gText_AW_Rival[];
 
 extern const u8 gText_BirchInTrouble[];
